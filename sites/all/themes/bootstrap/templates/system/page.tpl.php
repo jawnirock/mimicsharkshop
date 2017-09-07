@@ -74,71 +74,87 @@
  */
 ?>
 
-<div class="island-wrapper">
-  <section class="island island-left">
+<div class="island-wrapper" data-state="cube">
+  <section id="safety" class="island island-left">
     <nav class="island-nav">
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      SAFETY
+      <img src="/sites/all/themes/sharktheme/images/titles/safety.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
-        island content
+        <div class="island-dive-content-text">
+          <div class="island-dive-content-text-block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
     </aside>
   </section>
-  <section class="island island-left">
+  <section id="eco" class="island island-left">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      ECO
+      <img src="/sites/all/themes/sharktheme/images/titles/eco.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
-        island content
+        <div class="island-dive-content-text">
+          <div class="island-dive-content-text-block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
     </aside>
   </section>
-  <section class="island island-left">
+  <section id="habitat" class="island island-left">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      HABITAT
+      <img src="/sites/all/themes/sharktheme/images/titles/habitat.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
-        island content
+        <div class="island-dive-content-text">
+          <div class="island-dive-content-text-block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
     </aside>
   </section>
-  <section class="island island-left">
+  <section id="roots" class="island island-left">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      ROOTS
+      <img src="/sites/all/themes/sharktheme/images/titles/roots.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
-        island content
+        <div class="island-dive-content-text">
+          <div class="island-dive-content-text-block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
       </div>
     </aside>
   </section>
@@ -148,15 +164,17 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      ABOUT
+      <img src="/sites/all/themes/sharktheme/images/titles/about.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
         <div class="island-dive-content-text">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          <div class="island-dive-content-text-block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
         </div>
       </div>
     </aside>
@@ -168,15 +186,19 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      <img src="/sites/all/themes/sharktheme/mimicLogoAnim1.gif">
+      <img src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
     </div>
     <aside class="island-dive island-dive--visible">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
-        <span class="island-dive-nav island-dive-nav--up" data-divetarget="luke"></span>
-        island content
+        <div class="island-dive-content-sitemap">
+          <span class="island-dive-nav island-dive-nav--up" data-divetarget="luke"></span>
+          <span class="island-dive-nav island-dive-nav--down" data-divetarget="luke"></span>
+          <span class="island-dive-nav island-dive-nav--left" data-divetarget="luke"></span>
+          <span class="island-dive-nav island-dive-nav--right" data-divetarget="luke"></span>
+        </div>
       </div>
     </aside>
   </section>
@@ -187,91 +209,82 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      PRODUCTS
+      <img src="/sites/all/themes/sharktheme/images/titles/products.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
       </div>
-      <div id="products-kids" class="island-dive-content">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="products"></span>
-          <span class="island-dive-nav island-dive-nav--down" data-divetarget="products-women"></span>
-          KIDS
-      </div>
-      <div id="products-women" class="island-dive-content">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="products-kids"></span>
-          <span class="island-dive-nav island-dive-nav--down" data-divetarget="products-men"></span>
+
+      <div class="island-dive-content">
+        <div id="products-women"  class="island-dive-content-product">
           WOMEN
-      </div>
-      <div id="products-men" class="island-dive-content">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="products-women"></span>
+        </div>
+        <div id="products-men"  class="island-dive-content-product">
           MEN
+        </div>
       </div>
     </aside>
   </section>
+  
   <section id="shop" class="island island-right">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      SHOP
+      <img src="/sites/all/themes/sharktheme/images/titles/shop.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
       </div>
-      <div id="shop-kids" class="island-dive-content">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop"></span>
-          <span class="island-dive-nav island-dive-nav--down" data-divetarget="shop-women"></span>
-          <div class="island-dive-size">
-            <h3 class="island-dive-size-title">KIDS</h3>
-            <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
-          </div>
-          <div class="island-dive-shop">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg1.png">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg2.png">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg3.png">
-          </div>
+      
+      <div class="island-dive-content">
+        <div id="shop-women" class="island-dive-content-shop">
+            <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop-kids"></span>
+            <span class="island-dive-nav island-dive-nav--down" data-divetarget="shop-men"></span>
+            <div class="island-dive-size">
+              <h3 class="island-dive-size-title">WOMEN</h3>
+              <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
+            </div>
+            <div class="island-dive-shop">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women.png" style="display: none;">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women1.jpg">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women2.jpg">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women3.jpg">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women4.jpg">
+            </div>
+        </div>
+        <div id="shop-men" class="island-dive-content-shop">
+            <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop-women"></span>
+            <div class="island-dive-size">
+              <h3 class="island-dive-size-title">MEN</h3>
+              <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
+            </div>
+            <div class="island-dive-shop">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men.png" style="display: none;">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men1.jpg">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men2.jpg">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men3.jpg">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men4.jpg">
+            </div>
+        </div>        
       </div>
-      <div id="shop-women" class="island-dive-content">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop-kids"></span>
-          <span class="island-dive-nav island-dive-nav--down" data-divetarget="shop-men"></span>
-          <div class="island-dive-size">
-            <h3 class="island-dive-size-title">WOMEN</h3>
-            <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
-          </div>
-          <div class="island-dive-shop">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg1.png">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg2.png">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg3.png">
-          </div>
-      </div>
-      <div id="shop-men" class="island-dive-content">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop-women"></span>
-          <div class="island-dive-size">
-            <h3 class="island-dive-size-title">MEN</h3>
-            <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
-          </div>
-          <div class="island-dive-shop">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg1.png">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg2.png">
-            <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/bg3.png">
-          </div>
-      </div>
+
     </aside>
   </section>
+
+
   <section id="buy" class="island island-right">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      BUY
+      <img src="/sites/all/themes/sharktheme/images/titles/buy.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
         <?php print render($page['content']); ?>
@@ -284,14 +297,16 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title">
-      DISCLAIMER
+      <img src="/sites/all/themes/sharktheme/images/titles/disclaimer.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
-        disclaimer guy
+        <div class="island-dive-content-disclaimer">
+          
+        </div>
       </div>
     </aside>
   </section>
@@ -300,11 +315,11 @@
       <span class="island-nav--left"></span>
     </nav>
     <div class="island-title">
-      CONTACT
+      <img src="/sites/all/themes/sharktheme/images/titles/contact.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
-        dive transition
+        
       </div>
       <div class="island-dive-content">
         island content

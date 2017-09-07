@@ -1,0 +1,33 @@
+.island-dive-content-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    &-block {
+        max-width: 800px;
+        opacity: 0.7;
+        font-size: 18px;
+    }
+}
+
+#safety .island-dive-content-text {
+    background-image: url('../images/bg/texts/safety.jpg');
+}
+#eco .island-dive-content-text {
+    background-image: url('../images/bg/texts/eco.jpg');
+}
+#habitat .island-dive-content-text {
+    background-image: url('../images/bg/texts/habitat.jpg');
+}
+#roots .island-dive-content-text {
+    background-image: url('../images/bg/texts/roots.jpg');
+}
+#about .island-dive-content-text {
+    background-image: url('../images/bg/texts/about.jpg');
+}

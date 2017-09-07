@@ -1,0 +1,148 @@
+.island-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	perspective: 1200px;
+	transform-style: preserve-3d;
+
+	.island {
+		min-height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	    background-size: 100% auto;
+	    background-repeat: no-repeat;
+	    background-position: center;
+		backface-visibility: hidden;
+		transform: translate3d(0, 0, 0);
+		transform-style: preserve-3d;
+		font-size: 5em;
+		color: #fff;
+		visibility: hidden;
+		transition: 1.2ms;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;	
+	    
+	    // BACKGROUNDS
+
+		&:nth-child(1) {
+	    	background-image: url('../images/bg/islands/01.jpg');
+		}
+		&:nth-child(2) {
+	    	background-image: url('../images/bg/islands/02.jpg');
+		}
+		&:nth-child(3) {
+	    	background-image: url('../images/bg/islands/03.jpg');
+		}
+		&:nth-child(4) {
+	    	background-image: url('../images/bg/islands/04.jpg');
+		}
+		&:nth-child(5) {
+	    	background-image: url('../images/bg/islands/05.jpg');
+		}
+		&:nth-child(6) {
+	    	background-image: url('../images/bg/islands/06.jpg');
+		}
+		&:nth-child(7) {
+	    	background-image: url('../images/bg/islands/07.jpg');
+		}
+		&:nth-child(8) {
+	    	background-image: url('../images/bg/islands/08.jpg');
+		}
+		&:nth-child(9) {
+	    	background-image: url('../images/bg/islands/09.jpg');
+		}
+		&:nth-child(10) {
+	    	background-image: url('../images/bg/islands/10.jpg');
+		}
+		&:nth-child(11) {
+	    	background-image: url('../images/bg/islands/11.jpg');
+		}	
+		&-visible{
+			visibility: visible !important;
+		}
+		
+		
+		// TITLES
+		
+		&-center {
+			text-align: center;
+			.island-title {
+			    img {
+			    	width: auto;
+			    }
+			 }
+		}
+		
+		&-title {
+		    transform: translateZ(100px);
+		    cursor: pointer;
+		    z-index: 110;
+
+		    img {
+		    	max-height: 110px;
+		    }
+		    &:hover {
+		    	opacity: 0.9;
+		    }
+		}
+
+		
+		&-left {
+	    	justify-content: flex-start;		
+			.island-title {
+				margin: 25% 0% 0% 15%;
+			}
+		}
+		
+		&-right {
+	    	justify-content: flex-end;		
+			.island-title {
+				margin: 25% 15% 0% 0%;
+			}
+		}
+
+		&#safety {
+			.island-title {
+		    	margin: 25% 0% 0% 50%;
+			}
+		}
+
+		&#contact {
+			.island-title {
+		    	margin: 25% 50% 0% 0%;
+			}
+		}
+		
+		// NAVIGATIONS
+
+		&-nav {
+			&--left, &--right {
+			    position: absolute;
+			    z-index: 99;
+			    height: 100%;
+			    width: 50%;
+			    top: 0;
+			}
+			&--left {
+				left: 0;
+			    &:hover {
+					background: linear-gradient(to right, rgba(84,84,84,0.3) 0%,rgba(84,84,84,0) 100%);
+					cursor: pointer;
+			    }
+			}
+			&--right {
+				right: 0;
+			    &:hover {
+					background: linear-gradient(to left, rgba(84,84,84,0.3) 0%,rgba(84,84,84,0) 100%);
+					cursor: pointer;
+			    }
+			}
+		}
+		
+	}
+}

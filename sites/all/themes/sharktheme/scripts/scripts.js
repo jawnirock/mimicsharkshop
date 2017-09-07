@@ -2,8 +2,10 @@
 
 function animationOut(i){}
 function animationIn(i){}
+var state = "cube";
 
 $(document).ready(function() {
+	
 	
 	var length = $('.island').length,
 		current = 6,
@@ -28,16 +30,30 @@ $(document).ready(function() {
 	}
 	
 	function trans(direction) {
+		
 		if (!onGoing) {
 			onGoing = true;
 			if (direction == 'up') {
+
+				if ($(window).scrollTop() > $(window).height()) {
+					outClass = 'slideBottomOut';
+					inClass = 'slideBottomIn';
+				} else {
+					outClass = 'rotateCubeBottomOut';
+					inClass = 'rotateCubeBottomIn';
+				}
 				next = current > 1 ? current - 1 : length;
-				outClass = 'rotateCubeBottomOut';
-				inClass = 'rotateCubeBottomIn';
+
 			} else {
+
+			if ($(window).scrollTop() > $(window).height()) {
+					outClass = 'slideTopOut';
+					inClass = 'slideTopIn';
+				} else {
+					outClass = 'rotateCubeTopOut';
+					inClass = 'rotateCubeTopIn';
+				}
 				next = current < length ? current + 1 : 1;
-				outClass = 'rotateCubeTopOut';
-				inClass = 'rotateCubeTopIn';
 			}
 			show();
 		}
@@ -82,21 +98,88 @@ $(document).ready(function() {
 
 
 	$(document).keydown(function(e) {
-		if (e.keyCode == 38 || e && e.keyCode == 37) {
-			trans('up')
-		}
-		if (e.keyCode == 39 || e && e.keyCode == 40) {
-			trans('down')
-		}
+		var windowheight = $(window).height();
+		var windowoffset = $(window).scrollTop();
+		var moveup = windowoffset - windowheight;
+		var movedown = windowoffset + windowheight;
+		
+		if (!onGoing) {
+
+			if (e.keyCode == 37 && current !== 1) {
+				trans('up')
+			}
+			if (e.keyCode == 38) {
+				 onGoing = true;
+				if (windowoffset <= (windowheight + windowheight)) {
+					$("html, body").scrollTo(0, 1300, {easing: 'easeInOutCirc', onAfter: function() {
+					}});
+				} else {
+					$("html, body").scrollTo(moveup, 1300, {easing: 'easeInOutCirc', onAfter: function() {
+					}});
+				}
+				setTimeout(function() {
+					onGoing = false;
+				}, 1500)
+
+			}
+			if (e.keyCode == 39 && current !== 11) {
+				trans('down')
+			}
+			if (e.keyCode == 40) {
+				 onGoing = true;
+				if (windowoffset == 0) {
+					$("html, body").scrollTo((windowheight*2), 1300, {easing: 'easeInOutCirc', onAfter: function() {
+					}});				
+				} else {
+					$("html, body").scrollTo(movedown, 1300, {easing: 'easeInOutCirc', onAfter: function() {
+					}});
+				}
+				setTimeout(function() {
+					onGoing = false;
+				}, 1500)
+			}
+			
+
+		}		
 
 	});
 
 	$(document).swipe({
 		swipe: function(event, direction, distance, duration, fingerCount) {
-			if (direction == "left") {
+			
+		var windowheight = window.screen.height;
+		var windowoffset = $(window).scrollTop();
+		var moveup = windowoffset - windowheight;
+		var movedown = windowoffset + windowheight;
+		
+			if (direction == "left" && current !== 11) {
 				trans('down')
-			} else if (direction == "right") {
+			}
+			if (direction == "right" && current !== 1) {
 				trans('up')
+			}
+			
+			if (direction == "down") {
+				 onGoing = true;
+				if (windowoffset <= (windowheight + windowheight)) {
+					$("html, body").scrollTo(0, 1300, {easing: 'easeInOutCirc'});
+				} else {
+					$("html, body").scrollTo(moveup, 1300, {easing: 'easeInOutCirc'});
+				}
+				setTimeout(function() {
+					onGoing = false;
+				}, 1500)
+			}
+			if (direction == "up") {
+				 onGoing = true;
+				if (windowoffset == 0) {
+					$("html, body").scrollTo((windowheight*2), 1300, {easing: 'easeInOutCirc'});
+				} else {
+					$("html, body").scrollTo(movedown, 1300, {easing: 'easeInOutCirc'});
+				}
+				setTimeout(function() {
+					onGoing = false;
+				}, 1500)
 			}
 		}
 	});
@@ -124,7 +207,7 @@ $(document).ready(function() {
     
     $(".island-dive-shop-thumb").click(function() {
         var imgsrc = $(this).attr("src");
-        $(this).parents(".island-dive-content").css("background-image", "url(" + imgsrc + ")");
+        $(this).parents(".island-dive-content-shop").css("background-image", "url(" + imgsrc + ")");
     });
     
     
@@ -134,35 +217,45 @@ $(document).ready(function() {
         var islandContent = $(this).find(".island-dive-content");
         $(this).find(".island-title").click(function(){
             var alturaTotal =  $( window ).height() * 2
-            console.log(alturaTotal)
+			 onGoing = true;
              $("html, body").scrollTo(islandContent, 1300, {easing: 'easeInOutCirc'});
+			setTimeout(function() {
+				onGoing = false;
+			}, 1500)
         })
     })
     
+    
     //dive scrollers
     
-    $(".island-dive-nav").click(function() {
+    $(".island-dive-nav--up, .island-dive-nav--down").click(function() {
+     	onGoing = true;
         var target = $(this).data("divetarget");
         $("html, body").scrollTo($('#' + target), 1300, {easing: 'easeInOutCirc'});
+		setTimeout(function() {
+			onGoing = false;
+		}, 1500)
     })
+    $(".island-dive-nav--left").click(function() {
+    	trans("up");
+    })    
+    $(".island-dive-nav--right").click(function() {
+    	trans("down");
+    })   
     
-    $(".island-dive-content").swipe({
-    	swipe: function(event, direction, distance, duration, fingerCount) {
-    		if (direction == "down") {
-                var target = $(this).find(".island-dive-nav--up").data("divetarget");
-                $("html, body").scrollTo($('#' + target), 1300, {easing: 'easeInOutCirc'});
-    		} else if (direction == "up") {
-                var target = $(this).find(".island-dive-nav--down").data("divetarget");
-                $("html, body").scrollTo($('#' + target), 1300, {easing: 'easeInOutCirc'});
-    		}
-    	}
-    });
+    // ripples
+	// $(".island-dive-nav").ripples();
+    $(".island-dive-nav").ripples("pause");
     
     
-    $(".backup").click(function(){
-         $("html, body").scrollTo(0, 1300, {easing: 'easeInOutCirc'});
-    })
-
+	$(".island-dive-nav")
+	  .mouseover(function() {
+        $( this ).ripples("play");
+	  })
+	  .mouseout(function() {
+	    $( this ).ripples("pause");
+	  });
+	
 	// calcular hora vanuatu
 	d = new Date();
 	hours = d.getHours();
@@ -172,28 +265,86 @@ $(document).ready(function() {
 	
 	switch (true) {
 	  case (29 <= nd && nd <= 33): 
-	      console.log("dawn");
+	      $(".island-wrapper").addClass("dawn");
 	  break;
 	  case (34 <= nd &&  nd <= 35): 
-	      console.log("morning");
+	      $(".island-wrapper").addClass("morning");
 	  break;
 	  case (nd === 12): 
-	      console.log("morning");
+	      $(".island-wrapper").addClass("morning");
 	  break;
 	  case (13 <= nd &&  nd <= 15): 
-	      console.log("midday");
+	      $(".island-wrapper").addClass("midday");
 	  break;
 	  case (16 <= nd &&  nd <= 18): 
-	      console.log("afternoon");
+	      $(".island-wrapper").addClass("afternoon");
 	  break;
 	  case (19 <= nd &&  nd <= 21): 
-	      console.log("sunset");
+	      $(".island-wrapper").addClass("sunset");
 	  break;
 	  case (22 <= nd &&  nd <= 28): 
-	      console.log("night");
+	      $(".island-wrapper").addClass("night");
 	  break;
 	}
 	
-}); 
+	// checkout panes class change
+	
+	$("#block-commerce-cap-cap").addClass("firstStep");
+	
+	checkoutNumbers();
+
+	
+});
+	// checkout panes class change
+	$( document ).ajaxComplete(function() {
+		
+		
+		if ($("#block-commerce-cap-cap").find("#edit-account").length > 0){
+			if ($("#block-commerce-cap-cap").hasClass("thirdStep")) {
+				$("#block-commerce-cap-cap").addClass("goingBack")
+			} else {
+				$("#block-commerce-cap-cap").removeClass("goingBack")
+			}
+			$("#block-commerce-cap-cap").removeClass("firstStep thirdStep").addClass("secondStep");
+			$(".checkoutBack").remove();
+
+		} else if ($("#block-commerce-cap-cap").find("#edit-checkout-review").length > 0) {
+			$("#block-commerce-cap-cap").removeClass("firstStep secondStep").addClass("thirdStep");
+
+		} else {
+			if ($("#block-commerce-cap-cap").hasClass("secondStep")) {
+				$("#block-commerce-cap-cap").addClass("goingBack")
+			} else {
+				$("#block-commerce-cap-cap").removeClass("goingBack")
+			}
+			$("#block-commerce-cap-cap").removeClass("thirdStep secondStep").addClass("firstStep");
+			$(".checkoutBack").remove();
+		}
+		
+		checkoutNumbers();
+		
+	});
+
+var checkoutNumbers = function(){
+	$(".increment, .decrement").click(function(){
+		var currentRow = $(this).parents("tr");
+		var priceTd = currentRow.find("td:nth-child(2)")
+		var quantityTd = currentRow.find("td:nth-child(3) input")
+		var totalTd = currentRow.find("td:last-child")
+		var currentRowTotal = priceTd.text() * quantityTd.val();
+		var totalSum = 0;
+
+		totalTd.text(currentRowTotal + ".00");
+		// correr as rows, escolher os totais, soma-los, juntar ao order total
+		$(this).parents("table").find("tr td:last-child").each(function(){
+			// allTotals.push($(this).text());
+			totalSum = totalSum + Number($(this).text());
+		});
+		$(".component-total").text("$" + totalSum + ".00");
+		
+	})
+	// verificar o stock na outra tabela, esconder rows
+}
 
 })(jQuery);
+

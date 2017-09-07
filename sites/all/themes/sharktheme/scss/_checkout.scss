@@ -1,0 +1,146 @@
+
+// checkout
+@keyframes toSecond {
+	from { background-position: 0 0; }
+	to { background-position: 50% 0; }
+}
+@keyframes toThird {
+	from { background-position: 50% 0; }
+	to { background-position: 100% 0; }
+}
+@keyframes secondBack {
+	from { background-position: 100% 0; }
+	to { background-position: 50% 0; }
+}
+@keyframes firstBack {
+	from { background-position: 50% 0; }
+	to { background-position: 0 0; }
+}
+
+#block-commerce-cap-cap, #block-views-sharktable-block {
+	font-size: calc(10px + 0.5vh);
+	background: transparent;
+	color: white;
+	max-width: 90%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: 300% auto;
+    background-image: url('../images/bg/checkout/checkout.png');
+	
+	&.firstStep {
+		&.goingBack {
+			animation: firstBack 1s forwards;
+		}
+	}
+
+	&.secondStep {
+		animation: toSecond 1s forwards;
+		&.goingBack {
+			animation: secondBack 1s forwards;
+		}
+	}
+	
+	&.thirdStep {
+		animation: toThird 1s forwards;
+	}
+
+	h2 {
+		display: none;
+	}
+	.table-responsive {
+		border: 0px;
+		table {
+			thead {
+				display: none;
+				tr {
+					td {
+						padding: 0;
+						border: none;
+					}
+				}
+			}
+			tbody {
+				tr {
+					background: transparent;
+				    text-align: left;
+					td {
+						border: none;
+						padding: 0; 
+					    vertical-align: middle;
+						.form-item.form-type-textfield.form-group {
+							display: flex;
+							input {
+							    width: 40px;
+							    background: transparent;
+							    color: white;
+							    border: 1px solid white;
+							    text-align: center;
+							    box-shadow: none;
+							    font-size: calc(10px + 0.2vh);
+							    height: auto;
+							    border-radius: 0;
+							    padding: 5px 0px;
+							    margin: 1px;
+							}
+							a {
+							    font-size: calc(15px + 0.2vh);
+							    cursor: pointer;
+							    margin: 0 5px;
+							    color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// section 2
+	
+	.panel {
+		background: none;
+	    text-align: left;
+	    background: none;
+	    border: none;
+	    input {
+	    	height: 25px;
+	    	background: transparent;
+	    	border: 2px solid white;
+	    	border-radius: 0px;
+	    	color: white;
+		    padding: 0 4px;
+		    font-size: 11px;
+	    }
+	}
+	
+	.account {
+		legend {
+			display: none;
+		}
+	}
+	
+	#customer-profile-shipping-ajax-wrapper, .customer_profile_billing {
+		display: inline-block;
+		vertical-align: top;
+		max-width: 50%;
+		legend {
+			background: transparent;
+			color: white;
+			padding: 10px 0;
+		}
+		.panel-body {
+			display: flex;
+			flex-direction: column;
+			.form-item {
+				width: 100%;
+			}
+			.commerce-customer-profile-copy {
+				order: 10
+			}
+		}
+	}
+	
+	.commerce_shipping {
+		display: none;
+	}
+}

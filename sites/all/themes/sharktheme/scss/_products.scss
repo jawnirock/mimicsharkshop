@@ -1,0 +1,18 @@
+#products {
+    .island-dive-content {
+        height: 200%;
+        &-product {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 50%;
+        }
+    }
+}
+
+#products-women {
+     background-image: url('../images/bg/products/women.jpg');
+}
+#products-men {
+     background-image: url('../images/bg/products/men.jpg');
+}

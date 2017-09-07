@@ -63,6 +63,9 @@
         // Increase the quantity.
         $field.val(quantity + 1);
       });
+
     }
   }
+  
+  
 })(jQuery);

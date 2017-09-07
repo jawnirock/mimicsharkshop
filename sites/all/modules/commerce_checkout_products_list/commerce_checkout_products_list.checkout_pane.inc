@@ -161,7 +161,6 @@ function commerce_checkout_products_list_checkout_form($form, &$form_state, &$ch
     }
 
     $items[] = array(
-      'sku' => $product->sku,
       'name' => $product->title,
       'price' => number_format($price / 100, 2),
       'quantity' => array(
@@ -186,13 +185,7 @@ function commerce_checkout_products_list_checkout_form($form, &$form_state, &$ch
   $pane_form['items'] = array(
     '#theme' => 'table',
     '#rows' => $items,
-    '#header' => array(
-      t('SKU'),
-      t('Product'),
-      t('Price'),
-      t('Quantity'),
-      t('Total'),
-    ),
+    
     '#attributes' => array(
       'class' => array('views-table cols-5'),
     ),
