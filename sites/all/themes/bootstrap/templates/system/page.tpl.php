@@ -79,7 +79,7 @@
     <nav class="island-nav">
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/safety.gif">
     </div>
     <aside class="island-dive">
@@ -100,7 +100,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/eco.gif">
     </div>
     <aside class="island-dive">
@@ -121,7 +121,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/habitat.gif">
     </div>
     <aside class="island-dive">
@@ -142,7 +142,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/roots.gif">
     </div>
     <aside class="island-dive">
@@ -163,7 +163,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/about.gif">
     </div>
     <aside class="island-dive">
@@ -185,7 +185,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
     </div>
     <aside class="island-dive island-dive--visible">
@@ -208,7 +208,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/products.gif">
     </div>
     <aside class="island-dive">
@@ -231,7 +231,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/shop.gif">
     </div>
     <aside class="island-dive">
@@ -279,7 +279,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/buy.gif">
     </div>
     <aside class="island-dive">
@@ -296,7 +296,7 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/disclaimer.gif">
     </div>
     <aside class="island-dive">
@@ -314,7 +314,7 @@
     <nav class="island-nav">
       <span class="island-nav--left"></span>
     </nav>
-    <div class="island-title">
+    <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/titles/contact.gif">
     </div>
     <aside class="island-dive">

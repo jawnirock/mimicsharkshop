@@ -16,17 +16,49 @@
 	from { background-position: 50% 0; }
 	to { background-position: 0 0; }
 }
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
 
-#block-commerce-cap-cap, #block-views-sharktable-block {
+#block-views-sharktable-block {
+	display: none;
+}
+
+#block-commerce-cap-cap {
 	font-size: calc(10px + 0.5vh);
 	background: transparent;
 	color: white;
-	max-width: 90%;
 	margin: 0 auto;
 	background-repeat: no-repeat;
 	background-size: 300% auto;
     background-image: url('../images/bg/checkout/checkout.png');
-	
+	position: absolute;
+    height: 100%;
+    width: 100%;	
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    .alert, .error {
+	    width: 100%;
+		background-color: rgba(255,255,255,0.6);
+	    padding: 3px;
+	    font-size: 10px;
+	    margin: 5px 0;
+	    border: 0px solid transparent;
+	    border-radius: 0px;
+	    ul {
+	    	li {
+			    list-style-type: none;
+	    	}
+	    }
+    }
+    
+    form {
+		display: none;
+    }
+
 	&.firstStep {
 		&.goingBack {
 			animation: firstBack 1s forwards;
@@ -42,11 +74,61 @@
 	
 	&.thirdStep {
 		animation: toThird 1s forwards;
+
+		.checkout-help {
+			display: none;
+		}
+		form>div {
+			text-align: center;
+		    width: 100%;
+		    display: flex;
+		    flex-wrap: wrap;			
+		    .cart_contents, .checkout_review, .commerce_payment, .checkout-buttons {
+			    display: inline-block;
+			    width: 49.5%;
+			    vertical-align: top;	
+			    legend {
+					display: none;
+				}
+				.panel-body {
+				    width: 100%;
+				    padding: 0;
+				}
+			}
+			.checkout_review {
+				.custom-checkout {
+					display: none;
+				}			
+			}
+			.checkout-buttons {
+				order: 3;
+			}
+			.commerce_payment {
+				order: 4;
+				label {
+				 	padding: 0;
+				 	input {
+				 		display: none;
+				 	}
+			 		span {
+			 			img {
+			 				top: 0;
+			 			}
+			 		}
+				}
+			}
+		}
 	}
 
 	h2 {
 		display: none;
 	}
+	
+	&>div {
+		width: 100%;
+		max-width: 70%;
+	}
+	
 	.table-responsive {
 		border: 0px;
 		table {
@@ -65,15 +147,37 @@
 				    text-align: left;
 					td {
 						border: none;
-						padding: 0; 
+						padding: 0 5px; 
 					    vertical-align: middle;
+					    background-color: rgba(255,255,255,0.6);
+					    color: black;
+					   //mudar pra 0
+					    opacity: 0;
+					    
+					    &:nth-child(1) {
+	    					animation: fadeIn 1s forwards;
+							animation-delay: 1s;
+					    }
+					    &:nth-child(2) {
+	    					animation: fadeIn 1s forwards;
+							animation-delay: 2s;
+					    }	
+					    &:nth-child(3) {
+	    					animation: fadeIn 1s forwards;
+							animation-delay: 3s;
+					    }
+					    &:nth-child(4) {
+	    					animation: fadeIn 1s forwards;
+							animation-delay: 4s;
+					    }					    
+					    
 						.form-item.form-type-textfield.form-group {
 							display: flex;
 							input {
 							    width: 40px;
-							    background: transparent;
-							    color: white;
-							    border: 1px solid white;
+					    		background: rgba(255,255,255,0.6);
+							    color: black;
+							    border: 0px solid white;
 							    text-align: center;
 							    box-shadow: none;
 							    font-size: calc(10px + 0.2vh);
@@ -86,7 +190,7 @@
 							    font-size: calc(15px + 0.2vh);
 							    cursor: pointer;
 							    margin: 0 5px;
-							    color: white;
+							    color: black;
 							}
 						}
 					}
@@ -94,6 +198,7 @@
 			}
 		}
 	}
+
 	
 	// section 2
 	
@@ -102,12 +207,20 @@
 	    text-align: left;
 	    background: none;
 	    border: none;
+	    select {
+		    height: 25px;
+		    background: rgba(255,255,255,0.6);
+		    border: 0px;
+		    border-radius: 0px;
+		    font-size: 12px;	
+		    box-shadow: none;
+	    }
 	    input {
 	    	height: 25px;
-	    	background: transparent;
-	    	border: 2px solid white;
+    		background: rgba(255,255,255,0.6);
+		    color: black;
+		    border: 0px solid white;
 	    	border-radius: 0px;
-	    	color: white;
 		    padding: 0 4px;
 		    font-size: 11px;
 	    }
@@ -142,5 +255,14 @@
 	
 	.commerce_shipping {
 		display: none;
+	}
+}
+
+
+// mostrar so quando esta visivel o dive
+
+.island-dive.island-dive--visible {
+	#block-commerce-cap-cap form {
+		display: block;
 	}
 }

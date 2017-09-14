@@ -29,12 +29,10 @@ html,body {
 	}
 }
 
-@media only screen and (orientation:portrait){
-  body {  
-	    height: 100vw;
-	    width: 100vh;
-	    transform: rotate(90deg);
-	    transform-origin: 50vw;
+body.horizontal {  
+    transform: rotate(90deg);
+    .island {
+	    background-size: auto 100%;
     }
 }
 

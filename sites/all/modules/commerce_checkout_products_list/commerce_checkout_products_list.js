@@ -44,7 +44,7 @@
         }
         // Reduce the quantity.
         else {
-          quantity = quantity - 1;
+          quantity = quantity;
           $field.val(quantity);
         }
       });
@@ -61,7 +61,7 @@
         var quantity = parseInt($field.val());
 
         // Increase the quantity.
-        $field.val(quantity + 1);
+        $field.val(quantity);
       });
 
     }

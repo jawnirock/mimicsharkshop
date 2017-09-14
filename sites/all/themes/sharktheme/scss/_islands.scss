@@ -72,8 +72,10 @@
 		&-center {
 			text-align: center;
 			.island-title {
+                margin: 15% 0% 0% 15%;
 			    img {
 			    	width: auto;
+			    	max-width: 150px;
 			    }
 			 }
 		}
@@ -82,7 +84,10 @@
 		    transform: translateZ(100px);
 		    cursor: pointer;
 		    z-index: 110;
-
+			height: auto;
+			width: auto;
+			clip-path: none;
+    
 		    img {
 		    	max-height: 110px;
 		    }

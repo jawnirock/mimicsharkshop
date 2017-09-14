@@ -291,52 +291,151 @@
   to {
     background-position: 0 0; } }
 
-#block-commerce-cap-cap, #block-views-sharktable-block {
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#block-views-sharktable-block {
+  display: none; }
+
+#block-commerce-cap-cap {
   font-size: calc(10px + 0.5vh);
   background: transparent;
   color: white;
-  max-width: 90%;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 300% auto;
-  background-image: url("../images/bg/checkout/checkout.png"); }
-  #block-commerce-cap-cap.firstStep.goingBack, #block-views-sharktable-block.firstStep.goingBack {
+  background-image: url("../images/bg/checkout/checkout.png");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #block-commerce-cap-cap .alert, #block-commerce-cap-cap .error {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 3px;
+    font-size: 10px;
+    margin: 5px 0;
+    border: 0px solid transparent;
+    border-radius: 0px; }
+    #block-commerce-cap-cap .alert ul li, #block-commerce-cap-cap .error ul li {
+      list-style-type: none; }
+  #block-commerce-cap-cap form {
+    display: none; }
+  #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 1s forwards;
             animation: firstBack 1s forwards; }
-  #block-commerce-cap-cap.secondStep, #block-views-sharktable-block.secondStep {
+  #block-commerce-cap-cap.secondStep {
     -webkit-animation: toSecond 1s forwards;
             animation: toSecond 1s forwards; }
-    #block-commerce-cap-cap.secondStep.goingBack, #block-views-sharktable-block.secondStep.goingBack {
+    #block-commerce-cap-cap.secondStep.goingBack {
       -webkit-animation: secondBack 1s forwards;
               animation: secondBack 1s forwards; }
-  #block-commerce-cap-cap.thirdStep, #block-views-sharktable-block.thirdStep {
+  #block-commerce-cap-cap.thirdStep {
     -webkit-animation: toThird 1s forwards;
             animation: toThird 1s forwards; }
-  #block-commerce-cap-cap h2, #block-views-sharktable-block h2 {
-    display: none; }
-  #block-commerce-cap-cap .table-responsive, #block-views-sharktable-block .table-responsive {
-    border: 0px; }
-    #block-commerce-cap-cap .table-responsive table thead, #block-views-sharktable-block .table-responsive table thead {
+    #block-commerce-cap-cap.thirdStep .checkout-help {
       display: none; }
-      #block-commerce-cap-cap .table-responsive table thead tr td, #block-views-sharktable-block .table-responsive table thead tr td {
+    #block-commerce-cap-cap.thirdStep form > div {
+      text-align: center;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      #block-commerce-cap-cap.thirdStep form > div .cart_contents, #block-commerce-cap-cap.thirdStep form > div .checkout_review, #block-commerce-cap-cap.thirdStep form > div .commerce_payment, #block-commerce-cap-cap.thirdStep form > div .checkout-buttons {
+        display: inline-block;
+        width: 49.5%;
+        vertical-align: top; }
+        #block-commerce-cap-cap.thirdStep form > div .cart_contents legend, #block-commerce-cap-cap.thirdStep form > div .checkout_review legend, #block-commerce-cap-cap.thirdStep form > div .commerce_payment legend, #block-commerce-cap-cap.thirdStep form > div .checkout-buttons legend {
+          display: none; }
+        #block-commerce-cap-cap.thirdStep form > div .cart_contents .panel-body, #block-commerce-cap-cap.thirdStep form > div .checkout_review .panel-body, #block-commerce-cap-cap.thirdStep form > div .commerce_payment .panel-body, #block-commerce-cap-cap.thirdStep form > div .checkout-buttons .panel-body {
+          width: 100%;
+          padding: 0; }
+      #block-commerce-cap-cap.thirdStep form > div .checkout_review .custom-checkout {
+        display: none; }
+      #block-commerce-cap-cap.thirdStep form > div .checkout-buttons {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; }
+      #block-commerce-cap-cap.thirdStep form > div .commerce_payment {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
+        #block-commerce-cap-cap.thirdStep form > div .commerce_payment label {
+          padding: 0; }
+          #block-commerce-cap-cap.thirdStep form > div .commerce_payment label input {
+            display: none; }
+          #block-commerce-cap-cap.thirdStep form > div .commerce_payment label span img {
+            top: 0; }
+  #block-commerce-cap-cap h2 {
+    display: none; }
+  #block-commerce-cap-cap > div {
+    width: 100%;
+    max-width: 70%; }
+  #block-commerce-cap-cap .table-responsive {
+    border: 0px; }
+    #block-commerce-cap-cap .table-responsive table thead {
+      display: none; }
+      #block-commerce-cap-cap .table-responsive table thead tr td {
         padding: 0;
         border: none; }
-    #block-commerce-cap-cap .table-responsive table tbody tr, #block-views-sharktable-block .table-responsive table tbody tr {
+    #block-commerce-cap-cap .table-responsive table tbody tr {
       background: transparent;
       text-align: left; }
-      #block-commerce-cap-cap .table-responsive table tbody tr td, #block-views-sharktable-block .table-responsive table tbody tr td {
+      #block-commerce-cap-cap .table-responsive table tbody tr td {
         border: none;
-        padding: 0;
-        vertical-align: middle; }
-        #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group, #block-views-sharktable-block .table-responsive table tbody tr td .form-item.form-type-textfield.form-group {
+        padding: 0 5px;
+        vertical-align: middle;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: black;
+        opacity: 0; }
+        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(1) {
+          -webkit-animation: fadeIn 1s forwards;
+                  animation: fadeIn 1s forwards;
+          -webkit-animation-delay: 1s;
+                  animation-delay: 1s; }
+        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(2) {
+          -webkit-animation: fadeIn 1s forwards;
+                  animation: fadeIn 1s forwards;
+          -webkit-animation-delay: 2s;
+                  animation-delay: 2s; }
+        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(3) {
+          -webkit-animation: fadeIn 1s forwards;
+                  animation: fadeIn 1s forwards;
+          -webkit-animation-delay: 3s;
+                  animation-delay: 3s; }
+        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(4) {
+          -webkit-animation: fadeIn 1s forwards;
+                  animation: fadeIn 1s forwards;
+          -webkit-animation-delay: 4s;
+                  animation-delay: 4s; }
+        #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group input, #block-views-sharktable-block .table-responsive table tbody tr td .form-item.form-type-textfield.form-group input {
+          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group input {
             width: 40px;
-            background: transparent;
-            color: white;
-            border: 1px solid white;
+            background: rgba(255, 255, 255, 0.6);
+            color: black;
+            border: 0px solid white;
             text-align: center;
             box-shadow: none;
             font-size: calc(10px + 0.2vh);
@@ -344,35 +443,42 @@
             border-radius: 0;
             padding: 5px 0px;
             margin: 1px; }
-          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group a, #block-views-sharktable-block .table-responsive table tbody tr td .form-item.form-type-textfield.form-group a {
+          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group a {
             font-size: calc(15px + 0.2vh);
             cursor: pointer;
             margin: 0 5px;
-            color: white; }
-  #block-commerce-cap-cap .panel, #block-views-sharktable-block .panel {
+            color: black; }
+  #block-commerce-cap-cap .panel {
     background: none;
     text-align: left;
     background: none;
     border: none; }
-    #block-commerce-cap-cap .panel input, #block-views-sharktable-block .panel input {
+    #block-commerce-cap-cap .panel select {
       height: 25px;
-      background: transparent;
-      border: 2px solid white;
+      background: rgba(255, 255, 255, 0.6);
+      border: 0px;
       border-radius: 0px;
-      color: white;
+      font-size: 12px;
+      box-shadow: none; }
+    #block-commerce-cap-cap .panel input {
+      height: 25px;
+      background: rgba(255, 255, 255, 0.6);
+      color: black;
+      border: 0px solid white;
+      border-radius: 0px;
       padding: 0 4px;
       font-size: 11px; }
-  #block-commerce-cap-cap .account legend, #block-views-sharktable-block .account legend {
+  #block-commerce-cap-cap .account legend {
     display: none; }
-  #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper, #block-commerce-cap-cap .customer_profile_billing, #block-views-sharktable-block #customer-profile-shipping-ajax-wrapper, #block-views-sharktable-block .customer_profile_billing {
+  #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper, #block-commerce-cap-cap .customer_profile_billing {
     display: inline-block;
     vertical-align: top;
     max-width: 50%; }
-    #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper legend, #block-commerce-cap-cap .customer_profile_billing legend, #block-views-sharktable-block #customer-profile-shipping-ajax-wrapper legend, #block-views-sharktable-block .customer_profile_billing legend {
+    #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper legend, #block-commerce-cap-cap .customer_profile_billing legend {
       background: transparent;
       color: white;
       padding: 10px 0; }
-    #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body, #block-commerce-cap-cap .customer_profile_billing .panel-body, #block-views-sharktable-block #customer-profile-shipping-ajax-wrapper .panel-body, #block-views-sharktable-block .customer_profile_billing .panel-body {
+    #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body, #block-commerce-cap-cap .customer_profile_billing .panel-body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -380,14 +486,17 @@
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body .form-item, #block-commerce-cap-cap .customer_profile_billing .panel-body .form-item, #block-views-sharktable-block #customer-profile-shipping-ajax-wrapper .panel-body .form-item, #block-views-sharktable-block .customer_profile_billing .panel-body .form-item {
+      #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body .form-item, #block-commerce-cap-cap .customer_profile_billing .panel-body .form-item {
         width: 100%; }
-      #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body .commerce-customer-profile-copy, #block-commerce-cap-cap .customer_profile_billing .panel-body .commerce-customer-profile-copy, #block-views-sharktable-block #customer-profile-shipping-ajax-wrapper .panel-body .commerce-customer-profile-copy, #block-views-sharktable-block .customer_profile_billing .panel-body .commerce-customer-profile-copy {
+      #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body .commerce-customer-profile-copy, #block-commerce-cap-cap .customer_profile_billing .panel-body .commerce-customer-profile-copy {
         -webkit-box-ordinal-group: 11;
             -ms-flex-order: 10;
                 order: 10; }
-  #block-commerce-cap-cap .commerce_shipping, #block-views-sharktable-block .commerce_shipping {
+  #block-commerce-cap-cap .commerce_shipping {
     display: none; }
+
+.island-dive.island-dive--visible #block-commerce-cap-cap form {
+  display: block; }
 
 .island-dive {
   width: 100%;
@@ -578,13 +687,20 @@
       visibility: visible !important; }
     .island-wrapper .island-center {
       text-align: center; }
-      .island-wrapper .island-center .island-title img {
-        width: auto; }
+      .island-wrapper .island-center .island-title {
+        margin: 15% 0% 0% 15%; }
+        .island-wrapper .island-center .island-title img {
+          width: auto;
+          max-width: 150px; }
     .island-wrapper .island-title {
       -webkit-transform: translateZ(100px);
               transform: translateZ(100px);
       cursor: pointer;
-      z-index: 110; }
+      z-index: 110;
+      height: auto;
+      width: auto;
+      -webkit-clip-path: none;
+              clip-path: none; }
       .island-wrapper .island-title img {
         max-height: 110px; }
       .island-wrapper .island-title:hover {
@@ -638,14 +754,11 @@ html, body {
   .bullets li {
     margin: 0 6px; } }
 
-@media only screen and (orientation: portrait) {
-  body {
-    height: 100vw;
-    width: 100vh;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    -webkit-transform-origin: 50vw;
-            transform-origin: 50vw; } }
+body.horizontal {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+  body.horizontal .island {
+    background-size: auto 100%; }
 
 .alert-success.status {
   display: none; }
