@@ -13,6 +13,10 @@
 	padding: 0;
 }
 
+#goFS {
+	display: none;
+}
+
 html,body {
 	overflow: hidden;
 	background-color: black;
@@ -22,7 +26,15 @@ html,body {
 	position: static !important;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
+	
+	#goFS {
+		display: block;
+		position: absolute;
+		z-index: 999;
+		left: 20px;
+		top: 20px;
+	}
 
 	.bullets li {
 		margin: 0 6px;

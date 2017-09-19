@@ -42,7 +42,7 @@
     
     .alert, .error {
 	    width: 100%;
-		background-color: rgba(255,255,255,0.6);
+		background-color: rgba(255,255,255,0.3);
 	    padding: 3px;
 	    font-size: 10px;
 	    margin: 5px 0;
@@ -61,26 +61,29 @@
 
 	&.firstStep {
 		&.goingBack {
-			animation: firstBack 1s forwards;
+			animation: firstBack 2.5s forwards;
 		}
 	}
 
 	&.secondStep {
-		animation: toSecond 1s forwards;
+		animation: toSecond 2.5s forwards;
 		&.goingBack {
-			animation: secondBack 1s forwards;
+			animation: secondBack 2.5s forwards;
+		}
+		&>div {
+			max-width: 420px;
 		}
 	}
 	
 	&.thirdStep {
-		animation: toThird 1s forwards;
+		animation: toThird 2.5s forwards;
 
 		.checkout-help {
 			display: none;
 		}
 		form>div {
 			text-align: center;
-		    width: 100%;
+		    width: 480px;
 		    display: flex;
 		    flex-wrap: wrap;			
 		    .cart_contents, .checkout_review, .commerce_payment, .checkout-buttons {
@@ -95,7 +98,43 @@
 				    padding: 0;
 				}
 			}
+			.cart_contents {
+				
+				.view-commerce-cart-summary {
+					td.order-title {
+				    	background: transparent !important;
+					    color: white;
+					    font-weight: 500;
+			    		text-align: left;
+				    }					
+				}
+				
+				table.commerce-price-formatted-components {
+				    float: none;
+				    width: 100%;
+				    td {
+						background-color: rgba(255,255,255,0.3);
+
+				    }
+				}				
+			}
 			.checkout_review {
+				table {
+					width: 100%;
+					td {
+					    border-radius: 12px !important;
+					    padding: 2px 4px;
+					    text-align: left !important;
+
+					}
+					tr.pane-title {
+						td {
+					    	background: none;
+					    	color: white;
+					    	font-weight: 500;
+						}
+				    }
+				}
 				.custom-checkout {
 					display: none;
 				}			
@@ -104,7 +143,8 @@
 				order: 3;
 			}
 			.commerce_payment {
-				order: 4;
+			    display: none;
+			    order: 4;
 				label {
 				 	padding: 0;
 				 	input {
@@ -118,20 +158,21 @@
 				}
 			}
 		}
+
+
 	}
 
 	h2 {
 		display: none;
 	}
 	
-	&>div {
-		width: 100%;
-		max-width: 70%;
-	}
-	
 	.table-responsive {
 		border: 0px;
+
 		table {
+			width: auto;
+			margin-bottom: 0;
+			
 			thead {
 				display: none;
 				tr {
@@ -145,11 +186,16 @@
 				tr {
 					background: transparent;
 				    text-align: left;
+				    border: 4px solid transparent;	
+				
 					td {
+						font-size: 12px;
+						height: 27px;
+						width: 78px;
 						border: none;
 						padding: 0 5px; 
 					    vertical-align: middle;
-					    background-color: rgba(255,255,255,0.6);
+					    background-color: rgba(255,255,255,0.3);
 					    color: black;
 					   //mudar pra 0
 					    opacity: 0;
@@ -169,22 +215,30 @@
 					    &:nth-child(4) {
 	    					animation: fadeIn 1s forwards;
 							animation-delay: 4s;
+					    }				
+					    &:first-child {
+					    	border-radius: 12px 0 0 12px;
+						    width: 150px;
 					    }					    
+					    &:last-child {
+					    	border-radius: 0 12px 12px 0;
+						    text-align: right;
+					    }		
 					    
 						.form-item.form-type-textfield.form-group {
 							display: flex;
 							input {
 							    width: 40px;
-					    		background: rgba(255,255,255,0.6);
+					    		background: rgba(255,255,255,0.3);
 							    color: black;
 							    border: 0px solid white;
 							    text-align: center;
 							    box-shadow: none;
 							    font-size: calc(10px + 0.2vh);
-							    height: auto;
+							    height: 23px;
 							    border-radius: 0;
-							    padding: 5px 0px;
-							    margin: 1px;
+							    padding: 0px;
+							    margin: 0px;
 							}
 							a {
 							    font-size: calc(15px + 0.2vh);
@@ -196,6 +250,15 @@
 					}
 				}
 			}
+
+			&.commerce-price-formatted-components {
+			    float: right;
+			    width: 150px;
+			    td {
+			    	background-color: rgba(255,255,255,0.2);
+			    }
+			}
+
 		}
 	}
 
@@ -207,48 +270,79 @@
 	    text-align: left;
 	    background: none;
 	    border: none;
+	    .panel-body {
+	    	padding: 0;
+	    }
+	    
 	    select {
-		    height: 25px;
-		    background: rgba(255,255,255,0.6);
+		    height: 27px;
+		    background: rgba(255,255,255,0.3);
 		    border: 0px;
-		    border-radius: 0px;
+		    border-radius: 6px;
 		    font-size: 12px;	
 		    box-shadow: none;
+		    color: black;	    
 	    }
 	    input {
-	    	height: 25px;
-    		background: rgba(255,255,255,0.6);
+	    	height: 27px;
+    		background: rgba(255,255,255,0.3);
 		    color: black;
 		    border: 0px solid white;
-	    	border-radius: 0px;
-		    padding: 0 4px;
+	    	border-radius: 6px;
+		    padding: 0 10px;
 		    font-size: 11px;
+		    &::placeholder {
+		    	color: black;
+		    }
 	    }
 	}
 	
 	.account {
-		legend {
-			display: none;
-		}
+	    margin-bottom: 0px;
+	    legend {
+				display: none;
+			}
 	}
 	
-	#customer-profile-shipping-ajax-wrapper, .customer_profile_billing {
+	.customer_profile_shipping, #customer-profile-billing-ajax-wrapper {
 		display: inline-block;
 		vertical-align: top;
-		max-width: 50%;
+	    max-width: 48%;
+	    margin: 0px 3px;
 		legend {
 			background: transparent;
 			color: white;
 			padding: 10px 0;
+		    border: 0px;
+		    span {
+				font-size: 14px;
+			}
 		}
 		.panel-body {
 			display: flex;
 			flex-direction: column;
 			.form-item {
-				width: 100%;
+			    margin-bottom: 5px;
+			    width: 100%;
 			}
 			.commerce-customer-profile-copy {
 				order: 10
+			}
+		}
+		form-group {
+			margin-bottom: 8px;
+		}
+		.form-item-customer-profile-billing-commerce-customer-profile-copy {
+			label {
+				font-size: 11px;
+			    display: flex;
+			    align-items: flex-start;
+			    padding-top: 5px;
+			    input {
+				    padding: 0;
+				    height: 12px;
+				    margin-top: 2px;			    	
+			    }
 			}
 		}
 	}
@@ -256,6 +350,46 @@
 	.commerce_shipping {
 		display: none;
 	}
+
+	
+	
+	//BOTOES
+	
+	.button-operator {
+		display: none;
+	}
+	
+	.checkout-continue, .checkout-back {
+	    position: absolute;
+	    bottom: 20px;
+	    border: 0px;
+	    border-radius: 6px;
+	    height: 35px;
+		background-color: rgba(255,255,255,0.2);
+		color: black;
+		a {
+			color: black;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: rgba(255,255,255,0.7);
+		}
+	}
+	
+	.checkout-continue {
+	    right: 20px;
+	    .checkout-paypal {
+	    	background-image: url("http://www.freepngimg.com/thumb/paypal/3-2-paypal-logo-png-thumb.png");
+		    width: 100px;
+		    height: 25px;
+		    background-position: center;
+		    background-size: 100px;
+	    }
+    }
+    .checkout-back {
+	    left: 20px;
+    }
+	
 }
 
 

@@ -328,7 +328,7 @@
   display: flex; }
   #block-commerce-cap-cap .alert, #block-commerce-cap-cap .error {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 3px;
     font-size: 10px;
     margin: 5px 0;
@@ -339,22 +339,24 @@
   #block-commerce-cap-cap form {
     display: none; }
   #block-commerce-cap-cap.firstStep.goingBack {
-    -webkit-animation: firstBack 1s forwards;
-            animation: firstBack 1s forwards; }
+    -webkit-animation: firstBack 2.5s forwards;
+            animation: firstBack 2.5s forwards; }
   #block-commerce-cap-cap.secondStep {
-    -webkit-animation: toSecond 1s forwards;
-            animation: toSecond 1s forwards; }
+    -webkit-animation: toSecond 2.5s forwards;
+            animation: toSecond 2.5s forwards; }
     #block-commerce-cap-cap.secondStep.goingBack {
-      -webkit-animation: secondBack 1s forwards;
-              animation: secondBack 1s forwards; }
+      -webkit-animation: secondBack 2.5s forwards;
+              animation: secondBack 2.5s forwards; }
+    #block-commerce-cap-cap.secondStep > div {
+      max-width: 420px; }
   #block-commerce-cap-cap.thirdStep {
-    -webkit-animation: toThird 1s forwards;
-            animation: toThird 1s forwards; }
+    -webkit-animation: toThird 2.5s forwards;
+            animation: toThird 2.5s forwards; }
     #block-commerce-cap-cap.thirdStep .checkout-help {
       display: none; }
     #block-commerce-cap-cap.thirdStep form > div {
       text-align: center;
-      width: 100%;
+      width: 480px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -369,6 +371,26 @@
         #block-commerce-cap-cap.thirdStep form > div .cart_contents .panel-body, #block-commerce-cap-cap.thirdStep form > div .checkout_review .panel-body, #block-commerce-cap-cap.thirdStep form > div .commerce_payment .panel-body, #block-commerce-cap-cap.thirdStep form > div .checkout-buttons .panel-body {
           width: 100%;
           padding: 0; }
+      #block-commerce-cap-cap.thirdStep form > div .cart_contents .view-commerce-cart-summary td.order-title {
+        background: transparent !important;
+        color: white;
+        font-weight: 500;
+        text-align: left; }
+      #block-commerce-cap-cap.thirdStep form > div .cart_contents table.commerce-price-formatted-components {
+        float: none;
+        width: 100%; }
+        #block-commerce-cap-cap.thirdStep form > div .cart_contents table.commerce-price-formatted-components td {
+          background-color: rgba(255, 255, 255, 0.3); }
+      #block-commerce-cap-cap.thirdStep form > div .checkout_review table {
+        width: 100%; }
+        #block-commerce-cap-cap.thirdStep form > div .checkout_review table td {
+          border-radius: 12px !important;
+          padding: 2px 4px;
+          text-align: left !important; }
+        #block-commerce-cap-cap.thirdStep form > div .checkout_review table tr.pane-title td {
+          background: none;
+          color: white;
+          font-weight: 500; }
       #block-commerce-cap-cap.thirdStep form > div .checkout_review .custom-checkout {
         display: none; }
       #block-commerce-cap-cap.thirdStep form > div .checkout-buttons {
@@ -376,6 +398,7 @@
             -ms-flex-order: 3;
                 order: 3; }
       #block-commerce-cap-cap.thirdStep form > div .commerce_payment {
+        display: none;
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
                 order: 4; }
@@ -387,98 +410,130 @@
             top: 0; }
   #block-commerce-cap-cap h2 {
     display: none; }
-  #block-commerce-cap-cap > div {
-    width: 100%;
-    max-width: 70%; }
   #block-commerce-cap-cap .table-responsive {
     border: 0px; }
-    #block-commerce-cap-cap .table-responsive table thead {
-      display: none; }
-      #block-commerce-cap-cap .table-responsive table thead tr td {
-        padding: 0;
-        border: none; }
-    #block-commerce-cap-cap .table-responsive table tbody tr {
-      background: transparent;
-      text-align: left; }
-      #block-commerce-cap-cap .table-responsive table tbody tr td {
-        border: none;
-        padding: 0 5px;
-        vertical-align: middle;
-        background-color: rgba(255, 255, 255, 0.6);
-        color: black;
-        opacity: 0; }
-        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(1) {
-          -webkit-animation: fadeIn 1s forwards;
-                  animation: fadeIn 1s forwards;
-          -webkit-animation-delay: 1s;
-                  animation-delay: 1s; }
-        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(2) {
-          -webkit-animation: fadeIn 1s forwards;
-                  animation: fadeIn 1s forwards;
-          -webkit-animation-delay: 2s;
-                  animation-delay: 2s; }
-        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(3) {
-          -webkit-animation: fadeIn 1s forwards;
-                  animation: fadeIn 1s forwards;
-          -webkit-animation-delay: 3s;
-                  animation-delay: 3s; }
-        #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(4) {
-          -webkit-animation: fadeIn 1s forwards;
-                  animation: fadeIn 1s forwards;
-          -webkit-animation-delay: 4s;
-                  animation-delay: 4s; }
-        #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group input {
-            width: 40px;
-            background: rgba(255, 255, 255, 0.6);
-            color: black;
-            border: 0px solid white;
-            text-align: center;
-            box-shadow: none;
-            font-size: calc(10px + 0.2vh);
-            height: auto;
-            border-radius: 0;
-            padding: 5px 0px;
-            margin: 1px; }
-          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group a {
-            font-size: calc(15px + 0.2vh);
-            cursor: pointer;
-            margin: 0 5px;
-            color: black; }
+    #block-commerce-cap-cap .table-responsive table {
+      width: auto;
+      margin-bottom: 0; }
+      #block-commerce-cap-cap .table-responsive table thead {
+        display: none; }
+        #block-commerce-cap-cap .table-responsive table thead tr td {
+          padding: 0;
+          border: none; }
+      #block-commerce-cap-cap .table-responsive table tbody tr {
+        background: transparent;
+        text-align: left;
+        border: 4px solid transparent; }
+        #block-commerce-cap-cap .table-responsive table tbody tr td {
+          font-size: 12px;
+          height: 27px;
+          width: 78px;
+          border: none;
+          padding: 0 5px;
+          vertical-align: middle;
+          background-color: rgba(255, 255, 255, 0.3);
+          color: black;
+          opacity: 0; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(1) {
+            -webkit-animation: fadeIn 1s forwards;
+                    animation: fadeIn 1s forwards;
+            -webkit-animation-delay: 1s;
+                    animation-delay: 1s; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(2) {
+            -webkit-animation: fadeIn 1s forwards;
+                    animation: fadeIn 1s forwards;
+            -webkit-animation-delay: 2s;
+                    animation-delay: 2s; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(3) {
+            -webkit-animation: fadeIn 1s forwards;
+                    animation: fadeIn 1s forwards;
+            -webkit-animation-delay: 3s;
+                    animation-delay: 3s; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(4) {
+            -webkit-animation: fadeIn 1s forwards;
+                    animation: fadeIn 1s forwards;
+            -webkit-animation-delay: 4s;
+                    animation-delay: 4s; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td:first-child {
+            border-radius: 12px 0 0 12px;
+            width: 150px; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td:last-child {
+            border-radius: 0 12px 12px 0;
+            text-align: right; }
+          #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group input {
+              width: 40px;
+              background: rgba(255, 255, 255, 0.3);
+              color: black;
+              border: 0px solid white;
+              text-align: center;
+              box-shadow: none;
+              font-size: calc(10px + 0.2vh);
+              height: 23px;
+              border-radius: 0;
+              padding: 0px;
+              margin: 0px; }
+            #block-commerce-cap-cap .table-responsive table tbody tr td .form-item.form-type-textfield.form-group a {
+              font-size: calc(15px + 0.2vh);
+              cursor: pointer;
+              margin: 0 5px;
+              color: black; }
+      #block-commerce-cap-cap .table-responsive table.commerce-price-formatted-components {
+        float: right;
+        width: 150px; }
+        #block-commerce-cap-cap .table-responsive table.commerce-price-formatted-components td {
+          background-color: rgba(255, 255, 255, 0.2); }
   #block-commerce-cap-cap .panel {
     background: none;
     text-align: left;
     background: none;
     border: none; }
+    #block-commerce-cap-cap .panel .panel-body {
+      padding: 0; }
     #block-commerce-cap-cap .panel select {
-      height: 25px;
-      background: rgba(255, 255, 255, 0.6);
+      height: 27px;
+      background: rgba(255, 255, 255, 0.3);
       border: 0px;
-      border-radius: 0px;
+      border-radius: 6px;
       font-size: 12px;
-      box-shadow: none; }
+      box-shadow: none;
+      color: black; }
     #block-commerce-cap-cap .panel input {
-      height: 25px;
-      background: rgba(255, 255, 255, 0.6);
+      height: 27px;
+      background: rgba(255, 255, 255, 0.3);
       color: black;
       border: 0px solid white;
-      border-radius: 0px;
-      padding: 0 4px;
+      border-radius: 6px;
+      padding: 0 10px;
       font-size: 11px; }
-  #block-commerce-cap-cap .account legend {
-    display: none; }
-  #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper, #block-commerce-cap-cap .customer_profile_billing {
+      #block-commerce-cap-cap .panel input::-webkit-input-placeholder {
+        color: black; }
+      #block-commerce-cap-cap .panel input::-moz-placeholder {
+        color: black; }
+      #block-commerce-cap-cap .panel input:-ms-input-placeholder {
+        color: black; }
+      #block-commerce-cap-cap .panel input::placeholder {
+        color: black; }
+  #block-commerce-cap-cap .account {
+    margin-bottom: 0px; }
+    #block-commerce-cap-cap .account legend {
+      display: none; }
+  #block-commerce-cap-cap .customer_profile_shipping, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper {
     display: inline-block;
     vertical-align: top;
-    max-width: 50%; }
-    #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper legend, #block-commerce-cap-cap .customer_profile_billing legend {
+    max-width: 48%;
+    margin: 0px 3px; }
+    #block-commerce-cap-cap .customer_profile_shipping legend, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper legend {
       background: transparent;
       color: white;
-      padding: 10px 0; }
-    #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body, #block-commerce-cap-cap .customer_profile_billing .panel-body {
+      padding: 10px 0;
+      border: 0px; }
+      #block-commerce-cap-cap .customer_profile_shipping legend span, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper legend span {
+        font-size: 14px; }
+    #block-commerce-cap-cap .customer_profile_shipping .panel-body, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper .panel-body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -486,14 +541,55 @@
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body .form-item, #block-commerce-cap-cap .customer_profile_billing .panel-body .form-item {
+      #block-commerce-cap-cap .customer_profile_shipping .panel-body .form-item, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper .panel-body .form-item {
+        margin-bottom: 5px;
         width: 100%; }
-      #block-commerce-cap-cap #customer-profile-shipping-ajax-wrapper .panel-body .commerce-customer-profile-copy, #block-commerce-cap-cap .customer_profile_billing .panel-body .commerce-customer-profile-copy {
+      #block-commerce-cap-cap .customer_profile_shipping .panel-body .commerce-customer-profile-copy, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper .panel-body .commerce-customer-profile-copy {
         -webkit-box-ordinal-group: 11;
             -ms-flex-order: 10;
                 order: 10; }
+    #block-commerce-cap-cap .customer_profile_shipping form-group, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper form-group {
+      margin-bottom: 8px; }
+    #block-commerce-cap-cap .customer_profile_shipping .form-item-customer-profile-billing-commerce-customer-profile-copy label, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper .form-item-customer-profile-billing-commerce-customer-profile-copy label {
+      font-size: 11px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding-top: 5px; }
+      #block-commerce-cap-cap .customer_profile_shipping .form-item-customer-profile-billing-commerce-customer-profile-copy label input, #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper .form-item-customer-profile-billing-commerce-customer-profile-copy label input {
+        padding: 0;
+        height: 12px;
+        margin-top: 2px; }
   #block-commerce-cap-cap .commerce_shipping {
     display: none; }
+  #block-commerce-cap-cap .button-operator {
+    display: none; }
+  #block-commerce-cap-cap .checkout-continue, #block-commerce-cap-cap .checkout-back {
+    position: absolute;
+    bottom: 20px;
+    border: 0px;
+    border-radius: 6px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black; }
+    #block-commerce-cap-cap .checkout-continue a, #block-commerce-cap-cap .checkout-back a {
+      color: black;
+      text-decoration: none; }
+    #block-commerce-cap-cap .checkout-continue:hover, #block-commerce-cap-cap .checkout-back:hover {
+      background-color: rgba(255, 255, 255, 0.7); }
+  #block-commerce-cap-cap .checkout-continue {
+    right: 20px; }
+    #block-commerce-cap-cap .checkout-continue .checkout-paypal {
+      background-image: url("http://www.freepngimg.com/thumb/paypal/3-2-paypal-logo-png-thumb.png");
+      width: 100px;
+      height: 25px;
+      background-position: center;
+      background-size: 100px; }
+  #block-commerce-cap-cap .checkout-back {
+    left: 20px; }
 
 .island-dive.island-dive--visible #block-commerce-cap-cap form {
   display: block; }
@@ -503,12 +599,10 @@
   top: 100%;
   height: 100%;
   position: absolute; }
-  .island-dive--visible {
-    display: block; }
-    .island-dive--visible .island-dive-transition {
-      background: url("http://bestanimations.com/Nature/Water/ocean-water-animated-gif-3.gif");
-      background-size: cover;
-      background-repeat: no-repeat; }
+  .island-dive--visible .island-dive-transition {
+    background: url("http://bestanimations.com/Nature/Water/ocean-water-animated-gif-3.gif");
+    background-size: cover;
+    background-repeat: no-repeat; }
   .island-dive-transition {
     display: block;
     height: 100%; }
@@ -742,6 +836,9 @@
   margin: 0;
   padding: 0; }
 
+#goFS {
+  display: none; }
+
 html, body {
   overflow: hidden;
   background-color: black;
@@ -750,7 +847,13 @@ html, body {
   color: #fff;
   position: static !important; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
+  #goFS {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    left: 20px;
+    top: 20px; }
   .bullets li {
     margin: 0 6px; } }
 

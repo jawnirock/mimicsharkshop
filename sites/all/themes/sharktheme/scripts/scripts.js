@@ -34,15 +34,22 @@ var setVanuatuTime = function(){
 	}	
 }
 var checkoutNumbers = function(){
+	
+	$("#block-commerce-cap-cap .table-responsive tr td:nth-child(2), #block-commerce-cap-cap .table-responsive tr td:nth-child(4)").each(function() {
+	    var semZeros = $(this).text().replace(".00", "");
+	    var semZeros = semZeros.replace("$", "");
+	    $(this).html("<span>$</span><span class='value'>" + semZeros + "</span>");
+	})
 
 	$(".increment, .decrement").click(function(event){
 
 		var currentRow = $(this).parents("tr");
-		var priceTd = currentRow.find("td:nth-child(2)")
+		var priceTd = currentRow.find("td:nth-child(2) .value")
 		var quantityTotal = Number(currentRow.find("td:nth-child(3) input").val());
-		var totalTd = currentRow.find("td:last-child")
+		var totalTd = currentRow.find("td:last-child .value")
 		var currentRowTotal = 0;
 		var totalSum = 0;
+		
 
 		if ($(this).hasClass("increment")) {
 			quantityTotal = quantityTotal + 1;
@@ -54,17 +61,17 @@ var checkoutNumbers = function(){
 			currentRow.find("td:nth-child(3) input").val(quantityTotal);
 		}
 
- 	    currentRowTotal = priceTd.text() * quantityTotal;
-		totalTd.text(currentRowTotal + ".00");
+ 	    currentRowTotal = Number(priceTd.text()) * quantityTotal;
+		totalTd.text(currentRowTotal);
 		
 		// correr as rows, escolher os totais, soma-los, juntar ao order total
-		$(this).parents("table").find("tr td:last-child").each(function(){
+		$(this).parents("table").find("tr td:last-child .value").each(function(){
 			// allTotals.push($(this).text());
 			totalSum = totalSum + Number($(this).text());
 			totalSumShip = totalSum + 20 + Number($(this).text());
 		});
-		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum + ".00");
-		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip + ".00");
+		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum);
+		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip);
 		
 	})
 	// verificar o stock na outra tabela, esconder rows
@@ -72,23 +79,23 @@ var checkoutNumbers = function(){
 	$("#block-commerce-cap-cap form .form-wrapper .table-responsive .form-type-textfield input").focusout(function(event){
 
 		var currentRow = $(this).parents("tr");
-		var priceTd = currentRow.find("td:nth-child(2)")
+		var priceTd = currentRow.find("td:nth-child(2) .value")
 		var quantityTotal = Number(currentRow.find("td:nth-child(3) input").val());
-		var totalTd = currentRow.find("td:last-child")
+		var totalTd = currentRow.find("td:last-child .value")
 		var currentRowTotal = 0;
 		var totalSum = 0;
-
- 	    currentRowTotal = priceTd.text() * quantityTotal;
-		totalTd.text(currentRowTotal + ".00");
+		
+ 	    currentRowTotal = Number(priceTd.text()) * quantityTotal;
+		totalTd.text(currentRowTotal);
 		
 		// correr as rows, escolher os totais, soma-los, juntar ao order total
-		$(this).parents("table").find("tr td:last-child").each(function(){
+		$(this).parents("table").find("tr td:last-child .value").each(function(){
 			// allTotals.push($(this).text());
 			totalSum = totalSum + Number($(this).text());
 			totalSumShip = totalSum + 20 + Number($(this).text());
 		});
-		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum + ".00");
-		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip + ".00");
+		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum);
+		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip);
 		
 	})
 	
@@ -97,7 +104,7 @@ var checkoutNumbers = function(){
 }
 var checkoutTableFooter = function(){
 	$("#block-commerce-cap-cap form .form-wrapper .commerce-price-formatted-components").parent().remove();
-	$("#block-commerce-cap-cap form .form-wrapper .table-responsive").after('<div class="table-responsive"><table class="commerce-price-formatted-components custom-checkout table table-hover table-striped"><tbody><tr class="component-type-base-price"><td class="component-title">Subtotal</td><td class="component-total">$0.00</td></tr><tr class="component-type-flat-rate-eu-testing"><td class="component-title">Shipping</td><td class="component-total">$20.00</td></tr><tr class="component-type-commerce-price-formatted-amount"><td class="component-title">Order total</td><td class="component-total">$20.00</td></tr></tbody></table></div>');
+	$("#block-commerce-cap-cap form .form-wrapper .table-responsive").after('<div class="table-responsive"><table class="commerce-price-formatted-components custom-checkout table table-hover table-striped"><tbody><tr class="component-type-base-price"><td class="component-title">Sub</td><td class="component-total">0</td></tr><tr class="component-type-flat-rate-eu-testing"><td class="component-title">P&P</td><td class="component-total">20</td></tr><tr class="component-type-commerce-price-formatted-amount"><td class="component-title">Total</td><td class="component-total">20</td></tr></tbody></table></div>');
 
 	
 	if ($("#block-commerce-cap-cap").find(".checkout_review").length > 0) {
@@ -150,6 +157,19 @@ var checkoutClasses = function(){
 		$(".checkoutBack").remove();
 	}
 }
+var checkoutLabels = function() {
+	$(".checkout-back").text("BACK");
+	$(".checkout-continue").text("NEXT");
+	//second step
+	$(".customer_profile_billing .panel-title").text("Billing info");
+	$(".customer_profile_shipping .panel-title").text("Shipping info");
+	//third step
+	$(".checkout-review .pane-title:nth-child(1) td").text("email");
+	$(".checkout-review .pane-title:nth-child(2) td").text("Billing info");
+	$(".checkout-review .pane-title:nth-child(3) td").text("Shipping info");
+	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>")
+	$(".thirdStep .checkout-continue").html("<div class='checkout-paypal'></div>");
+}
 var setHorizontal = function(){
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
@@ -200,10 +220,17 @@ var checkoutPlaceholders = function() {
 }
 
 $(document).ready(function() {
+		window.scrollTo(0,0);
+		
+	  var goFS = document.getElementById("goFS");
+	  goFS.addEventListener("click", function() {
+	      document.body.webkitRequestFullScreen();
+	  }, false);
 
 	$("#block-commerce-cap-cap").addClass("firstStep");
-	checkoutNumbers();
 	checkoutTableFooter();
+	checkoutNumbers();
+	checkoutLabels();
 
 	var length = $('.island').length,
 		current = 6,
@@ -291,6 +318,7 @@ $(document).ready(function() {
 		if (direction == 'up') {
 			if (windowoffset <= (windowheight + windowheight)) {
 				$("html, body").scrollTo(0, 1300, {easing: 'easeInOutCirc', onAfter: function() {
+					//$(".island-dive").hide();
 				}});
 			} else {
 				$("html, body").scrollTo(moveup, 1300, {easing: 'easeInOutCirc', onAfter: function() {
@@ -298,6 +326,7 @@ $(document).ready(function() {
 			}			
 		} else {
 				if (windowoffset == 0) {
+					//$(".island-dive").show();
 					$("html, body").scrollTo((windowheight*2), 1300, {easing: 'easeInOutCirc', onAfter: function() {
 					}});				
 				} else {
@@ -407,7 +436,8 @@ $(document).ajaxComplete(function() {
 	checkoutTableFooter();
 	checkoutNumbers();
 	checkoutClasses();
-	checkoutPlaceholders()
+	checkoutPlaceholders();
+	checkoutLabels();
 });
 
 $(window).resize(function() {

@@ -73,8 +73,10 @@
  * @ingroup templates
  */
 ?>
+<button id="goFS">Go fullscreen</button>
 
-<div class="island-wrapper" data-state="cube">
+
+<div class="island-wrapper" data-state="cube" data-level="1">
   <section id="safety" class="island island-left">
     <nav class="island-nav">
       <span class="island-nav--right"></span>
