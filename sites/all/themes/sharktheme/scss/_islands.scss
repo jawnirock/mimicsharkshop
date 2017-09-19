@@ -6,6 +6,31 @@
 	height: 100vh;
 	perspective: 1200px;
 	transform-style: preserve-3d;
+	transition: transform 1.5ms ease-in-out;
+	transform: translateY(0);
+	z-index: 150;
+	
+	&[data-level="1"] {
+		transform: translateY(0);
+	}	
+	
+	&[data-level="2"] {
+		animation: diveDownLevelTwo 1.3s both ease-in;
+
+	}
+	
+	&[data-level="3"] {
+		animation: diveDownLevelThree 1.3s both ease-in;
+	}
+	
+	&[data-level="1"].goinUp {
+		animation: diveUpLevelTwo 1.3s both ease-in;
+
+	}
+	
+	&[data-level="2"].goinUp {
+		animation: diveUpLevelThree 1.3s both ease-in;
+	}
 
 	.island {
 		min-height: 100%;

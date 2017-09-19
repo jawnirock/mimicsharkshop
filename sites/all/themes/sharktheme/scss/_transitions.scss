@@ -134,3 +134,47 @@
 	}
 }
 
+// dives
+
+@keyframes diveDownLevelTwo {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(-200%);
+	}
+}
+
+@keyframes diveDownLevelThree {
+	0% {
+		transform: translateY(-200%);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(-300%);
+	}
+}
+@keyframes diveUpLevelTwo {
+	0% {
+		transform: translateY(-200%);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+@keyframes diveUpLevelThree {
+	0% {
+		transform: translateY(-300%);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(-200%);
+	}
+}

@@ -1,4 +1,6 @@
 (function($) {
+	
+
 
 function animationOut(i){}
 function animationIn(i){}
@@ -170,15 +172,36 @@ var checkoutLabels = function() {
 	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>")
 	$(".thirdStep .checkout-continue").html("<div class='checkout-paypal'></div>");
 }
-var setHorizontal = function(){
+var mobileResponse = function(){
 	var windowHeight = $(window).height();
 	var windowWidth = $(window).width();
 	var position = windowWidth / 2;
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowHeight > windowWidth ) {
-	alert("TURN TO LANDSCAPE - temporary message")
-	  // $("body").addClass("horizontal");
-	  // $("body").height(windowWidth).width(windowHeight).css("transform-origin", position)
+	
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowHeight < windowWidth ) {
+	  $(".mobileNotification.fullscreen").show();
+	  $(".mobileNotification.landscape").hide();
 	}
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowHeight > windowWidth ) {
+	  $(".mobileNotification.landscape").show();
+	  $(".mobileNotification.fullscreen").hide();
+	}
+	
+	$(".mobileNotification.fullscreen button").click(function() {
+			$(".mobileNotification").remove();
+			$(".island-wrapper").show();
+
+			var docElm = document.documentElement;
+			if (docElm.requestFullscreen) {
+			    docElm.requestFullscreen();
+			}
+			else if (docElm.mozRequestFullScreen) {
+			    docElm.mozRequestFullScreen();
+			}
+			else if (docElm.webkitRequestFullScreen) {
+			    docElm.webkitRequestFullScreen();
+			}
+	})
+	
 }
 var shopFunctions = function() {
     //hide/show size shart
@@ -220,18 +243,16 @@ var checkoutPlaceholders = function() {
 }
 
 $(document).ready(function() {
-		window.scrollTo(0,0);
-		
-	  var goFS = document.getElementById("goFS");
-	  goFS.addEventListener("click", function() {
-	      document.body.webkitRequestFullScreen();
-	  }, false);
+
+	mobileResponse();
+
 
 	$("#block-commerce-cap-cap").addClass("firstStep");
 	checkoutTableFooter();
 	checkoutNumbers();
 	checkoutLabels();
 
+	var level = $(".island-wrapper").data("level");
 	var length = $('.island').length,
 		current = 6,
 		next = 6,
@@ -258,8 +279,8 @@ $(document).ready(function() {
 		if (!onGoing) {
 			onGoing = true;
 			if (direction == 'up') {
-
-				if ($(window).scrollTop() > $(window).height()) {
+				console.log(level)
+				if (level > 1) {
 					outClass = 'slideBottomOut';
 					inClass = 'slideBottomIn';
 				} else {
@@ -269,8 +290,8 @@ $(document).ready(function() {
 				next = current > 1 ? current - 1 : length;
 
 			} else {
-
-			if ($(window).scrollTop() > $(window).height()) {
+				console.log(level)
+				if (level > 1) {
 					outClass = 'slideTopOut';
 					inClass = 'slideTopIn';
 				} else {
@@ -309,30 +330,23 @@ $(document).ready(function() {
 	}
 	
 	function dive(direction) {
-		var windowheight = $(window).height();
-		var windowoffset = $(window).scrollTop();
-		var moveup = windowoffset - windowheight;
-		var movedown = windowoffset + windowheight;
-
 		onGoing = true;
+
 		if (direction == 'up') {
-			if (windowoffset <= (windowheight + windowheight)) {
-				$("html, body").scrollTo(0, 1300, {easing: 'easeInOutCirc', onAfter: function() {
-					//$(".island-dive").hide();
-				}});
-			} else {
-				$("html, body").scrollTo(moveup, 1300, {easing: 'easeInOutCirc', onAfter: function() {
-				}});
-			}			
+			if (Number(level) >= 2) {
+				 console.log(level)
+				 level = level - 1;
+				 $(".island-wrapper").addClass("goinUp")
+				 $(".island-wrapper").attr("data-level", level);
+			}
 		} else {
-				if (windowoffset == 0) {
-					//$(".island-dive").show();
-					$("html, body").scrollTo((windowheight*2), 1300, {easing: 'easeInOutCirc', onAfter: function() {
-					}});				
-				} else {
-					$("html, body").scrollTo(movedown, 1300, {easing: 'easeInOutCirc', onAfter: function() {
-					}});
-				}			
+			if (Number(level) <= 2) {
+				 console.log(level)
+				 level = level + 1;
+				 $(".island-wrapper").removeClass("goinUp")
+				 $(".island-wrapper").attr("data-level", level);
+			}
+
 		}
 		setTimeout(function() {
 			onGoing = false;
@@ -342,13 +356,8 @@ $(document).ready(function() {
 
 	// key navigation
 	$(document).keydown(function(e) {
-		var windowheight = $(window).height();
-		var windowoffset = $(window).scrollTop();
-		var moveup = windowoffset - windowheight;
-		var movedown = windowoffset + windowheight;
-		
-		if (!onGoing) {
 
+		if (!onGoing) {
 			if (e.keyCode == 37 && current !== 1) {
 				trans('up')
 			}
@@ -369,12 +378,7 @@ $(document).ready(function() {
 	// swipe navigation
 	$(document).swipe({
 		swipe: function(event, direction, distance, duration, fingerCount) {
-			
-		var windowheight = window.screen.height;
-		var windowoffset = $(window).scrollTop();
-		var moveup = windowoffset - windowheight;
-		var movedown = windowoffset + windowheight;
-		
+
 			if (direction == "left" && current !== 11) {
 				trans('down')
 			}
@@ -383,26 +387,10 @@ $(document).ready(function() {
 			}
 			
 			if (direction == "down") {
-				 onGoing = true;
-				if (windowoffset <= (windowheight + windowheight)) {
-					$("html, body").scrollTo(0, 1300, {easing: 'easeInOutCirc'});
-				} else {
-					$("html, body").scrollTo(moveup, 1300, {easing: 'easeInOutCirc'});
-				}
-				setTimeout(function() {
-					onGoing = false;
-				}, 1500)
+				dive("up");
 			}
 			if (direction == "up") {
-				 onGoing = true;
-				if (windowoffset == 0) {
-					$("html, body").scrollTo((windowheight*2), 1300, {easing: 'easeInOutCirc'});
-				} else {
-					$("html, body").scrollTo(movedown, 1300, {easing: 'easeInOutCirc'});
-				}
-				setTimeout(function() {
-					onGoing = false;
-				}, 1500)
+				dive("down");
 			}
 		}
 	});
@@ -421,7 +409,6 @@ $(document).ready(function() {
      	dive("down");
     })
 
-	setHorizontal();
 
 	setVanuatuTime();	
 
@@ -441,7 +428,7 @@ $(document).ajaxComplete(function() {
 });
 
 $(window).resize(function() {
-	setHorizontal();
+	mobileResponse();
 });
 
 

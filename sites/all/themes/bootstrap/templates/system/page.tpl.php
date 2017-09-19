@@ -73,7 +73,20 @@
  * @ingroup templates
  */
 ?>
-<button id="goFS">Go fullscreen</button>
+
+<div class="mobileNotification landscape">
+    <span>For the full experience<br>
+    please switch your device to landscape
+    </span>
+</div>
+<div class="mobileNotification fullscreen">
+  <span>For the full experience
+    <br><button>Go fullscreen</button>
+  </span>
+  
+</div>
+
+
 
 
 <div class="island-wrapper" data-state="cube" data-level="1">

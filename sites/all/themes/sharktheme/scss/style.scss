@@ -13,9 +13,7 @@
 	padding: 0;
 }
 
-#goFS {
-	display: none;
-}
+
 
 html,body {
 	overflow: hidden;
@@ -24,21 +22,34 @@ html,body {
 	font-size: 16px;
 	color: #fff;
 	position: static !important;
+    touch-action: none;
 }
 
-@media screen and (max-width: 760px) {
-	
-	#goFS {
-		display: block;
-		position: absolute;
-		z-index: 999;
-		left: 20px;
-		top: 20px;
-	}
 
-	.bullets li {
-		margin: 0 6px;
+.mobileNotification {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	color: white;
+	z-index: 90;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	span {
+		text-align: center;
 	}
+	&.landscape {
+		z-index: 100;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.island-wrapper {
+		display: none;
+	}	
+
 }
 
 body.horizontal {  
