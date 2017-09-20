@@ -279,7 +279,6 @@ $(document).ready(function() {
 		if (!onGoing) {
 			onGoing = true;
 			if (direction == 'up') {
-				console.log(level)
 				if (level > 1) {
 					outClass = 'slideBottomOut';
 					inClass = 'slideBottomIn';
@@ -290,7 +289,6 @@ $(document).ready(function() {
 				next = current > 1 ? current - 1 : length;
 
 			} else {
-				console.log(level)
 				if (level > 1) {
 					outClass = 'slideTopOut';
 					inClass = 'slideTopIn';
@@ -331,22 +329,44 @@ $(document).ready(function() {
 	
 	function dive(direction) {
 		onGoing = true;
+		var singleLevels = [1,2,3,4,5,6,9,10];
+		var doubleLevels = [7,8,11];
 
 		if (direction == 'up') {
-			if (Number(level) >= 2) {
-				 console.log(level)
+			if (Number(level) >= 2 && doubleLevels.indexOf(current) !== -1) {
 				 level = level - 1;
 				 $(".island-wrapper").addClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
+				 if (Number(level) == 1) {
+					setTimeout(function() {
+						$(".island-dive").hide();
+					}, 1500)
+				 }
+			} else if (Number(level) >= 2 && singleLevels.indexOf(current) !== -1) {
+				 level = 1;
+				 $(".island-wrapper").addClass("goinUp")
+				 $(".island-wrapper").attr("data-level", level);
+				 if (Number(level) == 1) {
+					setTimeout(function() {
+						$(".island-dive").hide();
+					}, 1500)
+				 }
 			}
 		} else {
-			if (Number(level) <= 2) {
-				 console.log(level)
+			// se forem secoes de 1 nivel so desce 1 vez
+			if (Number(level) == 1 && singleLevels.indexOf(current) !== -1){
 				 level = level + 1;
 				 $(".island-wrapper").removeClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
+				 $(".island-dive").show();
 			}
-
+			// se forem secoes de 1 nivel so desce 1 vez
+			else if (Number(level) <= 2 && doubleLevels.indexOf(current) !== -1){
+				 level = level + 1;
+				 $(".island-wrapper").removeClass("goinUp")
+				 $(".island-wrapper").attr("data-level", level);
+				 $(".island-dive").show();
+			}
 		}
 		setTimeout(function() {
 			onGoing = false;

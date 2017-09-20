@@ -678,7 +678,8 @@
   width: 100%;
   top: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  display: none; }
   .island-dive--visible .island-dive-transition {
     background: url("http://bestanimations.com/Nature/Water/ocean-water-animated-gif-3.gif");
     background-size: cover;
@@ -730,6 +731,9 @@
               clip-path: circle(5% at 95% 50%); }
     .island-dive-nav:hover {
       opacity: 1; }
+
+.island-wrapper[data-level="3"] .island-dive-fixed {
+  top: 100%; }
 
 .island-dive-content-sitemap {
   background-size: cover;

@@ -101,7 +101,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -122,7 +122,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -143,7 +143,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -164,7 +164,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -185,7 +185,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -207,7 +207,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-sitemap">
           <span class="island-dive-nav island-dive-nav--up" data-divetarget="luke"></span>
           <span class="island-dive-nav island-dive-nav--down" data-divetarget="luke"></span>
@@ -288,7 +288,6 @@
     </aside>
   </section>
 
-
   <section id="buy" class="island island-right">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
@@ -301,7 +300,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <?php print render($page['content']); ?>
       </div>
     </aside>
@@ -318,7 +317,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-disclaimer">
           
         </div>
