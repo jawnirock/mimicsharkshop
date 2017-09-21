@@ -218,7 +218,13 @@ var shopFunctions = function() {
 }
 var hoverRipples = function() {
  
-	// falta definir o fundo   
+	// falta definir o fundo
+	$(".island-dive-nav").each(function() {
+	    var rippleFundo = $(this).parent().css("background-image");
+	    $(this).css("background-image", rippleFundo)
+	})
+	
+    
     
 	// $(".island-dive-nav").ripples();
     $(".island-dive-nav").ripples("pause");

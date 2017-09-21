@@ -695,9 +695,8 @@
   .island-dive-nav {
     position: absolute;
     z-index: 99;
-    opacity: 0;
     cursor: pointer;
-    background-image: url(http://mimicshark-jawni.c9users.io/sites/all/themes/sharktheme/images/bg1.png);
+    background-color: red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -749,7 +748,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50%; }
+    height: 50%;
+    position: relative; }
 
 #products-women {
   background-image: url("../images/bg/products/women.jpg"); }

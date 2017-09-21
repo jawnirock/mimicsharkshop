@@ -106,6 +106,9 @@
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -127,6 +130,9 @@
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -148,6 +154,9 @@
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -169,6 +178,9 @@
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -190,6 +202,9 @@
           <div class="island-dive-content-text-block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -209,10 +224,7 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-sitemap">
-          <span class="island-dive-nav island-dive-nav--up" data-divetarget="luke"></span>
-          <span class="island-dive-nav island-dive-nav--down" data-divetarget="luke"></span>
-          <span class="island-dive-nav island-dive-nav--left" data-divetarget="luke"></span>
-          <span class="island-dive-nav island-dive-nav--right" data-divetarget="luke"></span>
+          <span class="island-dive-nav island-dive-nav--up" ></span>
         </div>
       </div>
     </aside>
@@ -233,9 +245,15 @@
       <div class="island-dive-content">
         <div id="products-women"  class="island-dive-content-product">
           WOMEN
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
+            <span class="island-dive-nav island-dive-nav--down" ></span>
         </div>
         <div id="products-men"  class="island-dive-content-product">
           MEN
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
+            <span class="island-dive-nav island-dive-nav--down" ></span>
         </div>
       </div>
     </aside>
@@ -255,8 +273,12 @@
       
       <div class="island-dive-content">
         <div id="shop-women" class="island-dive-content-shop">
-            <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop-kids"></span>
-            <span class="island-dive-nav island-dive-nav--down" data-divetarget="shop-men"></span>
+
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
+            <span class="island-dive-nav island-dive-nav--down" ></span>
+
             <div class="island-dive-size">
               <h3 class="island-dive-size-title">WOMEN</h3>
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
@@ -270,7 +292,10 @@
             </div>
         </div>
         <div id="shop-men" class="island-dive-content-shop">
-            <span class="island-dive-nav island-dive-nav--up" data-divetarget="shop-women"></span>
+            <span class="island-dive-nav island-dive-nav--up" ></span>
+            <span class="island-dive-nav island-dive-nav--left" ></span>
+            <span class="island-dive-nav island-dive-nav--right" ></span>
+
             <div class="island-dive-size">
               <h3 class="island-dive-size-title">MEN</h3>
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
@@ -297,11 +322,12 @@
       <img src="/sites/all/themes/sharktheme/images/titles/buy.gif">
     </div>
     <aside class="island-dive">
-      <div class="island-dive-transition">
-        
-      </div>
       <div class="island-dive-content island-dive-fixed">
         <?php print render($page['content']); ?>
+        <span class="island-dive-nav island-dive-nav--up" ></span>
+        <span class="island-dive-nav island-dive-nav--left" ></span>
+        <span class="island-dive-nav island-dive-nav--right" ></span>
+
       </div>
     </aside>
   </section>
@@ -319,7 +345,9 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-disclaimer">
-          
+          <span class="island-dive-nav island-dive-nav--up" ></span>
+          <span class="island-dive-nav island-dive-nav--left" ></span>
+          <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -336,7 +364,9 @@
         
       </div>
       <div class="island-dive-content">
-        island content
+        <span class="island-dive-nav island-dive-nav--up" ></span>
+        <span class="island-dive-nav island-dive-nav--left" ></span>
+        <span class="island-dive-nav island-dive-nav--right" ></span>
       </div>
     </aside>
   </section>
