@@ -70,7 +70,7 @@ var checkoutNumbers = function(){
 		$(this).parents("table").find("tr td:last-child .value").each(function(){
 			// allTotals.push($(this).text());
 			totalSum = totalSum + Number($(this).text());
-			totalSumShip = totalSum + 20 + Number($(this).text());
+			totalSumShip = totalSum + 20;
 		});
 		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum);
 		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip);
@@ -214,6 +214,8 @@ var shopFunctions = function() {
     $(".island-dive-shop-thumb").click(function() {
         var imgsrc = $(this).attr("src");
         $(this).parents(".island-dive-content-shop").css("background-image", "url(" + imgsrc + ")");
+        $(this).parents(".island-dive-content-shop .island-nav span").css("background-image", "url(" + imgsrc + ")");
+        
     });	
 }
 var hoverRipples = function() {
@@ -247,10 +249,33 @@ var checkoutPlaceholders = function() {
 		
 	});
 }
+var siteMapCarouel = function() {
+    var init = function() {
+      var carousel = document.getElementById('carousel'),
+          navButtons = document.querySelectorAll('#navigation button'),
+          panelCount = carousel.children.length,
+          transformProp = Modernizr.prefixed('transform'),
+          theta = 0,
+
+          onNavButtonClick = function( event ){
+            var increment = parseInt( event.target.getAttribute('data-increment') );
+            theta += ( 360 / panelCount ) * increment * -1;
+            carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+          };
+
+      for (var i=0; i < 2; i++) {
+        navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+      }
+
+    };
+    window.addEventListener( 'DOMContentLoaded', init, false);
+}
+
 
 $(document).ready(function() {
 
 	mobileResponse();
+	siteMapCarouel();
 
 
 	$("#block-commerce-cap-cap").addClass("firstStep");
@@ -284,23 +309,33 @@ $(document).ready(function() {
 	function trans(direction) {
 		if (!onGoing) {
 			onGoing = true;
+			console.log(direction + " " + current + " " + level);
+
+			// esquerda
 			if (direction == 'up') {
-				if (level > 1) {
-					outClass = 'slideBottomOut';
-					inClass = 'slideBottomIn';
-				} else {
+				if (level === 1) {
 					outClass = 'rotateCubeBottomOut';
 					inClass = 'rotateCubeBottomIn';
+				} else if (current === 8){
+					outClass = 'spinBottomOut';
+					inClass = 'spinBottomIn';
+				} else {
+					outClass = 'slideBottomOut';
+					inClass = 'slideBottomIn';
 				}
 				next = current > 1 ? current - 1 : length;
 
+			// direita
 			} else {
-				if (level > 1) {
-					outClass = 'slideTopOut';
-					inClass = 'slideTopIn';
-				} else {
+				if (level === 1) {
 					outClass = 'rotateCubeTopOut';
 					inClass = 'rotateCubeTopIn';
+				} else if (current === 7){
+					outClass = 'spinTopOut';
+					inClass = 'spinTopIn';
+				} else {
+					outClass = 'slideTopOut';
+					inClass = 'slideTopIn';
 				}
 				next = current < length ? current + 1 : 1;
 			}

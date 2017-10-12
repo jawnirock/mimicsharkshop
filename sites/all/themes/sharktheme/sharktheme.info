@@ -31,4 +31,5 @@ scripts[] = scripts/jquery.touchSwipe.js
 scripts[] = scripts/scrollTo.js
 scripts[] = scripts/jquery.ripples.js
 scripts[] = scripts/jqueryui.js
+scripts[] = scripts/utils.js
 scripts[] = scripts/scripts.js

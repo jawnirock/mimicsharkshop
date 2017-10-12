@@ -24,6 +24,7 @@
     	}
     	
     	&-shop {
+        	transition: transform 1.5ms ease-in-out;
     		position: absolute;
     	    bottom: 20px;
     	    left: 20px;
@@ -45,4 +46,21 @@
 
 #shop-men {
     background-image: url('../images/bg/shop/men.png');
+}
+
+.island-wrapper {
+	&[data-level="2"] {
+	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {
+            #shop-men {
+               visibility: hidden;
+            }	    
+	    }
+	}    
+	&[data-level="3"] {
+	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {
+            #shop-women {
+               visibility: hidden;
+            }	    
+	    }
+	}   
 }

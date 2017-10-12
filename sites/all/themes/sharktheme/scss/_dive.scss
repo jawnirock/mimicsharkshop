@@ -4,6 +4,7 @@
 	height: 100%;
 	position: absolute;
 	display: none;
+	left: 0;
 	
 	&--visible {
 		//display: none;
@@ -25,6 +26,10 @@
 	}
 	
 	&-nav {
+		//TEMPORARY
+		// NAO COMPATIVEL COM IE
+		display: none;
+		//TEMPORARY
 	    position: absolute;
 	    z-index: 99;
 	    // opacity: 0;

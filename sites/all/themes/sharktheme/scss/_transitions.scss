@@ -134,6 +134,142 @@
 	}
 }
 
+
+
+//SPINS
+
+
+//direita
+.spinTopOut {
+	opacity: 1;
+	animation: spinTopOutWrap 1.3s both ease-in;
+
+	#products-men, #products-women {
+	animation: spinTopOut 1.3s both ease-in;
+	transform: scale(1) rotate(0deg);
+	}
+}
+
+.spinTopIn {
+	opacity: 0;
+	animation: spinTopInWrap 1.3s both ease-in;
+
+	#shop-men, #shop-women {
+	animation: spinTopIn 1s both ease-in;
+	transform: scale(4) rotate(-90deg);
+	}
+}
+
+//esquerda
+
+.spinBottomOut {
+	opacity: 1;
+	animation: spinBottomOutWrap 1.3s both ease-in;
+
+	#shop-men, #shop-women {
+	animation: spinBottomOut 1.3s both ease-in;
+	transform: scale(1) rotate(0deg);
+	}
+}
+
+.spinBottomIn {
+	opacity: 0;
+	animation: spinBottomInWrap 1.3s both ease-in;
+
+	#products-men, #products-women {
+	animation: spinBottomIn 1s both ease-in;
+	transform: scale(4) rotate(90deg);
+	}
+}
+
+@keyframes spinTopOut {
+	40% {
+		animation-timing-function: ease-out;
+		transform: scale(4) rotate(90deg);
+	}
+	100% {
+		transform: scale(4) rotate(90deg);		
+	}
+}
+
+@keyframes spinTopOutWrap {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.8;	
+	}
+}
+
+@keyframes spinTopIn {
+	30% {
+		animation-timing-function: ease-out;
+		transform: scale(4) rotate(-90deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+@keyframes spinTopInWrap {
+	50% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;	
+	}
+}
+
+// esquerda
+
+@keyframes spinBottomOut {
+	40% {
+		animation-timing-function: ease-out;
+		transform: scale(4) rotate(-90deg);
+	}
+	100% {
+		transform: scale(4) rotate(-90deg);		
+	}
+}
+
+@keyframes spinBottomOutWrap {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;	
+	}
+	
+	100% {
+		opacity: 0;	
+	}
+	
+}
+
+@keyframes spinBottomIn {
+	30% {
+		animation-timing-function: ease-out;
+		transform: scale(4) rotate(90deg);
+	}
+
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+@keyframes spinBottomInWrap {
+	50% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;	
+	}
+}
+
+
+
+
 // dives
 
 @keyframes diveDownLevelTwo {
@@ -178,3 +314,4 @@
 		transform: translateY(-200%);
 	}
 }
+

@@ -1,0 +1,42 @@
+--- addressfield_phone.module
++++ addressfield_phone.module
+@@ -310,17 +310,35 @@
+     $field = field_info_instance($entity_type, $field_name, $bundle);
+     $settings = $field['widget']['settings'];
+     $form['instance']['widget']['settings']['phone_number_fields'] = array(
+-      '#type' => 'checkboxes',
++      '#type' => 'fieldset',
+       '#title' => t('Available Phone Number Fields'),
+-      '#description' => t('If no phone fields are selected, all phones fields will be available.'),
+-      '#options' => _addressfield_phone_number_options_list(),
++      '#description' => t('If no phone fields are selected, all phones fields will be available as optional.'),
+       '#states' => array(
+         'visible' => array(// action to take.
+           ':input[name="instance[widget][settings][format_handlers][phone]"]' => array('checked' => TRUE),
+         ),
+       ),
+-      '#default_value' => $settings['phone_number_fields'],
+     );
++
++    $field_options = array(
++      '' => t('Hidden'),
++      'optional' => t('Optional'),
++      'required' => t('Required'),
++    );
++
++    foreach (_addressfield_phone_number_options_list() as $number => $label) {
++      $value = '';
++      if (!empty($settings['phone_number_fields'][$number])) {
++        $value = $settings['phone_number_fields'][$number];
++      }
++
++      $form['instance']['widget']['settings']['phone_number_fields'][$number] = array(
++        '#type' => 'select',
++        '#title' => $label,
++        '#options' => $field_options,
++        '#default_value' => $value,
++      );
++    }
+   }
+ }
+ 

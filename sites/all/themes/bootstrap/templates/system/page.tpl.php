@@ -322,6 +322,10 @@
       <img src="/sites/all/themes/sharktheme/images/titles/buy.gif">
     </div>
     <aside class="island-dive">
+      <div class="island-dive-transition">
+    
+      </div>
+
       <div class="island-dive-content island-dive-fixed">
         <?php print render($page['content']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>

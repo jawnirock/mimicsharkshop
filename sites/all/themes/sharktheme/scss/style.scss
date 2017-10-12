@@ -7,6 +7,7 @@
 @import 'shop';
 @import 'disclaimer';
 @import 'islands';
+@import 'contact';
 
 * {
 	margin: 0;
@@ -49,17 +50,13 @@ html,body {
 	.island-wrapper {
 		display: none;
 	}	
-
 }
 
-body.horizontal {  
-    transform: rotate(90deg);
-    .island {
-	    background-size: auto 100%;
-    }
+@media screen and (min-width: 768px) {
+	.mobileNotification {
+		display: none;
+	}	
 }
-
-
 
 
 
