@@ -251,8 +251,8 @@ var checkoutPlaceholders = function() {
 }
 var siteMapCarouel = function() {
     var init = function() {
-      var carousel = document.getElementById('carousel'),
-          navButtons = document.querySelectorAll('#navigation button'),
+      var carousel = document.getElementById('sitemap'),
+          navButtons = document.querySelectorAll('.sitemap-nav'),
           panelCount = carousel.children.length,
           transformProp = Modernizr.prefixed('transform'),
           theta = 0,
@@ -260,7 +260,7 @@ var siteMapCarouel = function() {
           onNavButtonClick = function( event ){
             var increment = parseInt( event.target.getAttribute('data-increment') );
             theta += ( 360 / panelCount ) * increment * -1;
-            carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+            carousel.style[ transformProp ] = 'translateZ( -320px ) rotateY(' + theta + 'deg)';
           };
 
       for (var i=0; i < 2; i++) {
@@ -370,8 +370,8 @@ $(document).ready(function() {
 	
 	function dive(direction) {
 		onGoing = true;
-		var singleLevels = [1,2,3,4,5,6,9,10];
-		var doubleLevels = [7,8,11];
+		var singleLevels = [1,2,3,4,5,6,9,10,11];
+		var doubleLevels = [7,8];
 
 		if (direction == 'up') {
 			if (Number(level) >= 2 && doubleLevels.indexOf(current) !== -1) {

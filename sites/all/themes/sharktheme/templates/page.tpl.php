@@ -225,26 +225,109 @@
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-sitemap">
           
-          <section class="container">
-            <div id="carousel">
-              <figure>1</figure>
-              <figure>2</figure>
-              <figure>3</figure>
-              <figure>4</figure>
-              <figure>5</figure>
-              <figure>6</figure>
-              <figure>7</figure>
-              <figure>8</figure>
-              <figure>9</figure>
+          <section class="sitemap-container">
+            <span class="sitemap-nav left" data-increment="-1"></span>
+            <span class="sitemap-nav right" data-increment="1"></span>
+            <div id="sitemap" class="sitemap">
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/07.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/products/women.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/products/men.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/08.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/shop/women.png">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/shop/men.png">
+                </figure>
+
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/09.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/10.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/disclaimer.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/11.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/contact/contact.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/01.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/texts/safety.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/02.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/texts/eco.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/03.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/texts/habitat.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/04.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/texts/roots.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/05.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/texts/about.png">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/06.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img src="/sites/all/themes/sharktheme/images/bg/luke/underluke.png">
+                </figure>
+              </div>
+
             </div>
           </section>  
-        <section id="options">
-          <p id="navigation">
-            <button id="previous" data-increment="-1">Previous</button>
-            <button id="next" data-increment="1">Next</button>
-          </p>
-        </section>
-              
+
           
           
           
@@ -353,6 +436,7 @@
       </div>
 
       <div class="island-dive-content island-dive-fixed">
+
         <?php print render($page['content']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>
         <span class="island-dive-nav island-dive-nav--left" ></span>
@@ -393,7 +477,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content">
+      <div class="island-dive-content island-dive-fixed">
         <?php print render($page['footer']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>
         <span class="island-dive-nav island-dive-nav--left" ></span>
