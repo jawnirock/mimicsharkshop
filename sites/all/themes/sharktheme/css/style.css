@@ -385,8 +385,8 @@
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); } }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
 
 @keyframes diveDownLevelTwo {
   0% {
@@ -395,33 +395,33 @@
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); } }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
 
 @-webkit-keyframes diveDownLevelThree {
   0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%); } }
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%); } }
 
 @keyframes diveDownLevelThree {
   0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%); } }
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%); } }
 
 @-webkit-keyframes diveUpLevelTwo {
   0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
@@ -430,8 +430,8 @@
 
 @keyframes diveUpLevelTwo {
   0% {
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
@@ -440,23 +440,23 @@
 
 @-webkit-keyframes diveUpLevelThree {
   0% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%); }
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%); }
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); } }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
 
 @keyframes diveUpLevelThree {
   0% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%); }
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%); }
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%); } }
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); } }
 
 .island-dive-content-text {
   position: absolute;
@@ -560,24 +560,6 @@
     -webkit-transform: translateX(-35px) translateY(0px);
             transform: translateX(-35px) translateY(0px);
     background-size: 120px; }
-  20% {
-    -webkit-transform: translateX(-14px) translateY(-3px);
-            transform: translateX(-14px) translateY(-3px); }
-  40% {
-    -webkit-transform: translateX(15px) translateY(-8px);
-            transform: translateX(15px) translateY(-8px); }
-  60% {
-    -webkit-transform: translateX(48px) translateY(-10px);
-            transform: translateX(48px) translateY(-10px); }
-  70% {
-    -webkit-transform: translateX(68px) translateY(-13px);
-            transform: translateX(68px) translateY(-13px); }
-  80% {
-    -webkit-transform: translateX(88px) translateY(-17px);
-            transform: translateX(88px) translateY(-17px); }
-  90% {
-    -webkit-transform: translateX(98px) translateY(-22px);
-            transform: translateX(98px) translateY(-22px); }
   100% {
     -webkit-transform: translateX(110px) translateY(-25px);
             transform: translateX(110px) translateY(-25px);
@@ -588,24 +570,6 @@
     -webkit-transform: translateX(-35px) translateY(0px);
             transform: translateX(-35px) translateY(0px);
     background-size: 120px; }
-  20% {
-    -webkit-transform: translateX(-14px) translateY(-3px);
-            transform: translateX(-14px) translateY(-3px); }
-  40% {
-    -webkit-transform: translateX(15px) translateY(-8px);
-            transform: translateX(15px) translateY(-8px); }
-  60% {
-    -webkit-transform: translateX(48px) translateY(-10px);
-            transform: translateX(48px) translateY(-10px); }
-  70% {
-    -webkit-transform: translateX(68px) translateY(-13px);
-            transform: translateX(68px) translateY(-13px); }
-  80% {
-    -webkit-transform: translateX(88px) translateY(-17px);
-            transform: translateX(88px) translateY(-17px); }
-  90% {
-    -webkit-transform: translateX(98px) translateY(-22px);
-            transform: translateX(98px) translateY(-22px); }
   100% {
     -webkit-transform: translateX(110px) translateY(-25px);
             transform: translateX(110px) translateY(-25px);
@@ -621,7 +585,7 @@
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 300% auto;
-  background-image: url("../images/bg/checkout/checkout.png");
+  background-image: url("../images/bg/checkout/checkout.jpg");
   background-position-y: center;
   position: absolute;
   height: 100%;
@@ -635,18 +599,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  #block-commerce-cap-cap .alert, #block-commerce-cap-cap .error {
+  #block-commerce-cap-cap .alert.error, #block-commerce-cap-cap .messages.error {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 3px;
     font-size: 10px;
     margin: 5px 0;
     border: 0px solid transparent;
-    border-radius: 0px; }
-    #block-commerce-cap-cap .alert ul li, #block-commerce-cap-cap .error ul li {
+    border-radius: 0px;
+    display: none; }
+    #block-commerce-cap-cap .alert.error ul li, #block-commerce-cap-cap .messages.error ul li {
       list-style-type: none; }
   #block-commerce-cap-cap form {
     display: none; }
+  #block-commerce-cap-cap.firstStep > div {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 7.7vw; }
   #block-commerce-cap-cap.firstStep::before {
     width: 125px;
     height: 100%;
@@ -658,22 +627,22 @@
     background-repeat: no-repeat;
     -webkit-transform: translateX(-35px) translateY(0px);
             transform: translateX(-35px) translateY(0px);
-    -webkit-animation: lukeFirst 8s normal forwards;
-            animation: lukeFirst 8s normal forwards;
+    -webkit-animation: lukeFirst 8s infinite forwards;
+            animation: lukeFirst 8s infinite forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(6) {
+  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(7) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(5) {
+  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(6) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(7) {
+  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(5) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
@@ -719,7 +688,10 @@
       -webkit-animation: secondBack 2.5s forwards;
               animation: secondBack 2.5s forwards; }
     #block-commerce-cap-cap.secondStep > div {
-      max-width: 420px; }
+      max-width: 420px;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin-top: 4.3vw; }
   #block-commerce-cap-cap.thirdStep {
     -webkit-animation: toThird 2.5s forwards;
             animation: toThird 2.5s forwards; }
@@ -887,7 +859,8 @@
       border: 0px solid white;
       border-radius: 6px;
       padding: 0 10px;
-      font-size: 11px; }
+      font-size: 11px;
+      transition: 0.3s linear; }
       #block-commerce-cap-cap .panel input::-webkit-input-placeholder {
         color: black; }
       #block-commerce-cap-cap .panel input::-moz-placeholder {
@@ -896,6 +869,14 @@
         color: black; }
       #block-commerce-cap-cap .panel input::placeholder {
         color: black; }
+      #block-commerce-cap-cap .panel input.error::-webkit-input-placeholder {
+        color: #8d0202; }
+      #block-commerce-cap-cap .panel input.error::-moz-placeholder {
+        color: #8d0202; }
+      #block-commerce-cap-cap .panel input.error:-ms-input-placeholder {
+        color: #8d0202; }
+      #block-commerce-cap-cap .panel input.error::placeholder {
+        color: #8d0202; }
   #block-commerce-cap-cap .account {
     margin-bottom: 0px; }
     #block-commerce-cap-cap .account legend {
@@ -973,6 +954,48 @@
 .island-dive.island-dive--visible #block-commerce-cap-cap form {
   display: block; }
 
+.diveWrapper {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 1; }
+  .diveWrapper.visible {
+    display: block;
+    -webkit-animation: headerFadout 4.4s ease-in;
+            animation: headerFadout 4.4s ease-in; }
+  .diveWrapper .output {
+    width: 100%;
+    height: 100%; }
+    .diveWrapper .output canvas {
+      width: 100%;
+      height: 100%; }
+  .diveWrapper video {
+    width: 100%;
+    height: auto; }
+
+@-webkit-keyframes headerFadout {
+  65% {
+    opacity: 1; }
+  75% {
+    opacity: 0.3; }
+  90% {
+    opacity: 0.1; }
+  98% {
+    opacity: 0; } }
+
+@keyframes headerFadout {
+  65% {
+    opacity: 1; }
+  75% {
+    opacity: 0.3; }
+  90% {
+    opacity: 0.1; }
+  98% {
+    opacity: 0; } }
+
 .island-dive {
   width: 100%;
   top: 100%;
@@ -981,12 +1004,10 @@
   display: none;
   left: 0; }
   .island-dive--visible .island-dive-transition {
-    background: url("http://bestanimations.com/Nature/Water/ocean-water-animated-gif-3.gif");
     background-size: cover;
     background-repeat: no-repeat; }
   .island-dive-transition {
-    display: block;
-    height: 100%; }
+    display: block; }
   .island-dive-content {
     background: #337ab7;
     display: block;
@@ -1039,7 +1060,7 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/bg/luke/underluke.png");
+  background-image: url("../images/bg/luke/01_BOTTOM_HOME.jpg");
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1061,7 +1082,8 @@
     position: relative;
     margin: 0 auto 40px;
     -webkit-perspective: 1100px;
-            perspective: 1100px; }
+            perspective: 1100px;
+    margin-left: 300px; }
   .island-dive-content-sitemap .sitemap {
     width: 100%;
     height: 100%;
@@ -1071,7 +1093,10 @@
     transition: -webkit-transform 1s;
     transition: transform 1s;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d; }
+            transform-style: preserve-3d;
+    perspective: 1100px;
+    -webkit-perspective: initial;
+    -moz-perspective: initial; }
     .island-dive-content-sitemap .sitemap-nav {
       position: absolute;
       z-index: 9999;
@@ -1095,8 +1120,14 @@
       font-size: 80px;
       font-weight: bold;
       color: white;
-      text-align: center; }
+      text-align: center;
+      perspective: 1100px;
+      -webkit-perspective: initial;
+      -moz-perspective: initial; }
       .island-dive-content-sitemap .sitemap-panel-item {
+        perspective: 1100px;
+        -webkit-perspective: initial;
+        -moz-perspective: initial;
         margin-top: 5px;
         overflow: hidden;
         position: relative;
@@ -1225,7 +1256,7 @@
   width: 100%; }
 
 .island-wrapper {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -1243,8 +1274,10 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   .island-wrapper[data-level="2"] {
-    -webkit-animation: diveDownLevelTwo 1.3s both ease-in;
-            animation: diveDownLevelTwo 1.3s both ease-in; }
+    -webkit-animation: diveDownLevelTwo 2.5s both ease-in;
+            animation: diveDownLevelTwo 2.5s both ease-in;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
   .island-wrapper[data-level="3"] {
     -webkit-animation: diveDownLevelThree 1.3s both ease-in;
             animation: diveDownLevelThree 1.3s both ease-in; }
@@ -1255,7 +1288,7 @@
     -webkit-animation: diveUpLevelThree 1.3s both ease-in;
             animation: diveUpLevelThree 1.3s both ease-in; }
   .island-wrapper .island {
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -1308,10 +1341,10 @@
     .island-wrapper .island-center {
       text-align: center; }
       .island-wrapper .island-center .island-title {
-        margin: 15% 0% 0% 15%; }
+        margin: 17vw 0 0 15vw; }
         .island-wrapper .island-center .island-title img {
           width: auto;
-          max-width: 150px; }
+          max-height: 14vw; }
     .island-wrapper .island-title {
       -webkit-transform: translateZ(100px);
               transform: translateZ(100px);
@@ -1322,7 +1355,7 @@
       -webkit-clip-path: none;
               clip-path: none; }
       .island-wrapper .island-title img {
-        max-height: 110px; }
+        max-height: 10vw; }
       .island-wrapper .island-title:hover {
         opacity: 0.9; }
     .island-wrapper .island-left {
@@ -1330,17 +1363,25 @@
           -ms-flex-pack: start;
               justify-content: flex-start; }
       .island-wrapper .island-left .island-title {
-        margin: 25% 0% 0% 15%; }
+        margin: 30vw 0 0 20vw; }
     .island-wrapper .island-right {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
       .island-wrapper .island-right .island-title {
-        margin: 25% 15% 0% 0%; }
-    .island-wrapper .island#safety .island-title {
-      margin: 25% 0% 0% 50%; }
-    .island-wrapper .island#contact .island-title {
-      margin: 25% 50% 0% 0%; }
+        margin: 30vw 20vw 0 0; }
+    .island-wrapper .island#safety {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .island-wrapper .island#safety .island-title {
+        margin: 30vw 0 0 6vw; }
+    .island-wrapper .island#contact {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .island-wrapper .island#contact .island-title {
+        margin: 30vw 4vw 0 0; }
     .island-wrapper .island-nav--left, .island-wrapper .island-nav--right {
       position: absolute;
       z-index: 99;

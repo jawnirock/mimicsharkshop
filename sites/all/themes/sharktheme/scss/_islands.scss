@@ -1,5 +1,5 @@
 .island-wrapper {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -9,13 +9,14 @@
 	transition: transform 1.5ms ease-in-out;
 	transform: translateY(0);
 	z-index: 150;
-	
+
 	&[data-level="1"] {
 		transform: translateY(0);
 	}	
 	
 	&[data-level="2"] {
-		animation: diveDownLevelTwo 1.3s both ease-in;
+		animation: diveDownLevelTwo 2.5s both ease-in;
+		animation-delay: 0.3s;
 
 	}
 	
@@ -33,7 +34,7 @@
 	}
 
 	.island {
-		min-height: 100%;
+		height: 100%;
 		width: 100%;
 		position: absolute;
 		top: 0;
@@ -96,10 +97,10 @@
 		&-center {
 			text-align: center;
 			.island-title {
-                margin: 15% 0% 0% 15%;
+                margin: 17vw 0 0 15vw;
 			    img {
 			    	width: auto;
-			    	max-width: 150px;
+			    	max-height: 14vw;
 			    }
 			 }
 		}
@@ -113,7 +114,7 @@
 			clip-path: none;
     
 		    img {
-		    	max-height: 110px;
+			    max-height: 10vw;
 		    }
 		    &:hover {
 		    	opacity: 0.9;
@@ -124,26 +125,28 @@
 		&-left {
 	    	justify-content: flex-start;		
 			.island-title {
-				margin: 25% 0% 0% 15%;
+				margin: 30vw 0 0 20vw;
 			}
 		}
 		
 		&-right {
 	    	justify-content: flex-end;		
 			.island-title {
-				margin: 25% 15% 0% 0%;
+				margin: 30vw 20vw 0 0;
 			}
 		}
 
 		&#safety {
+			justify-content: center;
 			.island-title {
-		    	margin: 25% 0% 0% 50%;
+		    	margin: 30vw 0 0 6vw;
 			}
 		}
 
 		&#contact {
+			justify-content: center;
 			.island-title {
-		    	margin: 25% 50% 0% 0%;
+		    	margin: 30vw 4vw 0 0;
 			}
 		}
 		

@@ -87,6 +87,29 @@
 </div>
 
 
+<div class="diveWrapper wavedive">
+  <div class="output">
+      <canvas id="videoscreen">
+          <p>Sorry your browser does not support HTML5</p>
+      </canvas>
+  </div>
+  <div class="source" style="display: none;">
+      <video style="" muted id="videodata" class="diveVideo" preload="auto" width="320" height="180">
+          <source src="/sites/all/themes/sharktheme/images/header.mp4" type="video/mp4">
+      </video>  
+  </div>
+</div>
+<div class="diveWrapper turndiveOne">
+  <video style="" muted class="turndiveOneVideo diveVideo" preload="auto" width="320" height="180">
+      <source src="/sites/all/themes/sharktheme/images/Buy.mp4" type="video/mp4">
+  </video>  
+</div>
+<div class="diveWrapper turndiveTwo">
+  <video style="" muted class="turndiveTwoVideo diveVideo" preload="auto" width="320" height="180">
+      <source src="/sites/all/themes/sharktheme/images/Disclaimer.mp4" type="video/mp4">
+  </video>  
+</div>
+
 
 
 <div class="island-wrapper" data-state="cube" data-level="1">
@@ -209,7 +232,7 @@
       </div>
     </aside>
   </section>
-  
+
   <section id="luke" class="island island-center">
     <nav class="island-nav">
       <span class="island-nav--left"></span>
@@ -220,7 +243,6 @@
     </div>
     <aside class="island-dive island-dive--visible">
       <div class="island-dive-transition">
-        
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-sitemap">

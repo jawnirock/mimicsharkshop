@@ -279,23 +279,25 @@
 
 	100% {
 		animation-timing-function: ease-out;
-		transform: translateY(-200%);
+		// NEW MECHANICHAL HEADER TEST
+		//transform: translateY(-200%);
+		transform: translateY(-100%);
 	}
 }
 
 @keyframes diveDownLevelThree {
 	0% {
-		transform: translateY(-200%);
+		transform: translateY(-100%);
 	}
 
 	100% {
 		animation-timing-function: ease-out;
-		transform: translateY(-300%);
+		transform: translateY(-200%);
 	}
 }
 @keyframes diveUpLevelTwo {
 	0% {
-		transform: translateY(-200%);
+		transform: translateY(-100%);
 	}
 
 	100% {
@@ -306,12 +308,12 @@
 
 @keyframes diveUpLevelThree {
 	0% {
-		transform: translateY(-300%);
+		transform: translateY(-200%);
 	}
 
 	100% {
 		animation-timing-function: ease-out;
-		transform: translateY(-200%);
+		transform: translateY(-100%);
 	}
 }
 

@@ -2,7 +2,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../images/bg/luke/underluke.png');
+    background-image: url('../images/bg/luke/01_BOTTOM_HOME.jpg');
     height: 100%;
     width: 100%;
     display: flex;
@@ -16,15 +16,19 @@
       position: relative;
       margin: 0 auto 40px;
       perspective: 1100px;
+      margin-left: 300px;
     }
 
     .sitemap {
-      width: 100%;
-      height: 100%;
-      position: absolute;
+        width: 100%;
+        height: 100%;
+        position: absolute;
         transform: translateZ( -320px );
         transition: transform 1s;
         transform-style: preserve-3d;
+        perspective: 1100px;
+          -webkit-perspective: initial;
+          -moz-perspective: initial;
         
         &-nav {
             position: absolute;
@@ -54,8 +58,15 @@
           font-weight: bold;
           color: white;
           text-align: center;
+          perspective: 1100px;
+          -webkit-perspective: initial;
+          -moz-perspective: initial;
 
           &-item {
+           perspective: 1100px;
+          -webkit-perspective: initial;
+          -moz-perspective: initial;
+
             margin-top: 5px;
             overflow: hidden;
             position: relative;

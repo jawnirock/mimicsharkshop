@@ -4,6 +4,95 @@
 
 function animationOut(i){}
 function animationIn(i){}
+
+
+
+
+function draw() {
+    if (window.requestAnimationFrame) window.requestAnimationFrame(draw);
+    // IE implementation
+    else if (window.msRequestAnimationFrame) window.msRequestAnimationFrame(draw);
+    // Firefox implementation
+    else if (window.mozRequestAnimationFrame) window.mozRequestAnimationFrame(draw);
+    // Chrome implementation
+    else if (window.webkitRequestAnimationFrame) window.webkitRequestAnimationFrame(draw);
+    // Other browsers that do not yet support feature
+    else setTimeout(draw, 16.7);
+    DrawVideoOnCanvas();
+}
+function DrawVideoOnCanvas() {
+    var object = document.getElementById("videodata")
+    var width = object.width;
+    var height = object.height;
+    var canvas = document.getElementById("videoscreen");
+    canvas.setAttribute('width', width);
+    canvas.setAttribute('height', height);
+    if (canvas.getContext) {
+        var context = canvas.getContext('2d');
+        context.drawImage(object, 0, 0, width, height);
+        var imgDataNormal = context.getImageData(0, 0, width, height);
+        var imgData = context.createImageData(width, height);
+
+        for (i = 0; i < imgData.width * imgData.height * 4; i += 4) {
+            var r = imgDataNormal.data[i + 0];
+            var g = imgDataNormal.data[i + 1];
+            var b = imgDataNormal.data[i + 2];
+            var a = imgDataNormal.data[i + 3];
+            // set rgb levels for green and set alphachannel to 0;
+            selectedR = 110;
+            selectedG = 154;
+            selectedB = 90;
+            if (r <= selectedR && g >= selectedG && b >= selectedB) {
+                a = 0;
+            }
+            if (a != 0) {
+                imgData.data[i + 0] = r;
+                imgData.data[i + 1] = g;
+                imgData.data[i + 2] = b;
+                imgData.data[i + 3] = a;
+            }
+        }
+        // For image anti-aliasing
+        for (var y = 0; y < imgData.height; y++) {
+            for (var x = 0; x < imgData.width; x++) {
+                var r = imgData.data[((imgData.width * y) + x) * 4];
+                var g = imgData.data[((imgData.width * y) + x) * 4 + 1];
+                var b = imgData.data[((imgData.width * y) + x) * 4 + 2];
+                var a = imgData.data[((imgData.width * y) + x) * 4 + 3];
+                if (imgData.data[((imgData.width * y) + x) * 4 + 3] != 0) {
+                    offsetYup = y - 1;
+                    offsetYdown = y + 1;
+                    offsetXleft = x - 1;
+                    offsetxRight = x + 1;
+                    var change = false;
+                    if (offsetYup > 0) {
+                        if (imgData.data[((imgData.width * (y - 1)) + (x)) * 4 + 3] == 0) {
+                            change = true;
+                        }
+                    }
+                    if (offsetYdown < imgData.height) {
+                        if (imgData.data[((imgData.width * (y + 1)) + (x)) * 4 + 3] == 0) {
+                            change = true;
+                        }
+                    }
+                    if (offsetXleft > -1) {
+                        if (imgData.data[((imgData.width * y) + (x - 1)) * 4 + 3] == 0) {
+                            change = true;
+                        }
+                    }
+                    if (offsetxRight < imgData.width) {
+                        if (imgData.data[((imgData.width * y) + (x + 1)) * 4 + 3] == 0) {
+                            change = true;
+                        }
+                    }
+                }
+            }
+        }
+        context.putImageData(imgData, 0, 0);
+    }
+}
+
+
 var setVanuatuTime = function(){
 	d = new Date();
 	hours = d.getHours();
@@ -165,10 +254,12 @@ var checkoutLabels = function() {
 	//second step
 	$(".customer_profile_billing .panel-title").text("Billing info");
 	$(".customer_profile_shipping .panel-title").text("Shipping info");
+	$(".form-item-account-login-mail input").attr("placeholder", "email");
+	$(".form-item-account-login-mail input").attr("placeholder", "email");
 	//third step
 	$(".checkout-review .pane-title:nth-child(1) td").text("email");
-	$(".checkout-review .pane-title:nth-child(2) td").text("Billing info");
-	$(".checkout-review .pane-title:nth-child(3) td").text("Shipping info");
+	$(".checkout-review .pane-title:nth-child(3) td").text("Billing info");
+	$(".checkout-review .pane-title:nth-child(5) td").text("Shipping info");
 	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>")
 	$(".thirdStep .checkout-continue").html("<div class='checkout-paypal'></div>");
 }
@@ -276,6 +367,9 @@ $(document).ready(function() {
 
 	mobileResponse();
 	siteMapCarouel();
+	
+	
+	draw();
 
 
 	$("#block-commerce-cap-cap").addClass("firstStep");
@@ -372,9 +466,12 @@ $(document).ready(function() {
 		onGoing = true;
 		var singleLevels = [1,2,3,4,5,6,9,10,11];
 		var doubleLevels = [7,8];
+		var wavedive = [1,2,3,4,5,6,7,8,11];
+		var turndiveone = [9];
+		var turndivetwo = [10];
 
 		if (direction == 'up') {
-			if (Number(level) >= 2 && doubleLevels.indexOf(current) !== -1) {
+			if (Number(level) >= 1 && doubleLevels.indexOf(current) !== -1) {
 				 level = level - 1;
 				 $(".island-wrapper").addClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
@@ -383,7 +480,7 @@ $(document).ready(function() {
 						$(".island-dive").hide();
 					}, 1500)
 				 }
-			} else if (Number(level) >= 2 && singleLevels.indexOf(current) !== -1) {
+			} else if (Number(level) >= 1 && singleLevels.indexOf(current) !== -1) {
 				 level = 1;
 				 $(".island-wrapper").addClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
@@ -394,6 +491,20 @@ $(document).ready(function() {
 				 }
 			}
 		} else {
+			// animaçao com mergulho
+			if (Number(level) == 1 && wavedive.indexOf(current) !== -1) {
+				$(".wavedive").addClass("visible");
+				$('#videodata')[0].play();
+			}
+			if (Number(level) == 1 && turndiveone.indexOf(current) !== -1) {
+				$(".turndiveOne").addClass("visible");
+				$('.turndiveOneVideo')[0].play();
+			}
+			if (Number(level) == 1 && turndivetwo.indexOf(current) !== -1) {
+				$(".turndiveTwo").addClass("visible");
+				$('.turndiveTwoVideo')[0].play();
+			}
+
 			// se forem secoes de 1 nivel so desce 1 vez
 			if (Number(level) == 1 && singleLevels.indexOf(current) !== -1){
 				 level = level + 1;
@@ -401,7 +512,7 @@ $(document).ready(function() {
 				 $(".island-wrapper").attr("data-level", level);
 				 $(".island-dive").show();
 			}
-			// se forem secoes de 1 nivel so desce 1 vez
+			// se forem secoes de 2 niveis desce 2
 			else if (Number(level) <= 2 && doubleLevels.indexOf(current) !== -1){
 				 level = level + 1;
 				 $(".island-wrapper").removeClass("goinUp")
@@ -411,7 +522,14 @@ $(document).ready(function() {
 		}
 		setTimeout(function() {
 			onGoing = false;
-		}, 1500)
+			$(".diveWrapper").removeClass("visible");
+			$('#videodata')[0].pause(); 
+			$('#videodata')[0].currentTime = 0;
+			$(".turndiveOneVideo")[0].pause(); 
+			$(".turndiveOneVideo")[0].currentTime = 0;
+			$(".turndiveTwoVideo")[0].pause(); 
+			$(".turndiveTwoVideo")[0].currentTime = 0;
+		}, 4300)
 		
 	}
 
@@ -475,7 +593,7 @@ $(document).ready(function() {
 
 	shopFunctions();
 
-	hoverRipples();
+	// hoverRipples();
 
 	
 });
