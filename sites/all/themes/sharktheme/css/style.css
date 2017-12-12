@@ -481,19 +481,19 @@
     font-size: 18px; }
 
 #safety .island-dive-content-text {
-  background-image: url("../images/bg/texts/safety.png"); }
+  background-image: url("../images/bg/texts/safety.jpg"); }
 
 #eco .island-dive-content-text {
-  background-image: url("../images/bg/texts/eco.png"); }
+  background-image: url("../images/bg/texts/eco.jpg"); }
 
 #habitat .island-dive-content-text {
-  background-image: url("../images/bg/texts/habitat.png"); }
+  background-image: url("../images/bg/texts/habitat.jpg"); }
 
 #roots .island-dive-content-text {
-  background-image: url("../images/bg/texts/roots.png"); }
+  background-image: url("../images/bg/texts/roots.jpg"); }
 
 #about .island-dive-content-text {
-  background-image: url("../images/bg/texts/about.png"); }
+  background-image: url("../images/bg/texts/about.jpg"); }
 
 @-webkit-keyframes toSecond {
   from {
@@ -623,12 +623,12 @@
     background-size: 120px;
     background-position: right 62%;
     right: 0;
-    background-image: url(../images/bg/checkout/lukewalk.gif);
+    background-image: url(../images/bg/checkout/luke_new.gif);
     background-repeat: no-repeat;
     -webkit-transform: translateX(-35px) translateY(0px);
             transform: translateX(-35px) translateY(0px);
-    -webkit-animation: lukeFirst 8s infinite forwards;
-            animation: lukeFirst 8s infinite forwards;
+    -webkit-animation: lukeFirst 8s infinite;
+            animation: lukeFirst 8s infinite;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
   #block-commerce-cap-cap.firstStep.goingBack {
@@ -954,7 +954,7 @@
 .island-dive.island-dive--visible #block-commerce-cap-cap form {
   display: block; }
 
-.diveWrapper {
+.diveVideoWrapper {
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -962,38 +962,38 @@
   height: 100%;
   display: none;
   opacity: 1; }
-  .diveWrapper.visible {
-    display: block;
+  .diveVideoWrapper.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
     -webkit-animation: headerFadout 4.4s ease-in;
             animation: headerFadout 4.4s ease-in; }
-  .diveWrapper .output {
-    width: 100%;
-    height: 100%; }
-    .diveWrapper .output canvas {
-      width: 100%;
-      height: 100%; }
-  .diveWrapper video {
+  .diveVideoWrapper .diveVideo {
     width: 100%;
     height: auto; }
 
 @-webkit-keyframes headerFadout {
-  65% {
+  0 {
+    opacity: 0; }
+  4% {
     opacity: 1; }
-  75% {
-    opacity: 0.3; }
-  90% {
-    opacity: 0.1; }
-  98% {
+  82% {
+    opacity: 1; }
+  100% {
     opacity: 0; } }
 
 @keyframes headerFadout {
-  65% {
+  0 {
+    opacity: 0; }
+  4% {
     opacity: 1; }
-  75% {
-    opacity: 0.3; }
-  90% {
-    opacity: 0.1; }
-  98% {
+  82% {
+    opacity: 1; }
+  100% {
     opacity: 0; } }
 
 .island-dive {
@@ -1060,7 +1060,7 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/bg/luke/01_BOTTOM_HOME.jpg");
+  background-image: url("../images/bg/luke/underluke.jpg");
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1096,7 +1096,9 @@
             transform-style: preserve-3d;
     perspective: 1100px;
     -webkit-perspective: initial;
-    -moz-perspective: initial; }
+    -moz-perspective: initial;
+    -ms-transform-style: none;
+    -ms-transform: none; }
     .island-dive-content-sitemap .sitemap-nav {
       position: absolute;
       z-index: 9999;
@@ -1274,16 +1276,18 @@
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   .island-wrapper[data-level="2"] {
-    -webkit-animation: diveDownLevelTwo 2.5s both ease-in;
-            animation: diveDownLevelTwo 2.5s both ease-in;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
+    -webkit-animation: diveDownLevelTwo 0.3s both ease-in;
+            animation: diveDownLevelTwo 0.3s both ease-in;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
   .island-wrapper[data-level="3"] {
     -webkit-animation: diveDownLevelThree 1.3s both ease-in;
             animation: diveDownLevelThree 1.3s both ease-in; }
   .island-wrapper[data-level="1"].goinUp {
-    -webkit-animation: diveUpLevelTwo 1.3s both ease-in;
-            animation: diveUpLevelTwo 1.3s both ease-in; }
+    -webkit-animation: diveUpLevelTwo 0.3s both ease-in;
+            animation: diveUpLevelTwo 0.3s both ease-in;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
   .island-wrapper[data-level="2"].goinUp {
     -webkit-animation: diveUpLevelThree 1.3s both ease-in;
             animation: diveUpLevelThree 1.3s both ease-in; }
@@ -1315,27 +1319,27 @@
         -ms-flex-pack: center;
             justify-content: center; }
     .island-wrapper .island:nth-child(1) {
-      background-image: url("../images/bg/islands/01.jpg"); }
+      background-image: url("../images/bg/islands/L5.jpg"); }
     .island-wrapper .island:nth-child(2) {
-      background-image: url("../images/bg/islands/02.jpg"); }
+      background-image: url("../images/bg/islands/L4.jpg"); }
     .island-wrapper .island:nth-child(3) {
-      background-image: url("../images/bg/islands/03.jpg"); }
+      background-image: url("../images/bg/islands/L3.jpg"); }
     .island-wrapper .island:nth-child(4) {
-      background-image: url("../images/bg/islands/04.jpg"); }
+      background-image: url("../images/bg/islands/L2.jpg"); }
     .island-wrapper .island:nth-child(5) {
-      background-image: url("../images/bg/islands/05.jpg"); }
+      background-image: url("../images/bg/islands/L1.jpg"); }
     .island-wrapper .island:nth-child(6) {
-      background-image: url("../images/bg/islands/06.jpg"); }
+      background-image: url("../images/bg/islands/00.jpg"); }
     .island-wrapper .island:nth-child(7) {
-      background-image: url("../images/bg/islands/07.jpg"); }
+      background-image: url("../images/bg/islands/R1.jpg"); }
     .island-wrapper .island:nth-child(8) {
-      background-image: url("../images/bg/islands/08.jpg"); }
+      background-image: url("../images/bg/islands/R2.jpg"); }
     .island-wrapper .island:nth-child(9) {
-      background-image: url("../images/bg/islands/09.jpg"); }
+      background-image: url("../images/bg/islands/R3.jpg"); }
     .island-wrapper .island:nth-child(10) {
-      background-image: url("../images/bg/islands/10.jpg"); }
+      background-image: url("../images/bg/islands/R4.jpg"); }
     .island-wrapper .island:nth-child(11) {
-      background-image: url("../images/bg/islands/11.jpg"); }
+      background-image: url("../images/bg/islands/R5.jpg"); }
     .island-wrapper .island-visible {
       visibility: visible !important; }
     .island-wrapper .island-center {

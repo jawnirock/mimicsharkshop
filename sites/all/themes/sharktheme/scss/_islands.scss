@@ -15,8 +15,8 @@
 	}	
 	
 	&[data-level="2"] {
-		animation: diveDownLevelTwo 2.5s both ease-in;
-		animation-delay: 0.3s;
+		animation: diveDownLevelTwo 0.3s both ease-in;
+		animation-delay: 1s;
 
 	}
 	
@@ -25,8 +25,8 @@
 	}
 	
 	&[data-level="1"].goinUp {
-		animation: diveUpLevelTwo 1.3s both ease-in;
-
+		animation: diveUpLevelTwo 0.3s both ease-in;
+		animation-delay: 1s;
 	}
 	
 	&[data-level="2"].goinUp {
@@ -55,37 +55,37 @@
 	    // BACKGROUNDS
 
 		&:nth-child(1) {
-	    	background-image: url('../images/bg/islands/01.jpg');
+	    	background-image: url('../images/bg/islands/L5.jpg');
 		}
 		&:nth-child(2) {
-	    	background-image: url('../images/bg/islands/02.jpg');
+	    	background-image: url('../images/bg/islands/L4.jpg');
 		}
 		&:nth-child(3) {
-	    	background-image: url('../images/bg/islands/03.jpg');
+	    	background-image: url('../images/bg/islands/L3.jpg');
 		}
 		&:nth-child(4) {
-	    	background-image: url('../images/bg/islands/04.jpg');
+	    	background-image: url('../images/bg/islands/L2.jpg');
 		}
 		&:nth-child(5) {
-	    	background-image: url('../images/bg/islands/05.jpg');
+	    	background-image: url('../images/bg/islands/L1.jpg');
 		}
 		&:nth-child(6) {
-	    	background-image: url('../images/bg/islands/06.jpg');
+	    	background-image: url('../images/bg/islands/00.jpg');
 		}
 		&:nth-child(7) {
-	    	background-image: url('../images/bg/islands/07.jpg');
+	    	background-image: url('../images/bg/islands/R1.jpg');
 		}
 		&:nth-child(8) {
-	    	background-image: url('../images/bg/islands/08.jpg');
+	    	background-image: url('../images/bg/islands/R2.jpg');
 		}
 		&:nth-child(9) {
-	    	background-image: url('../images/bg/islands/09.jpg');
+	    	background-image: url('../images/bg/islands/R3.jpg');
 		}
 		&:nth-child(10) {
-	    	background-image: url('../images/bg/islands/10.jpg');
+	    	background-image: url('../images/bg/islands/R4.jpg');
 		}
 		&:nth-child(11) {
-	    	background-image: url('../images/bg/islands/11.jpg');
+	    	background-image: url('../images/bg/islands/R5.jpg');
 		}	
 		&-visible{
 			visibility: visible !important;

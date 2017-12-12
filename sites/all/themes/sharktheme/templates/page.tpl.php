@@ -83,33 +83,81 @@
   <span>For the full experience
     <br><button>Go fullscreen</button>
   </span>
+</div>
+
+
+<div class="diveVideos">
+  <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L5.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L5rev.mp4" type="video/mp4">
+    </video>  
+  </aside>
+  <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L4.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L4rev.mp4" type="video/mp4">
+    </video>  
+  </aside>
+  <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L3.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L3rev.mp4" type="video/mp4">
+    </video>  
+  </aside>
+  <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L2.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L2rev.mp4" type="video/mp4">
+    </video>  
+  </aside>
+
+  <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L1.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/L1rev.mp4" type="video/mp4">
+    </video>  
+  </aside>
+
   
-</div>
-
-
-<div class="diveWrapper wavedive">
-  <div class="output">
-      <canvas id="videoscreen">
-          <p>Sorry your browser does not support HTML5</p>
-      </canvas>
+  <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/00.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/00rev.mp4" type="video/mp4">
+    </video>  
+  </aside>
+  
+  <aside class="diveVideoWrapper">
+  </aside>
+  
+  <aside class="diveVideoWrapper">
+  </aside>
+  
+  <div class="diveVideoWrapper">
+    <video style="" muted playsinline class="goinDown diveVideo" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/Buy.mp4" type="video/mp4">
+    </video>  
   </div>
-  <div class="source" style="display: none;">
-      <video style="" muted id="videodata" class="diveVideo" preload="auto" width="320" height="180">
-          <source src="/sites/all/themes/sharktheme/images/header.mp4" type="video/mp4">
-      </video>  
+  <div class="diveVideoWrapper">
+    <video style="" muted playsinline class="goinDown diveVideo" preload="auto" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/Disclaimer.mp4" type="video/mp4">
+    </video>  
   </div>
+  <aside class="diveVideoWrapper">
+  </aside>
 </div>
-<div class="diveWrapper turndiveOne">
-  <video style="" muted class="turndiveOneVideo diveVideo" preload="auto" width="320" height="180">
-      <source src="/sites/all/themes/sharktheme/images/Buy.mp4" type="video/mp4">
-  </video>  
-</div>
-<div class="diveWrapper turndiveTwo">
-  <video style="" muted class="turndiveTwoVideo diveVideo" preload="auto" width="320" height="180">
-      <source src="/sites/all/themes/sharktheme/images/Disclaimer.mp4" type="video/mp4">
-  </video>  
-</div>
-
 
 
 <div class="island-wrapper" data-state="cube" data-level="1">
@@ -232,6 +280,8 @@
       </div>
     </aside>
   </section>
+
+
 
   <section id="luke" class="island island-center">
     <nav class="island-nav">

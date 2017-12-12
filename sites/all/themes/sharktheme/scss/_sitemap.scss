@@ -2,7 +2,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../images/bg/luke/01_BOTTOM_HOME.jpg');
+    background-image: url('../images/bg/luke/underluke.jpg');
     height: 100%;
     width: 100%;
     display: flex;
@@ -27,8 +27,10 @@
         transition: transform 1s;
         transform-style: preserve-3d;
         perspective: 1100px;
-          -webkit-perspective: initial;
-          -moz-perspective: initial;
+        -webkit-perspective: initial;
+        -moz-perspective: initial;
+        -ms-transform-style: none;
+        -ms-transform: none;
         
         &-nav {
             position: absolute;
