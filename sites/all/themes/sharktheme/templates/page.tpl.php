@@ -337,7 +337,7 @@
                   <img src="/sites/all/themes/sharktheme/images/bg/islands/R4.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/disclaimer.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/disclaimer.png">
                 </figure>
               </div>
               <div class="sitemap-panel">
