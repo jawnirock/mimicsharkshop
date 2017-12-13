@@ -303,7 +303,7 @@
             <div id="sitemap" class="sitemap">
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/07.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/R1.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/products/women.jpg">
@@ -314,7 +314,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/08.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/R2.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/shop/women.png">
@@ -326,7 +326,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/09.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/R3.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.png">
@@ -334,7 +334,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/10.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/R4.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/disclaimer.png">
@@ -342,7 +342,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/11.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/R5.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/contact/contact.jpg">
@@ -350,7 +350,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/01.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/L5.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/texts/safety.png">
@@ -358,7 +358,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/02.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/L4.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/texts/eco.png">
@@ -366,7 +366,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/03.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/L3.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/texts/habitat.png">
@@ -374,7 +374,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/04.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/L2.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/texts/roots.png">
@@ -382,7 +382,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/05.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/L1.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/texts/about.png">
@@ -390,7 +390,7 @@
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/islands/06.jpg">
+                  <img src="/sites/all/themes/sharktheme/images/bg/islands/00.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
                   <img src="/sites/all/themes/sharktheme/images/bg/luke/underluke.png">
@@ -486,7 +486,6 @@
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men1.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men2.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men3.jpg">
-              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men4.jpg">
             </div>
         </div>        
       </div>

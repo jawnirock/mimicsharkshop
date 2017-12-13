@@ -26,6 +26,7 @@ regions[page_bottom]    = 'Page bottom'
 
 stylesheets[all][] = css/style.css
 scripts[] = scripts/wheel-indicator.js
+scripts[] = scripts/jquery.kyco.preloader.min.js
 scripts[] = scripts/mousewheel.js
 scripts[] = scripts/jquery.touchSwipe.js
 scripts[] = scripts/scrollTo.js
