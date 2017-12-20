@@ -4,3 +4,8 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+# Ignore heavy images.
+sites/all/themes/sharktheme/images/bg
+sites/all/themes/sharktheme/images/headers
+
