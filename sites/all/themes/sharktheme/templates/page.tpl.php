@@ -146,14 +146,8 @@
   </aside>
   
   <div class="diveVideoWrapper">
-    <video style="" muted playsinline class="goinDown diveVideo" preload="auto" width="320" height="180">
-        <source src="/sites/all/themes/sharktheme/images/Buy.mp4" type="video/mp4">
-    </video>  
   </div>
   <div class="diveVideoWrapper">
-    <video style="" muted playsinline class="goinDown diveVideo" preload="auto" width="320" height="180">
-        <source src="/sites/all/themes/sharktheme/images/Disclaimer.mp4" type="video/mp4">
-    </video>  
   </div>
   <aside class="diveVideoWrapper">
   </aside>
