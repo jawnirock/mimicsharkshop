@@ -346,7 +346,7 @@ var siteMapCarouel = function() {
 
 $(document).ready(function() {
 
-	$('body').kycoPreload();
+  // $('body').kycoPreload();
 
 	mobileResponse();
 	siteMapCarouel();
