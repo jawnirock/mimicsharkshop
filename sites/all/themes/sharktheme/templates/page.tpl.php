@@ -145,6 +145,8 @@
   <aside class="diveVideoWrapper">
     <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Shop.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Shoprev.mp4" type="video/mp4">
     </video>  
   </aside>
@@ -152,6 +154,8 @@
   <aside class="diveVideoWrapper">
     <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Buy.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Buyrev.mp4" type="video/mp4">
     </video>  
   </aside>
@@ -159,6 +163,8 @@
   <aside class="diveVideoWrapper">
     <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Disclaimer.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Disclaimerrev.mp4" type="video/mp4">
     </video>  
   </aside>
