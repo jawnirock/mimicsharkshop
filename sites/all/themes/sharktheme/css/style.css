@@ -567,10 +567,32 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 10px; }
+  .island-dive-content-text-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-perspective: 50vw;
+            perspective: 50vw;
+    -webkit-perspective-origin: center 50vw;
+            perspective-origin: center 50vw;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
   .island-dive-content-text-block {
-    max-width: 800px;
-    opacity: 0.7;
-    font-size: 18px; }
+    height: 80vh;
+    width: 50vw;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-color: red;
+    background-size: 50vw;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lorem_ipsum_flush_justified.svg/2000px-Lorem_ipsum_flush_justified.svg.png"); }
+    .island-dive-content-text-block--left {
+      background-position-x: -25vw;
+      -webkit-transform: translate(10px) rotateY(15deg);
+              transform: translate(10px) rotateY(15deg); }
+    .island-dive-content-text-block--right {
+      background-position-x: -25vw;
+      -webkit-transform: translate(-10px) rotateY(-15deg);
+              transform: translate(-10px) rotateY(-15deg); }
 
 #safety .island-dive-content-text {
   background-image: url("../images/bg/texts/safety.jpg"); }
@@ -1345,7 +1367,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/bg/disclaimer/disclaimer.png");
+  background-image: url("../images/bg/disclaimer/disclaimer.jpg");
   height: 100%;
   width: 100%; }
 

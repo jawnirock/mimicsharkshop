@@ -284,8 +284,9 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
-          <div class="island-dive-content-text-block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="island-dive-content-text-blocks">
+              <div class="island-dive-content-text-block island-dive-content-text-block--left"></div>
+              <div class="island-dive-content-text-block island-dive-content-text-block--right"></div>
           </div>
             <span class="island-dive-nav island-dive-nav--up" ></span>
             <span class="island-dive-nav island-dive-nav--left" ></span>
@@ -351,7 +352,7 @@
                   <img src="/sites/all/themes/sharktheme/images/bg/islands/R4.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/disclaimer.png">
+                  <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/disclaimer.jpg">
                 </figure>
               </div>
               <div class="sitemap-panel">
