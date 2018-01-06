@@ -17,22 +17,35 @@
     }
     &-block {
         height: 80vh;
-        width: 50vw;
+        width: 20vw;
         background-position-y: 0;
         background-repeat: no-repeat;
-        background-color: red;
-        background-size: 50vw;
-        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lorem_ipsum_flush_justified.svg/2000px-Lorem_ipsum_flush_justified.svg.png');
-    
-        &--left {
-            background-position-x: -25vw;
-            transform: translate(10px) rotateY(15deg);
+        background-size: 64vw;
+        background-image: url('../images/text-test.png');        
+        
+        &:nth-child(1) {
+            transform: translateZ(6.9vw) translateX(1vw) rotateY(20deg);
+            background-position-x: 18vw;
         }
-        &--right {
-            background-position-x: -25vw;
-            transform: translate(-10px) rotateY(-15deg);
+        &:nth-child(2) {
+            transform: translateZ(1.8vw) translatex(0.2vw) rotateY(10deg);
+            background-position-x: -2vw;
+            
+        }
+        &:nth-child(3) {
+            background-position-x: -22vw;
+        }
+        &:nth-child(4) {
+            transform: translateZ(1.8vw) translatex(-0.2vw) rotateY(-10deg);
+            background-position-x: -42vw;
+        }
+        &:nth-child(5) {
+            transform: translateZ(6.9vw) translateX(-1vw) rotateY(-20deg);
+            background-position-x: -62vw;
         }
     }
+
+    
 }
 
 #safety .island-dive-content-text {

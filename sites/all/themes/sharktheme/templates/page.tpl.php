@@ -285,8 +285,11 @@
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
-              <div class="island-dive-content-text-block island-dive-content-text-block--left"></div>
-              <div class="island-dive-content-text-block island-dive-content-text-block--right"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
           </div>
             <span class="island-dive-nav island-dive-nav--up" ></span>
             <span class="island-dive-nav island-dive-nav--left" ></span>
