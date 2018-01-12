@@ -26,40 +26,47 @@
         
         &:nth-child(1) {
             transform: translateZ(7.2vw) translateX(1.1vw) rotateY(20deg);
+            background-position-x: 18vw;
         }
         &:nth-child(2) {
             transform: translateZ(4.2vw) translatex(0.55vw) rotateY(15deg);
-
+            background-position-x: 8vw;
         }
         &:nth-child(3) {
             transform: translateZ(2vw) translatex(0.2vw) rotateY(10deg);
-
+            background-position-x: -2vw;
         }
         &:nth-child(4) {
             transform: translateZ(0.6vw) translatex(0.1vw) rotateY(5deg);
+            background-position-x: -12vw;
         }
         &:nth-child(5) {
             transform: translateZ(0) translatex(0vw) rotateY(2deg);
-            background-position-x: -2vw;
+            background-position-x: -22vw;
         }
         
         &:nth-child(6) {
             transform: translateZ(0) translatex(0vw) rotateY(-2deg);
-        }
+             background-position-x: -32vw;
+       }
 
         &:nth-child(7) {
             transform: translateZ(0.6vw) translatex(-0.1vw) rotateY(-5deg);
+            background-position-x: -42vw;
         }
 
         &:nth-child(8) {
             transform: translateZ(2vw) translatex(-0.3vw) rotateY(-10deg);
+            background-position-x: -52vw;
         }
         
         &:nth-child(9) {
             transform: translateZ(4.2vw) translatex(-0.55vw) rotateY(-15deg);
+            background-position-x: -62vw;
         }
         &:nth-child(10) {
             transform: translateZ(7.2vw) translateX(-1.1vw) rotateY(-20deg);
+            background-position-x: -72vw;
         }
     }
 
