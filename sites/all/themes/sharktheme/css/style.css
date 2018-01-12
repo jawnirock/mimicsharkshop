@@ -579,29 +579,42 @@
             transform-style: preserve-3d; }
   .island-dive-content-text-block {
     height: 80vh;
-    width: 20vw;
+    width: 10vw;
     background-position-y: 0;
     background-repeat: no-repeat;
     background-size: 64vw;
     background-image: url("../images/text-test.png"); }
     .island-dive-content-text-block:nth-child(1) {
-      -webkit-transform: translateZ(6.9vw) translateX(1vw) rotateY(20deg);
-              transform: translateZ(6.9vw) translateX(1vw) rotateY(20deg);
-      background-position-x: 18vw; }
+      -webkit-transform: translateZ(7.2vw) translateX(1.1vw) rotateY(20deg);
+              transform: translateZ(7.2vw) translateX(1.1vw) rotateY(20deg); }
     .island-dive-content-text-block:nth-child(2) {
-      -webkit-transform: translateZ(1.8vw) translatex(0.2vw) rotateY(10deg);
-              transform: translateZ(1.8vw) translatex(0.2vw) rotateY(10deg);
-      background-position-x: -2vw; }
+      -webkit-transform: translateZ(4.2vw) translatex(0.55vw) rotateY(15deg);
+              transform: translateZ(4.2vw) translatex(0.55vw) rotateY(15deg); }
     .island-dive-content-text-block:nth-child(3) {
-      background-position-x: -22vw; }
+      -webkit-transform: translateZ(2vw) translatex(0.2vw) rotateY(10deg);
+              transform: translateZ(2vw) translatex(0.2vw) rotateY(10deg); }
     .island-dive-content-text-block:nth-child(4) {
-      -webkit-transform: translateZ(1.8vw) translatex(-0.2vw) rotateY(-10deg);
-              transform: translateZ(1.8vw) translatex(-0.2vw) rotateY(-10deg);
-      background-position-x: -42vw; }
+      -webkit-transform: translateZ(0.6vw) translatex(0.1vw) rotateY(5deg);
+              transform: translateZ(0.6vw) translatex(0.1vw) rotateY(5deg); }
     .island-dive-content-text-block:nth-child(5) {
-      -webkit-transform: translateZ(6.9vw) translateX(-1vw) rotateY(-20deg);
-              transform: translateZ(6.9vw) translateX(-1vw) rotateY(-20deg);
-      background-position-x: -62vw; }
+      -webkit-transform: translateZ(0) translatex(0vw) rotateY(2deg);
+              transform: translateZ(0) translatex(0vw) rotateY(2deg);
+      background-position-x: -2vw; }
+    .island-dive-content-text-block:nth-child(6) {
+      -webkit-transform: translateZ(0) translatex(0vw) rotateY(-2deg);
+              transform: translateZ(0) translatex(0vw) rotateY(-2deg); }
+    .island-dive-content-text-block:nth-child(7) {
+      -webkit-transform: translateZ(0.6vw) translatex(-0.1vw) rotateY(-5deg);
+              transform: translateZ(0.6vw) translatex(-0.1vw) rotateY(-5deg); }
+    .island-dive-content-text-block:nth-child(8) {
+      -webkit-transform: translateZ(2vw) translatex(-0.3vw) rotateY(-10deg);
+              transform: translateZ(2vw) translatex(-0.3vw) rotateY(-10deg); }
+    .island-dive-content-text-block:nth-child(9) {
+      -webkit-transform: translateZ(4.2vw) translatex(-0.55vw) rotateY(-15deg);
+              transform: translateZ(4.2vw) translatex(-0.55vw) rotateY(-15deg); }
+    .island-dive-content-text-block:nth-child(10) {
+      -webkit-transform: translateZ(7.2vw) translateX(-1.1vw) rotateY(-20deg);
+              transform: translateZ(7.2vw) translateX(-1.1vw) rotateY(-20deg); }
 
 #safety .island-dive-content-text {
   background-image: url("../images/bg/texts/safety.jpg"); }

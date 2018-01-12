@@ -290,6 +290,11 @@
               <div class="island-dive-content-text-block"></div>
               <div class="island-dive-content-text-block"></div>
               <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
+              <div class="island-dive-content-text-block"></div>
           </div>
             <span class="island-dive-nav island-dive-nav--up" ></span>
             <span class="island-dive-nav island-dive-nav--left" ></span>
