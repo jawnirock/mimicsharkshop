@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 200;
 
     &-blocks {
         display: flex;
@@ -22,10 +23,9 @@
     &-block {
         height: 80vh;
         width: 10vw;
-        background-position-y: 0;
+        background-position-y: 30vw;
         background-repeat: no-repeat;
         background-size: 64vw;
-        background-image: url('../images/text-test.png');        
         // background-color: red;
         
         &:nth-child(1) {
@@ -92,6 +92,55 @@
 #roots .island-dive-content-text {
     background-image: url('../images/bg/texts/roots.jpg');
 }
-#about .island-dive-content-text {
-    background-image: url('../images/bg/texts/about.jpg');
+#about .island-dive-content {
+     &-text {
+        background-image: url('../images/bg/texts/about.jpg'); 
+        &-block {
+            background-image: url('../images/bg/texts/texts/about.png');        
+        }
+    }
+    &-smokey {
+        background-image: url('../images/bg/texts/smokey/about.png');
+        z-index: 400;
+    }
 }
+
+.island-dive .island-dive-content .underwater-slider-vertical {
+    background-image: url(../images/MS_scroll.svg);
+    background-size: auto 12vh;
+    background-repeat-x: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    width: 40px;
+    border: 0;
+    z-index: 500;
+    position: absolute;
+    right: 20px;
+    height: 60.5vh;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .ui-widget-header {
+        background: transparent;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default {
+        background-image: url(../images/MS_pointer.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 35px;
+        margin-left: 7px;
+        height: 35px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        &:focus {
+          border: none;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+}
+

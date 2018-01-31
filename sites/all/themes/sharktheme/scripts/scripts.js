@@ -1,7 +1,6 @@
 (function($) {
 	
 
-
 function animationOut(i){}
 function animationIn(i){}
 
@@ -258,6 +257,34 @@ var siteMapCarouel = function() {
 
 $(document).ready(function() {
 
+	// prevent pulldown
+	
+	const target = window 
+	let lastY = 0
+	target.addEventListener('touchmove', handleTouchMove)
+	function handleTouchMove(e) {
+	  var { pageY } = e.changedTouches[0]
+	  var scrollY = target.pageYOffset || target.scrollTop || 0
+	  if (pageY > lastY && scrollY === 0) {
+	    e.preventDefault()
+	  }
+	  lastY = pageY;
+	}
+
+
+	// VERTICAL TEXT SLIDER
+    $( ".underwater-slider-vertical" ).slider({
+      orientation: "vertical",
+      range: "min",
+      min: -300,
+      max: 30,
+      value: 30,
+      slide: function( event, ui ) {
+      	var textblock = $(this).parents(".island-dive-content").find(".island-dive-content-text-block");
+      	textblock.css('background-position-y' , (ui.value) + 'vh');
+      	event.stopPropagation();
+      }
+    });
 
 	mobileResponse();
 	siteMapCarouel();

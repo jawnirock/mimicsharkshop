@@ -85,7 +85,6 @@
   </span>
 </div>
 
-
 <div class="diveVideos">
   <aside class="diveVideoWrapper">
     <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
@@ -188,6 +187,7 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-smokey"></div>
+        <div class="underwater-slider-vertical"></div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -222,6 +222,9 @@
         
       </div>
       <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content-smokey"></div>
+        <div class="underwater-slider-vertical"></div>
+
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -256,6 +259,8 @@
         
       </div>
       <div class="island-dive-content island-dive-fixed">
+        <div class="island-dive-content-smokey"></div>
+        <div class="underwater-slider-vertical"></div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -289,6 +294,8 @@
         
       </div>
       <div class="island-dive-content island-dive-fixed">
+        <div class="island-dive-content-smokey"></div>
+        <div class="underwater-slider-vertical"></div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -322,6 +329,10 @@
         
       </div>
       <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content-text-title">
+      </div>
+      <div class="island-dive-content-smokey"></div>
+        <div class="underwater-slider-vertical"></div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
