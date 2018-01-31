@@ -277,8 +277,8 @@ $(document).ready(function() {
       orientation: "vertical",
       range: "min",
       min: -300,
-      max: 30,
-      value: 30,
+      max: 15,
+      value: 15,
       slide: function( event, ui ) {
       	var textblock = $(this).parents(".island-dive-content").find(".island-dive-content-text-block");
       	textblock.css('background-position-y' , (ui.value) + 'vh');
