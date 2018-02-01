@@ -27,8 +27,6 @@
         background-position-y: 15vw;
         background-repeat: no-repeat;
         background-size: 64vw;
-        background-color: red;
-        border: 1px solid white;
 
         &:nth-child(1) {
             transform: translateZ(7.2vw) translateX(1.1vw) rotateY(20deg);
@@ -96,13 +94,13 @@
 }
 #about .island-dive-content {
      &-text {
-        background-image: url('../images/-bg/texts/about.jpg'); 
+        background-image: url('../images/bg/texts/about.jpg'); 
         &-block {
-            background-image: url('../images/-bg/texts/texts/about.png');        
+            background-image: url('../images/bg/texts/texts/about.png');        
         }
     }
     &-smokey {
-        background-image: url('../images/-bg/texts/smokey/about.png');
+        background-image: url('../images/bg/texts/smokey/about.png');
         z-index: 400;
     }
 }

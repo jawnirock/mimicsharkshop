@@ -583,9 +583,7 @@
     width: 10vw;
     background-position-y: 15vw;
     background-repeat: no-repeat;
-    background-size: 64vw;
-    background-color: red;
-    border: 1px solid white; }
+    background-size: 64vw; }
     .island-dive-content-text-block:nth-child(1), .island-dive-content-smokey-block:nth-child(1) {
       -webkit-transform: translateZ(7.2vw) translateX(1.1vw) rotateY(20deg);
               transform: translateZ(7.2vw) translateX(1.1vw) rotateY(20deg);
@@ -643,12 +641,12 @@
   background-image: url("../images/bg/texts/roots.jpg"); }
 
 #about .island-dive-content-text {
-  background-image: url("../images/-bg/texts/about.jpg"); }
+  background-image: url("../images/bg/texts/about.jpg"); }
   #about .island-dive-content-text-block {
-    background-image: url("../images/-bg/texts/texts/about.png"); }
+    background-image: url("../images/bg/texts/texts/about.png"); }
 
 #about .island-dive-content-smokey {
-  background-image: url("../images/-bg/texts/smokey/about.png");
+  background-image: url("../images/bg/texts/smokey/about.png");
   z-index: 400; }
 
 .island-dive .island-dive-content .underwater-slider-vertical {
