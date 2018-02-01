@@ -260,7 +260,7 @@ $(document).ready(function() {
 	// prevent pulldown
 	
 	const target = window 
-	let lastY = 0
+	var lastY = 0
 	target.addEventListener('touchmove', handleTouchMove)
 	function handleTouchMove(e) {
 	  var { pageY } = e.changedTouches[0]
@@ -481,6 +481,15 @@ $(document).ready(function() {
 	});
 
 	// swipe navigation
+
+	$(".underwater-slider-vertical").swipe({
+		swipe: function(event, direction, distance, duration, fingerCount) {
+		 event.stopPropagation();
+		 event.preventDefault();
+		}
+	});
+	
+
 	$(document).swipe({
 		swipe: function(event, direction, distance, duration, fingerCount) {
 
@@ -532,6 +541,9 @@ $(window).resize(function() {
 	mobileResponse();
 });
 
+$(window).load(function() {
+	console.log("loaded!")
+})
 
 })(jQuery);
 

@@ -332,24 +332,24 @@
       <div class="island-dive-content-text-title">
       </div>
       <div class="island-dive-content-smokey"></div>
-        <div class="underwater-slider-vertical"></div>
-        <div class="island-dive-content-text">
-          <div class="island-dive-content-text-blocks">
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-              <div class="island-dive-content-text-block"></div>
-          </div>
-            <span class="island-dive-nav island-dive-nav--up" ></span>
-            <span class="island-dive-nav island-dive-nav--left" ></span>
-            <span class="island-dive-nav island-dive-nav--right" ></span>
-        </div>
+      <div class="underwater-slider-vertical"></div>
+      <div class="island-dive-content-text">
+      <div class="island-dive-content-text-blocks">
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+          <div class="island-dive-content-text-block"></div>
+      </div>
+        <span class="island-dive-nav island-dive-nav--up" ></span>
+        <span class="island-dive-nav island-dive-nav--left" ></span>
+        <span class="island-dive-nav island-dive-nav--right" ></span>
+    </div>
       </div>
     </aside>
   </section>
