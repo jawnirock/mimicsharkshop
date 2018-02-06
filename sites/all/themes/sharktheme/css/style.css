@@ -820,38 +820,6 @@
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(7) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(6) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(5) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(8) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(2) {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(1) {
-    -webkit-box-ordinal-group: 7;
-        -ms-flex-order: 6;
-            order: 6; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(3) {
-    -webkit-box-ordinal-group: 8;
-        -ms-flex-order: 7;
-            order: 7; }
-  #block-commerce-cap-cap.firstStep .table-responsive:first-child table tbody tr:nth-child(4) {
-    -webkit-box-ordinal-group: 9;
-        -ms-flex-order: 8;
-            order: 8; }
   #block-commerce-cap-cap.secondStep {
     -webkit-animation: toSecond 2.5s forwards;
             animation: toSecond 2.5s forwards; }

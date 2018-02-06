@@ -259,11 +259,11 @@ $(document).ready(function() {
 
 	// prevent pulldown
 	
-	const target = window 
+	var target = window 
 	var lastY = 0
 	target.addEventListener('touchmove', handleTouchMove)
 	function handleTouchMove(e) {
-	  var { pageY } = e.changedTouches[0]
+	  var pageY = e.changedTouches[0]
 	  var scrollY = target.pageYOffset || target.scrollTop || 0
 	  if (pageY > lastY && scrollY === 0) {
 	    e.preventDefault()

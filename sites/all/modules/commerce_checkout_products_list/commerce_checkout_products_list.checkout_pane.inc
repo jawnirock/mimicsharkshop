@@ -187,7 +187,7 @@ function commerce_checkout_products_list_checkout_form($form, &$form_state, &$ch
     '#rows' => $items,
     
     '#attributes' => array(
-      'class' => array('views-table cols-5'),
+      'class' => array('views-table cols-5 kek'),
     ),
   );
   $pane_form['#attached']['js'][] = drupal_get_path('module', 'commerce_checkout_products_list') . '/commerce_checkout_products_list.js';
