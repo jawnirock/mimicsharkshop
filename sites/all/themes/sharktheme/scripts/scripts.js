@@ -390,7 +390,8 @@ $(document).ready(function() {
 
 		if (direction == 'up') {
 			
-			if (Number(level) > 1) {
+			if (Number(level) === 2) {
+				$(".diveVideos").show();
 				currentVideoWrapper.addClass("visible");
 				currentVideoDown.hide();
 				if (currentVideoUp.length) {
@@ -421,6 +422,7 @@ $(document).ready(function() {
 		} else {
 			
 			if (Number(level) == 1) {
+				$(".diveVideos").show();
 				currentVideoWrapper.addClass("visible");
 				currentVideoUp.hide();
 				if (currentVideoDown.length) {
@@ -446,6 +448,7 @@ $(document).ready(function() {
 		}
 		setTimeout(function() {
 			onGoing = false;
+			$(".diveVideos").hide();
 			currentVideoWrapper.removeClass("visible");
 			if (currentVideoUp.length) {
 				currentVideoUp[0].pause(); 
@@ -461,21 +464,40 @@ $(document).ready(function() {
 
 	// key navigation
 	$(document).keydown(function(e) {
-
 		if (!onGoing) {
-			if (e.keyCode == 37 && current !== 1) {
-				trans('up')
-			}
-			if (e.keyCode == 38) {
-				dive("up");
-			}
-			if (e.keyCode == 39 && current !== 11) {
-				trans('down')
-			}
+			// sair da agua
 			if (e.keyCode == 40) {
 				dive("down");
 			}
+			// mergulhar
+			if (e.keyCode == 38) {
+				dive("up");
+			}
 
+			// acima de agua
+			if (level == 1) {
+				// esquerda
+				if (e.keyCode == 37 && current !== 1) {
+					trans('up')
+				}
+				// direita
+				if (e.keyCode == 39 && current !== 11) {
+					trans('down')
+				}
+			}
+			// debaixo de agua
+			if (level == 2) {
+				var canGoLeft = [2,3,4,5,8,9];
+				var canGoRight = [1,2,3,4,7,8];
+				// esquerda
+				if (e.keyCode == 37 && canGoLeft.indexOf(current) !== -1) {
+					trans('up')
+				}
+				// direita
+				if (e.keyCode == 39 && canGoRight.indexOf(current) !== -1) {
+					trans('down')
+				}
+			}
 		}		
 
 	});
@@ -493,19 +515,42 @@ $(document).ready(function() {
 	$(document).swipe({
 		swipe: function(event, direction, distance, duration, fingerCount) {
 
-			if (direction == "left" && current !== 11) {
-				trans('down')
-			}
-			if (direction == "right" && current !== 1) {
-				trans('up')
-			}
-			
+			// sair da agua
 			if (direction == "down") {
 				dive("up");
 			}
+			// mergulhar
 			if (direction == "up") {
 				dive("down");
 			}
+
+			// acima de agua
+			if (level == 1) {
+				// esquerda
+				if (direction == "left" && current !== 11) {
+					trans('down')
+				}
+				// direita
+				if (direction == "right" && current !== 1) {
+					trans('up')
+				}
+			}
+			// debaixo de agua
+			if (level == 2) {
+				var canGoLeft = [2,3,4,5,8,9];
+				var canGoRight = [1,2,3,4,7,8];
+				// esquerda
+				if (direction == "right" && canGoLeft.indexOf(current) !== -1) {
+					trans('up')
+				}
+				// direita
+				if (direction == "left" && canGoRight.indexOf(current) !== -1) {
+					trans('down')
+				}
+			}
+
+
+
 		}
 	});
 
