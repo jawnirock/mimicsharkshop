@@ -298,6 +298,112 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); } }
 
+.dissolveTopOut {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-animation: dissolveTopOut 1.3s both ease-in;
+          animation: dissolveTopOut 1.3s both ease-in;
+  opacity: 1; }
+
+.dissolveTopIn {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-animation: dissolveTopIn 1.3s both ease-in;
+          animation: dissolveTopIn 1.3s both ease-in;
+  opacity: 0; }
+
+.dissolveBottomOut {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-animation: dissolveBottomOut 1.3s both ease-in;
+          animation: dissolveBottomOut 1.3s both ease-in; }
+
+.dissolveBottomIn {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-animation: dissolveBottomIn 1.3s both ease-in;
+          animation: dissolveBottomIn 1.3s both ease-in; }
+
+@-webkit-keyframes dissolveTopOut {
+  70% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; }
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 0.3; }
+  100% {
+    opacity: 0; } }
+
+@keyframes dissolveTopOut {
+  70% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; }
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 0.3; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes dissolveTopIn {
+  0% {
+    opacity: 0; }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; } }
+
+@keyframes dissolveTopIn {
+  0% {
+    opacity: 0; }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; } }
+
+@-webkit-keyframes dissolveBottomOut {
+  70% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; }
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 0.3; }
+  100% {
+    opacity: 0; } }
+
+@keyframes dissolveBottomOut {
+  70% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; }
+  90% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 0.3; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes dissolveBottomIn {
+  0% {
+    opacity: 0; }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; } }
+
+@keyframes dissolveBottomIn {
+  0% {
+    opacity: 0; }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; } }
+
 .spinTopOut {
   opacity: 1;
   -webkit-animation: spinTopOutWrap 1.3s both ease-in;
@@ -785,6 +891,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  #block-commerce-cap-cap::before {
+    width: 125px;
+    height: 100%;
+    position: absolute;
+    background-size: 120px;
+    background-position: right 62%;
+    right: 0;
+    background-image: url(../images/-bg/checkout/luke.gif);
+    background-repeat: no-repeat; }
   #block-commerce-cap-cap .alert.error, #block-commerce-cap-cap .messages.error {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
@@ -803,14 +918,6 @@
         align-self: flex-start;
     margin-top: 7.7vw; }
   #block-commerce-cap-cap.firstStep::before {
-    width: 125px;
-    height: 100%;
-    position: absolute;
-    background-size: 120px;
-    background-position: right 62%;
-    right: 0;
-    background-image: url(../images/bg/checkout/luke_new.gif);
-    background-repeat: no-repeat;
     -webkit-transform: translateX(-35px) translateY(0px);
             transform: translateX(-35px) translateY(0px);
     -webkit-animation: lukeFirst 8s infinite;
@@ -824,14 +931,6 @@
     -webkit-animation: toSecond 2.5s forwards;
             animation: toSecond 2.5s forwards; }
     #block-commerce-cap-cap.secondStep::before {
-      width: 125px;
-      height: 100%;
-      position: absolute;
-      background-size: 120px;
-      background-position: right 62%;
-      right: 0;
-      background-image: url(../images/bg/checkout/lukewalk.gif);
-      background-repeat: no-repeat;
       -webkit-transform: translateX(-35px) translateY(0px);
               transform: translateX(-35px) translateY(0px);
       -webkit-animation: lukeFirst 8s normal forwards;

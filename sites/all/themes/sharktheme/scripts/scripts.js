@@ -330,8 +330,10 @@ $(document).ready(function() {
 				} else if (current === 8){
 					outClass = 'spinBottomOut';
 					inClass = 'spinBottomIn';
-				} else {
-					outClass = 'slideBottomOut';
+				} else if (current === 9){
+					outClass = 'dissolveBottomOut';
+					inClass = 'dissolveBottomIn';
+				} else {					outClass = 'slideBottomOut';
 					inClass = 'slideBottomIn';
 				}
 				next = current > 1 ? current - 1 : length;
@@ -344,8 +346,10 @@ $(document).ready(function() {
 				} else if (current === 7){
 					outClass = 'spinTopOut';
 					inClass = 'spinTopIn';
-				} else {
-					outClass = 'slideTopOut';
+				} else if (current === 8){
+					outClass = 'dissolveTopOut';
+					inClass = 'dissolveTopIn';
+				} else {					outClass = 'slideTopOut';
 					inClass = 'slideTopIn';
 				}
 				next = current < length ? current + 1 : 1;
@@ -504,13 +508,6 @@ $(document).ready(function() {
 
 	// swipe navigation
 
-	$(".underwater-slider-vertical").swipe({
-		swipe: function(event, direction, distance, duration, fingerCount) {
-		 event.stopPropagation();
-		 event.preventDefault();
-		}
-	});
-	
 
 	$(document).swipe({
 		swipe: function(event, direction, distance, duration, fingerCount) {

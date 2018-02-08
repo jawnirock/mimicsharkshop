@@ -332,7 +332,7 @@
       <div class="island-dive-content-text-title">
       </div>
       <div class="island-dive-content-smokey"></div>
-      <div class="underwater-slider-vertical"></div>
+      <div class="underwater-slider-vertical noSwipe"></div>
       <div class="island-dive-content-text">
       <div class="island-dive-content-text-blocks">
           <div class="island-dive-content-text-block"></div>
