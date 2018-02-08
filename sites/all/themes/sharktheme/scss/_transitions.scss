@@ -138,43 +138,26 @@
 
 // esquerda pra direita
 .dissolveTopOut {
-	transform-origin: 100% 50%;
 	animation: dissolveTopOut 1.3s both ease-in;
-	opacity: 1;
 }
 
 .dissolveTopIn {
-	transform-origin: 0% 50%;
 	animation: dissolveTopIn 1.3s both ease-in;
-	opacity: 0;
 }
 // direita pra esquerda
 .dissolveBottomOut {
-	transform-origin: 0% 50%;
 	animation: dissolveBottomOut 1.3s both ease-in;
 }
 
 .dissolveBottomIn {
-	transform-origin: 100% 50%;
 	animation: dissolveBottomIn 1.3s both ease-in;
 }
 
 // esquerda pra direita
 
 @keyframes dissolveTopOut {
-	70% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-	}
-	
-	90% {
-		animation-timing-function: ease-out;
-		opacity: 0.3;
-	}	
 
-	100% {
-		opacity: 0;	
-	}
+
 	
 }
 
@@ -184,37 +167,24 @@
 	}
 
 	100% {
-		animation-timing-function: ease-out;
 		opacity: 1;
 	}
 }
 // direita pra esquerda
 
 @keyframes dissolveBottomOut {
-	70% {
-		animation-timing-function: ease-out;
-		opacity: 1;
+	0% {
+		opacity: 1;	
 	}
-	
-	90% {
-		animation-timing-function: ease-out;
-		opacity: 0.3;
-	}	
 
 	100% {
-		opacity: 0;	
+		opacity: 0;
 	}
+
 }
 
 @keyframes dissolveBottomIn {
-	0% {
-		opacity: 0;	
-	}
 
-	100% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-	}
 }
 
 //SPINS
