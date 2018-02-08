@@ -490,7 +490,7 @@ $(document).ready(function() {
 				}
 			}
 			// debaixo de agua
-			if (level == 2) {
+			if (level >= 1) {
 				var canGoLeft = [2,3,4,5,8,9];
 				var canGoRight = [1,2,3,4,7,8];
 				// esquerda
@@ -533,7 +533,7 @@ $(document).ready(function() {
 				}
 			}
 			// debaixo de agua
-			if (level == 2) {
+			if (level >= 1) {
 				var canGoLeft = [2,3,4,5,8,9];
 				var canGoRight = [1,2,3,4,7,8];
 				// esquerda
