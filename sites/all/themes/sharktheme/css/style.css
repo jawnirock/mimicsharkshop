@@ -813,7 +813,7 @@
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 300% auto;
-  background-image: url("../images/-bg/checkout/checkout.jpg");
+  background-image: url("../images/bg/checkout/checkout.jpg");
   background-position-y: center;
   position: absolute;
   height: 100%;
@@ -1438,7 +1438,7 @@
     cursor: pointer; }
 
 #shop-women {
-  background-image: url("../images/-bg/shop/women.png"); }
+  background-image: url("../images/bg/shop/women.png"); }
 
 #shop-men {
   background-image: url("../images/bg/shop/men.png"); }
