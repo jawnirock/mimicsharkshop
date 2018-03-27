@@ -621,7 +621,7 @@
     -webkit-perspective: 50vw;
             perspective: 50vw; }
   .island-dive-content-text-block, .island-dive-content-smokey-block {
-    height: 80vh;
+    height: 100vh;
     width: 10vw;
     background-position-y: 15vw;
     background-repeat: no-repeat;
@@ -669,18 +669,48 @@
 
 #safety .island-dive-content-text {
   background-image: url("../images/bg/texts/safety.jpg"); }
+  #safety .island-dive-content-text-block {
+    background-image: url("../images/bg/texts/texts/safety.png"); }
 
 #safety .island-dive-content-smokey {
-  background-image: url("../images/bg/texts/safety.png"); }
+  background-image: url("../images/bg/texts/smokey/safety.png");
+  z-index: 400; }
+
+#safety .island-dive-content-text {
+  background-image: url("../images/bg/texts/safety.jpg"); }
+  #safety .island-dive-content-text-block {
+    background-image: url("../images/bg/texts/texts/safety.png"); }
+
+#safety .island-dive-content-smokey {
+  background-image: url("../images/bg/texts/smokey/safety.png");
+  z-index: 400; }
 
 #eco .island-dive-content-text {
   background-image: url("../images/bg/texts/eco.jpg"); }
+  #eco .island-dive-content-text-block {
+    background-image: url("../images/bg/texts/texts/eco.png"); }
+
+#eco .island-dive-content-smokey {
+  background-image: url("../images/bg/texts/smokey/eco.png");
+  z-index: 400; }
 
 #habitat .island-dive-content-text {
   background-image: url("../images/bg/texts/habitat.jpg"); }
+  #habitat .island-dive-content-text-block {
+    background-image: url("../images/bg/texts/texts/habitat.png"); }
+
+#habitat .island-dive-content-smokey {
+  background-image: url("../images/bg/texts/smokey/habitat.png");
+  z-index: 400; }
 
 #roots .island-dive-content-text {
   background-image: url("../images/bg/texts/roots.jpg"); }
+  #roots .island-dive-content-text-block {
+    background-image: url("../images/bg/texts/texts/roots.png"); }
+
+#roots .island-dive-content-smokey {
+  background-image: url("../images/bg/texts/smokey/roots.png");
+  z-index: 400; }
 
 #about .island-dive-content-text {
   background-image: url("../images/bg/texts/about.jpg"); }
@@ -714,6 +744,8 @@
     background-repeat: no-repeat;
     width: 35px;
     margin-left: 7px;
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
     height: 35px;
     border: 0;
     background-color: transparent;
@@ -1410,7 +1442,7 @@
   #shop .island-dive-content-shop {
     height: 50%;
     position: relative;
-    background-size: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     transition: background 1s; }
@@ -1438,10 +1470,10 @@
     cursor: pointer; }
 
 #shop-women {
-  background-image: url("../images/bg/shop/women.png"); }
+  background-image: url("../images/bg/shop/women.jpg"); }
 
 #shop-men {
-  background-image: url("../images/bg/shop/men.png"); }
+  background-image: url("../images/bg/shop/men.jpg"); }
 
 .island-wrapper[data-level="2"] .spinTopOut #shop-men, .island-wrapper[data-level="2"] .spinTopIn #shop-men, .island-wrapper[data-level="2"] .spinBottomOut #shop-men, .island-wrapper[data-level="2"] .spinBottomIn #shop-men {
   visibility: hidden; }

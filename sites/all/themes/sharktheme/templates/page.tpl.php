@@ -87,53 +87,53 @@
 
 <div class="diveVideos">
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L5.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L5rev.mp4" type="video/mp4">
     </video>  
   </aside>
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L4.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L4rev.mp4" type="video/mp4">
     </video>  
   </aside>
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L3.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L3rev.mp4" type="video/mp4">
     </video>  
   </aside>
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L2.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L2rev.mp4" type="video/mp4">
     </video>  
   </aside>
 
-  <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+  <aside class="diveVideoWrapper" id="lukevideo">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L1.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/L1rev.mp4" type="video/mp4">
     </video>  
   </aside>
 
   
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/00.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/00rev.mp4" type="video/mp4">
     </video>  
   </aside>
@@ -142,28 +142,28 @@
   </aside>
   
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Shop.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Shoprev.mp4" type="video/mp4">
     </video>  
   </aside>
   
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Buy.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Buyrev.mp4" type="video/mp4">
     </video>  
   </aside>
   
   <aside class="diveVideoWrapper">
-    <video style="" muted playsinline class="diveVideo goinDown" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Disclaimer.mp4" type="video/mp4">
     </video>  
-    <video style="" muted playsinline class="diveVideo goinUp" preload="auto" width="320" height="180">
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
         <source src="/sites/all/themes/sharktheme/images/headers/Disclaimerrev.mp4" type="video/mp4">
     </video>  
   </aside>

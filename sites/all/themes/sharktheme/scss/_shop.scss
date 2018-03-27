@@ -6,7 +6,7 @@
             &-shop {
                height: 50%;
                position: relative;
-        	    background-size: cover;
+        	    background-size: 100% auto;
         	    background-repeat: no-repeat;
         	    background-position: center;
         	    transition: background 1s;
@@ -14,7 +14,7 @@
 	    }
     	&-size {
     		position: absolute;
-    		top: 20px;
+    		top: 20px    ;
     		left: 20px;
     		z-index: 150;
     		&-title {
@@ -41,11 +41,11 @@
 }
 
 #shop-women {
-    background-image: url('../images/bg/shop/women.png');
+    background-image: url('../images/bg/shop/women.jpg');
 }
 
 #shop-men {
-    background-image: url('../images/bg/shop/men.png');
+    background-image: url('../images/bg/shop/men.jpg');
 }
 
 .island-wrapper {

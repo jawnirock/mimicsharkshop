@@ -282,6 +282,11 @@ $(document).ready(function() {
       slide: function( event, ui ) {
       	var textblock = $(this).parents(".island-dive-content").find(".island-dive-content-text-block");
       	textblock.css('background-position-y' , (ui.value) + 'vh');
+    	if (ui.value < -200) {
+    		console.log("menos de 30")
+    	} else {
+    		console.log("mais de 30")
+    	}
       	event.stopPropagation();
       }
     });
@@ -584,8 +589,11 @@ $(window).resize(function() {
 });
 
 $(window).load(function() {
-	console.log("loaded!")
+	console.log("all content loaded")
 })
+
+
+
 
 })(jQuery);
 

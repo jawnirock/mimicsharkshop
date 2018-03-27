@@ -22,7 +22,7 @@
         // -webkit-transform: translate3D(0px, -10px, 2px);
     }
     &-block {
-        height: 80vh;
+        height: 100vh;
         width: 10vw;
         background-position-y: 15vw;
         background-repeat: no-repeat;
@@ -77,21 +77,61 @@
     
 }
 
-#safety .island-dive-content-text {
-    background-image: url('../images/bg/texts/safety.jpg');
-}
-#safety .island-dive-content-smokey {
-    background-image: url('../images/bg/texts/safety.png');
-}
-#eco .island-dive-content-text {
-    background-image: url('../images/bg/texts/eco.jpg');
-}
-#habitat .island-dive-content-text {
-    background-image: url('../images/bg/texts/habitat.jpg');
-}
-#roots .island-dive-content-text {
-    background-image: url('../images/bg/texts/roots.jpg');
-}
+#safety .island-dive-content {
+     &-text {
+        background-image: url('../images/bg/texts/safety.jpg'); 
+        &-block {
+            background-image: url('../images/bg/texts/texts/safety.png');        
+        }
+    }
+    &-smokey {
+        background-image: url('../images/bg/texts/smokey/safety.png');
+        z-index: 400;
+    }}
+#safety .island-dive-content {
+     &-text {
+        background-image: url('../images/bg/texts/safety.jpg'); 
+        &-block {
+            background-image: url('../images/bg/texts/texts/safety.png');        
+        }
+    }
+    &-smokey {
+        background-image: url('../images/bg/texts/smokey/safety.png');
+        z-index: 400;
+    }}
+#eco .island-dive-content {
+     &-text {
+        background-image: url('../images/bg/texts/eco.jpg'); 
+        &-block {
+            background-image: url('../images/bg/texts/texts/eco.png');        
+        }
+    }
+    &-smokey {
+        background-image: url('../images/bg/texts/smokey/eco.png');
+        z-index: 400;
+    }}
+#habitat .island-dive-content {
+     &-text {
+        background-image: url('../images/bg/texts/habitat.jpg'); 
+        &-block {
+            background-image: url('../images/bg/texts/texts/habitat.png');        
+        }
+    }
+    &-smokey {
+        background-image: url('../images/bg/texts/smokey/habitat.png');
+        z-index: 400;
+    }}
+#roots .island-dive-content {
+     &-text {
+        background-image: url('../images/bg/texts/roots.jpg'); 
+        &-block {
+            background-image: url('../images/bg/texts/texts/roots.png');        
+        }
+    }
+    &-smokey {
+        background-image: url('../images/bg/texts/smokey/roots.png');
+        z-index: 400;
+    }}
 #about .island-dive-content {
      &-text {
         background-image: url('../images/bg/texts/about.jpg'); 
@@ -130,6 +170,7 @@
         background-repeat: no-repeat;
         width: 35px;
         margin-left: 7px;
+        transform: translateY(8px);
         height: 35px;
         border: 0;
         background-color: transparent;
