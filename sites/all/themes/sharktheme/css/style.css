@@ -817,26 +817,127 @@
 
 @-webkit-keyframes lukeFirst {
   0% {
-    -webkit-transform: translateX(-35px) translateY(0px);
-            transform: translateX(-35px) translateY(0px);
-    background-size: 120px; }
+    -webkit-transform: translateY(4vh) translateX(-10vw);
+            transform: translateY(4vh) translateX(-10vw);
+    background-size: 14.5vh;
+    opacity: 0; }
+  40% {
+    opacity: 1; }
   100% {
-    -webkit-transform: translateX(110px) translateY(-25px);
-            transform: translateX(110px) translateY(-25px);
-    background-size: 108px; } }
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+    background-size: 9.5vh;
+    -webkit-transform: translateY(-1vh) translateX(5vw);
+            transform: translateY(-1vh) translateX(5vw);
+    opacity: 1; } }
 
 @keyframes lukeFirst {
   0% {
-    -webkit-transform: translateX(-35px) translateY(0px);
-            transform: translateX(-35px) translateY(0px);
-    background-size: 120px; }
+    -webkit-transform: translateY(4vh) translateX(-10vw);
+            transform: translateY(4vh) translateX(-10vw);
+    background-size: 14.5vh;
+    opacity: 0; }
+  40% {
+    opacity: 1; }
   100% {
-    -webkit-transform: translateX(110px) translateY(-25px);
-            transform: translateX(110px) translateY(-25px);
-    background-size: 108px; } }
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+    background-size: 9.5vh;
+    -webkit-transform: translateY(-1vh) translateX(5vw);
+            transform: translateY(-1vh) translateX(5vw);
+    opacity: 1; } }
+
+@-webkit-keyframes lukeSecond {
+  0% {
+    background-size: 4.3vw;
+    -webkit-transform: translateX(-9.5vw) translateY(-4.4vh);
+            transform: translateX(-9.5vw) translateY(-4.4vh);
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  100% {
+    background-size: 5vh;
+    -webkit-transform: translateX(2.8vw) translateY(-6vh);
+            transform: translateX(2.8vw) translateY(-6vh);
+    opacity: 1; } }
+
+@keyframes lukeSecond {
+  0% {
+    background-size: 4.3vw;
+    -webkit-transform: translateX(-9.5vw) translateY(-4.4vh);
+            transform: translateX(-9.5vw) translateY(-4.4vh);
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  100% {
+    background-size: 5vh;
+    -webkit-transform: translateX(2.8vw) translateY(-6vh);
+            transform: translateX(2.8vw) translateY(-6vh);
+    opacity: 1; } }
+
+@-webkit-keyframes lukeThird {
+  0% {
+    background-size: 1.4vw;
+    -webkit-transform: translateX(-67vw) translateY(-7.4vh);
+            transform: translateX(-67vw) translateY(-7.4vh);
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  100% {
+    background-size: 0vw;
+    -webkit-transform: translateX(-66vw) translateY(-8.4vh);
+            transform: translateX(-66vw) translateY(-8.4vh);
+    opacity: 1; } }
+
+@keyframes lukeThird {
+  0% {
+    background-size: 1.4vw;
+    -webkit-transform: translateX(-67vw) translateY(-7.4vh);
+            transform: translateX(-67vw) translateY(-7.4vh);
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  100% {
+    background-size: 0vw;
+    -webkit-transform: translateX(-66vw) translateY(-8.4vh);
+            transform: translateX(-66vw) translateY(-8.4vh);
+    opacity: 1; } }
+
+@-webkit-keyframes lukeDisappear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
+
+@keyframes lukeDisappear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
 
 #block-views-sharktable-block {
   display: none; }
+
+#sideluke {
+  z-index: 999;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  width: 23vw;
+  height: 50vw;
+  position: absolute;
+  background-size: 38vh;
+  background-position: left bottom;
+  left: -2.1vw;
+  bottom: -16vw;
+  background-image: url(../images/-bg/checkout/lukeshop.png);
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-animation: lukeDisappear 2s forwards;
+          animation: lukeDisappear 2s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
 
 #block-commerce-cap-cap {
   font-size: calc(10px + 0.5vh);
@@ -845,7 +946,7 @@
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 300% auto;
-  background-image: url("../images/bg/checkout/checkout.jpg");
+  background-image: url("../images/-bg/checkout/checkout.jpg");
   background-position-y: center;
   position: absolute;
   height: 100%;
@@ -866,7 +967,6 @@
     background-size: 120px;
     background-position: right 62%;
     right: 0;
-    background-image: url(../images/-bg/checkout/luke.gif);
     background-repeat: no-repeat; }
   #block-commerce-cap-cap .alert.error, #block-commerce-cap-cap .messages.error {
     width: 100%;
@@ -886,12 +986,12 @@
         align-self: flex-start;
     margin-top: 7.7vw; }
   #block-commerce-cap-cap.firstStep::before {
-    -webkit-transform: translateX(-35px) translateY(0px);
-            transform: translateX(-35px) translateY(0px);
-    -webkit-animation: lukeFirst 8s infinite;
-            animation: lukeFirst 8s infinite;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s; }
+    background-image: url(../images/-bg/checkout/luke.gif);
+    opacity: 0;
+    -webkit-animation: lukeFirst 15s normal infinite;
+            animation: lukeFirst 15s normal infinite;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s; }
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }
@@ -899,12 +999,12 @@
     -webkit-animation: toSecond 2.5s forwards;
             animation: toSecond 2.5s forwards; }
     #block-commerce-cap-cap.secondStep::before {
-      -webkit-transform: translateX(-35px) translateY(0px);
-              transform: translateX(-35px) translateY(0px);
-      -webkit-animation: lukeFirst 8s normal forwards;
-              animation: lukeFirst 8s normal forwards;
-      -webkit-animation-delay: 1.5s;
-              animation-delay: 1.5s; }
+      background-image: url(../images/-bg/checkout/luke2.gif);
+      opacity: 0;
+      -webkit-animation: lukeSecond 18s normal forwards;
+              animation: lukeSecond 18s normal forwards;
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s; }
     #block-commerce-cap-cap.secondStep.goingBack {
       -webkit-animation: secondBack 2.5s forwards;
               animation: secondBack 2.5s forwards; }
@@ -916,6 +1016,13 @@
   #block-commerce-cap-cap.thirdStep {
     -webkit-animation: toThird 2.5s forwards;
             animation: toThird 2.5s forwards; }
+    #block-commerce-cap-cap.thirdStep::before {
+      background-image: url(../images/-bg/checkout/luke2.gif);
+      opacity: 0;
+      -webkit-animation: lukeThird 18s normal forwards;
+              animation: lukeThird 18s normal forwards;
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s; }
     #block-commerce-cap-cap.thirdStep .checkout-help {
       display: none; }
     #block-commerce-cap-cap.thirdStep form > div {
@@ -1007,25 +1114,25 @@
             color: black;
             opacity: 0; }
             #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(1) {
-              -webkit-animation: fadeIn 1s forwards;
-                      animation: fadeIn 1s forwards;
-              -webkit-animation-delay: 1s;
-                      animation-delay: 1s; }
-            #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(2) {
-              -webkit-animation: fadeIn 1s forwards;
-                      animation: fadeIn 1s forwards;
-              -webkit-animation-delay: 2s;
-                      animation-delay: 2s; }
-            #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(3) {
-              -webkit-animation: fadeIn 1s forwards;
-                      animation: fadeIn 1s forwards;
+              -webkit-animation: fadeIn 2s forwards;
+                      animation: fadeIn 2s forwards;
               -webkit-animation-delay: 3s;
                       animation-delay: 3s; }
-            #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(4) {
-              -webkit-animation: fadeIn 1s forwards;
-                      animation: fadeIn 1s forwards;
+            #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(2) {
+              -webkit-animation: fadeIn 2s forwards;
+                      animation: fadeIn 2s forwards;
               -webkit-animation-delay: 4s;
                       animation-delay: 4s; }
+            #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(3) {
+              -webkit-animation: fadeIn 2s forwards;
+                      animation: fadeIn 2s forwards;
+              -webkit-animation-delay: 5s;
+                      animation-delay: 5s; }
+            #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(4) {
+              -webkit-animation: fadeIn 2s forwards;
+                      animation: fadeIn 2s forwards;
+              -webkit-animation-delay: 6.5s;
+                      animation-delay: 6.5s; }
             #block-commerce-cap-cap .table-responsive table tbody tr td:first-child {
               border-radius: 5px 0 0 5px;
               width: 150px; }

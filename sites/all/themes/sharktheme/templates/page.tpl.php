@@ -580,6 +580,7 @@
       </div>
 
       <div class="island-dive-content island-dive-fixed">
+        <div id="sideluke"></div>
 
         <?php print render($page['content']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>
