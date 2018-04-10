@@ -931,7 +931,7 @@
   background-position: left bottom;
   left: -2.1vw;
   bottom: -16vw;
-  background-image: url(../images/-bg/checkout/lukeshop.png);
+  background-image: url(../images/bg/checkout/lukeshop.png);
   background-repeat: no-repeat;
   opacity: 1;
   -webkit-animation: lukeDisappear 2s forwards;
@@ -946,7 +946,7 @@
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 300% auto;
-  background-image: url("../images/-bg/checkout/checkout.jpg");
+  background-image: url("../images/bg/checkout/checkout.jpg");
   background-position-y: center;
   position: absolute;
   height: 100%;
@@ -986,7 +986,7 @@
         align-self: flex-start;
     margin-top: 7.7vw; }
   #block-commerce-cap-cap.firstStep::before {
-    background-image: url(../images/-bg/checkout/luke.gif);
+    background-image: url(../images/bg/checkout/luke.gif);
     opacity: 0;
     -webkit-animation: lukeFirst 15s normal infinite;
             animation: lukeFirst 15s normal infinite;
@@ -999,7 +999,7 @@
     -webkit-animation: toSecond 2.5s forwards;
             animation: toSecond 2.5s forwards; }
     #block-commerce-cap-cap.secondStep::before {
-      background-image: url(../images/-bg/checkout/luke2.gif);
+      background-image: url(../images/bg/checkout/luke2.gif);
       opacity: 0;
       -webkit-animation: lukeSecond 18s normal forwards;
               animation: lukeSecond 18s normal forwards;
@@ -1017,7 +1017,7 @@
     -webkit-animation: toThird 2.5s forwards;
             animation: toThird 2.5s forwards; }
     #block-commerce-cap-cap.thirdStep::before {
-      background-image: url(../images/-bg/checkout/luke2.gif);
+      background-image: url(../images/bg/checkout/luke2.gif);
       opacity: 0;
       -webkit-animation: lukeThird 18s normal forwards;
               animation: lukeThird 18s normal forwards;
