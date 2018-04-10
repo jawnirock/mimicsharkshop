@@ -1004,8 +1004,8 @@
     opacity: 0;
     -webkit-animation: lukeFirst 15s normal forwards;
             animation: lukeFirst 15s normal forwards;
-    -webkit-animation-delay: 7s;
-            animation-delay: 7s; }
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s; }
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }
