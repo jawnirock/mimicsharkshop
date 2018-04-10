@@ -933,6 +933,10 @@
   display: none; }
 
 #sideluke {
+  display: none; }
+
+.island-visible #sideluke {
+  display: block;
   z-index: 999;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
@@ -946,8 +950,8 @@
   opacity: 0;
   background-image: url(../images/bg/checkout/lukeshop.png);
   background-repeat: no-repeat;
-  -webkit-animation: lukeDisappear 6s forwards;
-          animation: lukeDisappear 6s forwards; }
+  -webkit-animation: lukeDisappear 6.5s forwards;
+          animation: lukeDisappear 6.5s forwards; }
 
 #block-commerce-cap-cap {
   font-size: calc(10px + 0.5vh);
@@ -1000,8 +1004,8 @@
     opacity: 0;
     -webkit-animation: lukeFirst 15s normal forwards;
             animation: lukeFirst 15s normal forwards;
-    -webkit-animation-delay: 8s;
-            animation-delay: 8s; }
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s; }
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }

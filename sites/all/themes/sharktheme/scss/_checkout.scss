@@ -105,6 +105,11 @@
 
 
 #sideluke {
+	display: none;
+}
+
+.island-visible #sideluke {
+	display: block;
 	z-index: 999;
     transform: rotate(8deg);
     width: 23vw;
@@ -117,7 +122,7 @@
 	opacity: 0;
     background-image: url(../images/bg/checkout/lukeshop.png);
     background-repeat: no-repeat;
-	animation: lukeDisappear 6s forwards;
+	animation: lukeDisappear 6.5s forwards;
 }
 
 
@@ -180,7 +185,7 @@
 		    background-image: url(../images/bg/checkout/luke.gif);    	
 		    opacity: 0;
 		    animation: lukeFirst 15s normal forwards;
-	   	    animation-delay: 8s;
+	   	    animation-delay: 7s;
 	    }
 
 		&.goingBack {
