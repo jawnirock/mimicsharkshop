@@ -913,6 +913,7 @@
     visibility: visible;
     opacity: 0; }
   100% {
+    opacity: 0;
     visibility: hidden; } }
 
 @keyframes lukeDisappear {
@@ -925,6 +926,7 @@
     visibility: visible;
     opacity: 0; }
   100% {
+    opacity: 0;
     visibility: hidden; } }
 
 #block-views-sharktable-block {
@@ -941,9 +943,9 @@
   background-position: left bottom;
   left: -2.1vw;
   bottom: -16vw;
+  opacity: 0;
   background-image: url(../images/bg/checkout/lukeshop.png);
   background-repeat: no-repeat;
-  opacity: 1;
   -webkit-animation: lukeDisappear 6s forwards;
           animation: lukeDisappear 6s forwards; }
 
@@ -998,8 +1000,8 @@
     opacity: 0;
     -webkit-animation: lukeFirst 15s normal forwards;
             animation: lukeFirst 15s normal forwards;
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s; }
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s; }
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }
@@ -1124,23 +1126,23 @@
             #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(1) {
               -webkit-animation: fadeIn 2s forwards;
                       animation: fadeIn 2s forwards;
-              -webkit-animation-delay: 3s;
-                      animation-delay: 3s; }
+              -webkit-animation-delay: 5s;
+                      animation-delay: 5s; }
             #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(2) {
               -webkit-animation: fadeIn 2s forwards;
                       animation: fadeIn 2s forwards;
-              -webkit-animation-delay: 4s;
-                      animation-delay: 4s; }
+              -webkit-animation-delay: 6s;
+                      animation-delay: 6s; }
             #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(3) {
               -webkit-animation: fadeIn 2s forwards;
                       animation: fadeIn 2s forwards;
-              -webkit-animation-delay: 5s;
-                      animation-delay: 5s; }
+              -webkit-animation-delay: 7s;
+                      animation-delay: 7s; }
             #block-commerce-cap-cap .table-responsive table tbody tr td:nth-child(4) {
               -webkit-animation: fadeIn 2s forwards;
                       animation: fadeIn 2s forwards;
-              -webkit-animation-delay: 6.5s;
-                      animation-delay: 6.5s; }
+              -webkit-animation-delay: 7.5s;
+                      animation-delay: 7.5s; }
             #block-commerce-cap-cap .table-responsive table tbody tr td:first-child {
               border-radius: 5px 0 0 5px;
               width: 150px; }
