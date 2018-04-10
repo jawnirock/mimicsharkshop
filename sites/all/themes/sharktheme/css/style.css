@@ -905,17 +905,27 @@
 
 @-webkit-keyframes lukeDisappear {
   0% {
+    visibility: visible;
     opacity: 1; }
+  50 {
+    opacity: 1; }
+  99% {
+    display: block; }
   100% {
     opacity: 0;
-    display: none; } }
+    visibility: hidden; } }
 
 @keyframes lukeDisappear {
   0% {
+    visibility: visible;
     opacity: 1; }
+  50 {
+    opacity: 1; }
+  99% {
+    display: block; }
   100% {
     opacity: 0;
-    display: none; } }
+    visibility: hidden; } }
 
 #block-views-sharktable-block {
   display: none; }
@@ -931,13 +941,12 @@
   background-position: left bottom;
   left: -2.1vw;
   bottom: -16vw;
+  visibility: hidden;
   background-image: url(../images/bg/checkout/lukeshop.png);
   background-repeat: no-repeat;
   opacity: 1;
-  -webkit-animation: lukeDisappear 2s forwards;
-          animation: lukeDisappear 2s forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s; }
+  -webkit-animation: lukeDisappear 4s forwards;
+          animation: lukeDisappear 4s forwards; }
 
 #block-commerce-cap-cap {
   font-size: calc(10px + 0.5vh);
@@ -988,8 +997,8 @@
   #block-commerce-cap-cap.firstStep::before {
     background-image: url(../images/bg/checkout/luke.gif);
     opacity: 0;
-    -webkit-animation: lukeFirst 15s normal infinite;
-            animation: lukeFirst 15s normal infinite;
+    -webkit-animation: lukeFirst 15s normal forwards;
+            animation: lukeFirst 15s normal forwards;
     -webkit-animation-delay: 4s;
             animation-delay: 4s; }
   #block-commerce-cap-cap.firstStep.goingBack {

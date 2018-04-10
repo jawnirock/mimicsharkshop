@@ -79,12 +79,21 @@
 
 @keyframes lukeDisappear {
 	0% { 
+		visibility: visible;
 		opacity: 1;
+	}
+	
+	50 {
+		opacity: 1;
+	}
+	
+	99% {
+		display: block;
 	}
 
 	100% {
 	    opacity: 0;
-	    display: none;
+	    visibility: hidden;
 	}
 }
 
@@ -104,11 +113,11 @@
     background-position: left bottom;
     left: -2.1vw;
     bottom: -16vw;
+    visibility: hidden;
     background-image: url(../images/bg/checkout/lukeshop.png);
     background-repeat: no-repeat;
     opacity: 1;
-	animation: lukeDisappear 2s forwards;
-    animation-delay: 2s;
+	animation: lukeDisappear 4s forwards;
 }
 
 
