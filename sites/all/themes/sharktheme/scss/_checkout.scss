@@ -83,16 +83,16 @@
 		opacity: 1;
 	}
 	
-	50 {
+	60% {
 		opacity: 1;
 	}
 	
 	99% {
 		visibility: visible;
+	    opacity: 0;
 	}
 
 	100% {
-	    opacity: 0;
 	    visibility: hidden;
 	}
 }
@@ -116,7 +116,7 @@
     background-image: url(../images/bg/checkout/lukeshop.png);
     background-repeat: no-repeat;
     opacity: 1;
-	animation: lukeDisappear 4s forwards;
+	animation: lukeDisappear 6s forwards;
 }
 
 

@@ -907,24 +907,24 @@
   0% {
     visibility: visible;
     opacity: 1; }
-  50 {
+  60% {
     opacity: 1; }
   99% {
-    visibility: visible; }
+    visibility: visible;
+    opacity: 0; }
   100% {
-    opacity: 0;
     visibility: hidden; } }
 
 @keyframes lukeDisappear {
   0% {
     visibility: visible;
     opacity: 1; }
-  50 {
+  60% {
     opacity: 1; }
   99% {
-    visibility: visible; }
+    visibility: visible;
+    opacity: 0; }
   100% {
-    opacity: 0;
     visibility: hidden; } }
 
 #block-views-sharktable-block {
@@ -944,8 +944,8 @@
   background-image: url(../images/bg/checkout/lukeshop.png);
   background-repeat: no-repeat;
   opacity: 1;
-  -webkit-animation: lukeDisappear 4s forwards;
-          animation: lukeDisappear 4s forwards; }
+  -webkit-animation: lukeDisappear 6s forwards;
+          animation: lukeDisappear 6s forwards; }
 
 #block-commerce-cap-cap {
   font-size: calc(10px + 0.5vh);
