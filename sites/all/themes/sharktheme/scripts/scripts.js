@@ -139,16 +139,19 @@ var checkoutTableFooter = function(){
 }
 var checkoutClasses = function(){
 	if ($("#block-commerce-cap-cap").find(".account.panel").length > 0){
-	if ($("#block-commerce-cap-cap").hasClass("thirdStep")) {
-		$("#block-commerce-cap-cap").addClass("goingBack")
-	} else {
-		$("#block-commerce-cap-cap").removeClass("goingBack")
-	}
-	$("#block-commerce-cap-cap").removeClass("firstStep thirdStep").addClass("secondStep");
-	$(".checkoutBack").remove();
+		if ($("#block-commerce-cap-cap").hasClass("thirdStep")) {
+			$("#block-commerce-cap-cap").addClass("goingBack")
+		} else {
+			$("#block-commerce-cap-cap").removeClass("goingBack")
+		}
+		$("#block-commerce-cap-cap").removeClass("firstStep thirdStep").addClass("secondStep");
+		$(".checkoutBack").remove();
+		$(".island-visible #sideluke").hide();
+
 
 	} else if ($("#block-commerce-cap-cap").find(".checkout_review").length > 0) {
 		$("#block-commerce-cap-cap").removeClass("firstStep secondStep").addClass("thirdStep");
+		$(".island-visible #sideluke").hide();
 	
 	} else {
 		if ($("#block-commerce-cap-cap").hasClass("secondStep")) {
@@ -157,6 +160,7 @@ var checkoutClasses = function(){
 			$("#block-commerce-cap-cap").removeClass("goingBack")
 		}
 		$("#block-commerce-cap-cap").removeClass("thirdStep secondStep").addClass("firstStep");
+		setTimeout(function(){ $(".island-visible #sideluke").show(); }, 2100);
 		$(".checkoutBack").remove();
 	}
 }
@@ -282,10 +286,10 @@ $(document).ready(function() {
       slide: function( event, ui ) {
       	var textblock = $(this).parents(".island-dive-content").find(".island-dive-content-text-block");
       	textblock.css('background-position-y' , (ui.value) + 'vh');
-    	if (ui.value < -200) {
-    		console.log("menos de 30")
+    	if (ui.value < - 100) {
+    		$(this).find(".underwater-slider-more").addClass("fadedIn")
     	} else {
-    		console.log("mais de 30")
+    		$(this).find(".underwater-slider-more").removeClass("fadedIn")
     	}
       	event.stopPropagation();
       }
@@ -398,7 +402,7 @@ $(document).ready(function() {
 		var currentVideoUp = currentVideoWrapper.find(".goinUp");
 
 		if (direction == 'up') {
-			
+			// mostrar video ao subir do nivel 2 para o 1
 			if (Number(level) === 2) {
 				$(".diveVideos").show();
 				currentVideoWrapper.addClass("visible");
@@ -409,6 +413,7 @@ $(document).ready(function() {
 				}
 			}
 			
+			// nao ha video se subires para o nivel 2
 			if (Number(level) >= 1 && doubleLevels.indexOf(current) !== -1) {
 				 level = level - 1;
 				 $(".island-wrapper").addClass("goinUp")
@@ -430,6 +435,7 @@ $(document).ready(function() {
 			}
 		} else {
 			
+			// mostrar video ao descer do nivel 1 pro 2
 			if (Number(level) == 1) {
 				$(".diveVideos").show();
 				currentVideoWrapper.addClass("visible");
@@ -474,13 +480,15 @@ $(document).ready(function() {
 	// key navigation
 	$(document).keydown(function(e) {
 		if (!onGoing) {
-			// sair da agua
+			// mergulhar
 			if (e.keyCode == 40) {
 				dive("down");
+				console.log (current + " - " + level)
 			}
-			// mergulhar
+			// sair da agua
 			if (e.keyCode == 38) {
 				dive("up");
+				console.log (current + " - " + level)
 			}
 
 			// acima de agua
@@ -496,8 +504,8 @@ $(document).ready(function() {
 			}
 			// debaixo de agua
 			if (level >= 1) {
-				var canGoLeft = [2,3,4,5,8,9];
-				var canGoRight = [1,2,3,4,7,8];
+				var canGoLeft = [2,3,4,5,6,8,9];
+				var canGoRight = [1,2,3,4,6,7,8];
 				// esquerda
 				if (e.keyCode == 37 && canGoLeft.indexOf(current) !== -1) {
 					trans('up')

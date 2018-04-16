@@ -187,7 +187,11 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-smokey"></div>
-        <div class="underwater-slider-vertical"></div>
+        <div class="underwater-slider-vertical">
+          <a href="#" class="underwater-slider-more">
+            ▼
+          </a>          
+        </div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -223,7 +227,8 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
       <div class="island-dive-content-smokey"></div>
-        <div class="underwater-slider-vertical"></div>
+        <div class="underwater-slider-vertical">
+        </div>
 
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
@@ -260,7 +265,11 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-smokey"></div>
-        <div class="underwater-slider-vertical"></div>
+        <div class="underwater-slider-vertical">
+          <a href="#" class="underwater-slider-more">
+            ▼
+          </a>          
+        </div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -295,7 +304,11 @@
       </div>
       <div class="island-dive-content island-dive-fixed">
         <div class="island-dive-content-smokey"></div>
-        <div class="underwater-slider-vertical"></div>
+        <div class="underwater-slider-vertical">
+          <a href="#" class="underwater-slider-more">
+            ▼
+          </a>          
+        </div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -332,7 +345,11 @@
       <div class="island-dive-content-text-title">
       </div>
       <div class="island-dive-content-smokey"></div>
-      <div class="underwater-slider-vertical noSwipe"></div>
+      <div class="underwater-slider-vertical noSwipe">
+        <a href="#" class="underwater-slider-more">
+          ▼
+        </a>
+      </div>
       <div class="island-dive-content-text">
       <div class="island-dive-content-text-blocks">
           <div class="island-dive-content-text-block"></div>

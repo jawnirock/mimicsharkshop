@@ -754,6 +754,22 @@
       border: none; }
     .island-dive .island-dive-content .underwater-slider-vertical .ui-state-default:hover, .island-dive .island-dive-content .underwater-slider-vertical .ui-widget-content .ui-state-default:hover {
       opacity: 0.8; }
+  .island-dive .island-dive-content .underwater-slider-vertical .underwater-slider-more {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    margin-bottom: -45px;
+    color: #0095ac;
+    font-weight: 900;
+    font-size: 30px;
+    border-bottom: 2px solid #0095ac;
+    padding: 2px 5px;
+    text-transform: capitalize;
+    border-radius: 9px;
+    opacity: 0;
+    transition: 1s linear; }
+    .island-dive .island-dive-content .underwater-slider-vertical .underwater-slider-more.fadedIn {
+      opacity: 1; }
 
 @-webkit-keyframes toSecond {
   from {
@@ -1004,8 +1020,8 @@
     opacity: 0;
     -webkit-animation: lukeFirst 15s normal forwards;
             animation: lukeFirst 15s normal forwards;
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s; }
+    -webkit-animation-delay: 4.5s;
+            animation-delay: 4.5s; }
   #block-commerce-cap-cap.firstStep.goingBack {
     -webkit-animation: firstBack 2.5s forwards;
             animation: firstBack 2.5s forwards; }
