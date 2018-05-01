@@ -215,7 +215,9 @@ var shopFunctions = function() {
     $(".island-dive-size-title").click(function() {
         $(this).next(".island-dive-size-chart").slideToggle();
     })
-    
+    $(".island-product-info-title").click(function() {
+      $(this).next(".island-product-info-text").slideToggle();
+    })
     //bg change
 
     $(".island-dive-shop-thumb").click(function() {
@@ -416,8 +418,8 @@ $(document).ready(function() {
 			// nao ha video se subires para o nivel 2
 			if (Number(level) >= 1 && doubleLevels.indexOf(current) !== -1) {
 				 level = level - 1;
-				 $(".island-wrapper").addClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
+					 $(".island-wrapper").addClass("goinUp")
 				 if (Number(level) == 1) {
 					setTimeout(function() {
 						$(".island-dive").hide();
@@ -433,6 +435,9 @@ $(document).ready(function() {
 					}, 1500)
 				 }
 			}
+			
+			
+			// direction down
 		} else {
 			
 			// mostrar video ao descer do nivel 1 pro 2
@@ -454,6 +459,7 @@ $(document).ready(function() {
 				 $(".island-dive").show();
 			}
 			// se forem secoes de 2 niveis desce 2
+			// MUDAR  PARA (Number(level) <= 3) QUANDO SE ACRESCENTAR CRIANCAS
 			else if (Number(level) <= 2 && doubleLevels.indexOf(current) !== -1){
 				 level = level + 1;
 				 $(".island-wrapper").removeClass("goinUp")

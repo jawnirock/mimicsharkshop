@@ -346,6 +346,7 @@
 		transform: translateY(-200%);
 	}
 }
+
 @keyframes diveUpLevelTwo {
 	0% {
 		transform: translateY(-100%);
@@ -368,3 +369,25 @@
 	}
 }
 
+// transiçoes para secçoes inferiores
+
+@keyframes fadeInSection {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+}
+@keyframes fadeOutSection {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 0;
+	}
+}

@@ -2,14 +2,19 @@
 	.island-dive   {
 	    
 	    &-content {
-	        height: 200%;
+	        height: 100%;
             &-shop {
-               height: 50%;
-               position: relative;
-        	    background-size: 100% auto;
-        	    background-repeat: no-repeat;
-        	    background-position: center;
-        	    transition: background 1s;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: background 1s;
+                opacity: 0;
+                &#shop-women {
+                    opacity: 1;
+                }
             }
 	    }
     	&-size {
@@ -49,6 +54,43 @@
 }
 
 .island-wrapper {
+	&[data-level="2"].goinUp {
+        #shop-men {
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+    }
+}
+.island-wrapper {
+	&[data-level="3"] {
+        #shop-men {    		
+            opacity: 1;
+            transition: opacity 1.5s;
+        }
+        #shop-women {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+	}
+}
+.island-wrapper {
+	&[data-level="3"].goinUp {
+        #shop-kids {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+    }
+}
+.island-wrapper {
+	&[data-level="4"] {
+        #shop-kids {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+	}
+}
+
+.island-wrapper {
 	&[data-level="2"] {
 	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {
             #shop-men {
@@ -60,7 +102,7 @@
 	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {
             #shop-women {
                visibility: hidden;
-            }	    
+            }
 	    }
 	}   
 }

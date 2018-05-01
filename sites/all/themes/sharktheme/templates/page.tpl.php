@@ -139,6 +139,12 @@
   </aside>
   
   <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/R1.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/R1rev.mp4" type="video/mp4">
+    </video>  
   </aside>
   
   <aside class="diveVideoWrapper">
@@ -169,6 +175,12 @@
   </aside>
   
   <aside class="diveVideoWrapper">
+    <video style="" muted playsinline class="diveVideo goinDown" preload="metadata" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/R5.mp4" type="video/mp4">
+    </video>  
+    <video style="" muted playsinline class="diveVideo goinUp" preload="metadata" width="320" height="180">
+        <source src="/sites/all/themes/sharktheme/images/headers/R5rev.mp4" type="video/mp4">
+    </video>  
   </aside>
 </div>
 
@@ -185,7 +197,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical">
           <a href="#" class="underwater-slider-more">
@@ -225,7 +237,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
       <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical">
         </div>
@@ -263,7 +275,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical">
           <a href="#" class="underwater-slider-more">
@@ -302,7 +314,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical">
           <a href="#" class="underwater-slider-more">
@@ -341,7 +353,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
       <div class="island-dive-content-text-title">
       </div>
       <div class="island-dive-content-smokey"></div>
@@ -384,7 +396,7 @@
     <aside class="island-dive island-dive--visible">
       <div class="island-dive-transition">
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <div class="island-dive-content-sitemap">
           
           <section class="sitemap-container">
@@ -515,16 +527,24 @@
 
       <div class="island-dive-content">
         <div id="products-women"  class="island-dive-content-product">
-          WOMEN
-            <span class="island-dive-nav island-dive-nav--up" ></span>
-            <span class="island-dive-nav island-dive-nav--right" ></span>
-            <span class="island-dive-nav island-dive-nav--down" ></span>
+          <div class="island-product-info">
+            <h3 class="island-product-info-title">WOMEN</h3>
+            <h3 class="island-product-info-text" style="display: none;">info</h3>
+          </div>
+          <video style="" muted autoplay loop playsinline class="productVideo" preload="metadata" width="320" height="180">
+              <source src="/sites/all/themes/sharktheme/images/-headers/R11.mp4" type="video/mp4">
+          </video>  
+
         </div>
         <div id="products-men"  class="island-dive-content-product">
-          MEN
-            <span class="island-dive-nav island-dive-nav--up" ></span>
-            <span class="island-dive-nav island-dive-nav--right" ></span>
-            <span class="island-dive-nav island-dive-nav--down" ></span>
+          <div class="island-product-info">
+            <h3 class="island-product-info-title">MEN</h3>
+            <h3 class="island-product-info-text" style="display: none;">info</h3>
+          </div>
+
+          <video style="" muted autoplay loop playsinline class="productVideo" preload="metadata" width="320" height="180">
+              <source src="/sites/all/themes/sharktheme/images/-headers/R12.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </aside>
@@ -596,7 +616,7 @@
     
       </div>
 
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <div id="sideluke"></div>
 
         <?php print render($page['content']); ?>
@@ -619,7 +639,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <div class="island-dive-content-disclaimer">
           <span class="island-dive-nav island-dive-nav--up" ></span>
           <span class="island-dive-nav island-dive-nav--left" ></span>
@@ -639,7 +659,7 @@
       <div class="island-dive-transition">
         
       </div>
-      <div class="island-dive-content island-dive-fixed">
+      <div class="island-dive-content">
         <?php print render($page['footer']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>
         <span class="island-dive-nav island-dive-nav--left" ></span>

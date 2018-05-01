@@ -1,38 +1,86 @@
 #products {
+    .productVideo {
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        top: 0px;
+    }
+    .island-product-info {
+        position: absolute;
+        z-index: 9999;
+    }
     .island-dive-content {
-        height: 200%;
+        height: 100%;
         &-product {
-        	transition: transform 1.5ms ease-in-out;
+        	transition: 1.5ms ease-in-out;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 50%;
-            position: relative;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            &#products-women {
+                opacity: 1;
+            }
         }
     }
 }
 
-#products-women {
-     background-image: url('../images/bg/products/women.jpg');
+.island-wrapper {
+	&[data-level="2"].goinUp {
+        #products-men {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+    }
 }
-#products-men {
-     background-image: url('../images/bg/products/men.jpg');
+.island-wrapper {
+	&[data-level="3"] {
+        #products-men {    		
+            transition: opacity 1.5s;
+            opacity: 1;
+        }
+        #products-women {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+	}
 }
+.island-wrapper {
+	&[data-level="3"].goinUp {
+        #products-kids {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
+    }
+}
+.island-wrapper {
+	&[data-level="4"] {
+        #products-kids {    		
+            opacity: 1;
+            transition: opacity 1.5s;
+        }
+	}
+}
+
+
 
 .island-wrapper {
 	&[data-level="2"] {
 	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {
             #products-men {
                visibility: hidden;
-            }	    
+            }
 	    }
 
-	}    
+	}
 	&[data-level="3"] {
 	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {
             #products-women {
                visibility: hidden;
-            }	    
+            }
 	    }
-	}    
+	}
 }
+
