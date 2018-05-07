@@ -526,7 +526,7 @@
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
           <video style="" muted autoplay loop playsinline class="productVideo" preload="metadata" width="320" height="180">
-              <source src="/sites/all/themes/sharktheme/images/-headers/R11.mp4" type="video/mp4">
+              <source src="/sites/all/themes/sharktheme/images/headers/R11.mp4" type="video/mp4">
           </video>  
 
         </div>
@@ -537,7 +537,7 @@
           </div>
 
           <video style="" muted autoplay loop playsinline class="productVideo" preload="metadata" width="320" height="180">
-              <source src="/sites/all/themes/sharktheme/images/-headers/R12.mp4" type="video/mp4">
+              <source src="/sites/all/themes/sharktheme/images/headers/R12.mp4" type="video/mp4">
           </video>
         </div>
       </div>
