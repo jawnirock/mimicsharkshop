@@ -221,10 +221,8 @@ var shopFunctions = function() {
     //bg change
 
     $(".island-dive-shop-thumb").click(function() {
-        var imgsrc = $(this).attr("src");
-        $(this).parents(".island-dive-content-shop").css("background-image", "url(" + imgsrc + ")");
-        $(this).parents(".island-dive-content-shop .island-nav span").css("background-image", "url(" + imgsrc + ")");
-        
+        $(".island-dive-shop-thumb").removeClass("active");
+        $(this).addClass("active");
     });	
 }
 
@@ -285,6 +283,7 @@ $(document).ready(function() {
       min: -300,
       max: 15,
       value: 15,
+	  step: 1,
       slide: function( event, ui ) {
       	var textblock = $(this).parents(".island-dive-content").find(".island-dive-content-text-block");
       	textblock.css('background-position-y' , (ui.value) + 'vh');

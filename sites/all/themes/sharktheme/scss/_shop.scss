@@ -29,17 +29,41 @@
     	}
     	
     	&-shop {
-        	transition: transform 1.5ms ease-in-out;
-    		position: absolute;
-    	    bottom: 20px;
-    	    left: 20px;
-    	    z-index: 150;
-    	    
     	    &-thumb {
     	    	background: white;
     	    	display: inline-block;
     	    	height: 80px;
     	    	cursor: pointer;
+    	    	transition: 1s linear;
+                position: absolute;
+                width: 100px;
+    	    	height: auto;
+                z-index: 90;
+	    	    left: 0px;
+	    	    bottom: 40px;
+	    	    &:nth-child(1) {
+	    	        left: 20px;
+	    	    }
+	    	    &:nth-child(2) {
+	    	        left: 140px;
+	    	    }
+	    	    &:nth-child(3) {
+	    	        left: 260px;
+	    	    }
+	    	    &:nth-child(4) {
+	    	        left: 380px;
+	    	    }
+	    	    &:nth-child(5) {
+	    	        left: 500px;
+	    	    }
+    	    	&.active {
+    	    	    width: 100%;
+    	    	    height: auto;
+    	    	    position: absolute;
+    	    	    z-index: 80;
+    	    	    left: 0;
+    	    	    bottom: 0;
+    	    	}
     	    }
     	}	    
 	}

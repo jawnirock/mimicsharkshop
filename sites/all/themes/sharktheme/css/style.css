@@ -1656,18 +1656,35 @@
     font-size: 40px;
     cursor: pointer; }
 
-#shop .island-dive-shop {
-  transition: -webkit-transform 1.5ms ease-in-out;
-  transition: transform 1.5ms ease-in-out;
+#shop .island-dive-shop-thumb {
+  background: white;
+  display: inline-block;
+  height: 80px;
+  cursor: pointer;
+  transition: 1s linear;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  z-index: 150; }
-  #shop .island-dive-shop-thumb {
-    background: white;
-    display: inline-block;
-    height: 80px;
-    cursor: pointer; }
+  width: 100px;
+  height: auto;
+  z-index: 90;
+  left: 0px;
+  bottom: 40px; }
+  #shop .island-dive-shop-thumb:nth-child(1) {
+    left: 20px; }
+  #shop .island-dive-shop-thumb:nth-child(2) {
+    left: 140px; }
+  #shop .island-dive-shop-thumb:nth-child(3) {
+    left: 260px; }
+  #shop .island-dive-shop-thumb:nth-child(4) {
+    left: 380px; }
+  #shop .island-dive-shop-thumb:nth-child(5) {
+    left: 500px; }
+  #shop .island-dive-shop-thumb.active {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 80;
+    left: 0;
+    bottom: 0; }
 
 #shop-women {
   background-image: url("../images/bg/shop/women.jpg"); }

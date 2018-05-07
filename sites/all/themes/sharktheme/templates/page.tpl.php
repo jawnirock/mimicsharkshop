@@ -501,12 +501,6 @@
 
             </div>
           </section>  
-
-          
-          
-          
-          
-          
           <span class="island-dive-nav island-dive-nav--up" ></span>
         </div>
       </div>
@@ -575,7 +569,7 @@
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
             </div>
             <div class="island-dive-shop">
-              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women.png" style="display: none;">
+              <img class="island-dive-shop-thumb active" src="/sites/all/themes/sharktheme/images/bg/shop/women.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women1.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women2.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/women3.jpg">
@@ -592,7 +586,7 @@
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
             </div>
             <div class="island-dive-shop">
-              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men.png" style="display: none;">
+              <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men.jpg" style="display: none;">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men1.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men2.jpg">
               <img class="island-dive-shop-thumb" src="/sites/all/themes/sharktheme/images/bg/shop/men3.jpg">
