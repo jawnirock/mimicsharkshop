@@ -39,8 +39,9 @@
                 width: 100px;
     	    	height: auto;
                 z-index: 90;
-	    	    left: 0px;
+	    	    // left: 0px;
 	    	    bottom: 40px;
+
 	    	    &:nth-child(1) {
 	    	        left: 20px;
 	    	    }
@@ -58,23 +59,53 @@
 	    	    }
     	    	&.active {
     	    	    width: 100%;
-    	    	    height: auto;
     	    	    position: absolute;
     	    	    z-index: 80;
-    	    	    left: 0;
-    	    	    bottom: 0;
+    	    	    // left: 0;
+    	    	    // bottom: 0;
+                    animation: growThumb 1s forwards;
+    	    	}
+    	    	&.static {
+                   // opacity: 0;
+                   // animation: showThumb 1s forwards;
     	    	}
     	    }
     	}	    
 	}
 }
 
+@keyframes growThumb {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+	    width: 100%;
+	    bottom: 0;
+	    left: 0;
+    }
+}
+
+
+@keyframes showThumb {
+    50% {
+	    width: 100%;
+	    left: 0;
+	    bottom: 0;        
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 #shop-women {
-    background-image: url('../images/bg/shop/women.jpg');
+    // background-image: url('../images/bg/shop/women.jpg');
 }
 
 #shop-men {
-    background-image: url('../images/bg/shop/men.jpg');
+    // background-image: url('../images/bg/shop/men.jpg');
 }
 
 .island-wrapper {
@@ -108,12 +139,15 @@
 .island-wrapper {
 	&[data-level="4"] {
         #shop-kids {    		
+            opacity: 1;
+            transition: opacity 1.5s;
+        }
+        #shop-women, #shop-men {    		
             opacity: 0 !important;
             transition: opacity 1.5s;
         }
 	}
 }
-
 .island-wrapper {
 	&[data-level="2"] {
 	    .spinTopOut, .spinTopIn, .spinBottomOut, .spinBottomIn {

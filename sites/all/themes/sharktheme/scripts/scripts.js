@@ -222,6 +222,8 @@ var shopFunctions = function() {
 
     $(".island-dive-shop-thumb").click(function() {
         $(".island-dive-shop-thumb").removeClass("active");
+        // $(".island-dive-shop-thumb").addClass("static");
+        $(this).removeClass("static");
         $(this).addClass("active");
     });	
 }
@@ -458,8 +460,7 @@ $(document).ready(function() {
 				 $(".island-dive").show();
 			}
 			// se forem secoes de 2 niveis desce 2
-			// MUDAR  PARA (Number(level) <= 3) QUANDO SE ACRESCENTAR CRIANCAS
-			else if (Number(level) <= 2 && doubleLevels.indexOf(current) !== -1){
+			else if (Number(level) <= 3 && doubleLevels.indexOf(current) !== -1){
 				 level = level + 1;
 				 $(".island-wrapper").removeClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
@@ -509,8 +510,8 @@ $(document).ready(function() {
 			}
 			// debaixo de agua
 			if (level >= 1) {
-				var canGoLeft = [2,3,4,5,6,8,9];
-				var canGoRight = [1,2,3,4,6,7,8];
+				var canGoLeft = [2,3,4,5,6,7,8,9];
+				var canGoRight = [1,2,3,4,5,6,7,8];
 				// esquerda
 				if (e.keyCode == 37 && canGoLeft.indexOf(current) !== -1) {
 					trans('up')

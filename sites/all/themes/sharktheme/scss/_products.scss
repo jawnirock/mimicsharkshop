@@ -61,6 +61,10 @@
             opacity: 1;
             transition: opacity 1.5s;
         }
+        #products-women, #products-men {    		
+            opacity: 0 !important;
+            transition: opacity 1.5s;
+        }
 	}
 }
 

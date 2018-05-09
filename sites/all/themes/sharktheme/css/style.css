@@ -1627,6 +1627,10 @@
   opacity: 1;
   transition: opacity 1.5s; }
 
+.island-wrapper[data-level="4"] #products-women, .island-wrapper[data-level="4"] #products-men {
+  opacity: 0 !important;
+  transition: opacity 1.5s; }
+
 .island-wrapper[data-level="2"] .spinTopOut #products-men, .island-wrapper[data-level="2"] .spinTopIn #products-men, .island-wrapper[data-level="2"] .spinBottomOut #products-men, .island-wrapper[data-level="2"] .spinBottomIn #products-men {
   visibility: hidden; }
 
@@ -1666,7 +1670,6 @@
   width: 100px;
   height: auto;
   z-index: 90;
-  left: 0px;
   bottom: 40px; }
   #shop .island-dive-shop-thumb:nth-child(1) {
     left: 20px; }
@@ -1680,17 +1683,44 @@
     left: 500px; }
   #shop .island-dive-shop-thumb.active {
     width: 100%;
-    height: auto;
     position: absolute;
     z-index: 80;
+    -webkit-animation: growThumb 1s forwards;
+            animation: growThumb 1s forwards; }
+
+@-webkit-keyframes growThumb {
+  0% {
+    width: 100px; }
+  100% {
+    width: 100%;
+    bottom: 0;
+    left: 0; } }
+
+@keyframes growThumb {
+  0% {
+    width: 100px; }
+  100% {
+    width: 100%;
+    bottom: 0;
+    left: 0; } }
+
+@-webkit-keyframes showThumb {
+  50% {
+    width: 100%;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-#shop-women {
-  background-image: url("../images/bg/shop/women.jpg"); }
-
-#shop-men {
-  background-image: url("../images/bg/shop/men.jpg"); }
+@keyframes showThumb {
+  50% {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .island-wrapper[data-level="2"].goinUp #shop-men {
   opacity: 0 !important;
@@ -1709,6 +1739,10 @@
   transition: opacity 1.5s; }
 
 .island-wrapper[data-level="4"] #shop-kids {
+  opacity: 1;
+  transition: opacity 1.5s; }
+
+.island-wrapper[data-level="4"] #shop-women, .island-wrapper[data-level="4"] #shop-men {
   opacity: 0 !important;
   transition: opacity 1.5s; }
 
