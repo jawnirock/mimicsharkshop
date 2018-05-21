@@ -54,11 +54,15 @@
 	    
 	    // BACKGROUNDS
 
-		&:nth-child(1) {
+		&#safety {
 	    	background-image: url('../images/bg/islands/L5.jpg');
+		    background-size: 118%;
+		    background-position: 0%;
 		}
-		&:nth-child(2) {
+		&#eco {
 	    	background-image: url('../images/bg/islands/L4.jpg');
+		    background-size: 128%;
+		    background-position: 100%;
 		}
 		&:nth-child(3) {
 	    	background-image: url('../images/bg/islands/L3.jpg');
@@ -66,14 +70,26 @@
 		&:nth-child(4) {
 	    	background-image: url('../images/bg/islands/L2.jpg');
 		}
-		&:nth-child(5) {
+		&#about {
 	    	background-image: url('../images/bg/islands/L1.jpg');
+		    background-size: 119%;
+		    background-position: 0%;
 		}
-		&:nth-child(6) {
+		&#luke .lukeBg{
 	    	background-image: url('../images/bg/islands/00.jpg');
+		    background-size: 144%;
+		    background-position: 50%;
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    background-repeat: no-repeat;
+		    background-position: center;
 		}
-		&:nth-child(7) {
+		&#products {
 	    	background-image: url('../images/bg/islands/R1.jpg');
+		    background-size: 119%;
+		    background-position: 100%;
+
 		}
 		&:nth-child(8) {
 	    	background-image: url('../images/bg/islands/R2.jpg');
@@ -81,14 +97,84 @@
 		&:nth-child(9) {
 	    	background-image: url('../images/bg/islands/R3.jpg');
 		}
-		&:nth-child(10) {
+		&#disclaimer {
 	    	background-image: url('../images/bg/islands/R4.jpg');
+		    background-size: 128%;
+		    background-position: 0%;
 		}
-		&:nth-child(11) {
+		&#contact {
 	    	background-image: url('../images/bg/islands/R5.jpg');
+		    background-size: 118%;
+		    background-position: 100%;
 		}	
 		&-visible{
 			visibility: visible !important;
+			&#luke {
+				&.down .lukeBg{
+			    	background-position: 100%;
+				    animation: LukeLeft 3.2s ease-out forwards;
+				}
+				&.up .lukeBg{
+					background-position: 0%;
+				    animation: LukeRight 3.2s ease-out forwards;
+				}				
+			}
+			
+			&#about, &#safety {
+				&.down {
+			    	background-position: 100%;
+				}
+				&.up {
+					background-position: 100%;
+				    transition: background-position 2s ease-out;
+				    transition-delay: 1.2s;
+				}
+			}
+
+			&#eco {
+				&.up {
+			    	background-position: 0%;
+				}
+				&.down {
+					background-position: 0%;
+				    transition: background-position 2s ease-out;
+				    transition-delay: 1.2s;
+				}				
+			}
+
+			&#products {
+				&.down {
+			    	background-position: 0%;
+				    transition: background-position 2s ease-out;
+				    transition-delay: 1.2s;
+				}
+				&.up {
+					background-position: 0%;
+				}
+			}
+
+			&#disclaimer {
+				&.up {
+			    	background-position: 100%;
+				    transition: background-position 2s ease-out;
+				    transition-delay: 1.2s;
+				}
+				&.down {
+					background-position: 100%;
+				}				
+			}
+			&#contact {
+				&.down {
+			    	background-position: 0%;
+				    transition: background-position 2s ease-out;
+				    transition-delay: 1.2s;
+				}
+				&.up {
+					background-position: 0%;
+				}
+			}
+
+			
 		}
 		
 		
@@ -177,4 +263,23 @@
 		}
 		
 	}
+}
+
+
+@keyframes LukeLeft {
+    from {
+	    background-position: 100%;
+    }
+    to {
+	    background-position: 50%;
+    }
+}
+
+@keyframes LukeRight {
+    from {
+	    background-position: 0%;
+    }
+    to {
+	    background-position: 50%;
+    }
 }

@@ -1661,26 +1661,16 @@
     cursor: pointer; }
 
 #shop .island-dive-shop-thumb {
-  background: white;
   display: inline-block;
   height: 80px;
   cursor: pointer;
-  transition: 1s linear;
   position: absolute;
   width: 100px;
-  height: auto;
+  height: 100px;
   z-index: 90;
   bottom: 40px; }
-  #shop .island-dive-shop-thumb:nth-child(1) {
-    left: 20px; }
-  #shop .island-dive-shop-thumb:nth-child(2) {
-    left: 140px; }
-  #shop .island-dive-shop-thumb:nth-child(3) {
-    left: 260px; }
-  #shop .island-dive-shop-thumb:nth-child(4) {
-    left: 380px; }
-  #shop .island-dive-shop-thumb:nth-child(5) {
-    left: 500px; }
+  #shop .island-dive-shop-thumb img {
+    width: 100%; }
   #shop .island-dive-shop-thumb.active {
     width: 100%;
     position: absolute;
@@ -1688,11 +1678,27 @@
     -webkit-animation: growThumb 1s forwards;
             animation: growThumb 1s forwards; }
 
+#shop .island-dive-shop .static {
+  left: 20px; }
+
+#shop .island-dive-shop .static ~ .static {
+  left: 140px; }
+
+#shop .island-dive-shop .static ~ .static ~ .static {
+  left: 260px; }
+
+#shop .island-dive-shop .static ~ .static ~ .static ~ .static {
+  left: 380px; }
+
+#shop .island-dive-shop .static ~ .static ~ .static ~ .static ~ .static {
+  left: 500px; }
+
 @-webkit-keyframes growThumb {
   0% {
     width: 100px; }
   100% {
     width: 100%;
+    height: 100%;
     bottom: 0;
     left: 0; } }
 
@@ -1701,6 +1707,7 @@
     width: 100px; }
   100% {
     width: 100%;
+    height: 100%;
     bottom: 0;
     left: 0; } }
 
@@ -1815,30 +1822,87 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .island-wrapper .island:nth-child(1) {
-      background-image: url("../images/bg/islands/L5.jpg"); }
-    .island-wrapper .island:nth-child(2) {
-      background-image: url("../images/bg/islands/L4.jpg"); }
+    .island-wrapper .island#safety {
+      background-image: url("../images/bg/islands/L5.jpg");
+      background-size: 118%;
+      background-position: 0%; }
+    .island-wrapper .island#eco {
+      background-image: url("../images/bg/islands/L4.jpg");
+      background-size: 128%;
+      background-position: 100%; }
     .island-wrapper .island:nth-child(3) {
       background-image: url("../images/bg/islands/L3.jpg"); }
     .island-wrapper .island:nth-child(4) {
       background-image: url("../images/bg/islands/L2.jpg"); }
-    .island-wrapper .island:nth-child(5) {
-      background-image: url("../images/bg/islands/L1.jpg"); }
-    .island-wrapper .island:nth-child(6) {
-      background-image: url("../images/bg/islands/00.jpg"); }
-    .island-wrapper .island:nth-child(7) {
-      background-image: url("../images/bg/islands/R1.jpg"); }
+    .island-wrapper .island#about {
+      background-image: url("../images/bg/islands/L1.jpg");
+      background-size: 119%;
+      background-position: 0%; }
+    .island-wrapper .island#luke .lukeBg {
+      background-image: url("../images/bg/islands/00.jpg");
+      background-size: 144%;
+      background-position: 50%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .island-wrapper .island#products {
+      background-image: url("../images/bg/islands/R1.jpg");
+      background-size: 119%;
+      background-position: 100%; }
     .island-wrapper .island:nth-child(8) {
       background-image: url("../images/bg/islands/R2.jpg"); }
     .island-wrapper .island:nth-child(9) {
       background-image: url("../images/bg/islands/R3.jpg"); }
-    .island-wrapper .island:nth-child(10) {
-      background-image: url("../images/bg/islands/R4.jpg"); }
-    .island-wrapper .island:nth-child(11) {
-      background-image: url("../images/bg/islands/R5.jpg"); }
+    .island-wrapper .island#disclaimer {
+      background-image: url("../images/bg/islands/R4.jpg");
+      background-size: 128%;
+      background-position: 0%; }
+    .island-wrapper .island#contact {
+      background-image: url("../images/bg/islands/R5.jpg");
+      background-size: 118%;
+      background-position: 100%; }
     .island-wrapper .island-visible {
       visibility: visible !important; }
+      .island-wrapper .island-visible#luke.down .lukeBg {
+        background-position: 100%;
+        -webkit-animation: LukeLeft 3.2s ease-out forwards;
+                animation: LukeLeft 3.2s ease-out forwards; }
+      .island-wrapper .island-visible#luke.up .lukeBg {
+        background-position: 0%;
+        -webkit-animation: LukeRight 3.2s ease-out forwards;
+                animation: LukeRight 3.2s ease-out forwards; }
+      .island-wrapper .island-visible#about.down, .island-wrapper .island-visible#safety.down {
+        background-position: 100%; }
+      .island-wrapper .island-visible#about.up, .island-wrapper .island-visible#safety.up {
+        background-position: 100%;
+        transition: background-position 2s ease-out;
+        transition-delay: 1.2s; }
+      .island-wrapper .island-visible#eco.up {
+        background-position: 0%; }
+      .island-wrapper .island-visible#eco.down {
+        background-position: 0%;
+        transition: background-position 2s ease-out;
+        transition-delay: 1.2s; }
+      .island-wrapper .island-visible#products.down {
+        background-position: 0%;
+        transition: background-position 2s ease-out;
+        transition-delay: 1.2s; }
+      .island-wrapper .island-visible#products.up {
+        background-position: 0%; }
+      .island-wrapper .island-visible#disclaimer.up {
+        background-position: 100%;
+        transition: background-position 2s ease-out;
+        transition-delay: 1.2s; }
+      .island-wrapper .island-visible#disclaimer.down {
+        background-position: 100%; }
+      .island-wrapper .island-visible#contact.down {
+        background-position: 0%;
+        transition: background-position 2s ease-out;
+        transition-delay: 1.2s; }
+      .island-wrapper .island-visible#contact.up {
+        background-position: 0%; }
     .island-wrapper .island-center {
       text-align: center; }
       .island-wrapper .island-center .island-title {
@@ -1899,6 +1963,30 @@
       .island-wrapper .island-nav--right:hover {
         background: linear-gradient(to left, rgba(84, 84, 84, 0.3) 0%, rgba(84, 84, 84, 0) 100%);
         cursor: pointer; }
+
+@-webkit-keyframes LukeLeft {
+  from {
+    background-position: 100%; }
+  to {
+    background-position: 50%; } }
+
+@keyframes LukeLeft {
+  from {
+    background-position: 100%; }
+  to {
+    background-position: 50%; } }
+
+@-webkit-keyframes LukeRight {
+  from {
+    background-position: 0%; }
+  to {
+    background-position: 50%; } }
+
+@keyframes LukeRight {
+  from {
+    background-position: 0%; }
+  to {
+    background-position: 50%; } }
 
 #contact .alert, #contact .error {
   width: 100%;

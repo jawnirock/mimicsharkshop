@@ -220,11 +220,17 @@ var shopFunctions = function() {
     })
     //bg change
 
-    $(".island-dive-shop-thumb").click(function() {
-        $(".island-dive-shop-thumb").removeClass("active");
-        // $(".island-dive-shop-thumb").addClass("static");
-        $(this).removeClass("static");
-        $(this).addClass("active");
+
+    $(".island-dive-shop-thumb.static").click(function() {
+    	var currentThumb = $(this);
+    	var currentLevel = currentThumb.parents(".island-dive-content-shop");
+        currentLevel.find(".island-dive-shop-thumb").removeClass("active");
+        currentLevel.find(".island-dive-shop-thumb").addClass("static");
+        currentThumb.addClass("active");
+		setTimeout(function(){ 
+	        currentThumb.removeClass("static");
+		}, 1001);
+        
     });	
 }
 
@@ -310,6 +316,7 @@ $(document).ready(function() {
 	var length = $('.island').length,
 		current = 6,
 		next = 6,
+		lastDirection,
 		outClass, inClass, onGoing = false;
 		$('.island:eq(5)').addClass('island-visible');
 	
@@ -333,6 +340,7 @@ $(document).ready(function() {
 		if (!onGoing) {
 			onGoing = true;
 			console.log(direction + " " + current + " " + level);
+			lastDirection = direction;
 
 			// esquerda
 			if (direction == 'up') {
@@ -372,9 +380,9 @@ $(document).ready(function() {
 	
 	function show() {
 		$('.island:eq(' + (current - 1) + ') aside').removeClass('island-dive--visible');
-		$('.island:eq(' + (next - 1) + ')').addClass('island-visible');
 		$('.island:eq(' + (current - 1) + ')').addClass(outClass);
-		$('.island:eq(' + (next - 1) + ')').addClass(inClass);	
+		$('.island:eq(' + (next - 1) + ')').addClass(inClass + " " + lastDirection);	
+		$('.island:eq(' + (next - 1) + ')').addClass('island-visible');
 		$('#bullets>li:eq(' + (current - 1) + ')').removeClass('active');
 		$('#bullets>li:eq(' + (next - 1) + ')').addClass('active');
 	
@@ -384,7 +392,7 @@ $(document).ready(function() {
 		}, 1200)
 	
 		setTimeout(function() {
-			$('.island:eq(' + (current - 1) + ')').removeClass(outClass);
+			$('.island:eq(' + (current - 1) + ')').removeClass(outClass).removeClass("up").removeClass("down");
 			$('.island:eq(' + (next - 1) + ')').removeClass(inClass);
 			$('.island:eq(' + (next - 1) + ') aside').addClass('island-dive--visible');
 			
@@ -553,8 +561,8 @@ $(document).ready(function() {
 			}
 			// debaixo de agua
 			if (level >= 1) {
-				var canGoLeft = [2,3,4,5,8,9];
-				var canGoRight = [1,2,3,4,7,8];
+				var canGoLeft = [2,3,4,5,6,7,8,9];
+				var canGoRight = [1,2,3,4,5,6,7,8];
 				// esquerda
 				if (direction == "right" && canGoLeft.indexOf(current) !== -1) {
 					trans('up')

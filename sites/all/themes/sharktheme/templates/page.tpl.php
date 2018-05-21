@@ -386,6 +386,7 @@
 
 
   <section id="luke" class="island island-center">
+    <div class="lukeBg"></div>
     <nav class="island-nav">
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
@@ -575,22 +576,23 @@
       
       <div class="island-dive-content">
         <div id="shop-women" class="island-dive-content-shop">
-
-            <span class="island-dive-nav island-dive-nav--up" ></span>
-            <span class="island-dive-nav island-dive-nav--left" ></span>
-            <span class="island-dive-nav island-dive-nav--right" ></span>
-            <span class="island-dive-nav island-dive-nav--down" ></span>
-
             <div class="island-dive-size">
               <h3 class="island-dive-size-title">WOMEN</h3>
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
             </div>
             <div class="island-dive-shop">
-              <img class="island-dive-shop-thumb active" src="/sites/all/themes/sharktheme/images/bg/shop/women.jpg">
-              <img class="island-dive-shop-thumb static" src="/sites/all/themes/sharktheme/images/bg/shop/women1.jpg">
-              <img class="island-dive-shop-thumb static" src="/sites/all/themes/sharktheme/images/bg/shop/women2.jpg">
-              <img class="island-dive-shop-thumb static" src="/sites/all/themes/sharktheme/images/bg/shop/women3.jpg">
-              <img class="island-dive-shop-thumb static" src="/sites/all/themes/sharktheme/images/bg/shop/women4.jpg">
+              <div class="island-dive-shop-thumb active">
+                <img src="/sites/all/themes/sharktheme/images/bg/shop/women.jpg">
+              </div> 
+              <div class="island-dive-shop-thumb static">
+                <img src="/sites/all/themes/sharktheme/images/bg/shop/women2.jpg">
+              </div> 
+              <div class="island-dive-shop-thumb static">
+                <img src="/sites/all/themes/sharktheme/images/bg/shop/women3.jpg">
+              </div> 
+              <div class="island-dive-shop-thumb static">
+                <img src="/sites/all/themes/sharktheme/images/bg/shop/women4.jpg">
+              </div> 
             </div>
         </div>
         <div id="shop-men" class="island-dive-content-shop">
