@@ -612,6 +612,32 @@ $(window).resize(function() {
 
 $(window).load(function() {
 	console.log("all content loaded")
+	var videosLoaded = 0;
+	
+	$("video").each(function(){
+		var vid = $(this)[0];
+		vid.addEventListener("loadedmetadata", getmetadata);
+		
+		if (vid.readyState >= 4) {
+			console.log("video ready " + videosLoaded);
+			getmetadata();
+		}
+		function getmetadata()
+		{
+			videosLoaded++
+			console.log("video loaded " + videosLoaded);
+			if (videosLoaded >= 25) {
+				alert("all videos loaded")
+			}
+		}
+	})
+	
+	
+	
+
+
+
+	
 })
 
 
