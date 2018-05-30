@@ -303,6 +303,14 @@ $(document).ready(function() {
       	event.stopPropagation();
       }
     });
+    
+    $(".underwater-slider-more").click(function(e) {
+        var pdf = $(this).attr("href");
+        window.open(pdf, '_blank');
+		e.preventDefault();
+        e.stopPropagation();
+        return false;
+    })
 
 	mobileResponse();
 	siteMapCarouel();
@@ -611,8 +619,8 @@ $(window).resize(function() {
 });
 
 $(window).load(function() {
-	console.log("all content loaded")
-	var videosLoaded = 0;
+	// console.log("all content loaded")
+	// var videosLoaded = 0;
 	
 	// $("video").each(function(){
 	// 	var vid = $(this)[0];
@@ -625,9 +633,8 @@ $(window).load(function() {
 	// 	function getmetadata()
 	// 	{
 	// 		videosLoaded++
-	// 		console.log("video loaded " + videosLoaded);
 	// 		if (videosLoaded >= 25) {
-	// 			console.log("all videos loaded")
+	// 			alert("all videos loaded")
 	// 		}
 	// 	}
 	// })

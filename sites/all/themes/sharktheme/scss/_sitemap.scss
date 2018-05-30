@@ -10,6 +10,8 @@
     align-items: center;
     flex-direction: column;
 
+
+
     .sitemap-container {
       width: 210px;
       height: 390px;
@@ -17,7 +19,8 @@
       margin: 0 auto 40px;
       perspective: 1100px;
       margin-left: 300px;
-    }
+      transform: scale(0.8) translateY(-95px);
+     }
 
     .sitemap {
         width: 100%;
@@ -32,10 +35,16 @@
         -ms-transform-style: none;
         -ms-transform: none;
         
+        &-title {
+          height: 10vw;
+         margin-left: -25px;
+        margin-bottom: -10px;
+        }
+        
         &-nav {
             position: absolute;
             z-index: 9999;
-            height: 405px;
+            height: 505px;
             width: 175px;
             position: absolute;
             display: block;

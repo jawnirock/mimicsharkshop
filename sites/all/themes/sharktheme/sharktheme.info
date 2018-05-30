@@ -34,4 +34,5 @@ scripts[] = scripts/jquery.ripples.js
 scripts[] = scripts/jqueryui.js
 scripts[] = scripts/jqueryui-touch.js
 scripts[] = scripts/utils.js
+scripts[] = scripts/player.js
 scripts[] = scripts/scripts.js

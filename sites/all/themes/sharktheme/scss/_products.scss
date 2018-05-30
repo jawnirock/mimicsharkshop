@@ -8,6 +8,13 @@
     .island-product-info {
         position: absolute;
         z-index: 9999;
+        left: 35px;
+        top: 35px;
+        &-title {
+            img {
+              max-height: 10vw;
+            }
+        }
     }
     .island-dive-content {
         height: 100%;

@@ -130,10 +130,11 @@
 
   
   <aside class="diveVideoWrapper">
-    <video style="" preload="metadata" muted playsinline class="diveVideo goinDown"  width="320" height="180">
+    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
         <source src="https://player.vimeo.com/external/271564227.hd.mp4?s=452a8185c97a4ae1002c615078f7cd32948b5b5f&profile_id=175"  type="video/mp4">
     </video>  
-    <video style="" preload="metadata" muted playsinline class="diveVideo goinUp"  width="320" height="180">
+
+    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
         <source src="https://player.vimeo.com/external/271564439.hd.mp4?s=77244c2afd17a937120c3563acf0d9e7246c9102&profile_id=175"  type="video/mp4">
     </video>  
   </aside>
@@ -278,7 +279,7 @@
       <div class="island-dive-content">
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical">
-          <a href="#" class="underwater-slider-more">
+        <a href="/sites/all/themes/sharktheme/images/pdf/HABITAT.pdf" target="_blank" class="underwater-slider-more">
             ▼
           </a>          
         </div>
@@ -317,7 +318,7 @@
       <div class="island-dive-content">
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical">
-          <a href="#" class="underwater-slider-more">
+        <a href="/sites/all/themes/sharktheme/images/pdf/ROOTS.pdf" target="_blank" class="underwater-slider-more">
             ▼
           </a>          
         </div>
@@ -358,7 +359,7 @@
       </div>
       <div class="island-dive-content-smokey"></div>
       <div class="underwater-slider-vertical noSwipe">
-        <a href="#" class="underwater-slider-more">
+        <a href="/sites/all/themes/sharktheme/images/pdf/ABOUT.pdf" target="_blank" class="underwater-slider-more">
           ▼
         </a>
       </div>
@@ -391,16 +392,23 @@
       <span class="island-nav--left"></span>
       <span class="island-nav--right"></span>
     </nav>
+    
     <div class="island-title island-dive-nav--down">
       <img src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
     </div>
+    <div class="island-title island-title--insta">
+      <a target="_blank" href="https://www.instagram.com/mimicsharksuits/">
+        <img src="/sites/all/themes/sharktheme/images/titles/instagram.gif">
+      </a>
+    </div>
+
     <aside class="island-dive island-dive--visible">
       <div class="island-dive-transition">
       </div>
       <div class="island-dive-content">
         <div class="island-dive-content-sitemap">
-          
           <section class="sitemap-container">
+            <img class="sitemap-title" src="/sites/all/themes/sharktheme/images/titles/islandmap.png">  
             <span class="sitemap-nav left" data-increment="-1"></span>
             <span class="sitemap-nav right" data-increment="1"></span>
             <div id="sitemap" class="sitemap">
@@ -528,7 +536,9 @@
       <div class="island-dive-content">
         <div id="products-women"  class="island-dive-content-product">
           <div class="island-product-info">
-            <h3 class="island-product-info-title">WOMEN</h3>
+            <h3 class="island-product-info-title">
+              <img src="/sites/all/themes/sharktheme/images/titles/womenwhite.png">  
+            </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
           <video style="" preload="metadata" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
@@ -538,7 +548,9 @@
         </div>
         <div id="products-men"  class="island-dive-content-product">
           <div class="island-product-info">
-            <h3 class="island-product-info-title">MEN</h3>
+            <h3 class="island-product-info-title">
+              <img src="/sites/all/themes/sharktheme/images/titles/menwhite.png">  
+            </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
 
@@ -548,7 +560,9 @@
         </div>
         <div id="products-kids"  class="island-dive-content-product">
           <div class="island-product-info">
-            <h3 class="island-product-info-title">KIDS</h3>
+            <h3 class="island-product-info-title">
+              <img src="/sites/all/themes/sharktheme/images/titles/kidswhite.png">  
+            </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
 
@@ -577,7 +591,10 @@
       <div class="island-dive-content">
         <div id="shop-women" class="island-dive-content-shop">
             <div class="island-dive-size">
-              <h3 class="island-dive-size-title">WOMEN</h3>
+              <h3 class="island-dive-size-title">
+                <img src="/sites/all/themes/sharktheme/images/titles/women.png">  
+              </h3>
+
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
             </div>
             <div class="island-dive-shop">
@@ -601,7 +618,9 @@
             <span class="island-dive-nav island-dive-nav--right" ></span>
 
             <div class="island-dive-size">
-              <h3 class="island-dive-size-title">MEN</h3>
+              <h3 class="island-dive-size-title">
+                <img src="/sites/all/themes/sharktheme/images/titles/men.png">  
+              </h3>
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
             </div>
             <div class="island-dive-shop">
@@ -617,7 +636,9 @@
             <span class="island-dive-nav island-dive-nav--right" ></span>
   
             <div class="island-dive-size">
-              <h3 class="island-dive-size-title">KIDS</h3>
+              <h3 class="island-dive-size-title">
+                <img src="/sites/all/themes/sharktheme/images/titles/kids.png">  
+              </h3>
               <h3 class="island-dive-size-chart" style="display: none;">SIZE CHART</h3>
             </div>
             <div class="island-dive-shop">

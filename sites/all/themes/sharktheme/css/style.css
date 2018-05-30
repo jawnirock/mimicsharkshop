@@ -1483,7 +1483,9 @@
     margin: 0 auto 40px;
     -webkit-perspective: 1100px;
             perspective: 1100px;
-    margin-left: 300px; }
+    margin-left: 300px;
+    -webkit-transform: scale(0.8) translateY(-95px);
+            transform: scale(0.8) translateY(-95px); }
   .island-dive-content-sitemap .sitemap {
     width: 100%;
     height: 100%;
@@ -1499,10 +1501,14 @@
     -moz-perspective: initial;
     -ms-transform-style: none;
     -ms-transform: none; }
+    .island-dive-content-sitemap .sitemap-title {
+      height: 10vw;
+      margin-left: -25px;
+      margin-bottom: -10px; }
     .island-dive-content-sitemap .sitemap-nav {
       position: absolute;
       z-index: 9999;
-      height: 405px;
+      height: 505px;
       width: 175px;
       position: absolute;
       display: block;
@@ -1591,7 +1597,11 @@
 
 #products .island-product-info {
   position: absolute;
-  z-index: 9999; }
+  z-index: 9999;
+  left: 35px;
+  top: 35px; }
+  #products .island-product-info-title img {
+    max-height: 10vw; }
 
 #products .island-dive-content {
   height: 100%; }
@@ -1653,12 +1663,11 @@
 
 #shop .island-dive-size {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 150; }
-  #shop .island-dive-size-title {
-    font-size: 40px;
-    cursor: pointer; }
+  z-index: 150;
+  left: 35px;
+  top: 35px; }
+  #shop .island-dive-size-title img {
+    max-height: 10vw; }
 
 #shop .island-dive-shop-thumb {
   display: inline-block;
@@ -1919,6 +1928,12 @@
       width: auto;
       -webkit-clip-path: none;
               clip-path: none; }
+      .island-wrapper .island-title--insta {
+        position: absolute;
+        margin: 12vw 0 0 17vw !important;
+        z-index: 900; }
+        .island-wrapper .island-title--insta img {
+          width: 2vw !important; }
       .island-wrapper .island-title img {
         max-height: 10vw; }
       .island-wrapper .island-title:hover {

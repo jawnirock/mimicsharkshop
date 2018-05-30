@@ -198,6 +198,15 @@
 			height: auto;
 			width: auto;
 			clip-path: none;
+			
+			&--insta {
+    			position: absolute;
+			    margin: 12vw 0 0 17vw !important;
+			    z-index: 900;
+			    img {
+			    	width: 2vw !important;
+			    }
+			}
     
 		    img {
 			    max-height: 10vw;
