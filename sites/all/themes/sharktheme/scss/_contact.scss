@@ -77,6 +77,37 @@
             }
         }
     }
+
+    .webform-component-file {
+        label {
+            display: none;
+        }
+        .form-managed-file {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            #edit-submitted-file-attachment-upload {
+                width: 40px;
+                height: 40px;
+                text-indent: -9999px;
+                background-image: url(/sites/all/themes/sharktheme/images/bg/contact/clip.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            #edit-submitted-file-attachment-upload-button {
+                text-indent: -9999px;
+                width: 40px;
+                height: 40px;
+                margin: 0 0px 0px 10px;
+                background-image: url(/sites/all/themes/sharktheme/images/bg/contact/upload.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    
 }
 .tooltip-inner {
     display: none;

@@ -25,7 +25,13 @@
             &-title {
                 img {
                   max-height: 10vw;
+                  cursor: pointer;
                 }
+    		}
+    		&-chart {
+    		    img {
+                  width: 45vw;
+    		    }
     		}
     	}
 
@@ -34,43 +40,54 @@
     	    	display: inline-block;
     	    	height: 80px;
     	    	cursor: pointer;
-    	    	// transition: 0.5s linear;
                 position: absolute;
                 width: 100px;
     	    	height: 100px;
-                z-index: 90;
+                z-index: 150;
 	    	    // left: 0px;
 	    	    bottom: 40px;
+	    	    background-size: cover;
 
-                img {
-                    width: 100%;
-                }
-
-    	    	&.active {
-    	    	    width: 100%;
-    	    	    // height: 100%;
-    	    	    position: absolute;
-    	    	    z-index: 80;
-    	    	    // left: 0;
-    	    	    // bottom: 0;
-                    animation: growThumb 1s forwards;
-    	    	}
-    	    }
-	    	.static {
-	    	        left: 20px;
-             }
-            .static ~ .static {
+    	    	&[data-thumb="1"] {
+    	    	    left: 20px;
+    	    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women.jpg);
+                 }
+                &[data-thumb="2"] {
 	    	        left: 140px;
-            }
-            .static ~ .static ~ .static {
+    	    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women2.jpg);
+                }
+                &[data-thumb="3"] {
 	    	        left: 260px;
-            }
-            .static ~ .static ~ .static ~ .static {
+    	    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women3.jpg);
+                }
+                &[data-thumb="4"] {
 	    	        left: 380px;
-            }
-            .static ~ .static ~ .static ~ .static ~ .static {
+    	    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women4.jpg);
+                }
+                &[data-thumb="5"] {
 	    	        left: 500px;
-            }
+    	    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women5.jpg);
+                }
+    	    }
+    	    &-shower {
+	            width: 100%;
+	            height: 100%;
+	            left: 0 !important;
+	            bottom: 0;
+	            z-index: 20;    	        
+    	    }
+    	    &-grower {
+	    	    z-index: 0;
+
+    	        &.grow {
+    	    	    transition: 0.5s linear;
+    	            width: 100%;
+    	            height: 100%;
+    	            left: 0;
+    	            bottom: 0;
+    	            z-index: 120;
+    	        }
+    	    }
     	}	    
 	}
 }

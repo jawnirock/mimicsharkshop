@@ -221,15 +221,23 @@ var shopFunctions = function() {
     //bg change
 
 
-    $(".island-dive-shop-thumb.static").click(function() {
+    $(".island-dive-shop-thumb").click(function() {
     	var currentThumb = $(this);
     	var currentLevel = currentThumb.parents(".island-dive-content-shop");
-        currentLevel.find(".island-dive-shop-thumb").removeClass("active");
-        currentLevel.find(".island-dive-shop-thumb").addClass("static");
-        currentThumb.addClass("active");
-		setTimeout(function(){ 
-	        currentThumb.removeClass("static");
-		}, 1001);
+    	var currentLevelGrower = currentLevel.find(".island-dive-shop-grower")
+    	var currentLevelShower = currentLevel.find(".island-dive-shop-shower")
+    	var currentThumbData = $(this).data("thumb");
+    	
+    	currentLevelGrower.removeClass("grow");
+    	currentLevelGrower.attr("data-thumb", currentThumbData);
+    	setTimeout(function(){ 
+	    	currentLevelGrower.addClass("grow");
+    	}, 200);
+    	setTimeout(function(){ 
+	    	currentLevelShower.attr("data-thumb", currentThumbData);
+    	}, 500);
+    	
+
         
     });	
 }
