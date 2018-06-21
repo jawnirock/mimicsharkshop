@@ -1669,11 +1669,15 @@
   #shop .island-dive-size-title img {
     max-height: 10vw;
     cursor: pointer; }
-  #shop .island-dive-size-chart img {
-    width: 45vw; }
+  #shop .island-dive-size-chart {
+    width: 11vw;
+    height: 11vw;
+    margin-top: -20px; }
+    #shop .island-dive-size-chart img {
+      width: 100%; }
 
 #shop .island-dive-shop-thumb {
-  display: inline-block;
+  display: inlineblock;
   height: 80px;
   cursor: pointer;
   position: absolute;
@@ -1681,32 +1685,32 @@
   height: 100px;
   z-index: 150;
   bottom: 40px;
+  background-position: center;
   background-size: cover; }
   #shop .island-dive-shop-thumb[data-thumb="1"] {
-    left: 20px;
-    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women.jpg); }
+    left: 35px; }
   #shop .island-dive-shop-thumb[data-thumb="2"] {
-    left: 140px;
-    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women2.jpg); }
+    left: 147px; }
   #shop .island-dive-shop-thumb[data-thumb="3"] {
-    left: 260px;
-    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women3.jpg); }
+    left: 258px; }
   #shop .island-dive-shop-thumb[data-thumb="4"] {
-    left: 380px;
-    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women4.jpg); }
+    left: 370px; }
   #shop .island-dive-shop-thumb[data-thumb="5"] {
-    left: 500px;
-    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women5.jpg); }
+    left: 482px; }
 
 #shop .island-dive-shop-shower {
   width: 100%;
   height: 100%;
   left: 0 !important;
   bottom: 0;
-  z-index: 20; }
+  z-index: 20;
+  background-size: 100% auto;
+  cursor: default; }
 
 #shop .island-dive-shop-grower {
-  z-index: 0; }
+  z-index: 0;
+  background-size: 100% auto;
+  cursor: default; }
   #shop .island-dive-shop-grower.grow {
     transition: 0.5s linear;
     width: 100%;
@@ -1715,41 +1719,32 @@
     bottom: 0;
     z-index: 120; }
 
-@-webkit-keyframes growThumb {
-  0% {
-    width: 100px; }
-  100% {
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0; } }
+#shop-women .island-dive-shop-thumb[data-thumb="1"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women.jpg); }
+  #shop-women .island-dive-shop-thumb[data-thumb="1"].static {
+    background-size: 176%;
+    background-position-y: -21px;
+    background-position-x: -70px; }
 
-@keyframes growThumb {
-  0% {
-    width: 100px; }
-  100% {
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0; } }
+#shop-women .island-dive-shop-thumb[data-thumb="2"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women1.jpg); }
+  #shop-women .island-dive-shop-thumb[data-thumb="2"].static {
+    background-position-x: -45px; }
 
-@-webkit-keyframes showThumb {
-  50% {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#shop-women .island-dive-shop-thumb[data-thumb="3"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women3.jpg); }
+  #shop-women .island-dive-shop-thumb[data-thumb="3"].static {
+    background-position-x: -45px; }
 
-@keyframes showThumb {
-  50% {
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#shop-women .island-dive-shop-thumb[data-thumb="4"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women4.jpg); }
+  #shop-women .island-dive-shop-thumb[data-thumb="4"].static {
+    background-position-x: -42px; }
+
+#shop-women .island-dive-shop-thumb[data-thumb="5"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women5.jpg); }
+  #shop-women .island-dive-shop-thumb[data-thumb="5"].static {
+    background-position-x: -30px; }
 
 .island-wrapper[data-level="2"].goinUp #shop-men {
   opacity: 0 !important;
@@ -2072,7 +2067,12 @@
       color: white; }
     #contact .island-dive-content form textarea::placeholder {
       color: white; }
+  #contact .island-dive-content form .form-actions {
+    margin-top: -48px;
+    float: right; }
   #contact .island-dive-content form button {
+    font-size: 13px;
+    font-weight: 900;
     border: 0px;
     border-radius: 6px;
     height: 35px;
@@ -2090,7 +2090,9 @@
       width: auto; }
     #contact .island-dive-content form .captcha .form-item-captcha-response {
       font-size: 15px;
-      margin-left: 44px; }
+      margin-left: 20px; }
+      #contact .island-dive-content form .captcha .form-item-captcha-response label {
+        font-size: 11px; }
   #contact .island-dive-content form .links {
     display: none; }
 

@@ -86,95 +86,95 @@
 </div>
 
 <div class="diveVideos">
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271566093.hd.mp4?s=f18a8089cb296015a1e5ddaac4725737c0193ef5&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271566246.hd.mp4?s=15c5fc97f470e535ed90b7261cc5f56563fd2318&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565654.hd.mp4?s=9ed59eafe859a8cf1886d23338619be8b51f7a7a&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565880.hd.mp4?s=649a576e7bb16829486eb67860107cfd95950cf3&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565408.hd.mp4?s=4ef48f8a316e6bbf850f93130356169ae8f4d5c7&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565507.hd.mp4?s=656d24837cf620bead006095ef7760065a116d62&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565199.hd.mp4?s=315b9a65e0844e2becfef4901546b146f90937b6&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565295.hd.mp4?s=cd793b841e22a5b667f28982d11e4786a74a84b8&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564986.hd.mp4?s=2da09257bf4e2c58cde152268c94fa0224cef03f&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271565110.hd.mp4?s=fd78acbbbcf232d963b1785a8649f7ad96653f91&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564227.hd.mp4?s=452a8185c97a4ae1002c615078f7cd32948b5b5f&profile_id=175"  type="video/mp4">
-    </video>  
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271566093.hd.mp4?s=f18a8089cb296015a1e5ddaac4725737c0193ef5&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271566246.hd.mp4?s=15c5fc97f470e535ed90b7261cc5f56563fd2318&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565654.hd.mp4?s=9ed59eafe859a8cf1886d23338619be8b51f7a7a&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565880.hd.mp4?s=649a576e7bb16829486eb67860107cfd95950cf3&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565408.hd.mp4?s=4ef48f8a316e6bbf850f93130356169ae8f4d5c7&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565507.hd.mp4?s=656d24837cf620bead006095ef7760065a116d62&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565199.hd.mp4?s=315b9a65e0844e2becfef4901546b146f90937b6&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565295.hd.mp4?s=cd793b841e22a5b667f28982d11e4786a74a84b8&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564986.hd.mp4?s=2da09257bf4e2c58cde152268c94fa0224cef03f&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271565110.hd.mp4?s=fd78acbbbcf232d963b1785a8649f7ad96653f91&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564227.hd.mp4?s=452a8185c97a4ae1002c615078f7cd32948b5b5f&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
 
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564439.hd.mp4?s=77244c2afd17a937120c3563acf0d9e7246c9102&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside id="videos-products" class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271566443.hd.mp4?s=7512d3aa9a954d9fc16a2a436aac0036bf2835f3&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271566667.hd.mp4?s=c128ef9f38819132f4b6805ca0e02478d2ba0249&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside id="videos-shop" class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271567779.hd.mp4?s=752569f597c03c4f3235f4fa37c7ced53028ff1d&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271568018.hd.mp4?s=a3dc5eb766f385e0cc71705182b69f2867d9bc56&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564559.hd.mp4?s=4b93e04c052e0319bbb3085ee9c1202177079e30&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564660.hd.mp4?s=c24251eae35f4aa8685e0b13bd37b3a9786e4cd6&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564747.hd.mp4?s=d1d78b20f090c2859690c43c2d2d84722adb2679&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271564859.hd.mp4?s=26ed8e5bbc71cf81de7ac78af20c3e43198651e6&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
-  <aside id="videos-contact" class="diveVideoWrapper">
-    <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271566970.hd.mp4?s=e559c1b2099e9ffe1fe84bc3d18f686e68c50d7c&profile_id=175"  type="video/mp4">
-    </video>  
-    <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">
-        <source src="https://player.vimeo.com/external/271567193.hd.mp4?s=ea304ed016a538dd1a8ca123961bcf334a702c6b&profile_id=175"  type="video/mp4">
-    </video>  
-  </aside>
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564439.hd.mp4?s=77244c2afd17a937120c3563acf0d9e7246c9102&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside id="videos-products" class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271566443.hd.mp4?s=7512d3aa9a954d9fc16a2a436aac0036bf2835f3&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271566667.hd.mp4?s=c128ef9f38819132f4b6805ca0e02478d2ba0249&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside id="videos-shop" class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271567779.hd.mp4?s=752569f597c03c4f3235f4fa37c7ced53028ff1d&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271568018.hd.mp4?s=a3dc5eb766f385e0cc71705182b69f2867d9bc56&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564559.hd.mp4?s=4b93e04c052e0319bbb3085ee9c1202177079e30&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564660.hd.mp4?s=c24251eae35f4aa8685e0b13bd37b3a9786e4cd6&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564747.hd.mp4?s=d1d78b20f090c2859690c43c2d2d84722adb2679&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271564859.hd.mp4?s=26ed8e5bbc71cf81de7ac78af20c3e43198651e6&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
+  <!--<aside id="videos-contact" class="diveVideoWrapper">-->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271566970.hd.mp4?s=e559c1b2099e9ffe1fe84bc3d18f686e68c50d7c&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--  <video style="" preload="auto" muted playsinline class="diveVideo goinUp"  width="320" height="180">-->
+  <!--      <source src="https://player.vimeo.com/external/271567193.hd.mp4?s=ea304ed016a538dd1a8ca123961bcf334a702c6b&profile_id=175"  type="video/mp4">-->
+  <!--  </video>  -->
+  <!--</aside>-->
 </div>
 
 
@@ -533,9 +533,9 @@
             </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
-          <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
-              <source src="https://player.vimeo.com/external/271567387.hd.mp4?s=eaefe0d0ba8a87a605e2e87f601b75716b9ffff7&profile_id=175"  type="video/mp4">
-          </video>  
+          <!--<video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">-->
+          <!--    <source src="https://player.vimeo.com/external/271567387.hd.mp4?s=eaefe0d0ba8a87a605e2e87f601b75716b9ffff7&profile_id=175"  type="video/mp4">-->
+          <!--</video>  -->
 
         </div>
         <div id="products-men"  class="island-dive-content-product">
@@ -546,9 +546,9 @@
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
 
-          <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
-              <source src="https://player.vimeo.com/external/271567602.hd.mp4?s=d7c2b9758d26f9356912267bf5eb690961951070&profile_id=175"  type="video/mp4">
-          </video>
+          <!--<video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">-->
+          <!--    <source src="https://player.vimeo.com/external/271567602.hd.mp4?s=d7c2b9758d26f9356912267bf5eb690961951070&profile_id=175"  type="video/mp4">-->
+          <!--</video>-->
         </div>
         <div id="products-kids"  class="island-dive-content-product">
           <div class="island-product-info">
@@ -558,9 +558,9 @@
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
 
-          <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
-              <source src="https://player.vimeo.com/external/271567602.hd.mp4?s=d7c2b9758d26f9356912267bf5eb690961951070&profile_id=175"  type="video/mp4">
-          </video>
+          <!--<video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">-->
+          <!--    <source src="https://player.vimeo.com/external/271567602.hd.mp4?s=d7c2b9758d26f9356912267bf5eb690961951070&profile_id=175"  type="video/mp4">-->
+          <!--</video>-->
         </div>
 
 
@@ -587,22 +587,22 @@
                 <img src="/sites/all/themes/sharktheme/images/titles/women.png">  
               </h3>
 
-              <h3 class="island-dive-size-chart" style="display: none;">
-                <img src="/sites/all/themes/sharktheme/images/bg/shop/SIZECHART_W.png">  
-              </h3>
+              <div class="island-dive-size-chart" style="display: none;">
+                <img src="/sites/all/themes/sharktheme/images/bg/shop/SIZECHART_W.png">
+              </div>
             </div>
             <div class="island-dive-shop-thumb island-dive-shop-grower"></div>
-            <!--<div class="island-dive-shop-thumb island-dive-shop-shower"  data-thumb="1"></div>-->
+            <div class="island-dive-shop-thumb island-dive-shop-shower"  data-thumb="1"></div>
             <div class="island-dive-shop">
-              <div class="island-dive-shop-thumb" data-thumb="1">
+              <div class="island-dive-shop-thumb static" data-thumb="1">
               </div> 
-              <div class="island-dive-shop-thumb" data-thumb="2">
+              <div class="island-dive-shop-thumb static" data-thumb="2">
               </div> 
-              <div class="island-dive-shop-thumb" data-thumb="3">
+              <div class="island-dive-shop-thumb static" data-thumb="3">
               </div> 
-              <div class="island-dive-shop-thumb" data-thumb="4">
+              <div class="island-dive-shop-thumb static" data-thumb="4">
               </div> 
-              <div class="island-dive-shop-thumb" data-thumb="5">
+              <div class="island-dive-shop-thumb static" data-thumb="5">
               </div> 
             </div>
         </div>

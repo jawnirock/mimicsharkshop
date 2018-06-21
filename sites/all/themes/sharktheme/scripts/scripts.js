@@ -213,21 +213,23 @@ var mobileResponse = function(){
 var shopFunctions = function() {
     //hide/show size shart
     $(".island-dive-size-title").click(function() {
-        $(this).next(".island-dive-size-chart").slideToggle();
+        $(this).next(".island-dive-size-chart").slideToggle("slow");
     })
     $(".island-product-info-title").click(function() {
-      $(this).next(".island-product-info-text").slideToggle();
+      $(this).next(".island-product-info-text").slideToggle("slow");
     })
     //bg change
 
+	$(".island-dive-size-chart").resizable();
 
-    $(".island-dive-shop-thumb").click(function() {
+    $(".island-dive-shop-thumb.static").click(function() {
     	var currentThumb = $(this);
     	var currentLevel = currentThumb.parents(".island-dive-content-shop");
     	var currentLevelGrower = currentLevel.find(".island-dive-shop-grower")
     	var currentLevelShower = currentLevel.find(".island-dive-shop-shower")
     	var currentThumbData = $(this).data("thumb");
-    	
+
+
     	currentLevelGrower.removeClass("grow");
     	currentLevelGrower.attr("data-thumb", currentThumbData);
     	setTimeout(function(){ 
@@ -235,7 +237,7 @@ var shopFunctions = function() {
     	}, 200);
     	setTimeout(function(){ 
 	    	currentLevelShower.attr("data-thumb", currentThumbData);
-    	}, 500);
+    	}, 700);
     	
 
         
