@@ -14,6 +14,38 @@
 	    }
     }
 
+    &-thanks {
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 9000;
+        &-title {
+            left: 50%;
+            top: 70vh;
+            opacity: 0;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 9200;
+            animation: titlefadein 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 3.5s;
+            img {
+              width: 400px;                
+            }
+        }
+    }
+
+    .webform-confirmation {
+        .links {
+            opacity: 0;
+        }
+        .div-hide {
+            opacity: 0;
+        }
+    }
 
     .island-dive-content {
         display: flex;
@@ -64,21 +96,31 @@
         		background-color: rgba(255,255,255,0.2);
     		    color: white;
                 margin-top: 14px;
+                width: 90px;
         		&:hover {
         			background-color: rgba(255,255,255,0.7);
         		}
             }
+            
+            .help-block {
+              display: none;
+            }
+            
             .captcha {
                 display: flex;
+                margin-top: 22px;
+                
                 img {
-                    height: 52px;
+                    height: 27px;
                     width: auto;                    
                 }
+                
                 .form-item-captcha-response {
                     font-size: 15px;
                     margin-left: 20px;
                     label {
                         font-size: 11px;
+                        display: none;
                     }
                 }
             }
@@ -123,4 +165,9 @@
 }
 .tooltip-inner {
     display: none;
+}
+
+@keyframes titlefadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

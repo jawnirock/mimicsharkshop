@@ -1593,7 +1593,9 @@
   width: 100vw;
   height: auto;
   position: absolute;
-  top: 0px; }
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 #products .island-product-info {
   position: absolute;
@@ -1671,8 +1673,11 @@
     cursor: pointer; }
   #shop .island-dive-size-chart {
     width: 11vw;
-    height: 11vw;
-    margin-top: -20px; }
+    min-height: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: -20px;
+    background-color: rgba(255, 255, 255, 0.4); }
     #shop .island-dive-size-chart img {
       width: 100%; }
 
@@ -1745,6 +1750,63 @@
   background-image: url(/sites/all/themes/sharktheme/images/bg/shop/women5.jpg); }
   #shop-women .island-dive-shop-thumb[data-thumb="5"].static {
     background-position-x: -30px; }
+
+#shop-men .island-dive-shop-thumb[data-thumb="1"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men.jpg); }
+  #shop-men .island-dive-shop-thumb[data-thumb="1"].static {
+    background-position-x: -40px; }
+
+#shop-men .island-dive-shop-thumb[data-thumb="2"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men1.jpg); }
+  #shop-men .island-dive-shop-thumb[data-thumb="2"].static {
+    background-position-x: -35px; }
+
+#shop-men .island-dive-shop-thumb[data-thumb="3"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men4.jpg); }
+  #shop-men .island-dive-shop-thumb[data-thumb="3"].static {
+    background-position-x: -43px; }
+
+#shop-men .island-dive-shop-thumb[data-thumb="4"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men2.jpg); }
+  #shop-men .island-dive-shop-thumb[data-thumb="4"].static {
+    background-position-x: -41px;
+    background-size: 154%; }
+
+#shop-men .island-dive-shop-thumb[data-thumb="5"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men3.jpg); }
+  #shop-men .island-dive-shop-thumb[data-thumb="5"].static {
+    background-position-x: 114px; }
+
+#shop-kids .island-dive-size-chart {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+#shop-kids .island-dive-shop-thumb[data-thumb="1"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid1.jpg); }
+  #shop-kids .island-dive-shop-thumb[data-thumb="1"].static {
+    background-position-x: -36px;
+    background-size: 149%; }
+
+#shop-kids .island-dive-shop-thumb[data-thumb="2"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid2.jpg); }
+  #shop-kids .island-dive-shop-thumb[data-thumb="2"].static {
+    background-position-x: -53px;
+    background-size: 162%; }
+
+#shop-kids .island-dive-shop-thumb[data-thumb="3"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid3.jpg); }
+  #shop-kids .island-dive-shop-thumb[data-thumb="3"].static {
+    background-position-x: -44px; }
+
+#shop-kids .island-dive-shop-thumb[data-thumb="4"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid4.jpg); }
+  #shop-kids .island-dive-shop-thumb[data-thumb="4"].static {
+    background-position-x: -45px; }
+
+#shop-kids .island-dive-shop-thumb[data-thumb="5"] {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid5.jpg); }
+  #shop-kids .island-dive-shop-thumb[data-thumb="5"].static {
+    background-position-x: -19px;
+    background-size: 151%; }
 
 .island-wrapper[data-level="2"].goinUp #shop-men {
   opacity: 0 !important;
@@ -2022,6 +2084,38 @@
   #contact .alert ul li, #contact .error ul li {
     list-style-type: none; }
 
+#contact-thanks {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9000; }
+  #contact-thanks-title {
+    left: 50%;
+    top: 70vh;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: absolute;
+    z-index: 9200;
+    -webkit-animation: titlefadein 1s;
+            animation: titlefadein 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3.5s;
+            animation-delay: 3.5s; }
+    #contact-thanks-title img {
+      width: 400px; }
+
+#contact .webform-confirmation .links {
+  opacity: 0; }
+
+#contact .webform-confirmation .div-hide {
+  opacity: 0; }
+
 #contact .island-dive-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2078,21 +2172,26 @@
     height: 35px;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
-    margin-top: 14px; }
+    margin-top: 14px;
+    width: 90px; }
     #contact .island-dive-content form button:hover {
       background-color: rgba(255, 255, 255, 0.7); }
+  #contact .island-dive-content form .help-block {
+    display: none; }
   #contact .island-dive-content form .captcha {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-top: 22px; }
     #contact .island-dive-content form .captcha img {
-      height: 52px;
+      height: 27px;
       width: auto; }
     #contact .island-dive-content form .captcha .form-item-captcha-response {
       font-size: 15px;
       margin-left: 20px; }
       #contact .island-dive-content form .captcha .form-item-captcha-response label {
-        font-size: 11px; }
+        font-size: 11px;
+        display: none; }
   #contact .island-dive-content form .links {
     display: none; }
 
@@ -2127,6 +2226,18 @@
 
 .tooltip-inner {
   display: none; }
+
+@-webkit-keyframes titlefadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes titlefadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*! jQuery UI - v1.12.1 - 2016-09-14
 * http://jqueryui.com

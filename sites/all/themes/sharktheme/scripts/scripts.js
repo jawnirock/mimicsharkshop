@@ -220,7 +220,9 @@ var shopFunctions = function() {
     })
     //bg change
 
-	$(".island-dive-size-chart").resizable();
+	$(".island-dive-size-chart").resizable({
+			aspectRatio: 150 / 76
+		});
 
     $(".island-dive-shop-thumb.static").click(function() {
     	var currentThumb = $(this);
@@ -229,7 +231,7 @@ var shopFunctions = function() {
     	var currentLevelShower = currentLevel.find(".island-dive-shop-shower")
     	var currentThumbData = $(this).data("thumb");
 
-
+		currentLevel.find(".island-dive-size-chart").slideUp();
     	currentLevelGrower.removeClass("grow");
     	currentLevelGrower.attr("data-thumb", currentThumbData);
     	setTimeout(function(){ 
@@ -242,6 +244,9 @@ var shopFunctions = function() {
 
         
     });	
+}
+var contactLabels = function() {
+	$("#edit-captcha-response").attr("placeholder", "Enter captcha *");
 }
 
 var checkoutPlaceholders = function() {
@@ -329,6 +334,7 @@ $(document).ready(function() {
 	checkoutTableFooter();
 	checkoutNumbers();
 	checkoutLabels();
+	contactLabels();
 
 	var level = $(".island-wrapper").data("level");
 	var length = $('.island').length,
@@ -555,6 +561,7 @@ $(document).ready(function() {
 
 
 	$(document).swipe({
+		
 		swipe: function(event, direction, distance, duration, fingerCount) {
 
 			// sair da agua

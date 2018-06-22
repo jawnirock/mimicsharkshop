@@ -30,9 +30,11 @@
     		}
     		&-chart {
     		    width: 11vw;
-    		    height: 11vw; 
+    		    min-height: 5px;
+    		    padding: 5px;
+                border-radius: 6px;
                 margin-top: -20px;
-                
+                background-color: rgba(256,256,256, 0.4);                
     		    img {
                       width: 100%;
         		    }
@@ -135,10 +137,82 @@
         }      
    }
 }
-
 #shop-men {
-   
+   .island-dive-shop-thumb {
+     	&[data-thumb="1"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men.jpg);
+    	    &.static {
+                background-position-x: -40px
+            }
+         }
+        &[data-thumb="2"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men1.jpg);
+    	    &.static {
+                background-position-x: -35px
+    	    }
+        }
+        &[data-thumb="3"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men4.jpg);
+    	    &.static {
+                background-position-x: -43px
+    	    }
+        }
+        &[data-thumb="4"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men2.jpg);
+    	    &.static {
+                background-position-x: -41px;
+                background-size: 154%;
+    	    }
+    	}
+        &[data-thumb="5"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men3.jpg);
+    	    &.static {
+                background-position-x: 114px;
+    	    }
+    	}
+   }
 }
+#shop-kids {
+   .island-dive-size-chart {
+       background-color: rgba(255, 255, 255, 0.8);
+   }
+   .island-dive-shop-thumb {
+     	&[data-thumb="1"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid1.jpg);
+    	    &.static {
+                background-position-x: -36px;
+                background-size: 149%;
+    	    }
+         }
+        &[data-thumb="2"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid2.jpg);
+    	    &.static {
+                background-position-x: -53px;
+                background-size: 162%;
+    	    }
+        }
+        &[data-thumb="3"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid3.jpg);
+    	    &.static {
+                background-position-x: -44px;
+    	    }
+        }
+        &[data-thumb="4"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid4.jpg);
+    	    &.static {
+                background-position-x: -45px;
+    	    }
+    	}
+        &[data-thumb="5"] {
+    	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid5.jpg);
+    	    &.static {
+                background-position-x: -19px;
+                background-size: 151%;
+            }
+        }      
+   }
+}
+
 
 .island-wrapper {
 	&[data-level="2"].goinUp {
