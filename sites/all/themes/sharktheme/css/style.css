@@ -344,7 +344,7 @@
   opacity: 1;
   -webkit-animation: spinTopOutWrap 1.3s both ease-in;
           animation: spinTopOutWrap 1.3s both ease-in; }
-  .spinTopOut #products-men, .spinTopOut #products-women {
+  .spinTopOut #products-men, .spinTopOut #products-women, .spinTopOut #products-kids {
     -webkit-animation: spinTopOut 1.3s both ease-in;
             animation: spinTopOut 1.3s both ease-in;
     -webkit-transform: scale(1) rotate(0deg);
@@ -354,7 +354,7 @@
   opacity: 0;
   -webkit-animation: spinTopInWrap 1.3s both ease-in;
           animation: spinTopInWrap 1.3s both ease-in; }
-  .spinTopIn #shop-men, .spinTopIn #shop-women {
+  .spinTopIn #shop-men, .spinTopIn #shop-women, .spinTopIn #shop-kids {
     -webkit-animation: spinTopIn 1s both ease-in;
             animation: spinTopIn 1s both ease-in;
     -webkit-transform: scale(4) rotate(-90deg);
@@ -364,7 +364,7 @@
   opacity: 1;
   -webkit-animation: spinBottomOutWrap 1.3s both ease-in;
           animation: spinBottomOutWrap 1.3s both ease-in; }
-  .spinBottomOut #shop-men, .spinBottomOut #shop-women {
+  .spinBottomOut #shop-men, .spinBottomOut #shop-women, .spinBottomOut #shop-kids {
     -webkit-animation: spinBottomOut 1.3s both ease-in;
             animation: spinBottomOut 1.3s both ease-in;
     -webkit-transform: scale(1) rotate(0deg);
@@ -374,7 +374,7 @@
   opacity: 0;
   -webkit-animation: spinBottomInWrap 1.3s both ease-in;
           animation: spinBottomInWrap 1.3s both ease-in; }
-  .spinBottomIn #products-men, .spinBottomIn #products-women {
+  .spinBottomIn #products-men, .spinBottomIn #products-women, .spinBottomIn #products-kids {
     -webkit-animation: spinBottomIn 1s both ease-in;
             animation: spinBottomIn 1s both ease-in;
     -webkit-transform: scale(4) rotate(90deg);
@@ -1479,16 +1479,18 @@
   .island-dive-content-sitemap .sitemap-container {
     width: 210px;
     height: 390px;
-    position: relative;
-    margin: 0 auto 40px;
     -webkit-perspective: 1100px;
             perspective: 1100px;
-    margin-left: 300px;
-    -webkit-transform: scale(0.8) translateY(-95px);
-            transform: scale(0.8) translateY(-95px); }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: scale(0.8) translate(-50%, -50%);
+            transform: scale(0.8) translate(-50%, -50%);
+    margin: -13.5vw 0vw 0 -20vw; }
   .island-dive-content-sitemap .sitemap {
     width: 100%;
     height: 100%;
+    top: 13vw;
     position: absolute;
     -webkit-transform: translateZ(-320px);
             transform: translateZ(-320px);
@@ -1502,9 +1504,12 @@
     -ms-transform-style: none;
     -ms-transform: none; }
     .island-dive-content-sitemap .sitemap-title {
-      height: 10vw;
-      margin-left: -25px;
-      margin-bottom: -10px; }
+      height: 7vw;
+      margin-top: 6vw;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
     .island-dive-content-sitemap .sitemap-nav {
       position: absolute;
       z-index: 9999;
@@ -1512,7 +1517,8 @@
       width: 175px;
       position: absolute;
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-top: 13.5vw; }
       .island-dive-content-sitemap .sitemap-nav.left {
         left: -165px; }
       .island-dive-content-sitemap .sitemap-nav.right {
@@ -1765,6 +1771,8 @@
   background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men4.jpg); }
   #shop-men .island-dive-shop-thumb[data-thumb="3"].static {
     background-position-x: -43px; }
+  #shop-men .island-dive-shop-thumb[data-thumb="3"].grow, #shop-men .island-dive-shop-thumb[data-thumb="3"].island-dive-shop-shower {
+    background-position-y: -105px; }
 
 #shop-men .island-dive-shop-thumb[data-thumb="4"] {
   background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men2.jpg); }
@@ -1776,6 +1784,8 @@
   background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men3.jpg); }
   #shop-men .island-dive-shop-thumb[data-thumb="5"].static {
     background-position-x: 114px; }
+  #shop-men .island-dive-shop-thumb[data-thumb="5"].grow, #shop-men .island-dive-shop-thumb[data-thumb="5"].island-dive-shop-shower {
+    background-position-y: -80px; }
 
 #shop-kids .island-dive-size-chart {
   background-color: rgba(255, 255, 255, 0.8); }
@@ -1845,6 +1855,15 @@
   background-image: url("../images/bg/disclaimer/disclaimer.jpg");
   height: 100%;
   width: 100%; }
+  .island-dive-content-disclaimer-more {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 15vw 0 0px 15.3vw; }
+    .island-dive-content-disclaimer-more img {
+      width: 50px; }
 
 .island-wrapper {
   position: fixed;
@@ -1924,6 +1943,8 @@
       width: 100%;
       height: 100%;
       position: absolute;
+      left: 0;
+      top: 0;
       background-repeat: no-repeat;
       background-position: center; }
     .island-wrapper .island#products {
@@ -2000,7 +2021,11 @@
               clip-path: none; }
       .island-wrapper .island-title--insta {
         position: absolute;
-        margin: 12vw 0 0 17vw !important;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate3D(-50%, -50%, 100px);
+                transform: translate3D(-50%, -50%, 100px);
+        margin: 12vw 0 0 17vw;
         z-index: 900; }
         .island-wrapper .island-title--insta img {
           width: 2vw !important; }
@@ -2095,10 +2120,11 @@
   z-index: 9000; }
   #contact-thanks-title {
     left: 50%;
-    top: 70vh;
+    top: 50%;
     opacity: 0;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: 10vw 0 0 -0.4vw;
     position: absolute;
     z-index: 9200;
     -webkit-animation: titlefadein 1s;
@@ -2108,7 +2134,7 @@
     -webkit-animation-delay: 3.5s;
             animation-delay: 3.5s; }
     #contact-thanks-title img {
-      width: 400px; }
+      width: 225px; }
 
 #contact .webform-confirmation .links {
   opacity: 0; }

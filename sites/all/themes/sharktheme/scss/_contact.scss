@@ -24,16 +24,17 @@
         z-index: 9000;
         &-title {
             left: 50%;
-            top: 70vh;
+            top: 50%;
             opacity: 0;
-            transform: translateX(-50%);
-            position: absolute;
+            transform: translate(-50%, -50%);
+             margin: 10vw 0 0 -0.4vw;
+             position: absolute;
             z-index: 9200;
             animation: titlefadein 1s;
             animation-fill-mode: forwards;
             animation-delay: 3.5s;
             img {
-              width: 400px;                
+              width: 225px;                
             }
         }
     }

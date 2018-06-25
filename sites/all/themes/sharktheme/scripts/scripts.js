@@ -303,7 +303,7 @@ $(document).ready(function() {
     $( ".underwater-slider-vertical" ).slider({
       orientation: "vertical",
       range: "min",
-      min: -300,
+      min: -400,
       max: 15,
       value: 15,
 	  step: 1,

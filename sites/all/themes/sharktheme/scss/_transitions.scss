@@ -195,7 +195,7 @@
 	opacity: 1;
 	animation: spinTopOutWrap 1.3s both ease-in;
 
-	#products-men, #products-women {
+	#products-men, #products-women, #products-kids {
 	animation: spinTopOut 1.3s both ease-in;
 	transform: scale(1) rotate(0deg);
 	}
@@ -205,7 +205,7 @@
 	opacity: 0;
 	animation: spinTopInWrap 1.3s both ease-in;
 
-	#shop-men, #shop-women {
+	#shop-men, #shop-women, #shop-kids {
 	animation: spinTopIn 1s both ease-in;
 	transform: scale(4) rotate(-90deg);
 	}
@@ -217,7 +217,7 @@
 	opacity: 1;
 	animation: spinBottomOutWrap 1.3s both ease-in;
 
-	#shop-men, #shop-women {
+	#shop-men, #shop-women, #shop-kids {
 	animation: spinBottomOut 1.3s both ease-in;
 	transform: scale(1) rotate(0deg);
 	}
@@ -227,7 +227,7 @@
 	opacity: 0;
 	animation: spinBottomInWrap 1.3s both ease-in;
 
-	#products-men, #products-women {
+	#products-men, #products-women, #products-kids {
 	animation: spinBottomIn 1s both ease-in;
 	transform: scale(4) rotate(90deg);
 	}

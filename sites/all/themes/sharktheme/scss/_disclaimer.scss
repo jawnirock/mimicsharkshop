@@ -5,4 +5,14 @@
     background-image: url('../images/bg/disclaimer/disclaimer.jpg');
     height: 100%;
     width: 100%;
+    &-more {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 15vw 0 0px 15.3vw;
+        img {
+            width: 50px;
+        }
+    }
 }

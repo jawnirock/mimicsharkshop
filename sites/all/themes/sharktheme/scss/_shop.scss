@@ -156,6 +156,9 @@
     	    &.static {
                 background-position-x: -43px
     	    }
+    	    &.grow, &.island-dive-shop-shower {
+             background-position-y: -105px;    	        
+    	    }
         }
         &[data-thumb="4"] {
     	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men2.jpg);
@@ -168,6 +171,9 @@
     	    background-image: url(/sites/all/themes/sharktheme/images/bg/shop/men3.jpg);
     	    &.static {
                 background-position-x: 114px;
+    	    }
+    	    &.grow, &.island-dive-shop-shower {
+             background-position-y: -80px;    	        
     	    }
     	}
    }
