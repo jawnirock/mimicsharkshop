@@ -39,9 +39,24 @@
         }
     }
 
-    .webform-confirmation {
+    #webform-ajax-wrapper-17 {
         .links {
+            position: absolute;
+            z-index: 9999;
+            left: 50%;
+            top: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            margin: 14vw 0 0 0;
             opacity: 0;
+            animation: titlefadein 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 3.8s;
+
+            a {
+                font-size: 12px;
+                color: white;
+            }
         }
         .div-hide {
             opacity: 0;
@@ -106,16 +121,23 @@
             .help-block {
               display: none;
             }
-            
             .captcha {
                 display: flex;
-                margin-top: 22px;
-                
+                 margin-top: -35px;
+                margin-left: 88px;                
                 img {
                     height: 27px;
-                    width: auto;                    
+                    width: auto;
+                    margin-left: 12px;
+                    margin-top: 7px;
                 }
-                
+                #edit-captcha-response {
+                      height: 35px; 
+                     margin-left: -10px;
+                }
+                #edit-webform-ajax-submit-17 {
+                  margin-top: 12px;
+                }
                 .form-item-captcha-response {
                     font-size: 15px;
                     margin-left: 20px;
@@ -139,7 +161,7 @@
         }
         .form-managed-file {
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             width: 100%;
             #edit-submitted-file-attachment-upload {
                 width: 40px;

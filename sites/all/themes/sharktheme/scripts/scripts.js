@@ -247,6 +247,7 @@ var shopFunctions = function() {
 }
 var contactLabels = function() {
 	$("#edit-captcha-response").attr("placeholder", "Enter captcha *");
+	$("#webform-ajax-wrapper-17 .links a").text("(BACK TO CONTACT)");
 }
 
 var checkoutPlaceholders = function() {
@@ -629,6 +630,7 @@ $(document).ajaxComplete(function() {
 	checkoutClasses();
 	checkoutPlaceholders();
 	checkoutLabels();
+	contactLabels();
 });
 
 $(window).resize(function() {
@@ -636,8 +638,8 @@ $(window).resize(function() {
 });
 
 $(window).load(function() {
-	// console.log("all content loaded")
-	// var videosLoaded = 0;
+	console.log("all content loaded")
+	var videosLoaded = 0;
 	
 	// $("video").each(function(){
 	// 	var vid = $(this)[0];
@@ -651,16 +653,12 @@ $(window).load(function() {
 	// 	{
 	// 		videosLoaded++
 	// 		if (videosLoaded >= 25) {
-	// 			alert("all videos loaded")
+	// 			$(".island-wrapper").css("opacity", "1")
+	// 			$("#preloadVideo").fadeOut()
 	// 		}
 	// 	}
 	// })
 	
-	
-	
-
-
-
 	
 })
 

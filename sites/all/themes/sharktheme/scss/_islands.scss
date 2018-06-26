@@ -1,3 +1,14 @@
+#preloadVideo {
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    position: absolute;
+}
+
+
 .island-wrapper {
 	position: fixed;
 	left: 0;

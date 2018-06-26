@@ -85,6 +85,11 @@
   </span>
 </div>
 
+
+<!--<video style="" preload="auto" muted playsinline autoplay loop id="preloadVideo" width="320" height="180">-->
+<!--    <source src="/sites/all/themes/sharktheme/images/LOAD.mp4"  type="video/mp4">-->
+<!--</video>  -->
+
 <div class="diveVideos">
   <aside class="diveVideoWrapper">
     <video style="" preload="auto" muted playsinline class="diveVideo goinDown"  width="320" height="180">
