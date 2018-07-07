@@ -2108,16 +2108,23 @@
   to {
     background-position: 50%; } }
 
-#contact .alert, #contact .error {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 3px;
-  font-size: 10px;
-  margin: 5px 0;
-  border: 0px solid transparent;
-  border-radius: 0px; }
-  #contact .alert ul li, #contact .error ul li {
-    list-style-type: none; }
+#contact .alert-block {
+  display: none; }
+
+#contact .alert::-webkit-input-placeholder, #contact .error::-webkit-input-placeholder {
+  color: #a94442 !important; }
+
+#contact .alert::-moz-placeholder, #contact .error::-moz-placeholder {
+  color: #a94442 !important; }
+
+#contact .alert:-ms-input-placeholder, #contact .error:-ms-input-placeholder {
+  color: #a94442 !important; }
+
+#contact .alert::placeholder, #contact .error::placeholder {
+  color: #a94442 !important; }
+
+#contact .alert ul li, #contact .error ul li {
+  list-style-type: none; }
 
 #contact-thanks {
   width: 100vw;
@@ -2242,7 +2249,7 @@
       width: auto;
       margin-left: 12px;
       margin-top: 7px; }
-    #contact .island-dive-content form .captcha #edit-captcha-response {
+    #contact .island-dive-content form .captcha input[name="captcha_response"] {
       height: 35px;
       margin-left: -10px; }
     #contact .island-dive-content form .captcha #edit-webform-ajax-submit-17 {
@@ -2267,7 +2274,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%; }
-  #contact .webform-component-file .form-managed-file #edit-submitted-file-attachment-upload {
+  #contact .webform-component-file .form-managed-file input[type="file"] {
     width: 40px;
     height: 40px;
     text-indent: -9999px;
@@ -2275,7 +2282,7 @@
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat; }
-  #contact .webform-component-file .form-managed-file #edit-submitted-file-attachment-upload-button {
+  #contact .webform-component-file .form-managed-file button[type="submit"] {
     text-indent: -9999px;
     width: 40px;
     height: 40px;

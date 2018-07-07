@@ -246,7 +246,7 @@ var shopFunctions = function() {
     });	
 }
 var contactLabels = function() {
-	$("#edit-captcha-response").attr("placeholder", "Enter captcha *");
+	$("input[name='captcha_response']").attr("placeholder", "Enter captcha *");
 	$("#webform-ajax-wrapper-17 .links a").text("(BACK TO CONTACT)");
 }
 
@@ -637,27 +637,34 @@ $(window).resize(function() {
 	mobileResponse();
 });
 
-$(window).load(function() {
+$(window).on("load", function() {
 	console.log("all content loaded")
 	var videosLoaded = 0;
+	$(".island-wrapper").css("opacity", "1")
+	$("#preloadVideo").fadeOut()
 	
-	// $("video").each(function(){
-	// 	var vid = $(this)[0];
-	// 	vid.addEventListener("loadedmetadata", getmetadata);
+	$("video").each(function(){
+		var vid = $(this);
+
+
+
+		// vid.addEventListener("loadedmetadata", getmetadata);
 		
-	// 	if (vid.readyState >= 4) {
-	// 		console.log("video ready " + videosLoaded);
-	// 		getmetadata();
-	// 	}
-	// 	function getmetadata()
-	// 	{
-	// 		videosLoaded++
-	// 		if (videosLoaded >= 25) {
-	// 			$(".island-wrapper").css("opacity", "1")
-	// 			$("#preloadVideo").fadeOut()
-	// 		}
-	// 	}
-	// })
+		// if (vid.readyState >= 4) {
+		// 	console.log("video ready " + videosLoaded);
+		// 	$("#preloadVideo").append("video ready" + videosLoaded)
+		// 	getmetadata();
+		// }
+		// function getmetadata()
+		// {
+		// 	videosLoaded++
+		// 	if (videosLoaded >= 25) {
+		// 		$(".island-wrapper").css("opacity", "1")
+		// 		$("#preloadVideo").fadeOut()
+		// 	}
+		// }
+		
+	})
 	
 	
 })
