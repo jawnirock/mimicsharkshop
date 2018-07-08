@@ -1674,15 +1674,18 @@
   z-index: 150;
   left: 35px;
   top: 35px; }
-  #shop .island-dive-size-title img {
-    max-height: 10vw;
-    cursor: pointer; }
+  #shop .island-dive-size-title {
+    margin-bottom: 0px; }
+    #shop .island-dive-size-title img {
+      max-height: 10vw;
+      cursor: pointer; }
   #shop .island-dive-size-chart {
     width: 11vw;
+    max-width: 50vw;
+    max-height: 25vw;
     min-height: 5px;
     padding: 5px;
     border-radius: 6px;
-    margin-top: -20px;
     background-color: rgba(255, 255, 255, 0.4); }
     #shop .island-dive-size-chart img {
       width: 100%; }

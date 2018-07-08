@@ -240,9 +240,6 @@ var shopFunctions = function() {
     	setTimeout(function(){ 
 	    	currentLevelShower.attr("data-thumb", currentThumbData);
     	}, 700);
-    	
-
-        
     });	
 }
 var contactLabels = function() {
@@ -367,6 +364,7 @@ $(document).ready(function() {
 			console.log(direction + " " + current + " " + level);
 			lastDirection = direction;
 
+
 			// esquerda
 			if (direction == 'up') {
 				if (level === 1) {
@@ -401,6 +399,12 @@ $(document).ready(function() {
 			}
 			show();
 		}
+	}
+	
+	function showerDefault() {
+			console.log("entao?")
+			$(".island-dive-shop-shower").attr("data-thumb", 1);
+			$(".island-dive-shop-grower").attr("data-thumb", 1);
 	}
 	
 	function show() {
@@ -518,6 +522,7 @@ $(document).ready(function() {
 
 	// key navigation
 	$(document).keydown(function(e) {
+		showerDefault()
 		if (!onGoing) {
 			// mergulhar
 			if (e.keyCode == 40) {
@@ -565,6 +570,7 @@ $(document).ready(function() {
 		
 		swipe: function(event, direction, distance, duration, fingerCount) {
 
+			showerDefault()
 			// sair da agua
 			if (direction == "down") {
 				dive("up");

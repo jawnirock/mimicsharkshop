@@ -23,6 +23,7 @@
             left: 35px;
             top: 35px;
             &-title {
+                margin-bottom: 0px;
                 img {
                   max-height: 10vw;
                   cursor: pointer;
@@ -30,10 +31,11 @@
     		}
     		&-chart {
     		    width: 11vw;
+    		    max-width: 50vw;
+    		    max-height: 25vw;
     		    min-height: 5px;
     		    padding: 5px;
                 border-radius: 6px;
-                margin-top: -20px;
                 background-color: rgba(256,256,256, 0.4);                
     		    img {
                       width: 100%;
