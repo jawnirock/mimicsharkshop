@@ -85,10 +85,10 @@
   </span>
 </div>
 
-<div id="preloadVideo">Preloadin...</div>
-<!--<video style="" preload="metadata" muted playsinline autoplay loop id="preloadVideo" width="320" height="180">-->
-<!--    <source src="/sites/all/themes/sharktheme/images/LOAD.mp4"  type="video/mp4">-->
-<!--</video>  -->
+<!--<div id="preloadVideo">Preloadin...</div>-->
+<video style="" preload="auto" muted playsinline autoplay loop id="preloadVideo" width="320" height="180">
+    <source src="/sites/all/themes/sharktheme/images/LOAD.mp4"  type="video/mp4">
+</video>  
 
 <div class="diveVideos">
   <aside class="diveVideoWrapper">
@@ -183,19 +183,20 @@
 </div>
 
 
-<div class="island-wrapper" data-state="cube" data-level="1" style="opacity: 0;">
+<div class="island-wrapper" data-state="cube" data-level="1" style="opacity: 1;">
   <section id="safety" class="island island-left">
     <nav class="island-nav">
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/safety.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/safety.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
           <a href="#" class="underwater-slider-more">
@@ -229,17 +230,17 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/eco.gif">
+      <img rel="preload" rel="preload" src="/sites/all/themes/sharktheme/images/titles/eco.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
-      <div class="island-dive-content-smokey"></div>
+        <div class="island-nav--up"></div>
+        <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
         </div>
-
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
               <div class="island-dive-content-text-block"></div>
@@ -267,13 +268,14 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/habitat.gif">
+      <img rel="preload" rel="preload" src="/sites/all/themes/sharktheme/images/titles/habitat.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
         <a href="/sites/all/themes/sharktheme/images/pdf/HABITAT.pdf" target="_blank" class="underwater-slider-more">
@@ -306,13 +308,14 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/roots.gif">
+      <img rel="preload" rel="preload" src="/sites/all/themes/sharktheme/images/titles/roots.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
         <a href="/sites/all/themes/sharktheme/images/pdf/ROOTS.pdf" target="_blank" class="underwater-slider-more">
@@ -345,34 +348,35 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/about.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/about.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
-      <div class="island-dive-content-text-title">
-      </div>
-      <div class="island-dive-content-smokey"></div>
-      <div class="underwater-slider-vertical noSwipe">
-        <a href="/sites/all/themes/sharktheme/images/pdf/ABOUT.pdf" target="_blank" class="underwater-slider-more">
-          ▼
-        </a>
-      </div>
-      <div class="island-dive-content-text">
-      <div class="island-dive-content-text-blocks">
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-          <div class="island-dive-content-text-block"></div>
-      </div>
+        <div class="island-nav--up"></div>
+        <div class="island-dive-content-text-title">
+        </div>
+        <div class="island-dive-content-smokey"></div>
+        <div class="underwater-slider-vertical noSwipe">
+          <a href="/sites/all/themes/sharktheme/images/pdf/ABOUT.pdf" target="_blank" class="underwater-slider-more">
+            ▼
+          </a>
+        </div>
+        <div class="island-dive-content-text">
+        <div class="island-dive-content-text-blocks">
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>
+        </div>
         <span class="island-dive-nav island-dive-nav--up" ></span>
         <span class="island-dive-nav island-dive-nav--left" ></span>
         <span class="island-dive-nav island-dive-nav--right" ></span>
@@ -391,123 +395,124 @@
     </nav>
     
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
     </div>
     <div class="island-title--insta">
       <a target="_blank" href="https://www.instagram.com/mimicsharksuits/">
-        <img src="/sites/all/themes/sharktheme/images/titles/instagram.gif">
+        <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/instagram.gif">
       </a>
     </div>
 
     <aside class="island-dive island-dive--visible">
       <div class="island-dive-transition">
       </div>
-      <img src="/sites/all/themes/sharktheme/images/bg/luke/home.jpg" style="display: none;">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/home.jpg" class="preload-image">
       <div class="island-dive-content">
         <div class="island-dive-content-sitemap">
+          <div class="island-nav--up"></div>
           <section class="sitemap-container">
-            <img class="sitemap-title" src="/sites/all/themes/sharktheme/images/titles/islandmap.png">  
+            <img rel="preload" class="sitemap-title" src="/sites/all/themes/sharktheme/images/titles/islandmap.png">  
             <span class="sitemap-nav left" data-increment="-1"></span>
             <span class="sitemap-nav right" data-increment="1"></span>
             <div id="sitemap" class="sitemap">
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R1.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R1a.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1a.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R1b.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1b.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R1c.jpg">
-                </figure>
-              </div>
-              <div class="sitemap-panel">
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R2.jpg">
-                </figure>
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R2a.jpg">
-                </figure>
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R2b.jpg">
-                </figure>
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R2c.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1c.jpg">
                 </figure>
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R3.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R3a.jpg">
-                </figure>
-              </div>
-              <div class="sitemap-panel">
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R4.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2a.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R4a.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2b.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2c.jpg">
                 </figure>
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R5.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R3.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/R5a.jpg">
-                </figure>
-              </div>
-              <div class="sitemap-panel">
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L5.jpg">
-                </figure>
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L5a.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R3a.jpg">
                 </figure>
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L4.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R4.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L4a.jpg">
-                </figure>
-              </div>
-              <div class="sitemap-panel">
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L3.jpg">
-                </figure>
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L3a.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R4a.jpg">
                 </figure>
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L2.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R5.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L2a.jpg">
-                </figure>
-              </div>
-              <div class="sitemap-panel">
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L1.jpg">
-                </figure>
-                <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/L1a.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R5a.jpg">
                 </figure>
               </div>
               <div class="sitemap-panel">
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/00.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L5.jpg">
                 </figure>
                 <figure class="sitemap-panel-item">
-                  <img src="/sites/all/themes/sharktheme/images/bg/luke/00a.jpg">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L5a.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L4.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L4a.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L3.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L3a.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L2.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L2a.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L1.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L1a.jpg">
+                </figure>
+              </div>
+              <div class="sitemap-panel">
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/00.jpg">
+                </figure>
+                <figure class="sitemap-panel-item">
+                  <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/00a.jpg">
                 </figure>
               </div>
 
@@ -525,17 +530,18 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/products.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/products.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
       </div>
 
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
         <div id="products-women"  class="island-dive-content-product">
           <div class="island-product-info">
             <h3 class="island-product-info-title">
-              <img src="/sites/all/themes/sharktheme/images/titles/womenwhite.png">  
+              <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/womenwhite.png">  
             </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
@@ -547,7 +553,7 @@
         <div id="products-men"  class="island-dive-content-product">
           <div class="island-product-info">
             <h3 class="island-product-info-title">
-              <img src="/sites/all/themes/sharktheme/images/titles/menwhite.png">  
+              <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/menwhite.png">  
             </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
@@ -559,7 +565,7 @@
         <div id="products-kids"  class="island-dive-content-product">
           <div class="island-product-info">
             <h3 class="island-product-info-title">
-              <img src="/sites/all/themes/sharktheme/images/titles/kidswhite.png">  
+              <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/kidswhite.png">  
             </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
@@ -580,21 +586,23 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/shop.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/shop.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
       </div>
       
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
+
         <div id="shop-women" class="island-dive-content-shop">
             <div class="island-dive-size">
               <h3 class="island-dive-size-title">
-                <img src="/sites/all/themes/sharktheme/images/titles/women.png">  
+                <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/women.png">  
               </h3>
 
               <div class="island-dive-size-chart noSwipe" style="display: none;" >
-                <img src="/sites/all/themes/sharktheme/images/bg/shop/SIZECHART_W.png">
+                <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/shop/SIZECHART_W.png">
               </div>
             </div>
             <div class="island-dive-shop-thumb island-dive-shop-grower"></div>
@@ -615,11 +623,11 @@
         <div id="shop-men" class="island-dive-content-shop">
             <div class="island-dive-size">
               <h3 class="island-dive-size-title">
-                <img src="/sites/all/themes/sharktheme/images/titles/men.png">  
+                <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/men.png">  
               </h3>
 
               <div class="island-dive-size-chart noSwipe" style="display: none;">
-                <img src="/sites/all/themes/sharktheme/images/bg/shop/SIZECHART_M.png">
+                <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/shop/SIZECHART_M.png">
               </div>
             </div>
             <div class="island-dive-shop-thumb island-dive-shop-grower"></div>
@@ -640,11 +648,11 @@
         <div id="shop-kids" class="island-dive-content-shop">
             <div class="island-dive-size">
               <h3 class="island-dive-size-title">
-                <img src="/sites/all/themes/sharktheme/images/titles/kids.png">  
+                <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/kids.png">  
               </h3>
 
               <div class="island-dive-size-chart noSwipe" style="display: none;">
-                <img src="/sites/all/themes/sharktheme/images/titles/COMINGSOON_AQUA.png">
+                <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/COMINGSOON_AQUA.png">
               </div>
             </div>
             <div class="island-dive-shop-thumb island-dive-shop-grower"></div>
@@ -673,7 +681,7 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/buy.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/buy.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
@@ -681,6 +689,7 @@
       </div>
 
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
         <div id="sideluke"></div>
 
         <?php print render($page['content']); ?>
@@ -697,16 +706,17 @@
       <span class="island-nav--right"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/disclaimer.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/disclaimer.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
+        <div class="island-nav--up"></div>
         <div class="island-dive-content-disclaimer">
           <a href="/sites/all/themes/sharktheme/images/pdf/DISCLAIMER.pdf" target="_blank" class="island-dive-content-disclaimer-more">
-            <img src="/sites/all/themes/sharktheme/images/bg/disclaimer/pdf_icon2.png"></img>
+            <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/disclaimer/pdf_icon2.png"></img>
           </a>  
           <span class="island-dive-nav island-dive-nav--up" ></span>
           <span class="island-dive-nav island-dive-nav--left" ></span>
@@ -720,13 +730,14 @@
       <span class="island-nav--left"></span>
     </nav>
     <div class="island-title island-dive-nav--down">
-      <img src="/sites/all/themes/sharktheme/images/titles/contact.gif">
+      <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/contact.gif">
     </div>
     <aside class="island-dive">
       <div class="island-dive-transition">
         
       </div>
       <div class="island-dive-content">
+          <div class="island-nav--up"></div>
         <?php print render($page['footer']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>
         <span class="island-dive-nav island-dive-nav--left" ></span>

@@ -43,6 +43,8 @@ var checkoutNumbers = function(){
 	    var semZeros = semZeros.replace("$", "");
 	    $(this).html("<span>$</span><span class='value'>" + semZeros + "</span>");
 	})
+	
+	$("#block-commerce-cap-cap").prepend("<div class='island-nav--up'></div>")
 
 	$(".increment, .decrement").click(function(event){
 
@@ -281,6 +283,24 @@ var siteMapCarouel = function() {
 
 
 $(document).ready(function() {
+
+    $('body').kycoPreload({
+	  truePercentage: false,
+	  disableOverlay: true,
+      animateDuration: 1000,
+      loaderText: '',
+      hidePercentage: true,
+      fadeOutDuration: 1500,
+      beforeComplete: function() {
+        console.log('images preloaded, fading out the overlay and loader at 1.5s');
+      },
+      onComplete: function() {
+        $("#preloadVideo").fadeOut();
+        
+      }
+    }); // This will preload all images on the page.
+
+
 
 	// prevent pulldown
 	
@@ -617,7 +637,7 @@ $(document).ready(function() {
 	$(".island-nav--right, .island-dive-nav--right").click(function(){
 	    trans('down');
 	});
-    $(".island-dive-nav--up").click(function() {
+    $(".island-nav--up").click(function() {
      	dive("up");
     })
     $(".island-dive-nav--down").click(function() {
@@ -644,33 +664,33 @@ $(window).resize(function() {
 });
 
 $(window).on("load", function() {
-	console.log("all content loaded")
-	var videosLoaded = 0;
-	$(".island-wrapper").css("opacity", "1")
-	$("#preloadVideo").fadeOut()
+	// console.log("all content loaded")
+	// var videosLoaded = 0;
+	// $(".island-wrapper").css("opacity", "1")
+	// $("#preloadVideo").fadeOut()
 	
-	$("video").each(function(){
-		var vid = $(this);
+	// $("video").each(function(){
+	// 	var vid = $(this);
 
 
 
-		// vid.addEventListener("loadedmetadata", getmetadata);
+	// 	// vid.addEventListener("loadedmetadata", getmetadata);
 		
-		// if (vid.readyState >= 4) {
-		// 	console.log("video ready " + videosLoaded);
-		// 	$("#preloadVideo").append("video ready" + videosLoaded)
-		// 	getmetadata();
-		// }
-		// function getmetadata()
-		// {
-		// 	videosLoaded++
-		// 	if (videosLoaded >= 25) {
-		// 		$(".island-wrapper").css("opacity", "1")
-		// 		$("#preloadVideo").fadeOut()
-		// 	}
-		// }
+	// 	// if (vid.readyState >= 4) {
+	// 	// 	console.log("video ready " + videosLoaded);
+	// 	// 	$("#preloadVideo").append("video ready" + videosLoaded)
+	// 	// 	getmetadata();
+	// 	// }
+	// 	// function getmetadata()
+	// 	// {
+	// 	// 	videosLoaded++
+	// 	// 	if (videosLoaded >= 25) {
+	// 	// 		$(".island-wrapper").css("opacity", "1")
+	// 	// 		$("#preloadVideo").fadeOut()
+	// 	// 	}
+	// 	// }
 		
-	})
+	// })
 	
 	
 })

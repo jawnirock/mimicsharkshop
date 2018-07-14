@@ -174,11 +174,16 @@
 		display: none;
     }
 
+	.island-nav--up {
+		margin-top: 0 !important;
+	}
+
 	&.firstStep {
 		
 		&>div {
 			align-self: flex-start;
-		    margin-top: 7.7vw;				
+		    margin-top: 7.7vw;
+		    z-index: 500;
 		}
 
 	    &::before {
@@ -214,6 +219,8 @@
 			max-width: 420px;
 			align-self: flex-start;
 		    margin-top: 4.3vw;				
+		    z-index: 500;
+
 		}
 	}
 	
@@ -232,6 +239,7 @@
 		}
 		form>div {
 			text-align: center;
+		    z-index: 500;
 		    width: 480px;
 		    display: flex;
 		    flex-wrap: wrap;			
