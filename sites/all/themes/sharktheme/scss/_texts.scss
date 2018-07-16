@@ -145,10 +145,20 @@
     }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .island-dive .island-dive-content .underwater-slider-vertical {
+        background-size: 55px 115px !important;
+    }
+}
+
+
 .island-dive .island-dive-content .underwater-slider-vertical {
     background-image: url(../images/MS_scroll.svg);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='../images/MS_scroll.svg',
+    sizingMethod='scale');
     background-size: auto 12vh;
-    background-repeat-x: no-repeat;
+    background-repeat: repeat-y;
     background-position: top;
     background-color: transparent;
     width: 40px;

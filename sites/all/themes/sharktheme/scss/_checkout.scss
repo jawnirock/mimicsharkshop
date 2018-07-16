@@ -126,6 +126,13 @@
 }
 
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   #block-commerce-cap-cap {
+   	&::before {
+   		background-position: right 0% !important;
+   	}
+   }
+}
 #block-commerce-cap-cap {
 	font-size: calc(10px + 0.5vh);
 	background: transparent;
