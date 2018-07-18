@@ -398,9 +398,9 @@
       <img rel="preload" src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
     </div>
     <div class="island-title--insta">
-      <a target="_blank" href="https://www.instagram.com/mimicsharksuits/">
-        <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/instagram.gif">
-      </a>
+      <!--<a target="_blank" href="https://www.instagram.com/mimicsharksuits/">-->
+      <!--  <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/instagram.gif">-->
+      <!--</a>-->
     </div>
 
     <aside class="island-dive island-dive--visible">
