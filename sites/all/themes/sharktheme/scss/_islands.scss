@@ -25,7 +25,12 @@
 	&[data-level="3"] {
 		// animation: diveDownLevelThree 1.3s both ease-in;
 	}
-	
+	&[data-level="4"] {
+		// animation: diveDownLevelThree 1.3s both ease-in;
+		.island-nav--down {
+			display: none;
+		}
+	}	
 	&[data-level="1"].goinUp {
 		animation: diveUpLevelTwo 0.3s both ease-in;
 		animation-delay: 1s;
@@ -264,22 +269,6 @@
 			    top: 0;
 			}
 			
-			&--up {
-				width: 0;
-			    height: 0;
-			    border-style: solid;
-			    border-width: 50vh 50vw 0 50vw;
-			    border-color: transparent transparent transparent transparent;
-			    position: absolute;
-			    left: 0;
-			    top: 0;
-			    cursor: pointer;
-			    z-index: 450;
-			    &:hover {
-					border-color: rgba(84,84,84,0.2) transparent transparent transparent;	    	
-			    }
-			}
-			
 			&--left {
 				left: 0;
 			    &:hover {
@@ -291,6 +280,32 @@
 				right: 0;
 			    &:hover {
 					background: linear-gradient(to left, rgba(84,84,84,0.3) 0%,rgba(84,84,84,0) 100%);
+					cursor: pointer;
+			    }
+			}
+			
+			&--up, &--down {
+			    height: 50%;
+			    width: 100%;
+			    position: absolute;
+			    left: 0;
+			    cursor: pointer;
+			    z-index: 450;
+			    &:hover {
+					background: linear-gradient(to bottom, rgba(84,84,84,0.3) 0%,rgba(84,84,84,0) 100%);
+			    }
+			}
+			&--up {
+				top: 0;
+			    &:hover {
+					background: linear-gradient(to bottom, rgba(84,84,84,0.3) 0%,rgba(84,84,84,0) 100%);
+					cursor: pointer;
+			    }
+			}
+			&--down {
+				bottom: 0;
+			    &:hover {
+					background: linear-gradient(to top, rgba(84,84,84,0.3) 0%,rgba(84,84,84,0) 100%);
 					cursor: pointer;
 			    }
 			}

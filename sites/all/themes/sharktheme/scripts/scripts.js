@@ -641,7 +641,7 @@ $(document).ready(function() {
     $(".island-nav--up").click(function() {
      	dive("up");
     })
-    $(".island-dive-nav--down").click(function() {
+    $(".island-dive-nav--down, .island-nav--down").click(function() {
      	dive("down");
     })
 

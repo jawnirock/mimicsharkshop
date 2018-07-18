@@ -538,6 +538,7 @@
 
       <div class="island-dive-content">
         <div class="island-nav--up"></div>
+        <div class="island-nav--down"></div>
         <div id="products-women"  class="island-dive-content-product">
           <div class="island-product-info">
             <h3 class="island-product-info-title">
@@ -594,6 +595,7 @@
       
       <div class="island-dive-content">
         <div class="island-nav--up"></div>
+        <div class="island-nav--down"></div>
 
         <div id="shop-women" class="island-dive-content-shop">
             <div class="island-dive-size">

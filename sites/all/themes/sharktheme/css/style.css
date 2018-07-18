@@ -1877,6 +1877,8 @@
             animation: diveDownLevelTwo 0.3s both ease-in;
     -webkit-animation-delay: 1s;
             animation-delay: 1s; }
+  .island-wrapper[data-level="4"] .island-nav--down {
+    display: none; }
   .island-wrapper[data-level="1"].goinUp {
     -webkit-animation: diveUpLevelTwo 0.3s both ease-in;
             animation: diveUpLevelTwo 0.3s both ease-in;
@@ -2052,19 +2054,6 @@
       height: 100%;
       width: 50%;
       top: 0; }
-    .island-wrapper .island-nav--up {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 50vh 50vw 0 50vw;
-      border-color: transparent transparent transparent transparent;
-      position: absolute;
-      left: 0;
-      top: 0;
-      cursor: pointer;
-      z-index: 450; }
-      .island-wrapper .island-nav--up:hover {
-        border-color: rgba(84, 84, 84, 0.2) transparent transparent transparent; }
     .island-wrapper .island-nav--left {
       left: 0; }
       .island-wrapper .island-nav--left:hover {
@@ -2074,6 +2063,25 @@
       right: 0; }
       .island-wrapper .island-nav--right:hover {
         background: linear-gradient(to left, rgba(84, 84, 84, 0.3) 0%, rgba(84, 84, 84, 0) 100%);
+        cursor: pointer; }
+    .island-wrapper .island-nav--up, .island-wrapper .island-nav--down {
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      cursor: pointer;
+      z-index: 450; }
+      .island-wrapper .island-nav--up:hover, .island-wrapper .island-nav--down:hover {
+        background: linear-gradient(to bottom, rgba(84, 84, 84, 0.3) 0%, rgba(84, 84, 84, 0) 100%); }
+    .island-wrapper .island-nav--up {
+      top: 0; }
+      .island-wrapper .island-nav--up:hover {
+        background: linear-gradient(to bottom, rgba(84, 84, 84, 0.3) 0%, rgba(84, 84, 84, 0) 100%);
+        cursor: pointer; }
+    .island-wrapper .island-nav--down {
+      bottom: 0; }
+      .island-wrapper .island-nav--down:hover {
+        background: linear-gradient(to top, rgba(84, 84, 84, 0.3) 0%, rgba(84, 84, 84, 0) 100%);
         cursor: pointer; }
 
 @-webkit-keyframes LukeLeft {
