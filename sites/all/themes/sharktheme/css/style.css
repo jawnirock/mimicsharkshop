@@ -1683,7 +1683,7 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  z-index: 150;
+  z-index: 500;
   bottom: 40px;
   background-position: center;
   background-size: cover; }

@@ -476,7 +476,9 @@ $(document).ready(function() {
 			
 			// nao ha video se subires para o nivel 2
 			if (Number(level) >= 1 && doubleLevels.indexOf(current) !== -1) {
-				 level = level - 1;
+				 if (level !== 1) {
+					 level = level - 1;
+				 }
 				 $(".island-wrapper").attr("data-level", level);
 					 $(".island-wrapper").addClass("goinUp")
 				 if (Number(level) == 1) {

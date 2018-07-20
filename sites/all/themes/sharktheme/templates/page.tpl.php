@@ -546,7 +546,7 @@
             </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
-          <video style="" preload="metadata" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
+          <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
               <source src="https://player.vimeo.com/external/271567387.hd.mp4?s=eaefe0d0ba8a87a605e2e87f601b75716b9ffff7&profile_id=175"  type="video/mp4">
           </video>  
 
@@ -559,7 +559,7 @@
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
 
-          <video style="" preload="metadata" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
+          <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
               <source src="https://player.vimeo.com/external/271567602.hd.mp4?s=d7c2b9758d26f9356912267bf5eb690961951070&profile_id=175"  type="video/mp4">
           </video>
         </div>
@@ -571,8 +571,8 @@
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
 
-          <video style="" preload="metadata" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
-              <source src="https://player.vimeo.com/external/276500492.hd.mp4?s=e8c4e3a6b4a17bfbba624e70f95c016bb12d0f8a&profile_id=175"  type="video/mp4">
+          <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
+              <source src="https://player.vimeo.com/external/276500492.hd.mp4?s=e8c4e3a6uy4a17bfbba624e70f95c016bb12d0f8a&profile_id=175"  type="video/mp4">
           </video>
         </div>
 
@@ -693,6 +693,7 @@
       <div class="island-dive-content">
         <div class="island-nav--up"></div>
         <div id="sideluke"></div>
+        <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg")">
 
         <?php print render($page['content']); ?>
         <span class="island-dive-nav island-dive-nav--up" ></span>
