@@ -570,10 +570,10 @@
             </h3>
             <h3 class="island-product-info-text" style="display: none;">info</h3>
           </div>
-
           <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
-              <source src="https://player.vimeo.com/external/276500492.hd.mp4?s=e8c4e3a6uy4a17bfbba624e70f95c016bb12d0f8a&profile_id=175"  type="video/mp4">
+              <source src="https://player.vimeo.com/external/276500492.hd.mp4?s=e8c4e3a6b4a17bfbba624e70f95c016bb12d0f8a&profile_id=175"  type="video/mp4">
           </video>
+
         </div>
 
 
