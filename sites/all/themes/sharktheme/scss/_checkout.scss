@@ -573,3 +573,15 @@
 		display: block;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+
+	#block-commerce-cap-cap {
+		&>div {
+	      .view.form-wrapper.form-group {
+	  	      margin-top: -9vw;
+		      transform: scale(0.8);
+	      }
+		}		
+	}
+}

@@ -260,12 +260,20 @@
 		
 		// NAVIGATIONS
 
+		&-dive {
+			.island-nav--up, .island-nav--down {
+				height: 30%;
+				z-index: 450;
+			}
+		}
+			
+
 		&-nav {
 			&--left, &--right {
 			    position: absolute;
 			    z-index: 99;
 			    height: 100%;
-			    width: 50%;
+			    width: 30%;
 			    top: 0;
 			}
 			

@@ -11,9 +11,23 @@
         z-index: 9999;
         left: 35px;
         top: 35px;
+        display: flex;
+        
         &-title {
+            cursor: pointer;
             img {
               max-height: 10vw;
+            }
+        }
+        
+        &-text {
+          width: 29vw;
+            img {
+             min-width: 29vw;
+             width: 100%;
+             margin-top: -0.8vw;
+             display: inline;
+             margin-left: 15px;            
             }
         }
     }

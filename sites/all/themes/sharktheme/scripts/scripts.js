@@ -219,13 +219,19 @@ var shopFunctions = function() {
         $(this).next(".island-dive-size-chart").slideToggle("slow");
     })
     $(".island-product-info-title").click(function() {
-      $(this).next(".island-product-info-text").slideToggle("slow");
+      $(this).next(".island-product-info-text").animate({width: 'toggle'});
     })
+    
     //bg change
+	
+	$(".island-product-info-text").resizable({
+			aspectRatio: 718 / 211
+	});
+
 
 	$(".island-dive-size-chart").resizable({
 			aspectRatio: 150 / 76
-		});
+	});
 
     $(".island-dive-shop-thumb.static").click(function() {
     	var currentThumb = $(this);
@@ -296,8 +302,9 @@ $(document).ready(function() {
         console.log('images preloaded, fading out the overlay and loader at 1.5s');
       },
       onComplete: function() {
-        $("#preloadVideo").fadeOut();
-        
+		setTimeout(function() {
+			$("#preloadVideo").fadeOut();
+		}, 5000)
       }
     }); // This will preload all images on the page.
 
@@ -517,14 +524,18 @@ $(document).ready(function() {
 				 level = level + 1;
 				 $(".island-wrapper").removeClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
-				 $(".island-dive").show();
+				setTimeout(function() {
+					$(".island-dive").show();
+				}, 200)
 			}
 			// se forem secoes de 2 niveis desce 2
 			else if (Number(level) <= 3 && doubleLevels.indexOf(current) !== -1){
 				 level = level + 1;
 				 $(".island-wrapper").removeClass("goinUp")
 				 $(".island-wrapper").attr("data-level", level);
-				 $(".island-dive").show();
+				setTimeout(function() {
+					$(".island-dive").show();
+				}, 200)
 			}
 		}
 		setTimeout(function() {

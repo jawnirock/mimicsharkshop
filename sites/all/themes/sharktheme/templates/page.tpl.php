@@ -196,7 +196,10 @@
         
       </div>
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
+
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
           <a href="#" class="underwater-slider-more">
@@ -237,6 +240,8 @@
         
       </div>
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
@@ -275,6 +280,8 @@
         
       </div>
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
@@ -315,6 +322,8 @@
         
       </div>
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
@@ -355,6 +364,8 @@
         
       </div>
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-dive-content-text-title">
         </div>
@@ -377,10 +388,7 @@
             <div class="island-dive-content-text-block"></div>
             <div class="island-dive-content-text-block"></div>
         </div>
-        <span class="island-dive-nav island-dive-nav--up" ></span>
-        <span class="island-dive-nav island-dive-nav--left" ></span>
-        <span class="island-dive-nav island-dive-nav--right" ></span>
-    </div>
+      </div>
       </div>
     </aside>
   </section>
@@ -409,6 +417,8 @@
       <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/home.jpg" class="preload-image">
       <div class="island-dive-content">
         <div class="island-dive-content-sitemap">
+          <span class="island-nav--left"></span>
+          <span class="island-nav--right"></span>
           <div class="island-nav--up"></div>
           <section class="sitemap-container">
             <img rel="preload" class="sitemap-title" src="/sites/all/themes/sharktheme/images/titles/islandmap.png">  
@@ -537,6 +547,8 @@
       </div>
 
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-nav--down"></div>
         <div id="products-women"  class="island-dive-content-product">
@@ -544,7 +556,9 @@
             <h3 class="island-product-info-title">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/womenwhite.png">  
             </h3>
-            <h3 class="island-product-info-text" style="display: none;">info</h3>
+            <h3 class="island-product-info-text noSwipe" style="display: none;">
+              <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/products/PRODUCTS.png">  
+            </h3>
           </div>
           <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
               <source src="https://player.vimeo.com/external/271567387.hd.mp4?s=eaefe0d0ba8a87a605e2e87f601b75716b9ffff7&profile_id=175"  type="video/mp4">
@@ -553,10 +567,12 @@
         </div>
         <div id="products-men"  class="island-dive-content-product">
           <div class="island-product-info">
-            <h3 class="island-product-info-title">
+            <h3 class="island-product-info-title ">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/menwhite.png">  
             </h3>
-            <h3 class="island-product-info-text" style="display: none;">info</h3>
+            <h3 class="island-product-info-text noSwipe" style="display: none;">
+              <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/products/PRODUCTS.png">  
+            </h3>
           </div>
 
           <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
@@ -568,7 +584,9 @@
             <h3 class="island-product-info-title">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/kidswhite.png">  
             </h3>
-            <h3 class="island-product-info-text" style="display: none;">info</h3>
+            <h3 class="island-product-info-text noSwipe" style="display: none;">
+              <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/products/PRODUCTSK.png">  
+            </h3>
           </div>
           <video style="" preload="auto" muted autoplay loop playsinline class="productVideo"  width="320" height="180">
               <source src="https://player.vimeo.com/external/276500492.hd.mp4?s=e8c4e3a6b4a17bfbba624e70f95c016bb12d0f8a&profile_id=175"  type="video/mp4">
@@ -594,6 +612,8 @@
       </div>
       
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-nav--down"></div>
 
@@ -691,15 +711,13 @@
       </div>
 
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div id="sideluke"></div>
-        <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg")">
+        <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg">
 
         <?php print render($page['content']); ?>
-        <span class="island-dive-nav island-dive-nav--up" ></span>
-        <span class="island-dive-nav island-dive-nav--left" ></span>
-        <span class="island-dive-nav island-dive-nav--right" ></span>
-
       </div>
     </aside>
   </section>
@@ -716,14 +734,13 @@
         
       </div>
       <div class="island-dive-content">
+        <span class="island-nav--left"></span>
+        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-dive-content-disclaimer">
           <a href="/sites/all/themes/sharktheme/images/pdf/DISCLAIMER.pdf" target="_blank" class="island-dive-content-disclaimer-more">
             <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/disclaimer/pdf_icon2.png"></img>
           </a>  
-          <span class="island-dive-nav island-dive-nav--up" ></span>
-          <span class="island-dive-nav island-dive-nav--left" ></span>
-          <span class="island-dive-nav island-dive-nav--right" ></span>
         </div>
       </div>
     </aside>
@@ -740,11 +757,10 @@
         
       </div>
       <div class="island-dive-content">
+          <span class="island-nav--left"></span>
+          <span class="island-nav--right"></span>
           <div class="island-nav--up"></div>
         <?php print render($page['footer']); ?>
-        <span class="island-dive-nav island-dive-nav--up" ></span>
-        <span class="island-dive-nav island-dive-nav--left" ></span>
-        <span class="island-dive-nav island-dive-nav--right" ></span>
       </div>
     </aside>
   </section>

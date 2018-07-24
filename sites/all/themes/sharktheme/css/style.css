@@ -76,7 +76,7 @@
   position: relative;
   width: 0;
   height: 100%;
-  border-bottom: 8px solid #003c47;
+  border-bottom: 16px solid #003c47;
   box-shadow: 0 0 2px rgba(63, 72, 204, 0.5); }
 
 #kyco_preloader .kyco_progress_notification.error {
@@ -1367,6 +1367,12 @@
 .island-dive.island-dive--visible #block-commerce-cap-cap form {
   display: block; }
 
+@media only screen and (max-width: 768px) {
+  #block-commerce-cap-cap > div .view.form-wrapper.form-group {
+    margin-top: -9vw;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
+
 .diveVideos {
   position: relative;
   z-index: 9999;
@@ -1593,9 +1599,22 @@
   position: absolute;
   z-index: 9999;
   left: 35px;
-  top: 35px; }
-  #products .island-product-info-title img {
-    max-height: 10vw; }
+  top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #products .island-product-info-title {
+    cursor: pointer; }
+    #products .island-product-info-title img {
+      max-height: 10vw; }
+  #products .island-product-info-text {
+    width: 29vw; }
+    #products .island-product-info-text img {
+      min-width: 29vw;
+      width: 100%;
+      margin-top: -0.8vw;
+      display: inline;
+      margin-left: 15px; }
 
 #products .island-dive-content {
   height: 100%; }
@@ -2048,11 +2067,14 @@
               justify-content: center; }
       .island-wrapper .island#contact .island-title {
         margin: 30vw 4vw 0 0; }
+    .island-wrapper .island-dive .island-nav--up, .island-wrapper .island-dive .island-nav--down {
+      height: 30%;
+      z-index: 450; }
     .island-wrapper .island-nav--left, .island-wrapper .island-nav--right {
       position: absolute;
       z-index: 99;
       height: 100%;
-      width: 50%;
+      width: 30%;
       top: 0; }
     .island-wrapper .island-nav--left {
       left: 0; }
