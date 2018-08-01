@@ -230,7 +230,7 @@ var shopFunctions = function() {
 
 
 	$(".island-dive-size-chart").resizable({
-			aspectRatio: 150 / 76
+			aspectRatio: 1225 / 760
 	});
 
     $(".island-dive-shop-thumb.static").click(function() {

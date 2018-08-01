@@ -712,7 +712,6 @@
 
       <div class="island-dive-content">
         <span class="island-nav--left"></span>
-        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div id="sideluke"></div>
         <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg">
@@ -734,8 +733,6 @@
         
       </div>
       <div class="island-dive-content">
-        <span class="island-nav--left"></span>
-        <span class="island-nav--right"></span>
         <div class="island-nav--up"></div>
         <div class="island-dive-content-disclaimer">
           <a href="/sites/all/themes/sharktheme/images/pdf/DISCLAIMER.pdf" target="_blank" class="island-dive-content-disclaimer-more">
