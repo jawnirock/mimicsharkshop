@@ -187,17 +187,17 @@ var mobileResponse = function(){
 	var windowWidth = $(window).width();
 	var position = windowWidth / 2;
 	
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowHeight < windowWidth ) {
+	if(windowHeight < windowWidth ) {
 	  $(".mobileNotification.fullscreen").show();
 	  $(".mobileNotification.landscape").hide();
 	}
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowHeight > windowWidth ) {
+	if(windowHeight > windowWidth ) {
 	  $(".mobileNotification.landscape").show();
 	  $(".mobileNotification.fullscreen").hide();
 	}
 	
 	$(".mobileNotification.fullscreen button").click(function() {
-			$(".mobileNotification").remove();
+			$(".mobileNotification.fullscreen").hide();
 			$(".island-wrapper").show();
 
 			var docElm = document.documentElement;
@@ -222,7 +222,7 @@ var shopFunctions = function() {
       $(this).next(".island-product-info-text").animate({width: 'toggle'});
     })
     
-    //bg change
+    // bg change
 	
 	$(".island-product-info-text").resizable({
 			aspectRatio: 718 / 211
@@ -232,6 +232,8 @@ var shopFunctions = function() {
 	$(".island-dive-size-chart").resizable({
 			aspectRatio: 1225 / 760
 	});
+	
+
 
     $(".island-dive-shop-thumb.static").click(function() {
     	var currentThumb = $(this);
@@ -304,7 +306,11 @@ $(document).ready(function() {
       onComplete: function() {
 		setTimeout(function() {
 			$("#preloadVideo").fadeOut();
+			$(".island-dive-size-chart").hide();
+			$(".island-product-info-text").hide();
+
 		}, 5000)
+	
       }
     }); // This will preload all images on the page.
 
@@ -676,40 +682,6 @@ $(document).ajaxComplete(function() {
 $(window).resize(function() {
 	mobileResponse();
 });
-
-$(window).on("load", function() {
-	// console.log("all content loaded")
-	// var videosLoaded = 0;
-	// $(".island-wrapper").css("opacity", "1")
-	// $("#preloadVideo").fadeOut()
-	
-	// $("video").each(function(){
-	// 	var vid = $(this);
-
-
-
-	// 	// vid.addEventListener("loadedmetadata", getmetadata);
-		
-	// 	// if (vid.readyState >= 4) {
-	// 	// 	console.log("video ready " + videosLoaded);
-	// 	// 	$("#preloadVideo").append("video ready" + videosLoaded)
-	// 	// 	getmetadata();
-	// 	// }
-	// 	// function getmetadata()
-	// 	// {
-	// 	// 	videosLoaded++
-	// 	// 	if (videosLoaded >= 25) {
-	// 	// 		$(".island-wrapper").css("opacity", "1")
-	// 	// 		$("#preloadVideo").fadeOut()
-	// 	// 	}
-	// 	// }
-		
-	// })
-	
-	
-})
-
-
 
 
 })(jQuery);

@@ -149,3 +149,10 @@
     }
     
 }
+
+
+@media screen and (max-width: 767px) {
+    .island-dive-content-sitemap .sitemap-container {
+        transform: scale(0.5) translate(-100%, -75%);
+    }
+}

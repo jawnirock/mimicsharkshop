@@ -35,8 +35,13 @@
     		    max-height: 31vw;
     		    min-height: 5px;
     		    padding: 5px;
-                border-radius: 6px;
-                background-color: rgba(256,256,256, 0.4);                
+                display: none;
+                background-color: rgba(256,256,256, 0.4);      
+                background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
+                background-repeat: no-repeat;
+                background-size: 10px;
+                background-position: right bottom;
+                border-radius: 6px 6px 0px 6px;
     		    img {
                       width: 100%;
         		    }
@@ -94,7 +99,7 @@
     	            height: 100%;
     	            left: 0;
     	            bottom: 0;
-    	            z-index: 120;
+    	            z-index: 85;
     	        }
     	    }
     	}	    
