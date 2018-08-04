@@ -74,5 +74,5 @@
  */
 ?>
 
-<img src="/sites/all/themes/luketheme/imgs/PURCHASE_W.png"> 
+<img src="/sites/all/themes/luketheme/imgs/order.png"> 
  
