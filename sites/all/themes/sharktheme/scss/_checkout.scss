@@ -177,6 +177,7 @@
 	    }
     }
     
+    
     form {
 		display: none;
     }
@@ -210,6 +211,27 @@
 	}
 
 	&.secondStep {
+		
+		.checkout-messages {
+		    background-color: rgba(255, 255, 255, 0.3);
+		    display: inline-block;
+		    width: 49%;
+		    height: 27px;
+		    padding: 5px 10px;
+		    border-radius: 6px;
+		    margin: 5px 0px;
+		    font-size: 11px;
+		    color: black;	
+		    cursor: pointer;
+		    
+		    &.privacy {
+			    margin-left: 8px;
+		    }
+		    &:hover {
+			    background-color: rgba(255, 255, 255, 0.7);
+		    }
+		}
+		
 		animation: toSecond 2.5s forwards;
 		
 	    &::before {

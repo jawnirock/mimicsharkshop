@@ -74,7 +74,5 @@
  */
 ?>
 
-<h1>THANK YOU</h1>
-<h3>sexy luke</h3>
- 
+<img src="/sites/all/themes/luketheme/imgs/PURCHASE_W.png"> 
  

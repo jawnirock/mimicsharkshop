@@ -754,7 +754,6 @@
         
       </div>
       <div class="island-dive-content">
-          <span class="island-nav--right"></span>
           <div class="island-nav--up"></div>
         <?php print render($page['footer']); ?>
       </div>

@@ -179,8 +179,10 @@ var checkoutLabels = function() {
 	$(".checkout-review .pane-title:nth-child(1) td").text("email");
 	$(".checkout-review .pane-title:nth-child(3) td").text("Billing info");
 	$(".checkout-review .pane-title:nth-child(5) td").text("Shipping info");
-	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>")
+	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>");
 	$(".thirdStep .checkout-continue").html("<div class='checkout-paypal'></div>");
+	$(".checkout-messages").remove();
+	$(".secondStep#block-commerce-cap-cap .account").append("<div class='checkout-messages delivery'>Delivery</div><div class='checkout-messages privacy'>Privacy Policy</div>");
 }
 var mobileResponse = function(){
 	var windowHeight = $(window).height();
