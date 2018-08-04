@@ -1719,15 +1719,17 @@
   left: 35px;
   top: 35px; }
   #shop .island-dive-size-title {
-    margin-bottom: 0px; }
+    margin-bottom: -15px; }
     #shop .island-dive-size-title img {
       max-height: 10vw;
       cursor: pointer; }
   #shop .island-dive-size-chart {
+    min-width: 11vw;
     width: 11vw;
-    max-width: 50vw;
-    max-height: 31vw;
-    min-height: 5px;
+    height: 6.82vw;
+    max-width: 40vw;
+    max-height: 24.8vw;
+    min-height: 6.82vw;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.4);
     background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
