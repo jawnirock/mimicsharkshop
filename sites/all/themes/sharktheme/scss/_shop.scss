@@ -35,7 +35,6 @@
     		    max-height: 31vw;
     		    min-height: 5px;
     		    padding: 5px;
-                display: none;
                 background-color: rgba(256,256,256, 0.4);      
                 background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
                 background-repeat: no-repeat;
@@ -283,3 +282,43 @@
 	    }
 	}   
 }
+
+
+
+@media screen and (max-width: 767px) {
+
+    #shop .island-dive-size {
+        z-index: 9990;
+        left: 17px;
+        top: 0px;
+    }
+    
+    #shop .island-dive-size-title {
+        margin-bottom: 0px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #shop .island-dive-size-chart {
+        width: 47vw;
+        height: 29.14vw;        
+        background-image: none;
+        border-radius: 6px;
+        display: inline-block;
+        vertical-align: top;
+        top: 20px;
+        margin-left: 5px;
+    }
+
+    .island-dive-shop {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transform: scale(0.65);
+        height: 65%;
+        z-index: 999;
+        transform-origin: bottom left;
+    }
+}
+

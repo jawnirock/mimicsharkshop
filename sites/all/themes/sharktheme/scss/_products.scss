@@ -21,17 +21,22 @@
         }
         
         &-text {
-          width: 29vw;
-        background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
-        background-repeat: no-repeat;
-        background-size: 10px;
-        background-position: right bottom;
-        padding-left: 15px;        
-        display: none;
+            min-width: 35vw;
+            width: 35vw;
+            height: 6.17vw;
+            min-height: 7.46vw;
+            background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
+            background-repeat: no-repeat;
+            background-size: 10px;
+            background-position: right bottom;
+            padding-left: 15px;        
+            max-width: 53vw;
+            max-height: 11.30vw;
+            display: none;
 
             img {
              width: 100%;
-             margin-top: -0.8vw;
+             margin-top: 0.4vw;
              display: inline;
             }
         }
@@ -115,3 +120,18 @@
 	}
 }
 
+
+
+@media screen and (max-width: 767px) {
+    #products .island-product-info-text {
+        width: 53vw;
+        background: none;
+        height: 11.30vw;        
+        border-radius: 6px;
+    }
+
+    #products .island-product-info-text img {
+        background: rgba(113, 113, 113, 0.5);
+        padding: 5px;
+    }
+}

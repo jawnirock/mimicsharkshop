@@ -227,7 +227,7 @@ var shopFunctions = function() {
     // bg change
 	
 	$(".island-product-info-text").resizable({
-			aspectRatio: 718 / 211
+			aspectRatio: 718 / 153
 	});
 
 

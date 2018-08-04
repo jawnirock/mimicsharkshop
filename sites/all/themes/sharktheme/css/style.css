@@ -1628,16 +1628,21 @@
     #products .island-product-info-title img {
       max-height: 10vw; }
   #products .island-product-info-text {
-    width: 29vw;
+    min-width: 35vw;
+    width: 35vw;
+    height: 6.17vw;
+    min-height: 7.46vw;
     background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: right bottom;
     padding-left: 15px;
+    max-width: 53vw;
+    max-height: 11.30vw;
     display: none; }
     #products .island-product-info-text img {
       width: 100%;
-      margin-top: -0.8vw;
+      margin-top: 0.4vw;
       display: inline; }
 
 #products .island-dive-content {
@@ -1684,6 +1689,16 @@
 .island-wrapper[data-level="3"] .spinTopOut #products-women, .island-wrapper[data-level="3"] .spinTopIn #products-women, .island-wrapper[data-level="3"] .spinBottomOut #products-women, .island-wrapper[data-level="3"] .spinBottomIn #products-women {
   visibility: hidden; }
 
+@media screen and (max-width: 767px) {
+  #products .island-product-info-text {
+    width: 53vw;
+    background: none;
+    height: 11.30vw;
+    border-radius: 6px; }
+  #products .island-product-info-text img {
+    background: rgba(113, 113, 113, 0.5);
+    padding: 5px; } }
+
 #shop .island-dive-content {
   height: 100%; }
   #shop .island-dive-content-shop {
@@ -1714,7 +1729,6 @@
     max-height: 31vw;
     min-height: 5px;
     padding: 5px;
-    display: none;
     background-color: rgba(255, 255, 255, 0.4);
     background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
     background-repeat: no-repeat;
@@ -1884,6 +1898,36 @@
 
 .island-wrapper[data-level="3"] .spinTopOut #shop-women, .island-wrapper[data-level="3"] .spinTopIn #shop-women, .island-wrapper[data-level="3"] .spinBottomOut #shop-women, .island-wrapper[data-level="3"] .spinBottomIn #shop-women {
   visibility: hidden; }
+
+@media screen and (max-width: 767px) {
+  #shop .island-dive-size {
+    z-index: 9990;
+    left: 17px;
+    top: 0px; }
+  #shop .island-dive-size-title {
+    margin-bottom: 0px;
+    display: inline-block;
+    vertical-align: top; }
+  #shop .island-dive-size-chart {
+    width: 47vw;
+    height: 29.14vw;
+    background-image: none;
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: top;
+    top: 20px;
+    margin-left: 5px; }
+  .island-dive-shop {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+    height: 65%;
+    z-index: 999;
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; } }
 
 .island-dive-content-disclaimer {
   background-size: cover;
