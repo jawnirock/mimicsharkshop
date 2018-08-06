@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+
 #contact {
     .alert-block {
         display: none;
@@ -186,6 +189,36 @@
                 background-size: 50%;
                 background-position: center;
                 background-repeat: no-repeat;
+            }
+        }
+    }
+    
+    .contact-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+        padding: 15px 30px;
+        &-mimic {
+            color: white;
+            &--long, &--short {
+                display: inline-block;
+            }
+        }
+        
+        &-pash {
+            a {
+                font-family: 'Montserrat', sans-serif;
+                color: #e84079;
+                font-size: 22px;
+                transition: .3s ease;
+                &:hover {
+                    text-decoration: none;
+                    color: #f6b220;                
+                }
             }
         }
     }

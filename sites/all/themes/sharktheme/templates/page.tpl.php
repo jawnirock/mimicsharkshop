@@ -756,6 +756,17 @@
       <div class="island-dive-content">
           <div class="island-nav--up"></div>
         <?php print render($page['footer']); ?>
+        <div class="contact-footer">
+          <div class="contact-footer-mimic">
+            <h4 class="contact-footer-mimic--short">© Mimic Suits™</h4>
+            <h4 class="contact-footer-mimic--long" style="display: none;"> All rights reserved © Mimic Suits™ / Mimic Shark Suits™ 2012 - present. </h4>
+          </div>
+          <div class="contact-footer-pash">
+            <a href="http://www.pash.rocks" target="_blank">
+              PASH
+            </a>
+          </div>
+        </div>
       </div>
     </aside>
   </section>

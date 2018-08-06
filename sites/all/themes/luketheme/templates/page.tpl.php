@@ -74,5 +74,8 @@
  */
 ?>
 
-<img src="/sites/all/themes/luketheme/imgs/order.png"> 
+<div class="thanks-container">
+    <img src="/sites/all/themes/luketheme/imgs/order.png"> 
+</div>
+
  

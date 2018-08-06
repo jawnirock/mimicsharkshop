@@ -180,7 +180,21 @@ var checkoutLabels = function() {
 	$(".checkout-review .pane-title:nth-child(3) td").text("Billing info");
 	$(".checkout-review .pane-title:nth-child(5) td").text("Shipping info");
 	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>");
+    $('.thirdStep .checkout-continue').attr("disabled", "disabled");
 	$(".thirdStep .checkout-continue").html("<div class='checkout-paypal'></div>");
+	$(".thirdStep .checkout-continue").before("<h3 class='disclaimer-text'>I have ready & accept the <a href='/sites/all/themes/sharktheme/images/pdf/DISCLAIMER.pdf' target='_blank'>Disclaimer</a> <input type='checkbox' id='disclaimer-check' />  </h3>");
+
+	$("#disclaimer-check").change(function() {
+	    if(this.checked) {
+	    	console.log("on")
+	        $('.thirdStep .checkout-continue').removeAttr("disabled");
+	    } else {
+	    	console.log("off")
+	        $('.thirdStep .checkout-continue').attr("disabled", "disabled");
+	    }
+	});
+
+
 	$(".checkout-messages").remove();
 	$(".secondStep#block-commerce-cap-cap .account").append("<div class='checkout-messages delivery'>Delivery</div><div class='checkout-messages privacy'>Privacy Policy</div>");
 }
@@ -258,6 +272,13 @@ var shopFunctions = function() {
 var contactLabels = function() {
 	$("input[name='captcha_response']").attr("placeholder", "Enter captcha *");
 	$("#webform-ajax-wrapper-17 .links a").text("(BACK TO CONTACT)");
+
+    
+    $(".contact-footer-mimic--short").hover(function(){
+    	$(".contact-footer-mimic--long").fadeToggle();
+    })
+	
+	
 }
 
 var checkoutPlaceholders = function() {

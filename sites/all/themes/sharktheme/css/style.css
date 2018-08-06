@@ -12,6 +12,7 @@
 	Distributed under the GPL
 
 \***************************************/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 #preloadVideo {
   left: 50%;
   top: 50%;
@@ -1132,7 +1133,8 @@
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      margin-top: -20vw; }
       #block-commerce-cap-cap.thirdStep form > div .cart_contents, #block-commerce-cap-cap.thirdStep form > div .checkout_review, #block-commerce-cap-cap.thirdStep form > div .commerce_payment, #block-commerce-cap-cap.thirdStep form > div .checkout-buttons {
         display: inline-block;
         width: 49.5%;
@@ -1362,12 +1364,27 @@
     border-radius: 6px;
     height: 35px;
     background-color: rgba(255, 255, 255, 0.2);
-    color: black; }
+    color: black;
+    z-index: 110; }
     #block-commerce-cap-cap .checkout-continue a, #block-commerce-cap-cap .checkout-back a {
       color: black;
       text-decoration: none; }
     #block-commerce-cap-cap .checkout-continue:hover, #block-commerce-cap-cap .checkout-back:hover {
       background-color: rgba(255, 255, 255, 0.7); }
+  #block-commerce-cap-cap .disclaimer-text {
+    position: absolute;
+    bottom: 13px;
+    right: 155px;
+    color: white;
+    font-size: 15px;
+    margin-top: 2px; }
+    #block-commerce-cap-cap .disclaimer-text a {
+      color: white; }
+    #block-commerce-cap-cap .disclaimer-text input {
+      vertical-align: middle;
+      width: 15px;
+      margin-top: 0px;
+      margin-left: 2px; }
   #block-commerce-cap-cap .checkout-continue {
     right: 20px; }
     #block-commerce-cap-cap .checkout-continue .checkout-paypal {
@@ -2392,6 +2409,34 @@
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat; }
+
+#contact .contact-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px; }
+  #contact .contact-footer-mimic {
+    color: white; }
+    #contact .contact-footer-mimic--long, #contact .contact-footer-mimic--short {
+      display: inline-block; }
+  #contact .contact-footer-pash a {
+    font-family: 'Montserrat', sans-serif;
+    color: #e84079;
+    font-size: 22px;
+    transition: .3s ease; }
+    #contact .contact-footer-pash a:hover {
+      text-decoration: none;
+      color: #f6b220; }
 
 .tooltip-inner {
   display: none; }
