@@ -182,7 +182,7 @@ var checkoutLabels = function() {
 	$(".view-commerce-cart-summary .table-responsive:first-child tbody").prepend("<tr><td class='order-title'>Order</td></tr>");
     $('.thirdStep .checkout-continue').attr("disabled", "disabled");
 	$(".thirdStep .checkout-continue").html("<div class='checkout-paypal'></div>");
-	$(".thirdStep .checkout-continue").before("<h3 class='disclaimer-text'>I have ready & accept the <a href='/sites/all/themes/sharktheme/images/pdf/DISCLAIMER.pdf' target='_blank'>Disclaimer</a> <input type='checkbox' id='disclaimer-check' />  </h3>");
+	$(".thirdStep .checkout-continue").before("<h3 class='disclaimer-text'>I have read & accept the <a href='/sites/all/themes/sharktheme/images/pdf/DISCLAIMER.pdf' target='_blank'>Disclaimer</a> <input type='checkbox' id='disclaimer-check' />  </h3>");
 
 	$("#disclaimer-check").change(function() {
 	    if(this.checked) {

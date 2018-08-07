@@ -653,7 +653,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 200;
+  z-index: 80;
   -webkit-perspective: 30vw;
           perspective: 30vw; }
   .island-dive-content-text-blocks, .island-dive-content-smokey-blocks {
@@ -716,7 +716,7 @@
 
 #safety .island-dive-content-smokey {
   background-image: url("../images/bg/texts/smokey/safety.png");
-  z-index: 400; }
+  z-index: 90; }
 
 #safety .island-dive-content-text {
   background-image: url("../images/bg/texts/safety.jpg"); }
@@ -725,7 +725,7 @@
 
 #safety .island-dive-content-smokey {
   background-image: url("../images/bg/texts/smokey/safety.png");
-  z-index: 400; }
+  z-index: 90; }
 
 #eco .island-dive-content-text {
   background-image: url("../images/bg/texts/eco.jpg"); }
@@ -734,7 +734,7 @@
 
 #eco .island-dive-content-smokey {
   background-image: url("../images/bg/texts/smokey/eco.png");
-  z-index: 400; }
+  z-index: 90; }
 
 #habitat .island-dive-content-text {
   background-image: url("../images/bg/texts/habitat.jpg"); }
@@ -743,7 +743,7 @@
 
 #habitat .island-dive-content-smokey {
   background-image: url("../images/bg/texts/smokey/habitat.png");
-  z-index: 400; }
+  z-index: 90; }
 
 #roots .island-dive-content-text {
   background-image: url("../images/bg/texts/roots.jpg"); }
@@ -752,7 +752,7 @@
 
 #roots .island-dive-content-smokey {
   background-image: url("../images/bg/texts/smokey/roots.png");
-  z-index: 400; }
+  z-index: 90; }
 
 #about .island-dive-content-text {
   background-image: url("../images/bg/texts/about.jpg"); }
@@ -761,7 +761,7 @@
 
 #about .island-dive-content-smokey {
   background-image: url("../images/bg/texts/smokey/about.png");
-  z-index: 400; }
+  z-index: 90; }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .island-dive .island-dive-content .underwater-slider-vertical {
@@ -1181,6 +1181,8 @@
             display: none; }
           #block-commerce-cap-cap.thirdStep form > div .commerce_payment label span img {
             top: 0; }
+    #block-commerce-cap-cap.thirdStep .table-responsive table tbody tr {
+      max-width: 233px; }
   #block-commerce-cap-cap h2 {
     display: none; }
   #block-commerce-cap-cap .table-responsive {
@@ -1623,6 +1625,18 @@
   .island-dive-content-sitemap .sitemap-container {
     -webkit-transform: scale(0.5) translate(-100%, -75%);
             transform: scale(0.5) translate(-100%, -75%); } }
+
+#products-women {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/products/women.jpg);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#products-men {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/products/men.jpg);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 #products .productVideo {
   width: 100vw;
@@ -2248,7 +2262,7 @@
   top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 9000; }
+  z-index: 100; }
   #contact-thanks-title {
     left: 50%;
     top: 50%;
@@ -2268,7 +2282,6 @@
       width: 225px; }
 
 #contact #block-webform-client-block-17 {
-  position: relative;
   z-index: 500; }
 
 #contact #webform-ajax-wrapper-17 .links {

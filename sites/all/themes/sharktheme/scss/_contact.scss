@@ -24,7 +24,7 @@
         left: 0;
         top: 45%;
         transform: translateY(-50%);
-        z-index: 9000;
+        z-index: 100;
         &-title {
             left: 50%;
             top: 50%;
@@ -43,7 +43,7 @@
     }
 
     #block-webform-client-block-17 {
-        position: relative;
+        // position: relative;
         z-index: 500;
     }
 

@@ -1,4 +1,20 @@
 #products {
+    
+    &-women {
+        background-image: url(/sites/all/themes/sharktheme/images/bg/products/women.jpg);
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    &-men {
+        background-image: url(/sites/all/themes/sharktheme/images/bg/products/men.jpg);
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    
     .productVideo {
         width: 100vw;
         height: auto;
