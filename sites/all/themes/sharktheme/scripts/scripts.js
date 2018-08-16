@@ -235,7 +235,7 @@ var shopFunctions = function() {
         $(this).next(".island-dive-size-chart").slideToggle("slow");
     })
     $(".island-product-info-title").click(function() {
-      $(this).next(".island-product-info-text").animate({width: 'toggle'});
+      $(this).next(".island-product-info-text").animate({width: 'toggle'}).toggleClass("active");
     })
     
     // bg change
@@ -422,6 +422,9 @@ $(document).ready(function() {
 			lastDirection = direction;
 
 
+        $(".island-dive-size-chart").slideUp();
+    	$(".island-product-info-text.active").animate({width: 'toggle'}).toggleClass("active");
+
 			// esquerda
 			if (direction == 'up') {
 				if (level === 1) {
@@ -497,6 +500,11 @@ $(document).ready(function() {
 		var currentVideoWrapper = $(".diveVideos .diveVideoWrapper:nth-child(" + current + ")");
 		var currentVideoDown = currentVideoWrapper.find(".goinDown");
 		var currentVideoUp = currentVideoWrapper.find(".goinUp");
+
+
+        $(".island-dive-size-chart").slideUp();
+    	$(".island-product-info-text.active").animate({width: 'toggle'}).toggleClass("active");
+
 
 		if (direction == 'up') {
 			// mostrar video ao subir do nivel 2 para o 1

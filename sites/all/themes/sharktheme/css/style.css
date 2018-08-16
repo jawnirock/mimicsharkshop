@@ -1627,13 +1627,19 @@
             transform: scale(0.5) translate(-100%, -75%); } }
 
 #products-women {
-  background-image: url(/sites/all/themes/sharktheme/images/bg/products/women.jpg);
+  background-image: url(/sites/all/themes/sharktheme/images/bg/products/WOMEN_STILL.jpg);
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat; }
 
 #products-men {
-  background-image: url(/sites/all/themes/sharktheme/images/bg/products/men.jpg);
+  background-image: url(/sites/all/themes/sharktheme/images/bg/products/MEN_STILL.jpg);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#products-kids {
+  background-image: url(/sites/all/themes/sharktheme/images/bg/products/KIDS_STILL.jpg);
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat; }
