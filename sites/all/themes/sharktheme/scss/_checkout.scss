@@ -126,13 +126,6 @@
 }
 
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-   #block-commerce-cap-cap {
-   	&::before {
-   		background-position: right 0% !important;
-   	}
-   }
-}
 #block-commerce-cap-cap {
 	font-size: calc(10px + 0.5vh);
 	background: transparent;
@@ -631,6 +624,43 @@
 	  	      margin-top: -9vw;
 		      transform: scale(0.8);
 	      }
-		}		
+		}
+		.customer_profile_shipping {
+		    transform: scale(0.8);
+		    margin-top: -10px;
+		    transform-origin: 100% 0;			
+		}
+		#customer-profile-billing-ajax-wrapper {
+	      	transform: scale(0.8);
+		    margin-top: -10px;
+	    	transform-origin: 0;
+		}
+		.account {
+		    margin-top: -10px;
+	      	transform: scale(0.8);
+		}
+		&.thirdStep form > div .checkout_review {
+	      	transform: scale(0.8);
+		    transform-origin: 100%;
+		    margin-top: 140px;
+		}
+		&.thirdStep form > div .cart_contents {
+		    transform: scale(0.8);
+		    transform-origin: 100%;
+    		margin-top: 140px;			
+		}
 	}
 }
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   #block-commerce-cap-cap {
+   		&.firstStep {
+		   	&::before {
+		   		background-position: right 0% !important;
+
+		   	}
+		}
+   }
+}
+

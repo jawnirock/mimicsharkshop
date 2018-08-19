@@ -322,5 +322,14 @@
         z-index: 999;
         transform-origin: bottom left;
     }
+    
+    #shop-kids .island-dive-shop-thumb[data-thumb="5"].static {
+        background-position-x: -38px;
+    }
+
+    #shop-men .island-dive-shop-thumb[data-thumb="3"].grow, #shop-men .island-dive-shop-thumb[data-thumb="3"].island-dive-shop-shower {
+        background-position-y: -65px;
+    }    
+    
 }
 

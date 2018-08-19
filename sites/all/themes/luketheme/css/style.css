@@ -25,6 +25,28 @@ html, body {
     
 }
 
+.thanks-container a{
+    margin-left: 145px;
+    margin-top: -4.5vw;
+    opacity: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thanks-container a:hover{
+    opacity: 0.6;
+}
+
+.thanks-container a img{
+    position: static;
+    transform: none;
+    margin: 0;
+    width: 40px;
+    height: 47px;
+}
+
 @media only screen and (max-width: 768px) {
     .thanks-container img{
         height: 41.4px;

@@ -75,7 +75,10 @@
 ?>
 
 <div class="thanks-container">
-    <img src="/sites/all/themes/luketheme/imgs/order.png"> 
+    <img src="/sites/all/themes/luketheme/imgs/order.png">
+    <a href="/">
+        <img src="/sites/all/themes/luketheme/imgs/home.png">
+    </a>
 </div>
 
  

@@ -1016,10 +1016,6 @@
   -webkit-animation: lukeDisappear 6.5s forwards;
           animation: lukeDisappear 6.5s forwards; }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #block-commerce-cap-cap::before {
-    background-position: right 0% !important; } }
-
 #block-commerce-cap-cap {
   font-size: calc(10px + 0.5vh);
   background: transparent;
@@ -1405,7 +1401,39 @@
   #block-commerce-cap-cap > div .view.form-wrapper.form-group {
     margin-top: -9vw;
     -webkit-transform: scale(0.8);
-            transform: scale(0.8); } }
+            transform: scale(0.8); }
+  #block-commerce-cap-cap .customer_profile_shipping {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: -10px;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0; }
+  #block-commerce-cap-cap #customer-profile-billing-ajax-wrapper {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin-top: -10px;
+    -webkit-transform-origin: 0;
+            transform-origin: 0; }
+  #block-commerce-cap-cap .account {
+    margin-top: -10px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  #block-commerce-cap-cap.thirdStep form > div .checkout_review {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    margin-top: 140px; }
+  #block-commerce-cap-cap.thirdStep form > div .cart_contents {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    margin-top: 140px; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #block-commerce-cap-cap.firstStep::before {
+    background-position: right 0% !important; } }
 
 .diveVideos {
   position: relative;
@@ -1966,7 +1994,11 @@
     height: 65%;
     z-index: 999;
     -webkit-transform-origin: bottom left;
-            transform-origin: bottom left; } }
+            transform-origin: bottom left; }
+  #shop-kids .island-dive-shop-thumb[data-thumb="5"].static {
+    background-position-x: -38px; }
+  #shop-men .island-dive-shop-thumb[data-thumb="3"].grow, #shop-men .island-dive-shop-thumb[data-thumb="3"].island-dive-shop-shower {
+    background-position-y: -65px; } }
 
 .island-dive-content-disclaimer {
   background-size: cover;

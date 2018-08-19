@@ -551,7 +551,7 @@
         <div class="island-nav--up"></div>
         <div class="island-nav--down"></div>
         <div id="products-women"  class="island-dive-content-product">
-          <img rel="preload" style="display: none;" src="/sites/all/themes/sharktheme/images/bg/products/WOMEN_STILL.jpg">  
+          <img class="preload-image"  rel="preload" style="display: none;" src="/sites/all/themes/sharktheme/images/bg/products/WOMEN_STILL.jpg">  
           <div class="island-product-info">
             <h3 class="island-product-info-title">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/womenwhite.png">  
@@ -566,7 +566,7 @@
 
         </div>
         <div id="products-men"  class="island-dive-content-product">
-          <img rel="preload" style="display: none;" src="/sites/all/themes/sharktheme/images/bg/products/MEN_STILL.jpg">  
+          <img class="preload-image"  rel="preload" style="display: none;" src="/sites/all/themes/sharktheme/images/bg/products/MEN_STILL.jpg">  
           <div class="island-product-info">
             <h3 class="island-product-info-title ">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/menwhite.png">  
@@ -581,7 +581,7 @@
           </video>
         </div>
         <div id="products-kids"  class="island-dive-content-product">
-          <img rel="preload" style="display: none;" src="/sites/all/themes/sharktheme/images/bg/products/KIDS_STILL.jpg">  
+          <img class="preload-image"  rel="preload" style="display: none;" src="/sites/all/themes/sharktheme/images/bg/products/KIDS_STILL.jpg">  
           <div class="island-product-info">
             <h3 class="island-product-info-title">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/kidswhite.png">  
