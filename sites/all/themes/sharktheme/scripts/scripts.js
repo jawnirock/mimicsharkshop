@@ -196,7 +196,7 @@ var checkoutLabels = function() {
 
 
 	$(".checkout-messages").remove();
-	$(".secondStep#block-commerce-cap-cap .account").append("<div class='checkout-messages delivery'>Delivery</div><div class='checkout-messages privacy'>Privacy Policy</div>");
+	$(".secondStep#block-commerce-cap-cap .account").append("<a target='_blank' href='/sites/all/themes/sharktheme/images/pdf/DELIVERY.pdf' class='checkout-messages delivery'>Delivery</a><a target='_blank' href='/sites/all/themes/sharktheme/images/pdf/PRIVACY-POLICY.pdf' class='checkout-messages privacy'>Privacy Policy</a>");
 }
 var mobileResponse = function(){
 	var windowHeight = $(window).height();
@@ -384,6 +384,8 @@ $(document).ready(function() {
 
 	mobileResponse();
 	siteMapCarouel();
+	$('#sitemap-ie .carousel-ie').Carousel3d('rotate', 5);
+
 	
 	$("#block-commerce-cap-cap").addClass("firstStep");
 	checkoutTableFooter();

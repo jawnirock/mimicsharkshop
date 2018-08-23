@@ -143,6 +143,39 @@
         }
 
     }
+    
+    .sitemap-ie {
+        &-panel {
+
+          display: block;
+          position: absolute;
+          width: 185px;
+          height: 120px;
+            &-item {
+            margin-top: 5px;
+            overflow: hidden;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            background: rgba(1,1,1,0.5);
+
+                img {
+                    position: absolute;
+                    top: -9999px;
+                    right: -9999px;
+                    bottom: -9999px;
+                    left: -9999px;
+                    margin: auto;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
   
     button {
         color: black;
@@ -150,9 +183,26 @@
     
 }
 
+#sitemap-ie {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
 
 @media screen and (max-width: 767px) {
     .island-dive-content-sitemap .sitemap-container {
         transform: scale(0.5) translate(-100%, -75%);
     }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #sitemap {
+        display: none;
+    }
+    #sitemap-ie {
+        visibility: visible;
+        opacity: 1;
+         z-index: 9999;
+     }   
 }

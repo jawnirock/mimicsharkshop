@@ -526,9 +526,120 @@
               </div>
 
             </div>
-          </section>  
+            
+            <div id="sitemap-ie" class="wrapper">
+              <div class="carousel-ie" data-carousel-3d>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L5.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L5a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L4.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L4a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L3.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L3a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L2.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L2a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L1.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/L1a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel" selected>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/00.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/00a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1a.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1b.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R1c.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2a.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2b.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R2c.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R3.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R3a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R4.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R4a.jpg">
+                  </figure>
+                </div>
+                <div class="sitemap-ie-panel">
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R5.jpg">
+                  </figure>
+                  <figure class="sitemap-ie-panel-item">
+                    <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/luke/R5a.jpg">
+                  </figure>
+                </div>
+
+
+              </div>
+            </div>
+
+          </section>
+
           <span class="island-dive-nav island-dive-nav--up" ></span>
         </div>
+
+
       </div>
     </aside>
   </section>
@@ -585,7 +696,7 @@
           <div class="island-product-info">
             <h3 class="island-product-info-title">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/kidswhite.png">  
-            </h3>
+            </h 3>
             <h3 class="island-product-info-text noSwipe" style="display: none;">
               <img rel="preload" src="/sites/all/themes/sharktheme/images/bg/products/PRODUCTSK.png">  
             </h3>

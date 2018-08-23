@@ -1092,7 +1092,8 @@
       #block-commerce-cap-cap.secondStep .checkout-messages.privacy {
         margin-left: 8px; }
       #block-commerce-cap-cap.secondStep .checkout-messages:hover {
-        background-color: rgba(255, 255, 255, 0.7); }
+        background-color: rgba(255, 255, 255, 0.7);
+        text-decoration: none; }
     #block-commerce-cap-cap.secondStep::before {
       background-image: url(../images/bg/checkout/luke2.gif);
       opacity: 0;
@@ -1646,13 +1647,48 @@
       .island-dive-content-sitemap .sitemap-panel:nth-child(11) {
         -webkit-transform: rotateY(360deg) translateZ(320px);
                 transform: rotateY(360deg) translateZ(320px); }
+  .island-dive-content-sitemap .sitemap-ie-panel {
+    display: block;
+    position: absolute;
+    width: 185px;
+    height: 120px; }
+    .island-dive-content-sitemap .sitemap-ie-panel-item {
+      margin-top: 5px;
+      overflow: hidden;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      background: rgba(1, 1, 1, 0.5); }
+      .island-dive-content-sitemap .sitemap-ie-panel-item img {
+        position: absolute;
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        opacity: 1; }
   .island-dive-content-sitemap button {
     color: black; }
+
+#sitemap-ie {
+  visibility: hidden;
+  opacity: 0; }
 
 @media screen and (max-width: 767px) {
   .island-dive-content-sitemap .sitemap-container {
     -webkit-transform: scale(0.5) translate(-100%, -75%);
             transform: scale(0.5) translate(-100%, -75%); } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #sitemap {
+    display: none; }
+  #sitemap-ie {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9999; } }
 
 #products-women {
   background-image: url(/sites/all/themes/sharktheme/images/bg/products/WOMEN_STILL.jpg);
@@ -2509,6 +2545,115 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8); } }
 
+.wrapper {
+  width: 400px;
+  position: absolute;
+  top: 13vw;
+  left: -11vw;
+  height: 555px; }
+
+/* line 3, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] [data-prev-button] {
+  position: absolute;
+  height: 100%;
+  width: 95px;
+  top: 0px;
+  left: 0px;
+  cursor: pointer; }
+
+/* line 10, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] [data-next-button] {
+  position: absolute;
+  height: 100%;
+  width: 95px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer; }
+
+/* line 22, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] {
+  position: relative;
+  overflow: hidden; }
+
+/* line 26, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] {
+  perspective: 3000px;
+  -ms-perspective: 3000px;
+  -moz-perspective: 3000px;
+  -webkit-perspective: 3000px; }
+
+/* line 32, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] > [data-child] {
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s; }
+
+/* line 43, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+/* line 50, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] > [data-child] {
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 0 !important;
+  opacity: 0.9 !important; }
+
+/* line 59, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] > [data-child] > [data-child-frame] > [data-content-wrapper] {
+  box-sizing: border-box;
+  transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -webkit-transform-origin: 0px 0px; }
+
+/* line 75, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d]:before {
+  padding-top: 40%;
+  display: block;
+  content: ''; }
+
+/* line 82, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] [data-children-wrapper] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 26%;
+  left: 26%; }
+
+/* line 9, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 19, ../../styles/theme/jquery.carousel-3d.default.scss */
+/* line 26, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-carousel-3d] [data-prev-button]:before {
+  content: url("./images/default/prev.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 43px;
+  height: 49px;
+  margin: auto; }
+
+/* line 39, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-carousel-3d] [data-next-button]:before {
+  content: url("./images/default/next.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 43px;
+  height: 49px;
+  margin: auto; }
+
+/* line 53, ../../styles/theme/jquery.carousel-3d.default.scss */
 /*! jQuery UI - v1.12.1 - 2016-09-14
 * http://jqueryui.com
 * Includes: core.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, draggable.css, resizable.css, progressbar.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css
