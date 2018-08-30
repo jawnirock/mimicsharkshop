@@ -296,6 +296,7 @@
 				    width: 100%;
 				    td {
 						background-color: rgba(255,255,255,0.3);
+						width: 150px !important;
 
 				    }
 				}				
@@ -345,6 +346,39 @@
 		    max-width: 233px;
 		}
 
+		.table-responsive {
+		table {
+			tbody {
+				tr {
+					td {
+
+					    &:nth-child(1) {
+	    					
+					    }
+					    &:nth-child(2) {
+							width: 50px;
+					    }	
+					    &:nth-child(3) {
+							width: 40px;
+					    }
+					    &:nth-child(4) {
+							width: 40px;
+					    }				
+					    &:first-child {
+						    width: 108px;
+					    }					    
+						&.pane-data-full {
+							width: 322px !important;
+						}
+					}
+				}
+			}
+
+
+		}
+	}
+
+
 
 	}
 
@@ -375,6 +409,8 @@
 					background: transparent;
 				    text-align: left;
 				    border: 2px solid transparent;	
+				    
+				    
 				
 					td {
 						font-size: 12px;
@@ -395,6 +431,7 @@
 					    &:nth-child(2) {
 	    					animation: fadeIn 2s forwards;
 							animation-delay: 6s;
+
 					    }	
 					    &:nth-child(3) {
 	    					animation: fadeIn 2s forwards;
@@ -435,13 +472,15 @@
 							    color: black;
 							}
 						}
+						
+						&.pane-data-full {
+						}
 					}
 				}
 			}
 
 			&.commerce-price-formatted-components {
 			    float: right;
-			    width: 150px;
 			    td {
 			    	background-color: rgba(255,255,255,0.2);
 			    }
@@ -563,6 +602,8 @@
 		background-color: rgba(255,255,255,0.2);
 		color: black;
 		z-index: 110;
+        min-width: 70px;
+
 		a {
 			color: black;
 			text-decoration: none;
@@ -640,6 +681,9 @@
 		    margin-top: -10px;
 	      	transform: scale(0.8);
 		}
+		&.secondStep .checkout-messages {	
+	      background-color: rgba(255, 255, 255, 0.7);
+		}
 		&.thirdStep form > div .checkout_review {
 	      	transform: scale(0.8);
 		    transform-origin: 100%;
@@ -656,12 +700,37 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
    #block-commerce-cap-cap {
+   		&::before {
+   			background-image: url(../images/bg/checkout/lukie.gif) !important;
+		    animation: lukeIE 7s normal forwards !important;
+	   	    animation-delay: 7s !important;
+   		}
+   	
+   	
    		&.firstStep {
 		   	&::before {
-		   		background-position: right 0% !important;
-
+		   		background-position: 110% 0% !important;
+				background-size: auto;
+				width: 500px;
 		   	}
 		}
    }
 }
 
+@keyframes lukeIE {
+	
+	0% { 
+	    opacity: 0;
+	}
+	
+	10% {
+		opacity: 1;
+	}
+
+	90% {
+	    opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

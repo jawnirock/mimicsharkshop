@@ -828,6 +828,7 @@
         <div class="island-nav--up"></div>
         <div id="sideluke"></div>
         <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg">
+        <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/luke.gif">
 
         <?php print render($page['content']); ?>
       </div>

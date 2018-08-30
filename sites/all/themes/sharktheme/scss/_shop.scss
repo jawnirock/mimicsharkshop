@@ -31,11 +31,11 @@
     		}
     		&-chart {
     		    min-width: 11vw;
+    		    min-height: 6.82vw;
     		    width: 11vw;
     		    height: 6.82vw;
     		    max-width: 40vw;
     		    max-height: 24.8vw;
-    		    min-height: 6.82vw;
     		    padding: 5px;
                 background-color: rgba(256,256,256, 0.4);      
                 background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
@@ -43,6 +43,7 @@
                 background-size: 10px;
                 background-position: right bottom;
                 border-radius: 6px 6px 0px 6px;
+                display: none;
     		    img {
                       width: 100%;
         		    }

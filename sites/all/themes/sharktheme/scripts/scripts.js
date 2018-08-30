@@ -226,13 +226,15 @@ var mobileResponse = function(){
 			else if (docElm.webkitRequestFullScreen) {
 			    docElm.webkitRequestFullScreen();
 			}
+		  $(".mobileNotification.fullscreen").hide();
+
 	})
 	
 }
 var shopFunctions = function() {
     //hide/show size shart
     $(".island-dive-size-title").click(function() {
-        $(this).next(".island-dive-size-chart").slideToggle("slow");
+        $(this).next(".island-dive-size-chart").animate({height: 'toggle'}).toggleClass("active");
     })
     $(".island-product-info-title").click(function() {
       $(this).next(".island-product-info-text").animate({width: 'toggle'}).toggleClass("active");
@@ -258,7 +260,7 @@ var shopFunctions = function() {
     	var currentLevelShower = currentLevel.find(".island-dive-shop-shower")
     	var currentThumbData = $(this).data("thumb");
 
-		currentLevel.find(".island-dive-size-chart").slideUp();
+		currentLevel.find(".island-dive-size-chart.active").animate({height: 'toggle'}).toggleClass("active");
     	currentLevelGrower.removeClass("grow");
     	currentLevelGrower.attr("data-thumb", currentThumbData);
     	setTimeout(function(){ 
@@ -424,7 +426,7 @@ $(document).ready(function() {
 			lastDirection = direction;
 
 
-        $(".island-dive-size-chart").slideUp();
+        $(".island-dive-size-chart.active").animate({height: 'toggle'}).toggleClass("active");
     	$(".island-product-info-text.active").animate({width: 'toggle'}).toggleClass("active");
 
 			// esquerda
@@ -464,7 +466,6 @@ $(document).ready(function() {
 	}
 	
 	function showerDefault() {
-			console.log("entao?")
 			$(".island-dive-shop-shower").attr("data-thumb", 1);
 			$(".island-dive-shop-grower").attr("data-thumb", 1);
 	}
@@ -504,7 +505,7 @@ $(document).ready(function() {
 		var currentVideoUp = currentVideoWrapper.find(".goinUp");
 
 
-        $(".island-dive-size-chart").slideUp();
+        $(".island-dive-size-chart.active").animate({height: 'toggle'}).toggleClass("active");
     	$(".island-product-info-text.active").animate({width: 'toggle'}).toggleClass("active");
     	
     	$(".island-nav--down").fadeOut();
