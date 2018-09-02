@@ -29,6 +29,10 @@ html,body {
     touch-action: none;
 }
 
+img { 
+	-ms-interpolation-mode: bicubic; 
+}
+
 
 .mobileNotification {
 	position: absolute;

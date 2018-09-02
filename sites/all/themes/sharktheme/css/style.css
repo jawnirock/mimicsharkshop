@@ -1424,8 +1424,8 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
     margin-top: -10px;
-    -webkit-transform-origin: 0;
-            transform-origin: 0; }
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0; }
   #block-commerce-cap-cap .account {
     margin-top: -10px;
     -webkit-transform: scale(0.8);
@@ -1984,7 +1984,7 @@
     background-position-y: -80px; }
 
 #shop-kids .island-dive-size-chart {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.5); }
 
 #shop-kids .island-dive-shop-thumb[data-thumb="1"] {
   background-image: url(/sites/all/themes/sharktheme/images/bg/shop/kid1.jpg); }
@@ -2075,6 +2075,13 @@
             transform-origin: bottom left; }
   #shop-kids .island-dive-shop-thumb[data-thumb="5"].static {
     background-position-x: -38px; }
+  #shop #shop-kids .island-dive-size-chart {
+    width: 47vw;
+    height: 16.14vw;
+    text-align: center;
+    padding-top: 15px; }
+    #shop #shop-kids .island-dive-size-chart img {
+      width: 80%; }
   #shop-men .island-dive-shop-thumb[data-thumb="3"].grow, #shop-men .island-dive-shop-thumb[data-thumb="3"].island-dive-shop-shower {
     background-position-y: -65px; } }
 
@@ -4327,6 +4334,9 @@ html, body {
   position: static !important;
   -ms-touch-action: none;
       touch-action: none; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
 
 .mobileNotification {
   position: absolute;

@@ -204,12 +204,10 @@ var mobileResponse = function(){
 	var position = windowWidth / 2;
 	
 	if(windowHeight < windowWidth ) {
-	  $(".mobileNotification.fullscreen").show();
 	  $(".mobileNotification.landscape").hide();
 	}
 	if(windowHeight > windowWidth ) {
 	  $(".mobileNotification.landscape").show();
-	  $(".mobileNotification.fullscreen").hide();
 	}
 	
 	$(".mobileNotification.fullscreen button").click(function() {
@@ -334,6 +332,14 @@ $(document).ready(function() {
 			$(".island-dive-size-chart").hide();
 			$(".island-product-info-text").hide();
 
+			var windowHeight = $(window).height();
+			var windowWidth = $(window).width();
+			if(windowHeight < windowWidth ) {
+				$(".mobileNotification.fullscreen").fadeIn();
+			}
+			if(windowHeight > windowWidth ) {
+			  $(".mobileNotification.fullscreen").hide();
+			}
 		}, 5000)
 	
       }
@@ -717,6 +723,9 @@ $(document).ajaxComplete(function() {
 });
 
 $(window).resize(function() {
+	mobileResponse();
+});
+window.addEventListener('orientationchange', function(){
 	mobileResponse();
 });
 

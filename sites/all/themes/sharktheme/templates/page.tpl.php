@@ -79,7 +79,7 @@
     please switch your device to landscape
     </span>
 </div>
-<div class="mobileNotification fullscreen">
+<div class="mobileNotification fullscreen" style="display: none;">
   <span>For the full experience
     <br><button>Go fullscreen</button>
   </span>
