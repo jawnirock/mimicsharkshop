@@ -29,8 +29,35 @@ html,body {
     touch-action: none;
 }
 
-img { 
-	-ms-interpolation-mode: bicubic; 
+#contact.browser-edge .webform-component-file .form-managed-file input[type="file"] {
+    background-size: 25px;
+    padding: 0px 0px 0px 40px;
+    width: 0;
+    cursor: pointer;
+    
+    &:hover {
+    	background-color: rgba(255,255,255,0.7);
+    }
+    
+    &::-ms-browse {
+        visibility: hidden;
+        opacity: 0;
+        margin-left: -9000px;
+        background: transparent;
+    }
+    
+    &:-ms-input-placeholder {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}
+#contact.browser-edge .island-dive-content form button {
+  width: 60px;
+  padding: 2px;
+}
+#contact.browser-edge .island-dive-content form .captcha input[name='captcha_response'] {
+    width: 90px;
 }
 
 
@@ -45,14 +72,11 @@ img {
 	align-items: center;
 	justify-content: center;
 	button {
-	    background: #003c47;
-	    border: 2px solid white;
-	    padding: 10px 20px;
-	    margin-top: 15px;
-	    &:hover {
-		    background: white;
-		    border: 2px solid #003c47;
-		    color: #003c47;
+		background: transparent;
+	    border: none;
+	    width: 240px;
+	    img {
+	    	width: 100%;
 	    }
 	}
 
@@ -62,6 +86,9 @@ img {
 	}
 	&.landscape {
 		z-index: 9999;
+	}
+	&.fullscreen {
+		background-image: #021220;
 	}
 }
 

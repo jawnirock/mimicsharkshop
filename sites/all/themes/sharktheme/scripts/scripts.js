@@ -346,7 +346,6 @@ $(document).ready(function() {
     }); // This will preload all images on the page.
 
 
-
 	// prevent pulldown
 	
 	var target = window 
@@ -360,6 +359,13 @@ $(document).ready(function() {
 	  }
 	  lastY = pageY;
 	}
+
+	// DETECTAR EDGE
+
+	if (/Edge/.test(navigator.userAgent)) {
+    	$("#contact").addClass("browser-edge");
+	}
+
 
 
 	// VERTICAL TEXT SLIDER

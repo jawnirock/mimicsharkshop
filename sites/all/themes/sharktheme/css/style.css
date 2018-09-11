@@ -1455,7 +1455,11 @@
   #block-commerce-cap-cap.firstStep::before {
     background-position: 110% 0% !important;
     background-size: auto;
-    width: 500px; } }
+    width: 500px; }
+  #block-commerce-cap-cap.thirdStep form > div {
+    width: 660px; }
+  #block-commerce-cap-cap.thirdStep .table-responsive table tbody tr td:first-child {
+    width: 168px; } }
 
 @-webkit-keyframes lukeIE {
   0% {
@@ -2593,6 +2597,28 @@
   #contact #block-webform-client-block-17 {
     -webkit-transform: scale(0.8);
             transform: scale(0.8); } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #contact .webform-component-file .form-managed-file input[type="file"] {
+    background-size: 25px;
+    padding: 0px 0px 0px 40px;
+    width: 0;
+    cursor: pointer; }
+    #contact .webform-component-file .form-managed-file input[type="file"]:hover {
+      background-color: rgba(255, 255, 255, 0.7); }
+    #contact .webform-component-file .form-managed-file input[type="file"]::-ms-browse {
+      visibility: hidden;
+      opacity: 0;
+      margin-left: -9000px;
+      background: transparent; }
+    #contact .webform-component-file .form-managed-file input[type="file"]:-ms-input-placeholder {
+      visibility: hidden;
+      opacity: 0; }
+  #contact .island-dive-content form button {
+    width: 60px;
+    padding: 2px; }
+  #contact .island-dive-content form .captcha input[name='captcha_response'] {
+    width: 90px; } }
 
 .wrapper {
   width: 500px;
@@ -4335,8 +4361,28 @@ html, body {
   -ms-touch-action: none;
       touch-action: none; }
 
-img {
-  -ms-interpolation-mode: bicubic; }
+#contact.browser-edge .webform-component-file .form-managed-file input[type="file"] {
+  background-size: 25px;
+  padding: 0px 0px 0px 40px;
+  width: 0;
+  cursor: pointer; }
+  #contact.browser-edge .webform-component-file .form-managed-file input[type="file"]:hover {
+    background-color: rgba(255, 255, 255, 0.7); }
+  #contact.browser-edge .webform-component-file .form-managed-file input[type="file"]::-ms-browse {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -9000px;
+    background: transparent; }
+  #contact.browser-edge .webform-component-file .form-managed-file input[type="file"]:-ms-input-placeholder {
+    visibility: hidden;
+    opacity: 0; }
+
+#contact.browser-edge .island-dive-content form button {
+  width: 60px;
+  padding: 2px; }
+
+#contact.browser-edge .island-dive-content form .captcha input[name='captcha_response'] {
+  width: 90px; }
 
 .mobileNotification {
   position: absolute;
@@ -4355,18 +4401,17 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
   .mobileNotification button {
-    background: #003c47;
-    border: 2px solid white;
-    padding: 10px 20px;
-    margin-top: 15px; }
-    .mobileNotification button:hover {
-      background: white;
-      border: 2px solid #003c47;
-      color: #003c47; }
+    background: transparent;
+    border: none;
+    width: 240px; }
+    .mobileNotification button img {
+      width: 100%; }
   .mobileNotification span {
     text-align: center; }
   .mobileNotification.landscape {
     z-index: 9999; }
+  .mobileNotification.fullscreen {
+    background-image: #021220; }
 
 .preload-image {
   display: none !important; }

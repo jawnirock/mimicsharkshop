@@ -80,9 +80,9 @@
     </span>
 </div>
 <div class="mobileNotification fullscreen" style="display: none;">
-  <span>For the full experience
-    <br><button>Go fullscreen</button>
-  </span>
+    <button>
+      <img src="/sites/all/themes/sharktheme/images/FSbutton.png"></img>  
+    </button>
 </div>
 
 <!--<div id="preloadVideo">Preloadin...</div>-->
@@ -405,9 +405,9 @@
       <img rel="preload" src="/sites/all/themes/sharktheme/images/mimicLogoAnim1.gif">
     </div>
     <div class="island-title--insta">
-      <!--<a target="_blank" href="https://www.instagram.com/mimicsharksuits/">-->
-      <!--  <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/instagram.gif">-->
-      <!--</a>-->
+      <a target="_blank" href="https://www.instagram.com/mimicsharksuits/">
+        <img rel="preload" src="/sites/all/themes/sharktheme/images/titles/instagram.gif">
+      </a>
     </div>
 
     <aside class="island-dive island-dive--visible">
