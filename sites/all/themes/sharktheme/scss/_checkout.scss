@@ -650,6 +650,17 @@
 }
 
 
+// reduzir envelopes
+
+.island-wrapper[data-level="2"] #buy .island-nav--left, .island-wrapper .island-nav--right {
+	width: 15%;
+    height: calc(100% - 100px);
+}
+.island-wrapper[data-level="2"] #buy .island-nav--up, .island-wrapper .island-nav--down {
+	height: 15%;
+}
+
+
 // mostrar so quando esta visivel o dive
 
 .island-dive.island-dive--visible {

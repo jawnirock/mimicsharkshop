@@ -303,8 +303,10 @@
     }
 
     #shop .island-dive-size-chart {
-        width: 47vw;
-        height: 29.14vw;        
+        width: 49vw;
+        height: 30.38vw;        
+        max-width: 49vw;
+        max-height: 30.38vw;        
         background-image: none;
         border-radius: 6px;
         display: inline-block;

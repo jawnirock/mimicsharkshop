@@ -29,36 +29,85 @@ html,body {
     touch-action: none;
 }
 
-#contact.browser-edge .webform-component-file .form-managed-file input[type="file"] {
-    background-size: 25px;
-    padding: 0px 0px 0px 40px;
-    width: 0;
-    cursor: pointer;
-    
-    &:hover {
-    	background-color: rgba(255,255,255,0.7);
-    }
-    
-    &::-ms-browse {
-        visibility: hidden;
-        opacity: 0;
-        margin-left: -9000px;
-        background: transparent;
-    }
-    
-    &:-ms-input-placeholder {
-        visibility: hidden;
-        opacity: 0;
-    }
 
+// EDGE CONTACT FIX
+    #contact .webform-component-file .form-managed-file input[type="file"] {
+        background-size: 25px;
+        padding: 0px 0px 0px 40px;
+        width: 0;
+        cursor: pointer;
+		margin-top: 5px;
+		height: 35px;
+
+        &:hover {
+        	background-color: rgba(255,255,255,0.7);
+        }
+        
+        &::-ms-browse {
+            visibility: hidden;
+            opacity: 0;
+            margin-left: -9000px;
+            background: transparent;
+        }
+        
+        &:-ms-input-placeholder {
+            visibility: hidden;
+            opacity: 0;
+        }
+    
+    }
+    #contact .island-dive-content form button {
+      width: 60px;
+      padding: 2px;
+    }
+    #contact .island-dive-content form .captcha input[name='captcha_response'] {
+        width: 90px;
+    }
+	#contact.browser-edge .webform-component-file .form-managed-file input[type="submit"] {
+		margin: 5px 0 0 10px;
+		height: 35px;
+	}  
+
+// IE CONTACT FIX
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #contact .webform-component-file .form-managed-file input[type="file"] {
+        background-size: 25px;
+        padding: 0px 0px 0px 40px;
+        width: 0;
+        cursor: pointer;
+		margin-top: 5px;
+		height: 35px;
+
+        &:hover {
+        	background-color: rgba(255,255,255,0.7);
+        }
+        
+        &::-ms-browse {
+            visibility: hidden;
+            opacity: 0;
+            margin-left: -9000px;
+            background: transparent;
+        }
+        
+        &:-ms-input-placeholder {
+            visibility: hidden;
+            opacity: 0;
+        }
+    
+    }
+    #contact .island-dive-content form button {
+      width: 60px;
+      padding: 2px;
+    }
+    #contact .island-dive-content form .captcha input[name='captcha_response'] {
+        width: 90px;
+    }
+	#contact.browser-edge .webform-component-file .form-managed-file input[type="submit"] {
+		margin: 5px 0 0 10px;
+		height: 35px;
+	}  
 }
-#contact.browser-edge .island-dive-content form button {
-  width: 60px;
-  padding: 2px;
-}
-#contact.browser-edge .island-dive-content form .captcha input[name='captcha_response'] {
-    width: 90px;
-}
+
 
 
 .mobileNotification {

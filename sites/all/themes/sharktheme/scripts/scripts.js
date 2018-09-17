@@ -44,7 +44,7 @@ var checkoutNumbers = function(){
 	    var semZeros = semZeros.replace("$", "");
 	    $(this).html("<span>$</span><span class='value'>" + semZeros + "</span>");
 	})
-	
+
 	$("#block-commerce-cap-cap").prepend("<div class='island-nav--up'></div>")
 
 	$(".increment, .decrement").click(function(event){
@@ -74,7 +74,7 @@ var checkoutNumbers = function(){
 		$(this).parents("table").find("tr td:last-child .value").each(function(){
 			// allTotals.push($(this).text());
 			totalSum = totalSum + Number($(this).text());
-			totalSumShip = totalSum + 20;
+			totalSumShip = totalSum + 0;
 		});
 		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum);
 		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip);
@@ -98,21 +98,22 @@ var checkoutNumbers = function(){
 		$(this).parents("table").find("tr td:last-child .value").each(function(){
 			// allTotals.push($(this).text());
 			totalSum = totalSum + Number($(this).text());
-			totalSumShip = totalSum + 20 + Number($(this).text());
+			totalSumShip = totalSum + 0 + Number($(this).text());
 		});
 		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum);
 		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip);
 		
 	})
 	
+	$(".component-type-flat-rate-eu-testing .component-total span").hide()
+	$(".component-type-flat-rate-eu-testing .component-total .value").show()
 	
 	
 }
 var checkoutTableFooter = function(){
 	$("#block-commerce-cap-cap form .form-wrapper .commerce-price-formatted-components").parent().remove();
-	$("#block-commerce-cap-cap form .form-wrapper .table-responsive").after('<div class="table-responsive"><table class="commerce-price-formatted-components custom-checkout table table-hover table-striped"><tbody><tr class="component-type-base-price"><td class="component-title">Sub</td><td class="component-total">0</td></tr><tr class="component-type-flat-rate-eu-testing"><td class="component-title">P&P</td><td class="component-total">20</td></tr><tr class="component-type-commerce-price-formatted-amount"><td class="component-title">Total</td><td class="component-total">20</td></tr></tbody></table></div>');
+	$("#block-commerce-cap-cap form .form-wrapper .table-responsive").after('<div class="table-responsive"><table class="commerce-price-formatted-components custom-checkout table table-hover table-striped"><tbody><tr class="component-type-base-price"><td class="component-title">Sub</td><td class="component-total">0</td></tr><tr class="component-type-flat-rate-eu-testing"><td class="component-title">Shipping</td><td class="component-total">Free</td></tr><tr class="component-type-commerce-price-formatted-amount"><td class="component-title">Total</td><td class="component-total">Free</td></tr></tbody></table></div>');
 
-	
 	if ($("#block-commerce-cap-cap").find(".checkout_review").length > 0) {
 
 		var totalSum = 0;
@@ -121,7 +122,7 @@ var checkoutTableFooter = function(){
 			var formmatedAmount = $(this).text().replace("$", "");
 			totalSum = totalSum + Number(formmatedAmount);
 		});
-		totalSumShip = totalSum + 20;
+		totalSumShip = totalSum + 0;
 
 		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum + ".00");
 		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip + ".00");
@@ -132,13 +133,16 @@ var checkoutTableFooter = function(){
 		var totalSumShip = 0;
 		$("#block-commerce-cap-cap form .form-wrapper .table-responsive:first-child table").find("tr td:last-child").each(function(){
 			totalSum = totalSum + Number($(this).text());
-			totalSumShip = totalSum + 20 + Number($(this).text());
+			totalSumShip = totalSum + 0 + Number($(this).text());
 		});
 		$(".custom-checkout .component-type-base-price .component-total").text("$" + totalSum + ".00");
 		$(".custom-checkout .component-type-commerce-price-formatted-amount .component-total").text("$" + totalSumShip + ".00");
 		
 	}
 	
+	$(".component-type-flat-rate-eu-testing .component-total span").hide()
+	$(".component-type-flat-rate-eu-testing .component-total .value").show()
+
 }
 var checkoutClasses = function(){
 	if ($("#block-commerce-cap-cap").find(".account.panel").length > 0){

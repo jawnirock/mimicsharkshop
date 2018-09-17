@@ -240,35 +240,3 @@
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    #contact .webform-component-file .form-managed-file input[type="file"] {
-        background-size: 25px;
-        padding: 0px 0px 0px 40px;
-        width: 0;
-        cursor: pointer;
-        
-        &:hover {
-        	background-color: rgba(255,255,255,0.7);
-        }
-        
-        &::-ms-browse {
-            visibility: hidden;
-            opacity: 0;
-            margin-left: -9000px;
-            background: transparent;
-        }
-        
-        &:-ms-input-placeholder {
-            visibility: hidden;
-            opacity: 0;
-        }
-    
-    }
-    #contact .island-dive-content form button {
-      width: 60px;
-      padding: 2px;
-    }
-    #contact .island-dive-content form .captcha input[name='captcha_response'] {
-        width: 90px;
-    }
-}
