@@ -177,6 +177,7 @@
 
 	.island-nav--up {
 		margin-top: 0 !important;
+		z-index: 500 !important;
 	}
 
 	&.firstStep {
@@ -184,7 +185,7 @@
 		&>div {
 			align-self: flex-start;
 		    margin-top: 7.7vw;
-		    z-index: 500;
+		    z-index: 505;
 		}
 
 	    &::before {
@@ -242,7 +243,7 @@
 			max-width: 420px;
 			align-self: flex-start;
 		    margin-top: 4.3vw;				
-		    z-index: 500;
+		    z-index: 505;
 
 		}
 	}
@@ -601,7 +602,7 @@
 	    height: 35px;
 		background-color: rgba(255,255,255,0.2);
 		color: black;
-		z-index: 110;
+		z-index: 510;
         min-width: 70px;
 
 		a {
@@ -652,14 +653,24 @@
 
 // reduzir envelopes
 
-.island-wrapper[data-level="2"] #buy .island-nav--left, .island-wrapper .island-nav--right {
-	width: 15%;
-    height: calc(100% - 100px);
+.deadzone {
+	background: transparent;
+	position: absolute;
+	z-index: 501;
+	&-left {
+		width: 250px;
+		height: 100px;
+		left: 0;
+		bottom: 0;
+	}
+	&-center {
+		width: 500px;
+		height: 70vh;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0px;
+	}
 }
-.island-wrapper[data-level="2"] #buy .island-nav--up, .island-wrapper .island-nav--down {
-	height: 15%;
-}
-
 
 // mostrar so quando esta visivel o dive
 

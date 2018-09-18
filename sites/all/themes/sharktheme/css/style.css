@@ -1059,12 +1059,13 @@
   #block-commerce-cap-cap form {
     display: none; }
   #block-commerce-cap-cap .island-nav--up {
-    margin-top: 0 !important; }
+    margin-top: 0 !important;
+    z-index: 500 !important; }
   #block-commerce-cap-cap.firstStep > div {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-top: 7.7vw;
-    z-index: 500; }
+    z-index: 505; }
   #block-commerce-cap-cap.firstStep::before {
     background-image: url(../images/bg/checkout/luke.gif);
     opacity: 0;
@@ -1109,7 +1110,7 @@
       -ms-flex-item-align: start;
           align-self: flex-start;
       margin-top: 4.3vw;
-      z-index: 500; }
+      z-index: 505; }
   #block-commerce-cap-cap.thirdStep {
     -webkit-animation: toThird 2.5s forwards;
             animation: toThird 2.5s forwards; }
@@ -1374,7 +1375,7 @@
     height: 35px;
     background-color: rgba(255, 255, 255, 0.2);
     color: black;
-    z-index: 110;
+    z-index: 510;
     min-width: 70px; }
     #block-commerce-cap-cap .checkout-continue a, #block-commerce-cap-cap .checkout-back a {
       color: black;
@@ -1406,12 +1407,22 @@
   #block-commerce-cap-cap .checkout-back {
     left: 20px; }
 
-.island-wrapper[data-level="2"] #buy .island-nav--left, .island-wrapper .island-nav--right {
-  width: 15%;
-  height: calc(100% - 100px); }
-
-.island-wrapper[data-level="2"] #buy .island-nav--up, .island-wrapper .island-nav--down {
-  height: 15%; }
+.deadzone {
+  background: transparent;
+  position: absolute;
+  z-index: 501; }
+  .deadzone-left {
+    width: 250px;
+    height: 100px;
+    left: 0;
+    bottom: 0; }
+  .deadzone-center {
+    width: 500px;
+    height: 70vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 0px; }
 
 .island-dive.island-dive--visible #block-commerce-cap-cap form {
   display: block; }
@@ -2228,7 +2239,7 @@
       .island-wrapper .island-visible#about.down, .island-wrapper .island-visible#safety.down {
         background-position: 100%; }
       .island-wrapper .island-visible#about.up, .island-wrapper .island-visible#safety.up {
-        background-position: 100%;
+        background-position: 99%;
         transition: background-position 2s ease-out;
         transition-delay: 1.2s; }
       .island-wrapper .island-visible#eco.up {

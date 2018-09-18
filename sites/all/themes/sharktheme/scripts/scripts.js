@@ -524,7 +524,8 @@ $(document).ready(function() {
         $(".island-dive-size-chart.active").animate({height: 'toggle'}).toggleClass("active");
     	$(".island-product-info-text.active").animate({width: 'toggle'}).toggleClass("active");
     	
-    	$(".island-nav--down").fadeOut();
+    	$(".island-nav--down").hide();
+    	$(".island-nav--up").hide();
 
 
 		if (direction == 'up') {
@@ -609,6 +610,7 @@ $(document).ready(function() {
 				currentVideoDown[0].currentTime = 0;
 			}
 	    	$(".island-nav--down").fadeIn();
+	    	$(".island-nav--up").fadeIn();
 		}, 4300)
 		
 	}
