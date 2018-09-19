@@ -60,9 +60,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content=" What’s the best way to snorkel without fear of sharks ? What’s the best shark deterrent  ? How can we dive without sharks ? What’s a shark protection you can trust  ? How can I protect myself against shark attacks ? Can I swim with sharks and not get eaten ? Which rash guards repel sharks ? How can I vacation without fear of shark attacks ? Can stripes stop a shark from biting me ? Can I surf with sharks ? Is there a swimsuit that mimics striped sea snakes ? How can I mimic a striped sea snake ? Is there a safe way to surf and avoid sharks ? What’s the safest shark deterrent  ? How do you surf safe from sharks ?" lang="en">
   <meta name="keywords" content=" ,what’s ,the ,best ,shark ,deterrent ,safest ,natural ,non-invasive ,find ,repellent ,latest ,protection ,newest ,trust ,mimic ,striped ,sea ,snake ,banded ,krait ,crate ,scare ,away ,sharks ,stripes ,stop ,attacking ,biting ,black ,white ,repel ,deter ,prevent ,attack ,suit ,mimics ,snakes ,swimsuit ,suits ,kind ,rash ,guard ,repels ,guards ,anyone ,found ,good ,skin ,surf ,safe ,way ,without ,avoid ,getting ,bitten ,attracting ,attacks ,protect ,myself ,against ,family ,fear ,swim ,snorkel ,dive ,kids ,snorkeling ,snorkelling ,buy ,vacation ,eaten ,mimic suit ,mimic shark suit" lang="en">  
-	<link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/sharktheme/images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/sites/all/themes/sharktheme/images/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/sites/all/themes/sharktheme/images/favicon-16x16.png" sizes="16x16">
+	<link rel="apple-touch-icon" sizes="180x180" href="/sites/all/themes/sharktheme/images/favicon_180.png">
+	<link rel="icon" type="image/png" href="/sites/all/themes/sharktheme/images/favicon_32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/sites/all/themes/sharktheme/images/favicon_16.png" sizes="16x16">
 
   <title>MIMIC SUITS</title>
   <?php print $styles; ?>
