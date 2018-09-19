@@ -1465,7 +1465,7 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #block-commerce-cap-cap::before {
-    background-image: url(../images/bg/checkout/lukie.gif) !important;
+    background: none !important;
     -webkit-animation: lukeIE 7s normal forwards !important;
             animation: lukeIE 7s normal forwards !important;
     -webkit-animation-delay: 7s !important;
@@ -1894,7 +1894,7 @@
     height: 6.82vw;
     max-width: 40vw;
     max-height: 24.8vw;
-    padding: 5px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.4);
     background-image: url(/sites/all/themes/sharktheme/images/bg/shop/stretchicon.png);
     background-repeat: no-repeat;
@@ -1903,7 +1903,8 @@
     border-radius: 6px 6px 0px 6px;
     display: none; }
     #shop .island-dive-size-chart img {
-      width: 100%; }
+      width: 100%;
+      margin-top: -1px; }
 
 #shop .island-dive-shop-thumb {
   display: inlineblock;

@@ -723,7 +723,8 @@
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
    #block-commerce-cap-cap {
    		&::before {
-   			background-image: url(../images/bg/checkout/lukie.gif) !important;
+   			// background-image: url(../images/bg/checkout/lukie.gif) !important;
+   			background: none !important;
 		    animation: lukeIE 7s normal forwards !important;
 	   	    animation-delay: 7s !important;
    		}
