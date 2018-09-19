@@ -2239,7 +2239,7 @@
       .island-wrapper .island-visible#about.down, .island-wrapper .island-visible#safety.down {
         background-position: 100%; }
       .island-wrapper .island-visible#about.up, .island-wrapper .island-visible#safety.up {
-        background-position: 99%;
+        background-position: 100%;
         transition: background-position 2s ease-out;
         transition-delay: 1.2s; }
       .island-wrapper .island-visible#eco.up {
@@ -2621,7 +2621,8 @@
 .wrapper {
   width: 500px;
   position: absolute;
-  top: 13vw;
+  top: 12vw;
+  margin-top: -10px;
   left: -11vw;
   height: 660px; }
 
