@@ -90,6 +90,9 @@
 <!--<div id="preloadVideo">Preloadin...</div>-->
 <video style="" preload="auto" muted playsinline autoplay loop id="preloadVideo" width="320" height="180">
     <source src="/sites/all/themes/sharktheme/images/LOAD.mp4"  type="video/mp4">
+</video>  
+
+<div class="diveVideos">
   <aside class="diveVideoWrapper">
     <video style="" preload="metadata" muted playsinline class="diveVideo goinDown"  width="320" height="180">
         <source src="https://player.vimeo.com/external/271566093.hd.mp4?s=f18a8089cb296015a1e5ddaac4725737c0193ef5&profile_id=175"  type="video/mp4">
@@ -200,7 +203,7 @@
 
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
-          <a href="#" class="underwater-slider-more">
+        	<a href="/sites/all/themes/sharktheme/images/pdf/SAFETY.pdf" target="_blank" class="underwater-slider-more">
             ▼
           </a>          
         </div>
@@ -827,8 +830,8 @@
         <div class="island-nav--up"></div>
         <div class="deadzone deadzone-left"></div>
         <div class="deadzone deadzone-center"></div>
-        <div id="siddeadzone div> -
-        <img  class=deadzone image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg">
+        <div id="sideluke"></div>
+        <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/checkout.jpg">
         <img  class="preload-image" style="display: none;" rel="preload" src="/sites/all/themes/sharktheme/images/bg/checkout/luke.gif">
 
         <?php print render($page['content']); ?>
