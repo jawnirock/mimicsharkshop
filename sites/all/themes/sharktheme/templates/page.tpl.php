@@ -76,9 +76,9 @@
 
 <div class="mobileNotification landscape">
     <span>
-    To open, open in Chrome. <br>
-    For the full experience <br>
-    please switch your device to landscape
+    To open, please go to Chrome. <br>
+    For the full experience  turn <br>
+    your device to landscape
     </span>
 </div>
 <div class="mobileNotification fullscreen" style="display: none;">
