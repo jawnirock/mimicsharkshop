@@ -204,7 +204,14 @@
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
         	<a href="/sites/all/themes/sharktheme/images/pdf/SAFETY.pdf" target="_blank" class="underwater-slider-more">
-            ▼
+            <span style="
+    font-size: 15px;
+    margin-bottom: -58px;
+    display: block;
+">PDF</span><br><span style="
+    display: block;
+    margin-bottom: -5px;
+"> ▼ </span>
           </a>          
         </div>
         <div class="island-dive-content-text">
@@ -287,7 +294,14 @@
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
         <a href="/sites/all/themes/sharktheme/images/pdf/HABITAT.pdf" target="_blank" class="underwater-slider-more">
-            ▼
+            <span style="
+    font-size: 15px;
+    margin-bottom: -58px;
+    display: block;
+">PDF</span><br><span style="
+    display: block;
+    margin-bottom: -5px;
+"> ▼ </span>
           </a>          
         </div>
         <div class="island-dive-content-text">
@@ -329,7 +343,14 @@
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
         <a href="/sites/all/themes/sharktheme/images/pdf/ROOTS.pdf" target="_blank" class="underwater-slider-more">
-            ▼
+            <span style="
+    font-size: 15px;
+    margin-bottom: -58px;
+    display: block;
+">PDF</span><br><span style="
+    display: block;
+    margin-bottom: -5px;
+"> ▼ </span>
           </a>          
         </div>
         <div class="island-dive-content-text">
@@ -373,13 +394,20 @@
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
           <a href="/sites/all/themes/sharktheme/images/pdf/ABOUT.pdf" target="_blank" class="underwater-slider-more">
-            ▼
+            <span style="
+    font-size: 15px;
+    margin-bottom: -58px;
+    display: block;
+">PDF</span><br><span style="
+    display: block;
+    margin-bottom: -5px;
+"> ▼ </span>
           </a>
         </div>
         <div class="island-dive-content-text">
         <div class="island-dive-content-text-blocks">
             <div class="island-dive-content-text-block"></div>
-            <div class="island-dive-content-text-block"></div>
+            <div class="island-dive-content-text-block"></div>  
             <div class="island-dive-content-text-block"></div>
             <div class="island-dive-content-text-block"></div>
             <div class="island-dive-content-text-block"></div>
