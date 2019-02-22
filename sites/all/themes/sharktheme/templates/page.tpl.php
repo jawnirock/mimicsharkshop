@@ -253,6 +253,10 @@
         <div class="island-nav--up"></div>
         <div class="island-dive-content-smokey"></div>
         <div class="underwater-slider-vertical noSwipe">
+        <a style="right: -8px; bottom: 12px;" href="http://news.sharkdeterrent.com" target="_blank" class="underwater-slider-more">
+           <span style="display: block;margin-bottom: 0px;font-size: 16px;"> NEWS</span>
+          </a>          
+
         </div>
         <div class="island-dive-content-text">
           <div class="island-dive-content-text-blocks">
